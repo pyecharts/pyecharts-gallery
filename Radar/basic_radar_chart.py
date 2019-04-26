@@ -17,7 +17,7 @@ v1 = [[4300, 10000, 28000, 35000, 50000, 19000]]
 v2 = [[5000, 14000, 28000, 31000, 42000, 21000]]
 
 (
-    Radar(init_opts=opts.InitOpts(width="1600px", height="1000px", chart_id="1234", bg_color="#CCCCCC"))
+    Radar(init_opts=opts.InitOpts(width="1600px", height="1000px", bg_color="#CCCCCC"))
     .add_schema(
         schema=[
             opts.RadarIndicatorOpts(name="销售（sales）", max_=6500),
@@ -30,24 +30,21 @@ v2 = [[5000, 14000, 28000, 31000, 42000, 21000]]
         splitarea_opt=opts.SplitAreaOpts(
             is_show=True, areastyle_opts=opts.AreaStyleOpts(opacity=1)
         ),
-        textstyle_opts=opts.TextStyleOpts(color="#fff")
+        textstyle_opts=opts.TextStyleOpts(color="#fff"),
     )
     .add(
         series_name="预算分配（Allocated Budget）",
         data=v1,
-        linestyle_opts=opts.LineStyleOpts(color="#CD0000")
+        linestyle_opts=opts.LineStyleOpts(color="#CD0000"),
     )
     .add(
         series_name="实际开销（Actual Spending）",
         data=v2,
-        linestyle_opts=opts.LineStyleOpts(color="#5CACEE")
+        linestyle_opts=opts.LineStyleOpts(color="#5CACEE"),
     )
-    .set_series_opts(
-        label_opts=opts.LabelOpts(is_show=False),
-    )
+    .set_series_opts(label_opts=opts.LabelOpts(is_show=False))
     .set_global_opts(
-        title_opts=opts.TitleOpts(title="基础雷达图"),
-        legend_opts=opts.LegendOpts()
+        title_opts=opts.TitleOpts(title="基础雷达图"), legend_opts=opts.LegendOpts()
     )
     .render("basic_radar_chart.html")
 )

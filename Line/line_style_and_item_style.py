@@ -36,7 +36,7 @@ Gallery 使用 Pyecharts 1.0.0
             axistick_opts=opts.AxisTickOpts(is_show=True),
             splitline_opts=opts.SplitLineOpts(is_show=True),
         ),
-        tooltip_opts=opts.TooltipOpts(is_show=False)
+        tooltip_opts=opts.TooltipOpts(is_show=False),
     )
     .render("line_style_and_item_style.html")
 )

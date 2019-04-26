@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="b60a92c57d104ec4982e8a4877f4e0a6" style="width:1600px; height:800px;"></div>
+    <script>
+        var chart_b60a92c57d104ec4982e8a4877f4e0a6 = echarts.init(
+            document.getElementById('b60a92c57d104ec4982e8a4877f4e0a6'), 'white', {renderer: 'canvas'});
+        var option_b60a92c57d104ec4982e8a4877f4e0a6 = {
+    "backgroundColor": "#2c343c",
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u8bbf\u95ee\u6765\u6e90",
+            "data": [
+                {
+                    "name": "\u89c6\u9891\u5e7f\u544a",
+                    "value": 235
+                },
+                {
+                    "name": "\u8054\u76df\u5e7f\u544a",
+                    "value": 274
+                },
+                {
+                    "name": "\u90ae\u4ef6\u8425\u9500",
+                    "value": 310
+                },
+                {
+                    "name": "\u76f4\u63a5\u8bbf\u95ee",
+                    "value": 335
+                },
+                {
+                    "name": "\u641c\u7d22\u5f15\u64ce",
+                    "value": 400
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(255, 255, 255, 0.3)",
+                "fontSize": 12
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u89c6\u9891\u5e7f\u544a",
+                "\u8054\u76df\u5e7f\u544a",
+                "\u90ae\u4ef6\u8425\u9500",
+                "\u76f4\u63a5\u8bbf\u95ee",
+                "\u641c\u7d22\u5f15\u64ce"
+            ],
+            "selected": {},
+            "show": false
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "Customized Pie",
+            "left": "center",
+            "top": "20",
+            "textStyle": {
+                "color": "#fff"
+            }
+        }
+    ]
+};
+        chart_b60a92c57d104ec4982e8a4877f4e0a6.setOption(option_b60a92c57d104ec4982e8a4877f4e0a6);
+    </script>
+</body>
+</html>

@@ -31,10 +31,12 @@
     * [Mixed Line and Bar](https://echarts.baidu.com/examples/editor.html?c=mix-line-bar) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/mixed_bar_and_line.py)
 
 * 饼图 Pie
-    * Coming Soon
+    * [Customized Pie](https://echarts.baidu.com/examples/editor.html?c=pie-custom) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/customized_pie.py)
+    * [Doughnut Chart](https://echarts.baidu.com/examples/editor.html?c=pie-doughnut) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/doughnut_chart.py)
+    * [Nested Pies](https://echarts.baidu.com/examples/editor.html?c=pie-nest) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/nested_pies.py)
 
 * 散点图 Scatter
-    * Coming Soon
+    * [Basic Scatter Chart](https://echarts.baidu.com/examples/editor.html?c=scatter-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Scatter/basic_scatter_chart.py)
 
 * 地理坐标/地图 GEO / Map
     * Coming Soon
@@ -49,7 +51,7 @@
     * [Boxplot Light Velocity](https://echarts.baidu.com/examples/editor.html?c=boxplot-light-velocity) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Boxplot/boxplot_light_velocity.py)
     
 * 热力图 Heatmap
-    * Coming Soon
+    * [HeatMap on Cartesian](https://echarts.baidu.com/examples/editor.html?c=heatmap-cartesian) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Heatmap/heatmap_on_cartesian.py)
     
 * 关系图 Graph
     * Coming Soon
