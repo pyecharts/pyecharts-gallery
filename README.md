@@ -43,10 +43,10 @@
     * Coming Soon
 
 * 雷达图 Radar
-    * [Basic Radar Chart](https://echarts.baidu.com/examples/editor.html?c=radar) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Boxplot/boxplot_light_valocity.py)
+    * [Basic Radar Chart](https://echarts.baidu.com/examples/editor.html?c=radar) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Radar/basic_radar_chart.py)
 
 * 盒须图 Boxplot
-    * [Boxplot Light Velocity](https://echarts.baidu.com/examples/editor.html?c=boxplot-light-velocity) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Radar/basic_radar_chart.py)
+    * [Boxplot Light Velocity](https://echarts.baidu.com/examples/editor.html?c=boxplot-light-velocity) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Boxplot/boxplot_light_velocity.py)
     
 * 热力图 Heatmap
     * Coming Soon
