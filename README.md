@@ -1,4 +1,4 @@
-<h1 align="center">pyecharts-gallert</h1>
+<h1 align="center">pyecharts-gallery</h1>
 
 ---
 
