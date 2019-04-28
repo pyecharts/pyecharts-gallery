@@ -3,16 +3,15 @@
 from __future__ import unicode_literals
 
 import pyecharts.options as opts
-from pyecharts.charts import HeatMap
+from pyecharts.charts import Bar3D
 
 """
 Gallery 使用 Pyecharts 1.0.0
-参考地址: https://echarts.baidu.com/examples/editor.html?c=heatmap-cartesian
+参考地址: https://echarts.baidu.com/examples/editor.html?c=bar3d-punch-card&gl=1
 
 目前无法实现的功能:
 
-1、官方示例中的 label 暂时无法居中，待解决
-2、暂时无法对块设置 itemStyle
+1、光照和阴影暂时无法设置
 """
 
 hours = [
@@ -213,38 +212,35 @@ data = [
     [6, 22, 2],
     [6, 23, 6],
 ]
-data = [[d[1], d[0], d[2] or "-"] for d in data]
+data = [[d[1], d[0], d[2]] for d in data]
 
 
 (
-    HeatMap(init_opts=opts.InitOpts(width="1440px", height="720px"))
-    .add_xaxis(xaxis_data=hours)
-    .add_yaxis(
-        series_name="Punch Card",
-        yaxis_data=days,
-        value=data,
-        label_opts=opts.LabelOpts(
-            is_show=True, color="#fff", position="bottom", horizontal_align="50%"
-        ),
+    Bar3D(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    .add(
+        series_name="",
+        data=data,
+        xaxis3d_opts=opts.Axis3DOpts(type_="category", data=hours),
+        yaxis3d_opts=opts.Axis3DOpts(type_="category", data=days),
+        zaxis3d_opts=opts.Axis3DOpts(type_="value"),
     )
-    .set_series_opts()
     .set_global_opts(
-        legend_opts=opts.LegendOpts(is_show=False),
-        xaxis_opts=opts.AxisOpts(
-            type_="category",
-            splitarea_opts=opts.SplitAreaOpts(
-                is_show=True, areastyle_opts=opts.AreaStyleOpts(opacity=1)
-            ),
-        ),
-        yaxis_opts=opts.AxisOpts(
-            type_="category",
-            splitarea_opts=opts.SplitAreaOpts(
-                is_show=True, areastyle_opts=opts.AreaStyleOpts(opacity=1)
-            ),
-        ),
         visualmap_opts=opts.VisualMapOpts(
-            min_=0, max_=10, is_calculable=True, orient="horizontal", pos_left="center"
-        ),
+            max_=20,
+            range_color=[
+                "#313695",
+                "#4575b4",
+                "#74add1",
+                "#abd9e9",
+                "#e0f3f8",
+                "#ffffbf",
+                "#fee090",
+                "#fdae61",
+                "#f46d43",
+                "#d73027",
+                "#a50026",
+            ],
+        )
     )
-    .render("heatmap_on_cartesian.html")
+    .render("bar3d_punch_card.html")
 )

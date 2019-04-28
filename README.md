@@ -42,7 +42,7 @@
     * Coming Soon
 
 * K 线图 Candlestick
-    * Coming Soon
+    * [Basic Candlestick](https://echarts.baidu.com/examples/editor.html?c=candlestick-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py)
 
 * 雷达图 Radar
     * [Basic Radar Chart](https://echarts.baidu.com/examples/editor.html?c=radar) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Radar/basic_radar_chart.py)
@@ -55,6 +55,42 @@
     
 * 关系图 Graph
     * Coming Soon
-
-* 路径图 Lines
+    
+* 树图 Tree
     * Coming Soon
+
+* 矩形树图 Treemap
+    * Coming Soon
+    
+* 旭日图 Sunburst
+    * Coming Soon
+
+* 平行坐标系 Parallel
+    * Coming Soon
+
+* 桑基图 Sankey
+    * Coming Soon
+
+* 漏斗图 Funnel
+    * Coming Soon
+
+* 仪表盘 Gauge
+    * Coming Soon
+
+* 主题河流图 ThemeRiver
+    * Coming Soon
+
+* 日历坐标系 Calendar
+    * Coming Soon
+
+* 3D 柱状图 3D Bar
+    * [Bar3D - Punch Card](https://echarts.baidu.com/examples/editor.html?c=bar3d-punch-card&gl=1) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar3D/bar3d_punch_card.py)
+
+* 3D 散点图 3D Scatter
+    * [Scatter3D](https://echarts.baidu.com/examples/editor.html?c=scatter3d&gl=1&theme=dark) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Scatter3D/scatter3d.py)
+
+* 3D 曲面 3D Surface
+    * [Surface Wave](https://echarts.baidu.com/examples/editor.html?c=surface-wave&gl=1) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Surface3D/surface_wave.py)
+
+* 3D 折线图 3D Line
+    * [三维折线图正交投影](https://echarts.baidu.com/examples/editor.html?c=line3d-orthographic&gl=1) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line3D/line3d_rectangular_projection.py)
