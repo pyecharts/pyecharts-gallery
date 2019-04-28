@@ -2,8 +2,6 @@
 # coding=utf-8
 from __future__ import unicode_literals
 
-from functools import reduce
-
 import asyncio
 from aiohttp import TCPConnector, ClientSession
 
@@ -16,8 +14,7 @@ Gallery 使用 Pyecharts 1.0.0
 
 目前无法实现的功能:
 
-1、暂时无法设置多个 VisualMap
-2、暂时无法对 Grid3D 设置 轴线和轴坐标的 style (非白色背景下有问题)
+1、暂时无法对 Grid3D 设置 轴线和轴坐标的 style (非白色背景下有问题)
 """
 
 
@@ -100,22 +97,23 @@ data = [
         grid3d_opts=opts.Grid3DOpts(width=100, height=100, depth=100),
     )
     .set_global_opts(
-        visualmap_opts=opts.VisualMapOpts(
-            pos_top="10",
-            is_calculable=True,
-            dimension=3,
-            max_=79 / 2,
-            range_color=[
-                "#1710c0",
-                "#0b9df0",
-                "#00fea8",
-                "#00ff0d",
-                "#f5f811",
-                "#f09a09",
-                "#fe0300",
-            ],
-            textstyle_opts=opts.TextStyleOpts(color="#fff"),
-        )
+        visualmap_opts=[
+            opts.VisualMapOpts(
+                type_="color",
+                is_calculable=True,
+                dimension=3,
+                pos_top="10",
+                max_=79 / 2,
+                range_color=["#1710c0", "#0b9df0", "#00fea8", "#00ff0d", "#f5f811", "#f09a09", "#fe0300"]
+            ),
+            opts.VisualMapOpts(
+                type_="size",
+                is_calculable=True,
+                dimension=4,
+                pos_bottom="10",
+                max_=2.4 / 2,
+                range_size=[10, 40]),
+        ]
     )
     .render("scatter3d.html")
 )

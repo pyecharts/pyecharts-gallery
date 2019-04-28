@@ -20,12 +20,12 @@ v2 = [[5000, 14000, 28000, 31000, 42000, 21000]]
     Radar(init_opts=opts.InitOpts(width="1600px", height="1000px", bg_color="#CCCCCC"))
     .add_schema(
         schema=[
-            opts.RadarIndicatorOpts(name="销售（sales）", max_=6500),
-            opts.RadarIndicatorOpts(name="管理（Administration）", max_=16000),
-            opts.RadarIndicatorOpts(name="信息技术（Information Technology）", max_=30000),
-            opts.RadarIndicatorOpts(name="客服（Customer Support）", max_=38000),
-            opts.RadarIndicatorOpts(name="研发（Development）", max_=52000),
-            opts.RadarIndicatorOpts(name="市场（Marketing）", max_=25000),
+            opts.RadarIndicatorItem(name="销售（sales）", max_=6500),
+            opts.RadarIndicatorItem(name="管理（Administration）", max_=16000),
+            opts.RadarIndicatorItem(name="信息技术（Information Technology）", max_=30000),
+            opts.RadarIndicatorItem(name="客服（Customer Support）", max_=38000),
+            opts.RadarIndicatorItem(name="研发（Development）", max_=52000),
+            opts.RadarIndicatorItem(name="市场（Marketing）", max_=25000),
         ],
         splitarea_opt=opts.SplitAreaOpts(
             is_show=True, areastyle_opts=opts.AreaStyleOpts(opacity=1)

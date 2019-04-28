@@ -8,11 +8,11 @@
 
 </head>
 <body>
-    <div id="84a9386d49c040a5bd91f59d6cd4d3d6" style="width:1440px; height:720px;"></div>
+    <div id="2ea5a87012d04a768ff88a80a2c6e767" style="width:1440px; height:720px;"></div>
     <script>
-        var chart_84a9386d49c040a5bd91f59d6cd4d3d6 = echarts.init(
-            document.getElementById('84a9386d49c040a5bd91f59d6cd4d3d6'), 'white', {renderer: 'canvas'});
-        var option_84a9386d49c040a5bd91f59d6cd4d3d6 = {
+        var chart_2ea5a87012d04a768ff88a80a2c6e767 = echarts.init(
+            document.getElementById('2ea5a87012d04a768ff88a80a2c6e767'), 'white', {renderer: 'canvas'});
+        var option_2ea5a87012d04a768ff88a80a2c6e767 = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -61168,31 +61168,47 @@
         },
         "borderWidth": 0
     },
-    "visualMap": {
-        "type": "continuous",
-        "min": 0,
-        "max": 39.5,
-        "textStyle": {
-            "color": "#fff"
+    "visualMap": [
+        {
+            "type": "continuous",
+            "min": 0,
+            "max": 39.5,
+            "inRange": {
+                "color": [
+                    "#1710c0",
+                    "#0b9df0",
+                    "#00fea8",
+                    "#00ff0d",
+                    "#f5f811",
+                    "#f09a09",
+                    "#fe0300"
+                ]
+            },
+            "calculable": true,
+            "splitNumber": 5,
+            "dimension": 3,
+            "orient": "vertical",
+            "top": "10",
+            "showLabel": true
         },
-        "inRange": {
-            "color": [
-                "#1710c0",
-                "#0b9df0",
-                "#00fea8",
-                "#00ff0d",
-                "#f5f811",
-                "#f09a09",
-                "#fe0300"
-            ]
-        },
-        "calculable": true,
-        "splitNumber": 5,
-        "dimension": 3,
-        "orient": "vertical",
-        "top": "10",
-        "showLabel": true
-    },
+        {
+            "type": "continuous",
+            "min": 0,
+            "max": 1.2,
+            "inRange": {
+                "symbolSize": [
+                    10,
+                    40
+                ]
+            },
+            "calculable": true,
+            "splitNumber": 5,
+            "dimension": 4,
+            "orient": "vertical",
+            "bottom": "10",
+            "showLabel": true
+        }
+    ],
     "xAxis3D": {
         "name": "protein",
         "nameGap": 20,
@@ -61231,7 +61247,7 @@
         {}
     ]
 };
-        chart_84a9386d49c040a5bd91f59d6cd4d3d6.setOption(option_84a9386d49c040a5bd91f59d6cd4d3d6);
+        chart_2ea5a87012d04a768ff88a80a2c6e767.setOption(option_2ea5a87012d04a768ff88a80a2c6e767);
     </script>
 </body>
 </html>
