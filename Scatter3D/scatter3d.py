@@ -104,7 +104,15 @@ data = [
                 dimension=3,
                 pos_top="10",
                 max_=79 / 2,
-                range_color=["#1710c0", "#0b9df0", "#00fea8", "#00ff0d", "#f5f811", "#f09a09", "#fe0300"]
+                range_color=[
+                    "#1710c0",
+                    "#0b9df0",
+                    "#00fea8",
+                    "#00ff0d",
+                    "#f5f811",
+                    "#f09a09",
+                    "#fe0300",
+                ],
             ),
             opts.VisualMapOpts(
                 type_="size",
@@ -112,7 +120,8 @@ data = [
                 dimension=4,
                 pos_bottom="10",
                 max_=2.4 / 2,
-                range_size=[10, 40]),
+                range_size=[10, 40],
+            ),
         ]
     )
     .render("scatter3d.html")

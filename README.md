@@ -54,34 +54,34 @@
     * [HeatMap on Cartesian](https://echarts.baidu.com/examples/editor.html?c=heatmap-cartesian) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Heatmap/heatmap_on_cartesian.py) -- Pyecharts 版本 1.0.0 测试通过
     
 * 关系图 Graph
-    * Coming Soon
+    * [NPM Dependencies](https://echarts.baidu.com/examples/editor.html?c=graph-npm) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Graph/npm_dependencies.py) -- Pyecharts 版本 1.0.0 测试通过
     
 * 树图 Tree
-    * Coming Soon
+    * [Radial Tree](https://echarts.baidu.com/examples/editor.html?c=tree-radial) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Tree/radial_tree.py) -- Pyecharts 版本 1.0.0 测试通过
 
 * 矩形树图 Treemap
-    * Coming Soon
+    * [Echarts Option Query](https://echarts.baidu.com/examples/editor.html?c=treemap-drill-down) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Treemap/echarts_option_query.py) -- Pyecharts 版本 1.0.0 测试通过
     
 * 旭日图 Sunburst
-    * Coming Soon
+    * 暂时不支持
 
 * 平行坐标系 Parallel
-    * Coming Soon
+    * [Basic Parallel](https://echarts.baidu.com/examples/editor.html?c=parallel-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Parallel/basic_parallel.py) -- Pyecharts 版本 1.0.0 测试通过
 
 * 桑基图 Sankey
-    * Coming Soon
+    * [Sankey Diagram](https://echarts.baidu.com/examples/editor.html?c=sankey-energy) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Sankey/sankey_diagram.py) -- Pyecharts 版本 1.0.0 测试通过
 
 * 漏斗图 Funnel
-    * Coming Soon
+    * [Funnel Chart](https://echarts.baidu.com/examples/editor.html?c=funnel) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Funnel/funnel_chart.py) -- Pyecharts 版本 1.0.0 测试通过
 
 * 仪表盘 Gauge
-    * Coming Soon
+    * [Gauge](https://echarts.baidu.com/examples/editor.html?c=gauge) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Gauge/gauge.py) -- Pyecharts 版本 1.0.0 测试通过
 
 * 主题河流图 ThemeRiver
-    * Coming Soon
+    * [ThemeRiver](https://echarts.baidu.com/examples/editor.html?c=themeRiver-basic) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/ThemeRiver/theme_river.py) -- Pyecharts 版本 1.0.0 测试通过
 
 * 日历坐标系 Calendar
-    * Coming Soon
+    * [Calendar Heatmap](https://echarts.baidu.com/examples/editor.html?c=calendar-heatmap) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Calendar/calendar_heatmap.py) -- Pyecharts 版本 1.0.0 测试通过
 
 * 3D 柱状图 3D Bar
     * [Bar3D - Punch Card](https://echarts.baidu.com/examples/editor.html?c=bar3d-punch-card&gl=1) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar3D/bar3d_punch_card.py) -- Pyecharts 版本 1.0.0 测试通过
