@@ -2,6 +2,10 @@
 
 ---
 
+* [English Introduction is Here](https://github.com/pyecharts/pyecharts-gallery/blob/master/README_EN.md)
+
+---
+
 ## 项目简介
 
 * 项目基于 Pycharts 1.0.0 版本进行展示
@@ -11,6 +15,7 @@
 
 * 项目代码结构按照 Echarts 官网的实例模块进行划分
 * 代码内有根据 1.0.0 版本的 Pyecharts 所生成的可视化数据视图和官方的进行对比, 有列出能实现的功能以及未实现的功能
+* 以下图例多数会基于 Echarts 的官方实例，不过也有部分会基于 Echarts 的社区 Gallery 实现
 
 ## 目前进度
 
@@ -76,7 +81,8 @@
 
 * 仪表盘 Gauge
     * [Gauge](https://echarts.baidu.com/examples/editor.html?c=gauge) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Gauge/gauge.py) -- Pyecharts 版本 1.0.0 测试通过
-
+    * [Gauge Change Color](https://gallery.echartsjs.com/editor.html?c=xH1vxib94f) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Gauge/gauge_change_color.py) -- Pyecharts 版本 1.0.0 测试通过(需要无视一下 type hints)
+    
 * 主题河流图 ThemeRiver
     * [ThemeRiver](https://echarts.baidu.com/examples/editor.html?c=themeRiver-basic) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/ThemeRiver/theme_river.py) -- Pyecharts 版本 1.0.0 测试通过
 
