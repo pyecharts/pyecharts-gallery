@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="6faaa29e1a9a4784858a18fee3516e77" style="width:1600px; height:800px;"></div>
+    <div id="f12cad26c86f49cfbebad39943b6b69f" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_6faaa29e1a9a4784858a18fee3516e77 = echarts.init(
-            document.getElementById('6faaa29e1a9a4784858a18fee3516e77'), 'white', {renderer: 'canvas'});
-        var option_6faaa29e1a9a4784858a18fee3516e77 = {
+        var chart_f12cad26c86f49cfbebad39943b6b69f = echarts.init(
+            document.getElementById('f12cad26c86f49cfbebad39943b6b69f'), 'white', {renderer: 'canvas'});
+        var option_f12cad26c86f49cfbebad39943b6b69f = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -91,25 +91,73 @@
             "type": "line",
             "name": "\u5e73\u5747\u6e29\u5ea6",
             "yAxisIndex": 1,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
             "data": [
-                2.0,
-                2.2,
-                3.3,
-                4.5,
-                6.3,
-                10.2,
-                20.3,
-                23.4,
-                23.0,
-                16.5,
-                12.0,
-                6.2
+                [
+                    "1\u6708",
+                    2.0
+                ],
+                [
+                    "2\u6708",
+                    2.2
+                ],
+                [
+                    "3\u6708",
+                    3.3
+                ],
+                [
+                    "4\u6708",
+                    4.5
+                ],
+                [
+                    "5\u6708",
+                    6.3
+                ],
+                [
+                    "6\u6708",
+                    10.2
+                ],
+                [
+                    "7\u6708",
+                    20.3
+                ],
+                [
+                    "8\u6708",
+                    23.4
+                ],
+                [
+                    "9\u6708",
+                    23.0
+                ],
+                [
+                    "10\u6708",
+                    16.5
+                ],
+                [
+                    "11\u6708",
+                    12.0
+                ],
+                [
+                    "12\u6708",
+                    6.2
+                ]
             ],
-            "barCategoryGap": "20%",
             "label": {
                 "show": false,
                 "position": "top",
                 "fontSize": 12
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
             }
         }
     ],
@@ -122,8 +170,7 @@
             ],
             "selected": {
                 "\u84b8\u53d1\u91cf": true,
-                "\u964d\u6c34\u91cf": true,
-                "\u5e73\u5747\u6e29\u5ea6": true
+                "\u964d\u6c34\u91cf": true
             },
             "show": true
         }
@@ -161,6 +208,7 @@
                 "formatter": "{value} ml"
             },
             "inverse": false,
+            "offset": 0,
             "min": 0,
             "max": 250,
             "type": "value",
@@ -189,6 +237,7 @@
                 "formatter": "{value} \u00b0C"
             },
             "inverse": false,
+            "offset": 0,
             "min": 0,
             "max": 25,
             "type": "value",
@@ -211,10 +260,11 @@
             "nameGap": 15,
             "gridIndex": 0,
             "axisPointer": {
-                "show": false,
+                "show": true,
                 "type": "shadow"
             },
             "inverse": false,
+            "offset": 0,
             "type": "category",
             "splitLine": {
                 "show": false,
@@ -245,7 +295,7 @@
         {}
     ]
 };
-        chart_6faaa29e1a9a4784858a18fee3516e77.setOption(option_6faaa29e1a9a4784858a18fee3516e77);
+        chart_f12cad26c86f49cfbebad39943b6b69f.setOption(option_f12cad26c86f49cfbebad39943b6b69f);
     </script>
 </body>
 </html>
