@@ -30,7 +30,8 @@
 * Bar
     * [Bar Chart Display Delay](https://echarts.baidu.com/examples/editor.html?c=bar-animation-delay) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/bar_chart_display_delay.py) -- Pyecharts version 1.0.0 can used 
     * [Mixed Line and Bar](https://echarts.baidu.com/examples/editor.html?c=mix-line-bar) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/mixed_bar_and_line.py) -- Pyecharts version 1.0.0 can used 
-    * [Multiple Y Axes](https://www.echartsjs.com/examples/editor.html?c=multiple-y-axis) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/multiple_y_axes.py) -- Pyecharts version 1.0.0-dev branch can used
+    * [Multiple Y Axes](https://www.echartsjs.com/examples/editor.html?c=multiple-y-axis) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/multiple_y_axes.py) -- Pyecharts version 1.0.0-dev branch can used
+    * [Finance Indices 2002](https://www.echartsjs.com/examples/editor.html?c=mix-timeline-finance) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/finance_indices_2002.py) -- Pyecharts version 1.0.0-dev branch can used
 
 * Pie
     * [Customized Pie](https://echarts.baidu.com/examples/editor.html?c=pie-custom) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/customized_pie.py) -- Pyecharts version 1.0.0 can used 
