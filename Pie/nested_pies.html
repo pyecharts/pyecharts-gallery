@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="f49a4460aa4a4dd892d1e5be8c5e655c" style="width:1600px; height:800px;"></div>
+    <div id="a270c7318aa6437299b16ef9a30d6b7f" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_f49a4460aa4a4dd892d1e5be8c5e655c = echarts.init(
-            document.getElementById('f49a4460aa4a4dd892d1e5be8c5e655c'), 'white', {renderer: 'canvas'});
-        var option_f49a4460aa4a4dd892d1e5be8c5e655c = {
+        var chart_a270c7318aa6437299b16ef9a30d6b7f = echarts.init(
+            document.getElementById('a270c7318aa6437299b16ef9a30d6b7f'), 'white', {renderer: 'canvas'});
+        var option_a270c7318aa6437299b16ef9a30d6b7f = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -42,6 +42,7 @@
         {
             "type": "pie",
             "name": "\u8bbf\u95ee\u6765\u6e90",
+            "clockwise": true,
             "data": [
                 {
                     "name": "\u76f4\u8fbe",
@@ -67,6 +68,7 @@
             "label": {
                 "show": true,
                 "position": "inner",
+                "margin": 8,
                 "fontSize": 12
             },
             "tooltip": {
@@ -92,6 +94,7 @@
         {
             "type": "pie",
             "name": "\u8bbf\u95ee\u6765\u6e90",
+            "clockwise": true,
             "data": [
                 {
                     "name": "\u76f4\u8fbe",
@@ -136,9 +139,52 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
+                "position": "outside",
+                "margin": 8,
                 "fontSize": 12,
-                "formatter": "{a} - {b} - {c} - {d}"
+                "formatter": "{a|{a}}{abg|}\n{hr|}\n {b|{b}: }{c}  {per|{d}%}  ",
+                "backgroundColor": "#eee",
+                "borderColor": "#aaa",
+                "borderWidth": 1,
+                "borderRadius": 4,
+                "rich": {
+                    "a": {
+                        "color": "#999",
+                        "lineHeight": 22,
+                        "align": "center"
+                    },
+                    "abg": {
+                        "backgroundColor": "#e3e3e3",
+                        "width": "100%",
+                        "align": "right",
+                        "height": 22,
+                        "borderRadius": [
+                            4,
+                            4,
+                            0,
+                            0
+                        ]
+                    },
+                    "hr": {
+                        "borderColor": "#aaa",
+                        "width": "100%",
+                        "borderWidth": 0.5,
+                        "height": 0
+                    },
+                    "b": {
+                        "fontSize": 16,
+                        "lineHeight": 33
+                    },
+                    "per": {
+                        "color": "#eee",
+                        "backgroundColor": "#334455",
+                        "padding": [
+                            2,
+                            4
+                        ],
+                        "borderRadius": 2
+                    }
+                }
             },
             "tooltip": {
                 "show": true,
@@ -195,7 +241,7 @@
         {}
     ]
 };
-        chart_f49a4460aa4a4dd892d1e5be8c5e655c.setOption(option_f49a4460aa4a4dd892d1e5be8c5e655c);
+        chart_a270c7318aa6437299b16ef9a30d6b7f.setOption(option_a270c7318aa6437299b16ef9a30d6b7f);
     </script>
 </body>
 </html>

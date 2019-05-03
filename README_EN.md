@@ -36,7 +36,7 @@
 * Pie
     * [Customized Pie](https://echarts.baidu.com/examples/editor.html?c=pie-custom) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/customized_pie.py) -- Pyecharts version 1.0.0 can used 
     * [Doughnut Chart](https://echarts.baidu.com/examples/editor.html?c=pie-doughnut) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/doughnut_chart.py) -- Pyecharts version 1.0.0 can used 
-    * [Nested Pies](https://echarts.baidu.com/examples/editor.html?c=pie-nest) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/nested_pies.py) -- Pyecharts version 1.0.0 can used 
+    * [Nested Pies](https://echarts.baidu.com/examples/editor.html?c=pie-nest) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/nested_pies.py) -- Pyecharts version 1.0.0-dev branch can used 
 
 * Scatter
     * [Basic Scatter Chart](https://echarts.baidu.com/examples/editor.html?c=scatter-simple) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Scatter/basic_scatter_chart.py) -- Pyecharts version 1.0.0 can used 
@@ -98,3 +98,6 @@
 
 * 3D Line
     * [3D Line Orthogonal projection](https://echarts.baidu.com/examples/editor.html?c=line3d-orthographic&gl=1) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line3D/line3d_rectangular_projection.py) -- Pyecharts version 1.0.0 can used 
+
+* WordCloud
+    * [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/WordCloud/basic_wordcloud.py) -- Pyecharts version 1.0.0 can used

@@ -40,7 +40,7 @@
 * 饼图 Pie
     * [Customized Pie](https://echarts.baidu.com/examples/editor.html?c=pie-custom) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/customized_pie.py) -- Pyecharts 版本 1.0.0 测试通过
     * [Doughnut Chart](https://echarts.baidu.com/examples/editor.html?c=pie-doughnut) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/doughnut_chart.py) -- Pyecharts 版本 1.0.0 测试通过
-    * [Nested Pies](https://echarts.baidu.com/examples/editor.html?c=pie-nest) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/nested_pies.py) -- Pyecharts 版本 1.0.0 测试通过
+    * [Nested Pies](https://echarts.baidu.com/examples/editor.html?c=pie-nest) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/nested_pies.py) -- Pyecharts 版本 1.0.0-dev 测试通过
 
 * 散点图 Scatter
     * [Basic Scatter Chart](https://echarts.baidu.com/examples/editor.html?c=scatter-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Scatter/basic_scatter_chart.py) -- Pyecharts 版本 1.0.0 测试通过
@@ -102,3 +102,6 @@
 
 * 3D 折线图 3D Line
     * [三维折线图正交投影](https://echarts.baidu.com/examples/editor.html?c=line3d-orthographic&gl=1) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line3D/line3d_rectangular_projection.py) -- Pyecharts 版本 1.0.0 测试通过
+
+* 词云
+    * [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/WordCloud/basic_wordcloud.py) -- Pyecharts 版本 1.0.0 测试通过
