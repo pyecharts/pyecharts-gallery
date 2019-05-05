@@ -42,7 +42,7 @@
     * [Basic Scatter Chart](https://echarts.baidu.com/examples/editor.html?c=scatter-simple) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Scatter/basic_scatter_chart.py) -- Pyecharts version 1.0.0 can used 
 
 * GEO / Map
-    * Coming Soon
+    * [Population Density of HongKong](https://echarts.baidu.com/examples/editor.html?c=map-HK) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map/population_density_of_HongKong.py) -- Pyecharts version 1.0.0 can used
 
 * Candlestick
     * [Basic Candlestick](https://echarts.baidu.com/examples/editor.html?c=candlestick-simple) -- [Pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py) -- Pyecharts version 1.0.0 can used 

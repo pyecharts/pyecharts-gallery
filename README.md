@@ -46,7 +46,7 @@
     * [Basic Scatter Chart](https://echarts.baidu.com/examples/editor.html?c=scatter-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Scatter/basic_scatter_chart.py) -- Pyecharts 版本 1.0.0 测试通过
 
 * 地理坐标/地图 GEO / Map
-    * Coming Soon
+    * [Population Density of HongKong](https://echarts.baidu.com/examples/editor.html?c=map-HK) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map/population_density_of_HongKong.py) -- Pyecharts 版本 1.0.0-dev 测试通过
 
 * K 线图 Candlestick
     * [Basic Candlestick](https://echarts.baidu.com/examples/editor.html?c=candlestick-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py) -- Pyecharts 版本 1.0.0 测试通过
