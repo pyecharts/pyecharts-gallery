@@ -4,7 +4,7 @@ import pyecharts.options as opts
 from pyecharts.charts import Gauge
 
 """
-Gallery 使用 Pyecharts 1.0.0
+Gallery 使用 pyecharts 1.0.0
 参考地址: https://gallery.echartsjs.com/editor.html?c=xH1vxib94f
 
 目前无法实现的功能:

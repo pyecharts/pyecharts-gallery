@@ -5,7 +5,7 @@ from pyecharts.charts import Line
 from pyecharts.commons.utils import produce_js_func
 
 """
-Gallery 使用 Pyecharts 1.0.0
+Gallery 使用 pyecharts 1.0.0
 参考地址: https://echarts.baidu.com/examples/editor.html?c=multiple-x-axis
 
 目前无法实现的功能:

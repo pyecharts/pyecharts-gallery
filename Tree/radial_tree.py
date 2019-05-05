@@ -7,7 +7,7 @@ import pyecharts.options as opts
 from pyecharts.charts import Tree
 
 """
-Gallery 使用 Pyecharts 1.0.0
+Gallery 使用 pyecharts 1.0.0
 参考地址: https://echarts.baidu.com/examples/editor.html?c=tree-radial
 
 目前无法实现的功能:
