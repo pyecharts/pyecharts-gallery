@@ -27,6 +27,7 @@
     * [Stacked Line Chart](https://echarts.baidu.com/examples/editor.html?c=line-stack) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/stacked_line_chart.py) -- pyecharts 版本 1.0.0 测试通过
     * [Rainfall](https://echarts.baidu.com/examples/editor.html?c=area-rainfall) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/rainfall.py) -- pyecharts 版本 1.0.0 测试通过
     * [Beijing AQI](https://echarts.baidu.com/examples/editor.html?c=line-aqi) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/beijing_aqi.py) -- pyecharts 版本 1.0.0 测试通过
+    * [Log Axis](https://www.echartsjs.com/examples/editor.html?c=line-log) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/log_axis.py) -- pyecharts 版本 1.0.0 测试通过
     * [Temperature Change In The Coming Week](https://echarts.baidu.com/examples/editor.html?c=line-marker) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/temperature_change_line_chart.py) -- pyecharts 版本 1.0.0 测试通过
     * [Distribution of Electricity](https://www.echartsjs.com/examples/editor.html?c=line-sections) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/distribution_of_electricity.py) -- pyecharts 版本 1.0.0 测试通过
     * [Line Style and Item Style](https://echarts.baidu.com/examples/editor.html?c=line-style) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/line_style_and_item_style.py) -- pyecharts 版本 1.0.0 测试通过
