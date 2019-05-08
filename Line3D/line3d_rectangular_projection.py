@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# coding=utf-8
 import math
 import pyecharts.options as opts
 from pyecharts.charts import Line3D

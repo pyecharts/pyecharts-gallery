@@ -1,7 +1,7 @@
-#!/usr/bin/env python
-# coding=utf-8
 import pyecharts.options as opts
 from pyecharts.charts import Line
+
+# 将在 v1.1.0 中更改
 from pyecharts.commons.utils import produce_js_func
 
 """

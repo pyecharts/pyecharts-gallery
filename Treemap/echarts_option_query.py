@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# coding=utf-8
 import re
 import asyncio
 from aiohttp import TCPConnector, ClientSession

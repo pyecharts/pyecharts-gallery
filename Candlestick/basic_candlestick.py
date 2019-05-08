@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# coding=utf-8
 import pyecharts.options as opts
 from pyecharts.charts import Candlestick
 
