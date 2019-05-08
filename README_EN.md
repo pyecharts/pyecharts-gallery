@@ -28,7 +28,10 @@
     * [Distribution of Electricity](https://www.echartsjs.com/examples/editor.html?c=line-sections) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/distribution_of_electricity.py) -- pyecharts version 1.0.0 can used 
     * [Line Style and Item Style](https://echarts.baidu.com/examples/editor.html?c=line-style) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/line_style_and_item_style.py) -- pyecharts version 1.0.0 can used 
     * [Multiple X Axes](https://echarts.baidu.com/examples/editor.html?c=multiple-x-axis) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/multiple_x_axes.py) -- pyecharts version 1.0.0 can used 
-    
+
+* Polar
+    * [Two Value-Axes in Polar](https://www.echartsjs.com/examples/editor.html?c=line-polar) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Polar/two_value_axes_in_polar.py) -- pyecharts version 1.0.0 can used
+ 
 * Bar
     * [Bar Chart Display Delay](https://echarts.baidu.com/examples/editor.html?c=bar-animation-delay) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/bar_chart_display_delay.py) -- pyecharts version 1.0.0 can used 
     * [Mixed Line and Bar](https://echarts.baidu.com/examples/editor.html?c=mix-line-bar) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/mixed_bar_and_line.py) -- pyecharts version 1.0.0 can used 
@@ -54,6 +57,7 @@
 
 * Boxplot
     * [Boxplot Light Velocity](https://echarts.baidu.com/examples/editor.html?c=boxplot-light-velocity) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Boxplot/boxplot_light_velocity.py) -- pyecharts version 1.0.0 can used 
+    * [Multiple Categories](https://www.echartsjs.com/examples/editor.html?c=boxplot-multi) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Boxplot/multiple_categories.py) -- pyecharts version 1.0.0 can used
     
 * Heatmap
     * [HeatMap on Cartesian](https://echarts.baidu.com/examples/editor.html?c=heatmap-cartesian) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Heatmap/heatmap_on_cartesian.py) -- pyecharts version 1.0.0 can used 
@@ -68,7 +72,7 @@
     * [Echarts Option Query](https://echarts.baidu.com/examples/editor.html?c=treemap-drill-down) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Treemap/echarts_option_query.py) -- pyecharts version 1.0.0 can used 
     
 * Sunburst
-    * Temporarily unsupported.
+    * Temporarily unsupported. (Coming at v1.1.0)
 
 * Parallel
     * [Basic Parallel](https://echarts.baidu.com/examples/editor.html?c=parallel-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Parallel/basic_parallel.py) -- pyecharts version 1.0.0 can used 

@@ -32,7 +32,10 @@
     * [Distribution of Electricity](https://www.echartsjs.com/examples/editor.html?c=line-sections) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/distribution_of_electricity.py) -- pyecharts 版本 1.0.0 测试通过
     * [Line Style and Item Style](https://echarts.baidu.com/examples/editor.html?c=line-style) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/line_style_and_item_style.py) -- pyecharts 版本 1.0.0 测试通过
     * [Multiple X Axes](https://echarts.baidu.com/examples/editor.html?c=multiple-x-axis) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/multiple_x_axes.py) -- pyecharts 版本 1.0.0 测试通过
-    
+
+* 极坐标 Polar
+    * [Two Value-Axes in Polar](https://www.echartsjs.com/examples/editor.html?c=line-polar) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Polar/two_value_axes_in_polar.py) -- pyecharts 版本 1.0.0 测试通过
+
 * 柱状图 Bar
     * [Bar Chart Display Delay](https://echarts.baidu.com/examples/editor.html?c=bar-animation-delay) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/bar_chart_display_delay.py) -- pyecharts 版本 1.0.0 测试通过
     * [Mixed Line and Bar](https://echarts.baidu.com/examples/editor.html?c=mix-line-bar) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/mixed_bar_and_line.py) -- pyecharts 版本 1.0.0 测试通过
@@ -58,7 +61,8 @@
 
 * 盒须图 Boxplot
     * [Boxplot Light Velocity](https://echarts.baidu.com/examples/editor.html?c=boxplot-light-velocity) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Boxplot/boxplot_light_velocity.py) -- pyecharts 版本 1.0.0 测试通过
-    
+    * [Multiple Categories](https://www.echartsjs.com/examples/editor.html?c=boxplot-multi) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Boxplot/multiple_categories.py) -- pyecharts 版本 1.0.0 测试通过
+
 * 热力图 Heatmap
     * [HeatMap on Cartesian](https://echarts.baidu.com/examples/editor.html?c=heatmap-cartesian) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Heatmap/heatmap_on_cartesian.py) -- pyecharts 版本 1.0.0 测试通过
     
@@ -72,7 +76,7 @@
     * [Echarts Option Query](https://echarts.baidu.com/examples/editor.html?c=treemap-drill-down) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Treemap/echarts_option_query.py) -- pyecharts 版本 1.0.0 测试通过
     
 * 旭日图 Sunburst
-    * 暂时不支持
+    * 暂时不支持 (Coming at v1.1.0)
 
 * 平行坐标系 Parallel
     * [Basic Parallel](https://echarts.baidu.com/examples/editor.html?c=parallel-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Parallel/basic_parallel.py) -- pyecharts 版本 1.0.0 测试通过
