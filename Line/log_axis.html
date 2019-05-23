@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="4e289d44fd894d3db4ae432cfc09d79f" style="width:1600px; height:800px;"></div>
+    <div id="8f4e7a906720406b9de627970d62cee7" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_4e289d44fd894d3db4ae432cfc09d79f = echarts.init(
-            document.getElementById('4e289d44fd894d3db4ae432cfc09d79f'), 'white', {renderer: 'canvas'});
-        var option_4e289d44fd894d3db4ae432cfc09d79f = {
+        var chart_8f4e7a906720406b9de627970d62cee7 = echarts.init(
+            document.getElementById('8f4e7a906720406b9de627970d62cee7'), 'white', {renderer: 'canvas'});
+        var option_8f4e7a906720406b9de627970d62cee7 = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -87,6 +87,7 @@
             "label": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -147,6 +148,7 @@
             "label": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -207,6 +209,7 @@
             "label": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -251,6 +254,7 @@
     },
     "yAxis": [
         {
+            "type": "log",
             "name": "y",
             "show": true,
             "scale": true,
@@ -259,7 +263,8 @@
             "gridIndex": 0,
             "inverse": false,
             "offset": 0,
-            "type": "log",
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
@@ -273,6 +278,7 @@
     ],
     "xAxis": [
         {
+            "type": "category",
             "name": "x",
             "show": true,
             "scale": false,
@@ -281,7 +287,8 @@
             "gridIndex": 0,
             "inverse": false,
             "offset": 0,
-            "type": "category",
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -311,7 +318,7 @@
         }
     ]
 };
-        chart_4e289d44fd894d3db4ae432cfc09d79f.setOption(option_4e289d44fd894d3db4ae432cfc09d79f);
+        chart_8f4e7a906720406b9de627970d62cee7.setOption(option_8f4e7a906720406b9de627970d62cee7);
     </script>
 </body>
 </html>

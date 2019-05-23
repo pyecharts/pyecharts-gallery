@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="98ba534446a24a0a9bcd143be12265e5" style="width:900px; height:500px;"></div>
+    <div id="0e2466dc85a0411c8c3f8c379a7575ba" style="width:900px; height:500px;"></div>
     <script>
-        var chart_98ba534446a24a0a9bcd143be12265e5 = echarts.init(
-            document.getElementById('98ba534446a24a0a9bcd143be12265e5'), 'white', {renderer: 'canvas'});
-        var option_98ba534446a24a0a9bcd143be12265e5 = {
+        var chart_0e2466dc85a0411c8c3f8c379a7575ba = echarts.init(
+            document.getElementById('0e2466dc85a0411c8c3f8c379a7575ba'), 'white', {renderer: 'canvas'});
+        var option_0e2466dc85a0411c8c3f8c379a7575ba = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -79,6 +79,7 @@
             "label": {
                 "show": false,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -118,6 +119,7 @@
     },
     "yAxis": [
         {
+            "type": "value",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -129,17 +131,11 @@
                 "inside": false
             },
             "inverse": false,
-            "type": "value",
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": true,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "axisLine": {
                 "lineStyle": {
                     "width": 1,
                     "opacity": 1,
@@ -151,24 +147,19 @@
     ],
     "xAxis": [
         {
+            "type": "category",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
             "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
             "boundaryGap": false,
-            "type": "category",
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "axisLine": {
                 "lineStyle": {
                     "width": 1,
                     "opacity": 1,
@@ -191,7 +182,7 @@
         {}
     ]
 };
-        chart_98ba534446a24a0a9bcd143be12265e5.setOption(option_98ba534446a24a0a9bcd143be12265e5);
+        chart_0e2466dc85a0411c8c3f8c379a7575ba.setOption(option_0e2466dc85a0411c8c3f8c379a7575ba);
     </script>
 </body>
 </html>

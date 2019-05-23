@@ -1,7 +1,15 @@
 import math
-
 import pyecharts.options as opts
 from pyecharts.charts import Polar
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://www.echartsjs.com/examples/editor.html?c=line-polar
+
+目前无法实现的功能:
+
+1、赞无
+"""
 
 data = []
 

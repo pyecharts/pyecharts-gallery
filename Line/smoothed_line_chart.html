@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="8f6141ffb6ff455c86f86ded2fd72d56" style="width:900px; height:500px;"></div>
+    <div id="dffa3443ab794f3c9d1ea33c360f7b58" style="width:900px; height:500px;"></div>
     <script>
-        var chart_8f6141ffb6ff455c86f86ded2fd72d56 = echarts.init(
-            document.getElementById('8f6141ffb6ff455c86f86ded2fd72d56'), 'white', {renderer: 'canvas'});
-        var option_8f6141ffb6ff455c86f86ded2fd72d56 = {
+        var chart_dffa3443ab794f3c9d1ea33c360f7b58 = echarts.init(
+            document.getElementById('dffa3443ab794f3c9d1ea33c360f7b58'), 'white', {renderer: 'canvas'});
+        var option_dffa3443ab794f3c9d1ea33c360f7b58 = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -79,6 +79,7 @@
             "label": {
                 "show": false,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -117,6 +118,7 @@
     },
     "yAxis": [
         {
+            "type": "value",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -128,17 +130,11 @@
                 "inside": false
             },
             "inverse": false,
-            "type": "value",
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": true,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "axisLine": {
                 "lineStyle": {
                     "width": 1,
                     "opacity": 1,
@@ -159,16 +155,11 @@
             "nameGap": 15,
             "gridIndex": 0,
             "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "axisLine": {
                 "lineStyle": {
                     "width": 1,
                     "opacity": 1,
@@ -188,7 +179,7 @@
         }
     ]
 };
-        chart_8f6141ffb6ff455c86f86ded2fd72d56.setOption(option_8f6141ffb6ff455c86f86ded2fd72d56);
+        chart_dffa3443ab794f3c9d1ea33c360f7b58.setOption(option_dffa3443ab794f3c9d1ea33c360f7b58);
     </script>
 </body>
 </html>

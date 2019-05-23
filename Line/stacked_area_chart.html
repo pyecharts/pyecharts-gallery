@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="ad1029f7fb4c47219b926623abf02058" style="width:900px; height:500px;"></div>
+    <div id="7afd3396605a49b2ac98c1ba91d05b9c" style="width:900px; height:500px;"></div>
     <script>
-        var chart_ad1029f7fb4c47219b926623abf02058 = echarts.init(
-            document.getElementById('ad1029f7fb4c47219b926623abf02058'), 'white', {renderer: 'canvas'});
-        var option_ad1029f7fb4c47219b926623abf02058 = {
+        var chart_7afd3396605a49b2ac98c1ba91d05b9c = echarts.init(
+            document.getElementById('7afd3396605a49b2ac98c1ba91d05b9c'), 'white', {renderer: 'canvas'});
+        var option_7afd3396605a49b2ac98c1ba91d05b9c = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -80,6 +80,7 @@
             "label": {
                 "show": false,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -133,6 +134,7 @@
             "label": {
                 "show": false,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -186,6 +188,7 @@
             "label": {
                 "show": false,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -239,6 +242,7 @@
             "label": {
                 "show": false,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -292,6 +296,7 @@
             "label": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -338,6 +343,7 @@
     },
     "yAxis": [
         {
+            "type": "value",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -349,7 +355,9 @@
                 "inside": false
             },
             "inverse": false,
-            "type": "value",
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
@@ -363,14 +371,17 @@
     ],
     "xAxis": [
         {
+            "type": "category",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
             "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
             "boundaryGap": false,
-            "type": "category",
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -397,7 +408,7 @@
         }
     ]
 };
-        chart_ad1029f7fb4c47219b926623abf02058.setOption(option_ad1029f7fb4c47219b926623abf02058);
+        chart_7afd3396605a49b2ac98c1ba91d05b9c.setOption(option_7afd3396605a49b2ac98c1ba91d05b9c);
     </script>
 </body>
 </html>

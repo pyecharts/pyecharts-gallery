@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="802f8cce4ac8472eb6dbea6be96302c2" style="width:1600px; height:1000px;"></div>
+    <div id="b3cbea7d29884c068686e1079ec90241" style="width:1600px; height:1000px;"></div>
     <script>
-        var chart_802f8cce4ac8472eb6dbea6be96302c2 = echarts.init(
-            document.getElementById('802f8cce4ac8472eb6dbea6be96302c2'), 'white', {renderer: 'canvas'});
-        var option_802f8cce4ac8472eb6dbea6be96302c2 = {
+        var chart_b3cbea7d29884c068686e1079ec90241 = echarts.init(
+            document.getElementById('b3cbea7d29884c068686e1079ec90241'), 'white', {renderer: 'canvas'});
+        var option_b3cbea7d29884c068686e1079ec90241 = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -83,6 +83,7 @@
             "label": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "markPoint": {
@@ -90,9 +91,9 @@
                     "show": true,
                     "position": "inside",
                     "color": "#fff",
+                    "margin": 8,
                     "fontSize": 12
-                },
-                "data": []
+                }
             },
             "markLine": {
                 "silent": false,
@@ -100,9 +101,9 @@
                 "label": {
                     "show": true,
                     "position": "top",
+                    "margin": 8,
                     "fontSize": 12
-                },
-                "data": []
+                }
             },
             "tooltip": {
                 "show": true,
@@ -123,9 +124,52 @@
                 "scale": 2.5,
                 "period": 4
             }
+        },
+        {
+            "type": "scatter",
+            "xAxisIndex": 1,
+            "yAxisIndex": 1,
+            "symbolSize": 10,
+            "data": [
+                [
+                    "expr 0",
+                    650
+                ],
+                [
+                    "expr 1",
+                    620
+                ],
+                [
+                    "expr 2",
+                    720
+                ],
+                [
+                    "expr 3",
+                    720
+                ],
+                [
+                    "expr 4",
+                    950
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "right",
+                "margin": 8,
+                "fontSize": 12
+            }
         }
     ],
     "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true
+        },
         {
             "data": [
                 ""
@@ -150,6 +194,7 @@
     },
     "yAxis": [
         {
+            "type": "value",
             "name": "km/s minus 299,000",
             "show": true,
             "scale": false,
@@ -157,7 +202,9 @@
             "nameGap": 15,
             "gridIndex": 0,
             "inverse": false,
-            "type": "value",
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -173,10 +220,42 @@
                     "opacity": 1
                 }
             }
+        },
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 1,
+            "axisTick": {
+                "show": false,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "axisLabel": {
+                "show": false,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 12
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
         }
     ],
     "xAxis": [
         {
+            "type": "category",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -185,12 +264,15 @@
             "axisLabel": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12,
                 "formatter": "expr {value}"
             },
             "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
             "boundaryGap": true,
-            "type": "category",
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -213,12 +295,49 @@
                 "expr 3",
                 "expr 4"
             ]
+        },
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 1,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "expr 0",
+                "expr 1",
+                "expr 2",
+                "expr 3",
+                "expr 4"
+            ]
         }
     ],
     "title": [
         {
             "text": "Michelson-Morley Experiment",
             "left": "center"
+        },
+        {
+            "text": "upper: Q3 + 1.5 * IQR \nlower: Q1 - 1.5 * IQR",
+            "left": "10%",
+            "top": "90%",
+            "textStyle": {
+                "fontSize": 14,
+                "borderColor": "#999",
+                "borderWidth": 1
+            }
         }
     ],
     "grid": [
@@ -226,10 +345,15 @@
             "left": "10%",
             "right": "10%",
             "bottom": "15%"
+        },
+        {
+            "left": "10%",
+            "right": "10%",
+            "bottom": "15%"
         }
     ]
 };
-        chart_802f8cce4ac8472eb6dbea6be96302c2.setOption(option_802f8cce4ac8472eb6dbea6be96302c2);
+        chart_b3cbea7d29884c068686e1079ec90241.setOption(option_b3cbea7d29884c068686e1079ec90241);
     </script>
 </body>
 </html>

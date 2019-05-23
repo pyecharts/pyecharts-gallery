@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="50367ae64c184a4fad907f81a1c99b6b" style="width:1680px; height:800px;"></div>
+    <div id="f8693ab054674986a9fbd38694ca304f" style="width:1680px; height:800px;"></div>
     <script>
-        var chart_50367ae64c184a4fad907f81a1c99b6b = echarts.init(
-            document.getElementById('50367ae64c184a4fad907f81a1c99b6b'), 'white', {renderer: 'canvas'});
-        var option_50367ae64c184a4fad907f81a1c99b6b = {
+        var chart_f8693ab054674986a9fbd38694ca304f = echarts.init(
+            document.getElementById('f8693ab054674986a9fbd38694ca304f'), 'white', {renderer: 'canvas'});
+        var option_f8693ab054674986a9fbd38694ca304f = {
     "color": [
         "#5793f3",
         "#d14a61",
@@ -63,6 +63,7 @@
             "label": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             }
         },
@@ -88,6 +89,7 @@
             "label": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             }
         },
@@ -152,6 +154,7 @@
             "label": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -193,6 +196,7 @@
     },
     "yAxis": [
         {
+            "type": "value",
             "name": "\u964d\u6c34\u91cf",
             "show": true,
             "scale": false,
@@ -214,15 +218,17 @@
             "axisLabel": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12,
                 "formatter": "{value} ml"
             },
             "inverse": false,
             "position": "right",
             "offset": 80,
+            "splitNumber": 5,
             "min": 0,
             "max": 250,
-            "type": "value",
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -234,6 +240,7 @@
             }
         },
         {
+            "type": "value",
             "name": "\u84b8\u53d1\u91cf",
             "show": true,
             "scale": false,
@@ -255,15 +262,17 @@
             "axisLabel": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12,
                 "formatter": "{value} ml"
             },
             "inverse": false,
             "position": "right",
             "offset": 0,
+            "splitNumber": 5,
             "min": 0,
             "max": 250,
-            "type": "value",
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -275,6 +284,7 @@
             }
         },
         {
+            "type": "value",
             "name": "\u6e29\u5ea6",
             "show": true,
             "scale": false,
@@ -296,15 +306,17 @@
             "axisLabel": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12,
                 "formatter": "{value} \u00b0C"
             },
             "inverse": false,
             "position": "left",
             "offset": 0,
+            "splitNumber": 5,
             "min": 0,
             "max": 25,
-            "type": "value",
+            "minInterval": 0,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
@@ -325,6 +337,8 @@
             "gridIndex": 0,
             "inverse": false,
             "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -354,7 +368,7 @@
         {}
     ]
 };
-        chart_50367ae64c184a4fad907f81a1c99b6b.setOption(option_50367ae64c184a4fad907f81a1c99b6b);
+        chart_f8693ab054674986a9fbd38694ca304f.setOption(option_f8693ab054674986a9fbd38694ca304f);
     </script>
 </body>
 </html>

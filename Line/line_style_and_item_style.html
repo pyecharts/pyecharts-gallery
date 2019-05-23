@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="f4538c44eb3246b89c6aa2a3a281b7a6" style="width:1280px; height:720px;"></div>
+    <div id="a4fe80f3379342bfaa29ae134426c96f" style="width:1280px; height:720px;"></div>
     <script>
-        var chart_f4538c44eb3246b89c6aa2a3a281b7a6 = echarts.init(
-            document.getElementById('f4538c44eb3246b89c6aa2a3a281b7a6'), 'white', {renderer: 'canvas'});
-        var option_f4538c44eb3246b89c6aa2a3a281b7a6 = {
+        var chart_a4fe80f3379342bfaa29ae134426c96f = echarts.init(
+            document.getElementById('a4fe80f3379342bfaa29ae134426c96f'), 'white', {renderer: 'canvas'});
+        var option_a4fe80f3379342bfaa29ae134426c96f = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -79,6 +79,7 @@
             "label": {
                 "show": false,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -123,6 +124,7 @@
     },
     "yAxis": [
         {
+            "type": "value",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -134,7 +136,9 @@
                 "inside": false
             },
             "inverse": false,
-            "type": "value",
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
@@ -148,13 +152,16 @@
     ],
     "xAxis": [
         {
+            "type": "category",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
             "inverse": false,
-            "type": "category",
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -179,7 +186,7 @@
         {}
     ]
 };
-        chart_f4538c44eb3246b89c6aa2a3a281b7a6.setOption(option_f4538c44eb3246b89c6aa2a3a281b7a6);
+        chart_a4fe80f3379342bfaa29ae134426c96f.setOption(option_a4fe80f3379342bfaa29ae134426c96f);
     </script>
 </body>
 </html>

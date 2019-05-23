@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="3e10f315707e41caa058e8c410f0bbe0" style="width:1680px; height:800px;"></div>
+    <div id="2c3700087f40405a9169e39228d72d37" style="width:1680px; height:800px;"></div>
     <script>
-        var chart_3e10f315707e41caa058e8c410f0bbe0 = echarts.init(
-            document.getElementById('3e10f315707e41caa058e8c410f0bbe0'), 'white', {renderer: 'canvas'});
-        var option_3e10f315707e41caa058e8c410f0bbe0 = {
+        var chart_2c3700087f40405a9169e39228d72d37 = echarts.init(
+            document.getElementById('2c3700087f40405a9169e39228d72d37'), 'white', {renderer: 'canvas'});
+        var option_2c3700087f40405a9169e39228d72d37 = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -19763,6 +19763,7 @@
             "label": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -19780,6 +19781,7 @@
                 "label": {
                     "show": true,
                     "position": "end",
+                    "margin": 8,
                     "fontSize": 12
                 },
                 "data": [
@@ -19833,6 +19835,7 @@
     },
     "yAxis": [
         {
+            "type": "value",
             "show": true,
             "scale": true,
             "nameLocation": "start",
@@ -19844,19 +19847,13 @@
                 "inside": false
             },
             "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
             "min": 0,
             "max": 500,
-            "type": "value",
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "axisLine": {
                 "lineStyle": {
                     "width": 1,
                     "opacity": 1,
@@ -19868,23 +19865,18 @@
     ],
     "xAxis": [
         {
+            "type": "category",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
             "inverse": false,
-            "type": "category",
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "axisLine": {
                 "lineStyle": {
                     "width": 1,
                     "opacity": 1,
@@ -24889,7 +24881,6 @@
             "start": 20,
             "end": 80,
             "orient": "horizontal",
-            "xAxisIndex": 0,
             "yAxisIndex": 0,
             "zoomLock": false
         },
@@ -24900,13 +24891,12 @@
             "start": 20,
             "end": 80,
             "orient": "horizontal",
-            "xAxisIndex": 0,
             "yAxisIndex": 0,
             "zoomLock": false
         }
     ]
 };
-        chart_3e10f315707e41caa058e8c410f0bbe0.setOption(option_3e10f315707e41caa058e8c410f0bbe0);
+        chart_2c3700087f40405a9169e39228d72d37.setOption(option_2c3700087f40405a9169e39228d72d37);
     </script>
 </body>
 </html>

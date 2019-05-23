@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="f12cad26c86f49cfbebad39943b6b69f" style="width:1600px; height:800px;"></div>
+    <div id="0f85e70070554c04bd5379ca2fc82214" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_f12cad26c86f49cfbebad39943b6b69f = echarts.init(
-            document.getElementById('f12cad26c86f49cfbebad39943b6b69f'), 'white', {renderer: 'canvas'});
-        var option_f12cad26c86f49cfbebad39943b6b69f = {
+        var chart_0f85e70070554c04bd5379ca2fc82214 = echarts.init(
+            document.getElementById('0f85e70070554c04bd5379ca2fc82214'), 'white', {renderer: 'canvas'});
+        var option_0f85e70070554c04bd5379ca2fc82214 = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -60,6 +60,7 @@
             "label": {
                 "show": false,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             }
         },
@@ -84,6 +85,7 @@
             "label": {
                 "show": false,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             }
         },
@@ -148,6 +150,7 @@
             "label": {
                 "show": false,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -189,6 +192,7 @@
     },
     "yAxis": [
         {
+            "type": "value",
             "name": "\u6c34\u91cf",
             "show": true,
             "scale": false,
@@ -204,14 +208,16 @@
             "axisLabel": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12,
                 "formatter": "{value} ml"
             },
             "inverse": false,
             "offset": 0,
+            "splitNumber": 5,
             "min": 0,
             "max": 250,
-            "type": "value",
+            "minInterval": 0,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
@@ -223,6 +229,7 @@
             }
         },
         {
+            "type": "value",
             "name": "\u6e29\u5ea6",
             "show": true,
             "scale": false,
@@ -233,14 +240,16 @@
             "axisLabel": {
                 "show": true,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12,
                 "formatter": "{value} \u00b0C"
             },
             "inverse": false,
             "offset": 0,
+            "splitNumber": 5,
             "min": 0,
             "max": 25,
-            "type": "value",
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -254,6 +263,7 @@
     ],
     "xAxis": [
         {
+            "type": "category",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -265,7 +275,8 @@
             },
             "inverse": false,
             "offset": 0,
-            "type": "category",
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -295,7 +306,7 @@
         {}
     ]
 };
-        chart_f12cad26c86f49cfbebad39943b6b69f.setOption(option_f12cad26c86f49cfbebad39943b6b69f);
+        chart_0f85e70070554c04bd5379ca2fc82214.setOption(option_0f85e70070554c04bd5379ca2fc82214);
     </script>
 </body>
 </html>

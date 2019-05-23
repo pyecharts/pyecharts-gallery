@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="05a056dbcd564efeafcf753405c9de2d" style="width:1600px; height:800px;"></div>
+    <div id="c3800786573c4997a0f7a5875366a3b8" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_05a056dbcd564efeafcf753405c9de2d = echarts.init(
-            document.getElementById('05a056dbcd564efeafcf753405c9de2d'), 'white', {renderer: 'canvas'});
-        var option_05a056dbcd564efeafcf753405c9de2d = {
+        var chart_c3800786573c4997a0f7a5875366a3b8 = echarts.init(
+            document.getElementById('c3800786573c4997a0f7a5875366a3b8'), 'white', {renderer: 'canvas'});
+        var option_c3800786573c4997a0f7a5875366a3b8 = {
     "baseOption": {
         "series": [
             {
@@ -147,6 +147,7 @@
                 "label": {
                     "show": false,
                     "position": "top",
+                    "margin": 8,
                     "fontSize": 12
                 }
             },
@@ -283,6 +284,7 @@
                 "label": {
                     "show": false,
                     "position": "top",
+                    "margin": 8,
                     "fontSize": 12
                 }
             },
@@ -419,6 +421,7 @@
                 "label": {
                     "show": false,
                     "position": "top",
+                    "margin": 8,
                     "fontSize": 12
                 }
             },
@@ -555,6 +558,7 @@
                 "label": {
                     "show": false,
                     "position": "top",
+                    "margin": 8,
                     "fontSize": 12
                 }
             },
@@ -691,6 +695,7 @@
                 "label": {
                     "show": false,
                     "position": "top",
+                    "margin": 8,
                     "fontSize": 12
                 }
             },
@@ -827,12 +832,14 @@
                 "label": {
                     "show": false,
                     "position": "top",
+                    "margin": 8,
                     "fontSize": 12
                 }
             },
             {
                 "type": "pie",
                 "name": "GDP\u5360\u6bd4",
+                "clockwise": true,
                 "data": [
                     {
                         "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -855,6 +862,7 @@
                 "label": {
                     "show": true,
                     "position": "top",
+                    "margin": 8,
                     "fontSize": 12
                 },
                 "tooltip": {
@@ -879,10 +887,12 @@
         ],
         "timeline": {
             "axisType": "category",
+            "orient": "horizontal",
             "autoPlay": true,
             "loop": true,
             "rewind": false,
             "show": true,
+            "inverse": false,
             "playInterval": 1000,
             "bottom": "-5px",
             "data": [
@@ -907,6 +917,8 @@
                 "gridIndex": 0,
                 "inverse": false,
                 "offset": 0,
+                "splitNumber": 5,
+                "minInterval": 0,
                 "splitLine": {
                     "show": false,
                     "lineStyle": {
@@ -960,6 +972,8 @@
                 "gridIndex": 0,
                 "inverse": false,
                 "offset": 0,
+                "splitNumber": 5,
+                "minInterval": 0,
                 "splitLine": {
                     "show": false,
                     "lineStyle": {
@@ -9275,7 +9289,7 @@
         }
     ]
 };
-        chart_05a056dbcd564efeafcf753405c9de2d.setOption(option_05a056dbcd564efeafcf753405c9de2d);
+        chart_c3800786573c4997a0f7a5875366a3b8.setOption(option_c3800786573c4997a0f7a5875366a3b8);
     </script>
 </body>
 </html>

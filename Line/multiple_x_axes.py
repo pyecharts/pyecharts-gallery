@@ -2,7 +2,7 @@ import pyecharts.options as opts
 from pyecharts.charts import Line
 
 # 将在 v1.1.0 中更改
-from pyecharts.commons.utils import produce_js_func
+from pyecharts.commons.utils import JsCode
 
 """
 Gallery 使用 pyecharts 1.0.0
@@ -40,7 +40,7 @@ js_formatter = """function (params) {
             axispointer_opts=opts.AxisPointerOpts(
                 is_show=True,
                 label=opts.LabelOpts(
-                    formatter=produce_js_func(js_formatter)
+                    formatter=JsCode(js_formatter)
                 ),
             ),
         ),
@@ -79,7 +79,7 @@ js_formatter = """function (params) {
             axispointer_opts=opts.AxisPointerOpts(
                 is_show=True,
                 label=opts.LabelOpts(
-                    formatter=produce_js_func(js_formatter)
+                    formatter=JsCode(js_formatter)
                 ),
             ),
         ),

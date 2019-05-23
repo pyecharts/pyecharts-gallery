@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="b0cd92e72e3248d9aba607e8ece41f7c" style="width:1000px; height:600px;"></div>
+    <script>
+        var chart_b0cd92e72e3248d9aba607e8ece41f7c = echarts.init(
+            document.getElementById('b0cd92e72e3248d9aba607e8ece41f7c'), 'white', {renderer: 'canvas'});
+        var option_b0cd92e72e3248d9aba607e8ece41f7c = {
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "sunburst",
+            "data": [
+                {
+                    "name": "Grandpa",
+                    "target": "blank",
+                    "children": [
+                        {
+                            "value": 15,
+                            "name": "Uncle Leo",
+                            "target": "blank",
+                            "children": [
+                                {
+                                    "value": 2,
+                                    "name": "Cousin Jack",
+                                    "target": "blank"
+                                },
+                                {
+                                    "value": 5,
+                                    "name": "Cousin Mary",
+                                    "target": "blank",
+                                    "children": [
+                                        {
+                                            "value": 2,
+                                            "name": "Jackson",
+                                            "target": "blank"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "value": 4,
+                                    "name": "Cousin Ben",
+                                    "target": "blank"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 10,
+                            "name": "Father",
+                            "target": "blank",
+                            "children": [
+                                {
+                                    "value": 5,
+                                    "name": "Me",
+                                    "target": "blank"
+                                },
+                                {
+                                    "value": 1,
+                                    "name": "Brother Peter",
+                                    "target": "blank"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Nancy",
+                    "target": "blank",
+                    "children": [
+                        {
+                            "name": "Uncle Nike",
+                            "target": "blank",
+                            "children": [
+                                {
+                                    "value": 1,
+                                    "name": "Cousin Betty",
+                                    "target": "blank"
+                                },
+                                {
+                                    "value": 2,
+                                    "name": "Cousin Jenny",
+                                    "target": "blank"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "radius": [
+                0,
+                "90%"
+            ],
+            "highlightPolicy": "descendant",
+            "nodeClick": "rootToNode",
+            "sort": "desc",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 12,
+                "formatter": "{b}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {},
+            "show": true
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "Sunburst-\u57fa\u672c\u793a\u4f8b"
+        }
+    ]
+};
+        chart_b0cd92e72e3248d9aba607e8ece41f7c.setOption(option_b0cd92e72e3248d9aba607e8ece41f7c);
+    </script>
+</body>
+</html>

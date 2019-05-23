@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="b1b34111dc084b169cbbed8cb3a6d85e" style="width:1600px; height:1000px;"></div>
+    <div id="459d19bce77b47b3b8e5849ca902fb80" style="width:1600px; height:1000px;"></div>
     <script>
-        var chart_b1b34111dc084b169cbbed8cb3a6d85e = echarts.init(
-            document.getElementById('b1b34111dc084b169cbbed8cb3a6d85e'), 'white', {renderer: 'canvas'});
-        var option_b1b34111dc084b169cbbed8cb3a6d85e = {
+        var chart_459d19bce77b47b3b8e5849ca902fb80 = echarts.init(
+            document.getElementById('459d19bce77b47b3b8e5849ca902fb80'), 'white', {renderer: 'canvas'});
+        var option_459d19bce77b47b3b8e5849ca902fb80 = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -91,6 +91,7 @@
             "label": {
                 "show": false,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "rippleEffect": {
@@ -126,6 +127,7 @@
     },
     "yAxis": [
         {
+            "type": "value",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -137,7 +139,9 @@
                 "inside": false
             },
             "inverse": false,
-            "type": "value",
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
@@ -151,13 +155,16 @@
     ],
     "xAxis": [
         {
+            "type": "value",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
             "inverse": false,
-            "type": "value",
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
@@ -186,7 +193,7 @@
         {}
     ]
 };
-        chart_b1b34111dc084b169cbbed8cb3a6d85e.setOption(option_b1b34111dc084b169cbbed8cb3a6d85e);
+        chart_459d19bce77b47b3b8e5849ca902fb80.setOption(option_459d19bce77b47b3b8e5849ca902fb80);
     </script>
 </body>
 </html>

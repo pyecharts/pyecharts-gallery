@@ -2,7 +2,7 @@ import pyecharts.options as opts
 from pyecharts.charts import Gauge
 
 """
-Gallery 使用 pyecharts 1.0.0
+Gallery 使用 pyecharts 1.1.0
 参考地址: https://echarts.baidu.com/examples/editor.html?c=gauge
 
 目前无法实现的功能:

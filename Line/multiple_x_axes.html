@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="c7e423f946064c17b88829835b2492d9" style="width:1600px; height:800px;"></div>
+    <div id="2fd58d3b47194fb3b1cd9ef6f81fbe8e" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_c7e423f946064c17b88829835b2492d9 = echarts.init(
-            document.getElementById('c7e423f946064c17b88829835b2492d9'), 'white', {renderer: 'canvas'});
-        var option_c7e423f946064c17b88829835b2492d9 = {
+        var chart_2fd58d3b47194fb3b1cd9ef6f81fbe8e = echarts.init(
+            document.getElementById('2fd58d3b47194fb3b1cd9ef6f81fbe8e'), 'white', {renderer: 'canvas'});
+        var option_2fd58d3b47194fb3b1cd9ef6f81fbe8e = {
     "color": [
         "#6e9ef1",
         "#d14a61",
@@ -102,6 +102,7 @@
             "label": {
                 "show": false,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -175,6 +176,7 @@
             "label": {
                 "show": false,
                 "position": "top",
+                "margin": 8,
                 "fontSize": 12
             },
             "lineStyle": {
@@ -215,6 +217,7 @@
     },
     "yAxis": [
         {
+            "type": "value",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -222,7 +225,8 @@
             "gridIndex": 0,
             "inverse": false,
             "offset": 0,
-            "type": "value",
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
@@ -236,6 +240,7 @@
     ],
     "xAxis": [
         {
+            "type": "category",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -264,13 +269,15 @@
                 "label": {
                     "show": true,
                     "position": "top",
+                    "margin": 8,
                     "fontSize": 12,
                     "formatter": function (params) {        console.log(params);        return '\u964d\u6c34\u91cf  ' + params.value + (params.seriesData.length ? '\uff1a' + params.seriesData[0].data : '');    }
                 }
             },
             "inverse": false,
             "offset": 0,
-            "type": "category",
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -296,6 +303,7 @@
             ]
         },
         {
+            "type": "category",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -324,13 +332,15 @@
                 "label": {
                     "show": true,
                     "position": "top",
+                    "margin": 8,
                     "fontSize": 12,
                     "formatter": function (params) {        console.log(params);        return '\u964d\u6c34\u91cf  ' + params.value + (params.seriesData.length ? '\uff1a' + params.seriesData[0].data : '');    }
                 }
             },
             "inverse": false,
             "offset": 0,
-            "type": "category",
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -360,7 +370,7 @@
         {}
     ]
 };
-        chart_c7e423f946064c17b88829835b2492d9.setOption(option_c7e423f946064c17b88829835b2492d9);
+        chart_2fd58d3b47194fb3b1cd9ef6f81fbe8e.setOption(option_2fd58d3b47194fb3b1cd9ef6f81fbe8e);
     </script>
 </body>
 </html>

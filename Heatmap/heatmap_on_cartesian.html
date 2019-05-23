@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="79e389219334487ba1eda724f59212fc" style="width:1440px; height:720px;"></div>
+    <div id="68a992a0806d43f585cdf31ea42f988f" style="width:1440px; height:720px;"></div>
     <script>
-        var chart_79e389219334487ba1eda724f59212fc = echarts.init(
-            document.getElementById('79e389219334487ba1eda724f59212fc'), 'white', {renderer: 'canvas'});
-        var option_79e389219334487ba1eda724f59212fc = {
+        var chart_68a992a0806d43f585cdf31ea42f988f = echarts.init(
+            document.getElementById('68a992a0806d43f585cdf31ea42f988f'), 'white', {renderer: 'canvas'});
+        var option_68a992a0806d43f585cdf31ea42f988f = {
     "color": [
         "#c23531",
         "#2f4554",
@@ -888,6 +888,7 @@
                 "show": true,
                 "position": "bottom",
                 "color": "#fff",
+                "margin": 8,
                 "fontSize": 12,
                 "align": "50%"
             },
@@ -924,13 +925,16 @@
     },
     "yAxis": [
         {
+            "type": "category",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
             "inverse": false,
-            "type": "category",
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -979,13 +983,16 @@
     },
     "xAxis": [
         {
+            "type": "category",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
             "inverse": false,
-            "type": "category",
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -1030,7 +1037,7 @@
         }
     ]
 };
-        chart_79e389219334487ba1eda724f59212fc.setOption(option_79e389219334487ba1eda724f59212fc);
+        chart_68a992a0806d43f585cdf31ea42f988f.setOption(option_68a992a0806d43f585cdf31ea42f988f);
     </script>
 </body>
 </html>

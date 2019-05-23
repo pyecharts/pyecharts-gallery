@@ -7,7 +7,7 @@ Gallery 使用 pyecharts 1.0.0
 
 目前无法实现的功能:
 
-1、yaxis_opts 需要增加 offset 参数
+1、暂无
 """
 
 colors = ['#5793f3', '#d14a61', '#675bba']

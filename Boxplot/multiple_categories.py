@@ -2,10 +2,10 @@ import pyecharts.options as opts
 from pyecharts.charts import Boxplot
 
 # 将在 v1.1.0 中更改
-from pyecharts.commons.utils import produce_js_func
+from pyecharts.commons.utils import JsCode
 
 """
-Gallery 使用 pyecharts 1.0.0
+Gallery 使用 pyecharts 1.1.0
 参考地址: https://www.echartsjs.com/examples/editor.html?c=boxplot-multi
 
 目前无法实现的功能:
@@ -146,7 +146,7 @@ data = [
         series_name="category0",
         y_axis=data[0]["boxData"],
         tooltip_opts=opts.TooltipOpts(
-            formatter=produce_js_func("""function(param) { return [
+            formatter=JsCode("""function(param) { return [
                             'Experiment ' + param.name + ': ',
                             'upper: ' + param.data[0],
                             'Q1: ' + param.data[1],
@@ -160,7 +160,7 @@ data = [
         series_name="category1",
         y_axis=data[1]["boxData"],
         tooltip_opts=opts.TooltipOpts(
-            formatter=produce_js_func("""function(param) { return [
+            formatter=JsCode("""function(param) { return [
                             'Experiment ' + param.name + ': ',
                             'upper: ' + param.data[0],
                             'Q1: ' + param.data[1],
@@ -174,7 +174,7 @@ data = [
         series_name="category2",
         y_axis=data[2]["boxData"],
         tooltip_opts=opts.TooltipOpts(
-            formatter=produce_js_func("""function(param) { return [
+            formatter=JsCode("""function(param) { return [
                             'Experiment ' + param.name + ': ',
                             'upper: ' + param.data[0],
                             'Q1: ' + param.data[1],
