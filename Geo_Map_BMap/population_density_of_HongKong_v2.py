@@ -1,29 +1,17 @@
-import asyncio
-from aiohttp import TCPConnector, ClientSession
-
 import pyecharts.options as opts
 from pyecharts.charts import Map
+from pyecharts.datasets import register_url
 
 """
-Gallery 使用 pyecharts 1.1.0
+Gallery 使用 pyecharts 1.1.0 和 echarts-china-cities-js
 参考地址: https://echarts.baidu.com/examples/editor.html?c=map-HK
 """
 
+# 与 pyecharts 注册，当画香港地图的时候，用 echarts-china-cities-js
+register_url('https://echarts-maps.github.io/echarts-china-cities-js')
+
 WIKI_LINK = ("http://zh.wikipedia.org/wiki/" +
              "%E9%A6%99%E6%B8%AF%E8%A1%8C%E6%94%BF%E5%8D%80%E5%8A%83#cite_note-12")
-
-
-async def get_json_data(url: str) -> dict:
-    async with ClientSession(connector=TCPConnector(ssl=False)) as session:
-        async with session.get(url=url) as response:
-            return await response.json()
-
-
-# 下载香港地图
-data = asyncio.run(
-    get_json_data(url="https://echarts.baidu.com/examples/data/asset/geo/HK.json")
-)
-
 MAP_DATA = [
     ["中西区", 20057.34],
     ["湾仔", 15477.48],
@@ -49,32 +37,31 @@ MAP_DATA = [
 NAME_MAP_DATA = {
     # "key": "value"
     # "name on the hong kong map": "name in the MAP DATA",
-    "Central and Western": "中西区",
-    "Eastern": "东区",
-    "Islands": "离岛",
-    "Kowloon City": "九龙城",
-    "Kwai Tsing": "葵青",
-    "Kwun Tong": "观塘",
-    "North": "北区",
-    "Sai Kung": "西贡",
-    "Sha Tin": "沙田",
-    "Sham Shui Po": "深水埗",
-    "Southern": "南区",
-    "Tai Po": "大埔",
-    "Tsuen Wan": "荃湾",
-    "Tuen Mun": "屯门",
-    "Wan Chai": "湾仔",
-    "Wong Tai Sin": "黄大仙",
-    "Yau Tsim Mong": "油尖旺",
-    "Yuen Long": "元朗",
+    "中西区": "中西区",
+    "东区": "东区",
+    "离岛区": "离岛",
+    "九龙城区": "九龙城",
+    "葵青区": "葵青",
+    "观塘区": "观塘",
+    "北区": "北区",
+    "西贡区": "西贡",
+    "沙田区": "沙田",
+    "深水埗区": "深水埗",
+    "南区": "南区",
+    "大埔区": "大埔",
+    "荃湾区": "荃湾",
+    "屯门区": "屯门",
+    "湾仔区": "湾仔",
+    "黄大仙区": "黄大仙",
+    "油尖旺区": "油尖旺",
+    "元朗区": "元朗",
 }
 
 (
     Map(init_opts=opts.InitOpts(width="1400px", height="800px"))
-    .add_js_funcs("echarts.registerMap('HK', {});".format(data))
     .add(
         series_name="香港18区人口密度",
-        maptype="HK",
+        maptype="香港",
         data_pair=MAP_DATA,
         name_map=NAME_MAP_DATA,
         is_map_symbol_show=False
@@ -96,5 +83,5 @@ NAME_MAP_DATA = {
             range_color=["lightskyblue", "yellow", "orangered"],
         ),
     )
-    .render("population_density_of_HongKong.html")
+    .render("population_density_of_HongKong_v2.html")
 )
