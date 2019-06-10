@@ -49,7 +49,7 @@
 
 * GEO / Map / BMap
     * [Population Density of HongKong](https://echarts.baidu.com/examples/editor.html?c=map-HK) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map/population_density_of_HongKong.py) -- pyecharts version 1.1.0 can used
-    * [BMap of hiking train in HangZhou](https://echarts.baidu.com/examples/editor.html?c=lines-bmap) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/population_density_of_HongKong.py) -- pyecharts version 1.1.0 can used
+    * [BMap of hiking train in HangZhou](https://echarts.baidu.com/examples/editor.html?c=lines-bmap) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/population_density_of_HongKong.py) -- pyecharts version 1.1.0 can used. [pyecharts + echarts-china-cities-js](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/population_density_of_HongKong_v2.py)
 
 * Candlestick
     * [Basic Candlestick](https://echarts.baidu.com/examples/editor.html?c=candlestick-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py) -- pyecharts version 1.1.0 can used 
