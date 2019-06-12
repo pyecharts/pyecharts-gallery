@@ -53,7 +53,7 @@
 
 * 地理坐标/地图/百度地图 GEO / Map / BMap
     * [Population Density of HongKong](https://echarts.baidu.com/examples/editor.html?c=map-HK) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/population_density_of_HongKong.py) -- pyecharts 版本 1.1.0 测试通过。[实现的代码2](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/population_density_of_HongKong_v2.py) -- pyecharts 版本 1.1.0 + [echarts-china-cities-js](https://github.com/echarts-map/echarts-china-cities-js)
-    * [BMap of hiking train in HangZhou](https://echarts.baidu.com/examples/editor.html?c=lines-bmap) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/population_density_of_HongKong.py) -- pyecharts 版本 1.1.0 测试通过
+    * [BMap of hiking train in HangZhou](https://echarts.baidu.com/examples/editor.html?c=lines-bmap) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/hiking_trail_in_hangzhou.py) -- pyecharts 版本 1.1.0 测试通过
 
 * K 线图 Candlestick
     * [Basic Candlestick](https://echarts.baidu.com/examples/editor.html?c=candlestick-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py) -- pyecharts 版本 1.1.0 测试通过
