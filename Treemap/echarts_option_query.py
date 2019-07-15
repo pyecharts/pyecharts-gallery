@@ -11,8 +11,7 @@ Gallery 使用 pyecharts 1.1.0
 
 目前无法实现的功能:
 
-1、迷之 label postion = "middle"
-2、层级的样式配置
+1、层级的样式配置
 """
 
 
@@ -29,7 +28,7 @@ data = asyncio.run(
     )
 )
 
-tree_map_data = {"children": []}
+tree_map_data: dict = {"children": []}
 
 
 def convert(source, target, base_path: str):
@@ -59,7 +58,8 @@ convert(source=data, target=tree_map_data, base_path="")
         data=tree_map_data["children"],
         visual_min=300,
         leaf_depth=1,
-        label_opts=opts.LabelOpts(position="middle"),
+        # 标签居中为 position = "inside"
+        label_opts=opts.LabelOpts(position="inside"),
     )
     .set_global_opts(
         legend_opts=opts.LegendOpts(is_show=False),
