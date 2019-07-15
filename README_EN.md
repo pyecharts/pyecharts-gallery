@@ -52,7 +52,8 @@
     * [BMap of hiking train in HangZhou](https://echarts.baidu.com/examples/editor.html?c=lines-bmap) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/hiking_trail_in_hangzhou.py) -- pyecharts version 1.2.1 can used. 
 
 * Candlestick
-    * [Basic Candlestick](https://echarts.baidu.com/examples/editor.html?c=candlestick-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py) -- pyecharts version 1.2.1 can used 
+    * [Basic Candlestick](https://echarts.baidu.com/examples/editor.html?c=candlestick-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py) -- pyecharts version 1.2.1 can used
+    * [Professional Candlestick](https://gallery.echartsjs.com/editor.html?c=xByOFPcjBe) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/professional_kline_chart.py) -- pyecharts version 1.3.1 can used
 
 * Radar
     * [Basic Radar Chart](https://echarts.baidu.com/examples/editor.html?c=radar) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Radar/basic_radar_chart.py) -- pyecharts version 1.2.1 can used 
@@ -75,7 +76,7 @@
     
 * Sunburst
     * [Basic Sunburst](https://www.echartsjs.com/examples/editor.html?c=sunburst-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Sunburst/basic_sunburst.py) -- pyecharts version 1.2.1 can used
-        * [Drink Flavors](https://www.echartsjs.com/examples/editor.html?c=sunburst-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Sunburst/drink_flavors.py) -- pyecharts version 1.2.1 can used
+    * [Drink Flavors](https://www.echartsjs.com/examples/editor.html?c=sunburst-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Sunburst/drink_flavors.py) -- pyecharts version 1.2.1 can used
 
 * Parallel
     * [Basic Parallel](https://echarts.baidu.com/examples/editor.html?c=parallel-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Parallel/basic_parallel.py) -- pyecharts version 1.2.1 can used 

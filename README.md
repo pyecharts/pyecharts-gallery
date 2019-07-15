@@ -57,6 +57,7 @@
 
 * K 线图 Candlestick
     * [Basic Candlestick](https://echarts.baidu.com/examples/editor.html?c=candlestick-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py) -- pyecharts 版本 1.2.1 测试通过
+    * [Professional Candlestick](https://gallery.echartsjs.com/editor.html?c=xByOFPcjBe) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/professional_kline_chart.py) -- pyecharts 版本 1.3.1 测试通过
 
 * 雷达图 Radar
     * [Basic Radar Chart](https://echarts.baidu.com/examples/editor.html?c=radar) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Radar/basic_radar_chart.py) -- pyecharts 版本 1.2.1 测试通过
