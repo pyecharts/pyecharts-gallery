@@ -7,11 +7,19 @@
 
 </head>
 <body>
-    <div id="b3cbea7d29884c068686e1079ec90241" style="width:1600px; height:1000px;"></div>
+    <div id="093ae77425784dda9b936213fe007197" style="width:1600px; height:1000px;"></div>
     <script>
-        var chart_b3cbea7d29884c068686e1079ec90241 = echarts.init(
-            document.getElementById('b3cbea7d29884c068686e1079ec90241'), 'white', {renderer: 'canvas'});
-        var option_b3cbea7d29884c068686e1079ec90241 = {
+        var chart_093ae77425784dda9b936213fe007197 = echarts.init(
+            document.getElementById('093ae77425784dda9b936213fe007197'), 'white', {renderer: 'canvas'});
+        var option_093ae77425784dda9b936213fe007197 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
     "color": [
         "#c23531",
         "#2f4554",
@@ -83,16 +91,14 @@
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8,
-                "fontSize": 12
+                "margin": 8
             },
             "markPoint": {
                 "label": {
                     "show": true,
                     "position": "inside",
                     "color": "#fff",
-                    "margin": 8,
-                    "fontSize": 12
+                    "margin": 8
                 }
             },
             "markLine": {
@@ -101,8 +107,7 @@
                 "label": {
                     "show": true,
                     "position": "top",
-                    "margin": 8,
-                    "fontSize": 12
+                    "margin": 8
                 }
             },
             "tooltip": {
@@ -155,8 +160,7 @@
             "label": {
                 "show": true,
                 "position": "right",
-                "margin": 8,
-                "fontSize": 12
+                "margin": 8
             }
         }
     ],
@@ -192,67 +196,6 @@
         },
         "borderWidth": 0
     },
-    "yAxis": [
-        {
-            "type": "value",
-            "name": "km/s minus 299,000",
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "splitArea": {
-                "show": true,
-                "areaStyle": {
-                    "opacity": 1
-                }
-            }
-        },
-        {
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 1,
-            "axisTick": {
-                "show": false,
-                "alignWithLabel": false,
-                "inside": false
-            },
-            "axisLabel": {
-                "show": false,
-                "position": "top",
-                "margin": 8,
-                "fontSize": 12
-            },
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            }
-        }
-    ],
     "xAxis": [
         {
             "type": "category",
@@ -265,7 +208,6 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
-                "fontSize": 12,
                 "formatter": "expr {value}"
             },
             "inverse": false,
@@ -324,6 +266,66 @@
             ]
         }
     ],
+    "yAxis": [
+        {
+            "type": "value",
+            "name": "km/s minus 299,000",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "splitArea": {
+                "show": true,
+                "areaStyle": {
+                    "opacity": 1
+                }
+            }
+        },
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 1,
+            "axisTick": {
+                "show": false,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "axisLabel": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
     "title": [
         {
             "text": "Michelson-Morley Experiment",
@@ -353,7 +355,7 @@
         }
     ]
 };
-        chart_b3cbea7d29884c068686e1079ec90241.setOption(option_b3cbea7d29884c068686e1079ec90241);
+        chart_093ae77425784dda9b936213fe007197.setOption(option_093ae77425784dda9b936213fe007197);
     </script>
 </body>
 </html>

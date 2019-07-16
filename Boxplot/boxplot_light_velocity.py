@@ -7,7 +7,7 @@ Gallery 使用 pyecharts 1.1.0
 
 目前无法实现的功能:
 
-1、官方示例左小角的公式边框暂时没有实现，titleOpts 暂时没有 border 的相关配置 
+1、官方示例左小角的公式边框暂时没有实现，titleOpts 暂时没有 border 的相关配置
 """
 
 y_data = [
@@ -122,14 +122,7 @@ y_data = [
         870,
     ],
 ]
-scatter_data = [
-    650,
-    620,
-    720,
-    720,
-    950,
-    970
-]
+scatter_data = [650, 620, 720, 720, 950, 970]
 
 box_plot = Boxplot()
 
@@ -170,24 +163,24 @@ scatter = (
             title="upper: Q3 + 1.5 * IQR \nlower: Q1 - 1.5 * IQR",
             title_textstyle_opts=opts.TextStyleOpts(
                 border_color="#999", border_width=1, font_size=14
-            )
+            ),
         ),
         yaxis_opts=opts.AxisOpts(
             axislabel_opts=opts.LabelOpts(is_show=False),
-            axistick_opts=opts.AxisTickOpts(is_show=False)
-        )
+            axistick_opts=opts.AxisTickOpts(is_show=False),
+        ),
     )
 )
 
 grid = (
     Grid(init_opts=opts.InitOpts(width="1600px", height="1000px"))
-        .add(
+    .add(
         box_plot,
         grid_opts=opts.GridOpts(pos_left="10%", pos_right="10%", pos_bottom="15%"),
     )
-        .add(
+    .add(
         scatter,
-        grid_opts=opts.GridOpts(pos_left="10%", pos_right="10%", pos_bottom="15%")
+        grid_opts=opts.GridOpts(pos_left="10%", pos_right="10%", pos_bottom="15%"),
     )
-        .render("boxplot_light_velocity.html")
+    .render("boxplot_light_velocity.html")
 )

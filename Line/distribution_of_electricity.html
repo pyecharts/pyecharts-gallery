@@ -7,11 +7,19 @@
 
 </head>
 <body>
-    <div id="4ccb5f4629d545e8ba36c6ce14ae2f39" style="width:1600px; height:800px;"></div>
+    <div id="dbb6081c691648c4b965516e3089b4a1" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_4ccb5f4629d545e8ba36c6ce14ae2f39 = echarts.init(
-            document.getElementById('4ccb5f4629d545e8ba36c6ce14ae2f39'), 'white', {renderer: 'canvas'});
-        var option_4ccb5f4629d545e8ba36c6ce14ae2f39 = {
+        var chart_dbb6081c691648c4b965516e3089b4a1 = echarts.init(
+            document.getElementById('dbb6081c691648c4b965516e3089b4a1'), 'white', {renderer: 'canvas'});
+        var option_dbb6081c691648c4b965516e3089b4a1 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
     "color": [
         "#c23531",
         "#2f4554",
@@ -42,6 +50,7 @@
         {
             "type": "line",
             "name": "\u7528\u7535\u91cf",
+            "connectNulls": false,
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": true,
@@ -128,11 +137,11 @@
                     400
                 ]
             ],
+            "hoverAnimation": true,
             "label": {
                 "show": false,
                 "position": "top",
-                "margin": 8,
-                "fontSize": 12
+                "margin": 8
             },
             "lineStyle": {
                 "width": 2,
@@ -148,8 +157,7 @@
                 "label": {
                     "show": true,
                     "position": "top",
-                    "margin": 8,
-                    "fontSize": 12
+                    "margin": 8
                 },
                 "data": [
                     [
@@ -203,35 +211,6 @@
         },
         "borderWidth": 0
     },
-    "yAxis": [
-        {
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "axisLabel": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "fontSize": 12,
-                "formatter": "{value} W"
-            },
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": true,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            }
-        }
-    ],
     "xAxis": [
         {
             "show": true,
@@ -277,6 +256,34 @@
             ]
         }
     ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{value} W"
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
     "title": [
         {
             "text": "\u4e00\u5929\u7528\u7535\u91cf\u5206\u5e03",
@@ -284,6 +291,7 @@
         }
     ],
     "visualMap": {
+        "show": true,
         "type": "piecewise",
         "min": 0,
         "max": 100,
@@ -326,7 +334,7 @@
         ]
     }
 };
-        chart_4ccb5f4629d545e8ba36c6ce14ae2f39.setOption(option_4ccb5f4629d545e8ba36c6ce14ae2f39);
+        chart_dbb6081c691648c4b965516e3089b4a1.setOption(option_dbb6081c691648c4b965516e3089b4a1);
     </script>
 </body>
 </html>

@@ -62,9 +62,12 @@ bar = (
         )
     )
     .set_global_opts(
-        tooltip_opts=opts.TooltipOpts(is_show=True, trigger="axis", axis_pointer_type="cross"),
+        tooltip_opts=opts.TooltipOpts(
+            is_show=True, trigger="axis", axis_pointer_type="cross"
+        ),
         xaxis_opts=opts.AxisOpts(
-            type_="category", axispointer_opts=opts.AxisPointerOpts(is_show=True, type_="shadow")
+            type_="category",
+            axispointer_opts=opts.AxisPointerOpts(is_show=True, type_="shadow"),
         ),
         yaxis_opts=opts.AxisOpts(
             name="水量",

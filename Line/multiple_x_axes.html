@@ -7,11 +7,19 @@
 
 </head>
 <body>
-    <div id="2fd58d3b47194fb3b1cd9ef6f81fbe8e" style="width:1600px; height:800px;"></div>
+    <div id="ed5aa4af14a446ffab58c1e31a7b14c9" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_2fd58d3b47194fb3b1cd9ef6f81fbe8e = echarts.init(
-            document.getElementById('2fd58d3b47194fb3b1cd9ef6f81fbe8e'), 'white', {renderer: 'canvas'});
-        var option_2fd58d3b47194fb3b1cd9ef6f81fbe8e = {
+        var chart_ed5aa4af14a446ffab58c1e31a7b14c9 = echarts.init(
+            document.getElementById('ed5aa4af14a446ffab58c1e31a7b14c9'), 'white', {renderer: 'canvas'});
+        var option_ed5aa4af14a446ffab58c1e31a7b14c9 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
     "color": [
         "#6e9ef1",
         "#d14a61",
@@ -44,6 +52,7 @@
         {
             "type": "line",
             "name": "2015 \u964d\u6c34\u91cf",
+            "connectNulls": false,
             "symbol": "emptyCircle",
             "symbolSize": 4,
             "showSymbol": false,
@@ -99,11 +108,11 @@
                     2.3
                 ]
             ],
+            "hoverAnimation": true,
             "label": {
                 "show": false,
                 "position": "top",
-                "margin": 8,
-                "fontSize": 12
+                "margin": 8
             },
             "lineStyle": {
                 "width": 2,
@@ -118,6 +127,7 @@
         {
             "type": "line",
             "name": "2016 \u964d\u6c34\u91cf",
+            "connectNulls": false,
             "symbol": "emptyCircle",
             "symbolSize": 4,
             "showSymbol": false,
@@ -173,11 +183,11 @@
                     0.7
                 ]
             ],
+            "hoverAnimation": true,
             "label": {
                 "show": false,
                 "position": "top",
-                "margin": 8,
-                "fontSize": 12
+                "margin": 8
             },
             "lineStyle": {
                 "width": 2,
@@ -215,29 +225,6 @@
         },
         "borderWidth": 0
     },
-    "yAxis": [
-        {
-            "type": "value",
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": true,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            }
-        }
-    ],
     "xAxis": [
         {
             "type": "category",
@@ -270,7 +257,6 @@
                     "show": true,
                     "position": "top",
                     "margin": 8,
-                    "fontSize": 12,
                     "formatter": function (params) {        console.log(params);        return '\u964d\u6c34\u91cf  ' + params.value + (params.seriesData.length ? '\uff1a' + params.seriesData[0].data : '');    }
                 }
             },
@@ -333,7 +319,6 @@
                     "show": true,
                     "position": "top",
                     "margin": 8,
-                    "fontSize": 12,
                     "formatter": function (params) {        console.log(params);        return '\u964d\u6c34\u91cf  ' + params.value + (params.seriesData.length ? '\uff1a' + params.seriesData[0].data : '');    }
                 }
             },
@@ -366,11 +351,34 @@
             ]
         }
     ],
+    "yAxis": [
+        {
+            "type": "value",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
     "title": [
         {}
     ]
 };
-        chart_2fd58d3b47194fb3b1cd9ef6f81fbe8e.setOption(option_2fd58d3b47194fb3b1cd9ef6f81fbe8e);
+        chart_ed5aa4af14a446ffab58c1e31a7b14c9.setOption(option_ed5aa4af14a446ffab58c1e31a7b14c9);
     </script>
 </body>
 </html>

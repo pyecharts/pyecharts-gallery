@@ -7,11 +7,19 @@
 
 </head>
 <body>
-    <div id="2c3700087f40405a9169e39228d72d37" style="width:1680px; height:800px;"></div>
+    <div id="c32a056e29fe457f92df5769af3bedfa" style="width:1680px; height:800px;"></div>
     <script>
-        var chart_2c3700087f40405a9169e39228d72d37 = echarts.init(
-            document.getElementById('2c3700087f40405a9169e39228d72d37'), 'white', {renderer: 'canvas'});
-        var option_2c3700087f40405a9169e39228d72d37 = {
+        var chart_c32a056e29fe457f92df5769af3bedfa = echarts.init(
+            document.getElementById('c32a056e29fe457f92df5769af3bedfa'), 'white', {renderer: 'canvas'});
+        var option_c32a056e29fe457f92df5769af3bedfa = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
     "color": [
         "#c23531",
         "#2f4554",
@@ -41,6 +49,7 @@
     "series": [
         {
             "type": "line",
+            "connectNulls": false,
             "yAxisIndex": 0,
             "symbolSize": 4,
             "showSymbol": false,
@@ -19760,11 +19769,11 @@
                     207
                 ]
             ],
+            "hoverAnimation": true,
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8,
-                "fontSize": 12
+                "margin": 8
             },
             "lineStyle": {
                 "width": 1,
@@ -19781,8 +19790,7 @@
                 "label": {
                     "show": true,
                     "position": "end",
-                    "margin": 8,
-                    "fontSize": 12
+                    "margin": 8
                 },
                 "data": [
                     {
@@ -19833,36 +19841,6 @@
         },
         "borderWidth": 0
     },
-    "yAxis": [
-        {
-            "type": "value",
-            "show": true,
-            "scale": true,
-            "nameLocation": "start",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "axisTick": {
-                "show": true,
-                "alignWithLabel": false,
-                "inside": false
-            },
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "min": 0,
-            "max": 500,
-            "minInterval": 0,
-            "splitLine": {
-                "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            }
-        }
-    ],
     "xAxis": [
         {
             "type": "category",
@@ -24816,12 +24794,43 @@
             ]
         }
     ],
+    "yAxis": [
+        {
+            "type": "value",
+            "show": true,
+            "scale": true,
+            "nameLocation": "start",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "min": 0,
+            "max": 500,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
     "title": [
         {
             "text": "Beijing AQI"
         }
     ],
     "visualMap": {
+        "show": true,
         "type": "piecewise",
         "min": 0,
         "max": 100,
@@ -24896,7 +24905,7 @@
         }
     ]
 };
-        chart_2c3700087f40405a9169e39228d72d37.setOption(option_2c3700087f40405a9169e39228d72d37);
+        chart_c32a056e29fe457f92df5769af3bedfa.setOption(option_c32a056e29fe457f92df5769af3bedfa);
     </script>
 </body>
 </html>

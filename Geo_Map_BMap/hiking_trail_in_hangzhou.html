@@ -10,11 +10,19 @@
 
 </head>
 <body>
-    <div id="78b3ab7ac0a349449d8a4e18f8d4a314" style="width:1600px; height:800px;"></div>
+    <div id="70381f4eb5a14bffac06135770282167" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_78b3ab7ac0a349449d8a4e18f8d4a314 = echarts.init(
-            document.getElementById('78b3ab7ac0a349449d8a4e18f8d4a314'), 'white', {renderer: 'canvas'});
-        var option_78b3ab7ac0a349449d8a4e18f8d4a314 = {
+        var chart_70381f4eb5a14bffac06135770282167 = echarts.init(
+            document.getElementById('70381f4eb5a14bffac06135770282167'), 'white', {renderer: 'canvas'});
+        var option_70381f4eb5a14bffac06135770282167 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
     "color": [
         "#c23531",
         "#2f4554",
@@ -22816,7 +22824,6 @@
         "axisPointer": {
             "type": "line"
         },
-        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
         "textStyle": {
             "fontSize": 14
         },
@@ -22950,8 +22957,8 @@
         }
     }
 };
-        chart_78b3ab7ac0a349449d8a4e18f8d4a314.setOption(option_78b3ab7ac0a349449d8a4e18f8d4a314);
-            var bmap = chart_78b3ab7ac0a349449d8a4e18f8d4a314.getModel().getComponent('bmap').getBMap();
+        chart_70381f4eb5a14bffac06135770282167.setOption(option_70381f4eb5a14bffac06135770282167);
+            var bmap = chart_70381f4eb5a14bffac06135770282167.getModel().getComponent('bmap').getBMap();
                     bmap.addControl(new BMap.NavigationControl({"anchor": 0, "offset": {"width": 10, "height": 10}, "type": 0, "showZoomInfo": false, "enableGeolocation": false}));
                     var overview = new BMap.OverviewMapControl({"anchor": 3, "offset": {"width": 10, "height": 50}, "isOpen": true});
                     bmap.addControl(overview);

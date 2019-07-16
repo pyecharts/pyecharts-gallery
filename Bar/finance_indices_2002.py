@@ -2069,7 +2069,7 @@ total_data["dataEstate"] = format_data(data=data_estate)
 total_data["dataFinancial"] = format_data(data=data_financial)
 
 
-########################################################################################################################
+#####################################################################################
 # 2002 - 2011 年的数据
 def get_year_overlap_chart(year: int) -> Bar:
     bar = (
@@ -2110,8 +2110,7 @@ def get_year_overlap_chart(year: int) -> Bar:
         )
         .set_global_opts(
             title_opts=opts.TitleOpts(
-                title="{}全国宏观经济指标".format(year),
-                subtitle="数据来自国家统计局",
+                title="{}全国宏观经济指标".format(year), subtitle="数据来自国家统计局"
             ),
             tooltip_opts=opts.TooltipOpts(
                 is_show=True, trigger="axis", axis_pointer_type="shadow"
@@ -2127,11 +2126,10 @@ def get_year_overlap_chart(year: int) -> Bar:
                 ["第二产业", total_data["dataSI"]["{}sum".format(year)]],
                 ["第三产业", total_data["dataTI"]["{}sum".format(year)]],
             ],
-            center=["75%", "35%"], radius="28%",
+            center=["75%", "35%"],
+            radius="28%",
         )
-        .set_series_opts(
-            tooltip_opts=opts.TooltipOpts(is_show=True, trigger="item")
-        )
+        .set_series_opts(tooltip_opts=opts.TooltipOpts(is_show=True, trigger="item"))
     )
     return bar.overlap(pie)
 

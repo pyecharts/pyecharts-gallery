@@ -1,3 +1,5 @@
+import ssl
+
 import pyecharts.options as opts
 from pyecharts.charts import Map
 from pyecharts.datasets import register_url
@@ -6,12 +8,14 @@ from pyecharts.datasets import register_url
 Gallery 使用 pyecharts 1.1.0 和 echarts-china-cities-js
 参考地址: https://echarts.baidu.com/examples/editor.html?c=map-HK
 """
-
+ssl._create_default_https_context = ssl._create_unverified_context
 # 与 pyecharts 注册，当画香港地图的时候，用 echarts-china-cities-js
-register_url('https://echarts-maps.github.io/echarts-china-cities-js')
+register_url("https://echarts-maps.github.io/echarts-china-cities-js")
 
-WIKI_LINK = ("http://zh.wikipedia.org/wiki/" +
-             "%E9%A6%99%E6%B8%AF%E8%A1%8C%E6%94%BF%E5%8D%80%E5%8A%83#cite_note-12")
+WIKI_LINK = (
+    "http://zh.wikipedia.org/wiki/"
+    "%E9%A6%99%E6%B8%AF%E8%A1%8C%E6%94%BF%E5%8D%80%E5%8A%83#cite_note-12"
+)
 MAP_DATA = [
     ["中西区", 20057.34],
     ["湾仔", 15477.48],
@@ -64,13 +68,13 @@ NAME_MAP_DATA = {
         maptype="香港",
         data_pair=MAP_DATA,
         name_map=NAME_MAP_DATA,
-        is_map_symbol_show=False
+        is_map_symbol_show=False,
     )
     .set_global_opts(
         title_opts=opts.TitleOpts(
             title="香港18区人口密度 （2011）",
             subtitle="人口密度数据来自Wikipedia",
-            subtitle_link=WIKI_LINK
+            subtitle_link=WIKI_LINK,
         ),
         tooltip_opts=opts.TooltipOpts(
             trigger="item", formatter="{b}<br/>{c} (p / km2)"

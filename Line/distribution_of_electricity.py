@@ -63,7 +63,7 @@ y_data = [
         y_axis=y_data,
         is_smooth=True,
         label_opts=opts.LabelOpts(is_show=False),
-        linestyle_opts=opts.LineStyleOpts(width=2)
+        linestyle_opts=opts.LineStyleOpts(width=2),
     )
     .set_global_opts(
         title_opts=opts.TitleOpts(title="一天用电量分布", subtitle="纯属虚构"),

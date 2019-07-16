@@ -7,11 +7,19 @@
 
 </head>
 <body>
-    <div id="5238062ff3bf4090a5c1faddcf8f6c17" style="width:1600px; height:800px;"></div>
+    <div id="d12a5feb48bf4d8aad5ea89c3614f591" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_5238062ff3bf4090a5c1faddcf8f6c17 = echarts.init(
-            document.getElementById('5238062ff3bf4090a5c1faddcf8f6c17'), 'white', {renderer: 'canvas'});
-        var option_5238062ff3bf4090a5c1faddcf8f6c17 = {
+        var chart_d12a5feb48bf4d8aad5ea89c3614f591 = echarts.init(
+            document.getElementById('d12a5feb48bf4d8aad5ea89c3614f591'), 'white', {renderer: 'canvas'});
+        var option_d12a5feb48bf4d8aad5ea89c3614f591 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
     "color": [
         "#c23531",
         "#2f4554",
@@ -42,11 +50,15 @@
         {
             "type": "gauge",
             "detail": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
                 "formatter": "{value}%"
             },
             "name": "\u4e1a\u52a1\u6307\u6807",
             "min": 0,
             "max": 100,
+            "splitNumber": 10,
             "startAngle": 225,
             "endAngle": -45,
             "data": [
@@ -116,7 +128,7 @@
         {}
     ]
 };
-        chart_5238062ff3bf4090a5c1faddcf8f6c17.setOption(option_5238062ff3bf4090a5c1faddcf8f6c17);
+        chart_d12a5feb48bf4d8aad5ea89c3614f591.setOption(option_d12a5feb48bf4d8aad5ea89c3614f591);
     </script>
 </body>
 </html>

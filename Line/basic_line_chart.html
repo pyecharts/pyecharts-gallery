@@ -7,11 +7,19 @@
 
 </head>
 <body>
-    <div id="33e0d66252a943e7a92bba934d7a4d00" style="width:900px; height:500px;"></div>
+    <div id="77ce5f9f974c4ab3843c6adecf32e511" style="width:900px; height:500px;"></div>
     <script>
-        var chart_33e0d66252a943e7a92bba934d7a4d00 = echarts.init(
-            document.getElementById('33e0d66252a943e7a92bba934d7a4d00'), 'white', {renderer: 'canvas'});
-        var option_33e0d66252a943e7a92bba934d7a4d00 = {
+        var chart_77ce5f9f974c4ab3843c6adecf32e511 = echarts.init(
+            document.getElementById('77ce5f9f974c4ab3843c6adecf32e511'), 'white', {renderer: 'canvas'});
+        var option_77ce5f9f974c4ab3843c6adecf32e511 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
     "color": [
         "#c23531",
         "#2f4554",
@@ -41,6 +49,7 @@
     "series": [
         {
             "type": "line",
+            "connectNulls": false,
             "symbol": "emptyCircle",
             "symbolSize": 4,
             "showSymbol": true,
@@ -76,11 +85,11 @@
                     1320
                 ]
             ],
+            "hoverAnimation": true,
             "label": {
                 "show": false,
                 "position": "top",
-                "margin": 8,
-                "fontSize": 12
+                "margin": 8
             },
             "lineStyle": {
                 "width": 1,
@@ -116,6 +125,38 @@
         },
         "borderWidth": 0
     },
+    "xAxis": [
+        {
+            "type": "category",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+            ]
+        }
+    ],
     "yAxis": [
         {
             "type": "value",
@@ -146,40 +187,9 @@
     ],
     "title": [
         {}
-    ],
-    "xAxis": [
-        {
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "data": [
-                "Mon",
-                "Tue",
-                "Wed",
-                "Thu",
-                "Fri",
-                "Sat",
-                "Sun"
-            ]
-        }
     ]
 };
-        chart_33e0d66252a943e7a92bba934d7a4d00.setOption(option_33e0d66252a943e7a92bba934d7a4d00);
+        chart_77ce5f9f974c4ab3843c6adecf32e511.setOption(option_77ce5f9f974c4ab3843c6adecf32e511);
     </script>
 </body>
 </html>

@@ -7,11 +7,19 @@
 
 </head>
 <body>
-    <div id="f8693ab054674986a9fbd38694ca304f" style="width:1680px; height:800px;"></div>
+    <div id="d8c84a460d4d45598bc0d0dd9d9c42ea" style="width:1680px; height:800px;"></div>
     <script>
-        var chart_f8693ab054674986a9fbd38694ca304f = echarts.init(
-            document.getElementById('f8693ab054674986a9fbd38694ca304f'), 'white', {renderer: 'canvas'});
-        var option_f8693ab054674986a9fbd38694ca304f = {
+        var chart_d8c84a460d4d45598bc0d0dd9d9c42ea = echarts.init(
+            document.getElementById('d8c84a460d4d45598bc0d0dd9d9c42ea'), 'white', {renderer: 'canvas'});
+        var option_d8c84a460d4d45598bc0d0dd9d9c42ea = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
     "color": [
         "#5793f3",
         "#d14a61",
@@ -63,8 +71,7 @@
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8,
-                "fontSize": 12
+                "margin": 8
             }
         },
         {
@@ -89,13 +96,13 @@
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8,
-                "fontSize": 12
+                "margin": 8
             }
         },
         {
             "type": "line",
             "name": "\u5e73\u5747\u6e29\u5ea6",
+            "connectNulls": false,
             "yAxisIndex": 2,
             "symbolSize": 4,
             "showSymbol": true,
@@ -151,11 +158,11 @@
                     6.2
                 ]
             ],
+            "hoverAnimation": true,
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8,
-                "fontSize": 12
+                "margin": 8
             },
             "lineStyle": {
                 "width": 1,
@@ -194,6 +201,42 @@
         },
         "borderWidth": 0
     },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "1\u6708",
+                "2\u6708",
+                "3\u6708",
+                "4\u6708",
+                "5\u6708",
+                "6\u6708",
+                "7\u6708",
+                "8\u6708",
+                "9\u6708",
+                "10\u6708",
+                "11\u6708",
+                "12\u6708"
+            ]
+        }
+    ],
     "yAxis": [
         {
             "type": "value",
@@ -219,7 +262,6 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
-                "fontSize": 12,
                 "formatter": "{value} ml"
             },
             "inverse": false,
@@ -263,7 +305,6 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
-                "fontSize": 12,
                 "formatter": "{value} ml"
             },
             "inverse": false,
@@ -307,7 +348,6 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
-                "fontSize": 12,
                 "formatter": "{value} \u00b0C"
             },
             "inverse": false,
@@ -328,47 +368,11 @@
             }
         }
     ],
-    "xAxis": [
-        {
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "data": [
-                "1\u6708",
-                "2\u6708",
-                "3\u6708",
-                "4\u6708",
-                "5\u6708",
-                "6\u6708",
-                "7\u6708",
-                "8\u6708",
-                "9\u6708",
-                "10\u6708",
-                "11\u6708",
-                "12\u6708"
-            ]
-        }
-    ],
     "title": [
         {}
     ]
 };
-        chart_f8693ab054674986a9fbd38694ca304f.setOption(option_f8693ab054674986a9fbd38694ca304f);
+        chart_d8c84a460d4d45598bc0d0dd9d9c42ea.setOption(option_d8c84a460d4d45598bc0d0dd9d9c42ea);
     </script>
 </body>
 </html>

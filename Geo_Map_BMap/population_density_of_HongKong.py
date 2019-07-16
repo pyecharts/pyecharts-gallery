@@ -9,8 +9,10 @@ Gallery 使用 pyecharts 1.1.0
 参考地址: https://echarts.baidu.com/examples/editor.html?c=map-HK
 """
 
-WIKI_LINK = ("http://zh.wikipedia.org/wiki/" +
-             "%E9%A6%99%E6%B8%AF%E8%A1%8C%E6%94%BF%E5%8D%80%E5%8A%83#cite_note-12")
+WIKI_LINK = (
+    "http://zh.wikipedia.org/wiki/"
+    "%E9%A6%99%E6%B8%AF%E8%A1%8C%E6%94%BF%E5%8D%80%E5%8A%83#cite_note-12"
+)
 
 
 async def get_json_data(url: str) -> dict:
@@ -77,13 +79,13 @@ NAME_MAP_DATA = {
         maptype="HK",
         data_pair=MAP_DATA,
         name_map=NAME_MAP_DATA,
-        is_map_symbol_show=False
+        is_map_symbol_show=False,
     )
     .set_global_opts(
         title_opts=opts.TitleOpts(
             title="香港18区人口密度 （2011）",
             subtitle="人口密度数据来自Wikipedia",
-            subtitle_link=WIKI_LINK
+            subtitle_link=WIKI_LINK,
         ),
         tooltip_opts=opts.TooltipOpts(
             trigger="item", formatter="{b}<br/>{c} (p / km2)"

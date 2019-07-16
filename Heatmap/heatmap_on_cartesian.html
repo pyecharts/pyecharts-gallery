@@ -7,11 +7,19 @@
 
 </head>
 <body>
-    <div id="68a992a0806d43f585cdf31ea42f988f" style="width:1440px; height:720px;"></div>
+    <div id="a13a4e5f8175410aaa6210b4051db2bb" style="width:1440px; height:720px;"></div>
     <script>
-        var chart_68a992a0806d43f585cdf31ea42f988f = echarts.init(
-            document.getElementById('68a992a0806d43f585cdf31ea42f988f'), 'white', {renderer: 'canvas'});
-        var option_68a992a0806d43f585cdf31ea42f988f = {
+        var chart_a13a4e5f8175410aaa6210b4051db2bb = echarts.init(
+            document.getElementById('a13a4e5f8175410aaa6210b4051db2bb'), 'white', {renderer: 'canvas'});
+        var option_a13a4e5f8175410aaa6210b4051db2bb = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
     "color": [
         "#c23531",
         "#2f4554",
@@ -889,7 +897,6 @@
                 "position": "bottom",
                 "color": "#fff",
                 "margin": 8,
-                "fontSize": 12,
                 "align": "50%"
             },
             "rippleEffect": {
@@ -922,64 +929,6 @@
             "fontSize": 14
         },
         "borderWidth": 0
-    },
-    "yAxis": [
-        {
-            "type": "category",
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "splitArea": {
-                "show": true,
-                "areaStyle": {
-                    "opacity": 1
-                }
-            },
-            "data": [
-                "Saturday",
-                "Friday",
-                "Thursday",
-                "Wednesday",
-                "Tuesday",
-                "Monday",
-                "Sunday"
-            ]
-        }
-    ],
-    "title": [
-        {}
-    ],
-    "visualMap": {
-        "type": "continuous",
-        "min": 0,
-        "max": 10,
-        "inRange": {
-            "color": [
-                "#50a3ba",
-                "#eac763",
-                "#d94e5d"
-            ]
-        },
-        "calculable": true,
-        "splitNumber": 5,
-        "orient": "horizontal",
-        "left": "center",
-        "showLabel": true
     },
     "xAxis": [
         {
@@ -1035,9 +984,68 @@
                 "11p"
             ]
         }
-    ]
+    ],
+    "yAxis": [
+        {
+            "type": "category",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "splitArea": {
+                "show": true,
+                "areaStyle": {
+                    "opacity": 1
+                }
+            },
+            "data": [
+                "Saturday",
+                "Friday",
+                "Thursday",
+                "Wednesday",
+                "Tuesday",
+                "Monday",
+                "Sunday"
+            ]
+        }
+    ],
+    "title": [
+        {}
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 10,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "splitNumber": 5,
+        "orient": "horizontal",
+        "left": "center",
+        "showLabel": true
+    }
 };
-        chart_68a992a0806d43f585cdf31ea42f988f.setOption(option_68a992a0806d43f585cdf31ea42f988f);
+        chart_a13a4e5f8175410aaa6210b4051db2bb.setOption(option_a13a4e5f8175410aaa6210b4051db2bb);
     </script>
 </body>
 </html>

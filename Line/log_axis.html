@@ -7,11 +7,19 @@
 
 </head>
 <body>
-    <div id="8f4e7a906720406b9de627970d62cee7" style="width:1600px; height:800px;"></div>
+    <div id="c83486d6891641fe9bbaccb9f807f907" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_8f4e7a906720406b9de627970d62cee7 = echarts.init(
-            document.getElementById('8f4e7a906720406b9de627970d62cee7'), 'white', {renderer: 'canvas'});
-        var option_8f4e7a906720406b9de627970d62cee7 = {
+        var chart_c83486d6891641fe9bbaccb9f807f907 = echarts.init(
+            document.getElementById('c83486d6891641fe9bbaccb9f807f907'), 'white', {renderer: 'canvas'});
+        var option_c83486d6891641fe9bbaccb9f807f907 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
     "color": [
         "#c23531",
         "#2f4554",
@@ -42,6 +50,7 @@
         {
             "type": "line",
             "name": "1/2\u7684\u6307\u6570",
+            "connectNulls": false,
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
@@ -84,11 +93,11 @@
                     0.001953125
                 ]
             ],
+            "hoverAnimation": true,
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8,
-                "fontSize": 12
+                "margin": 8
             },
             "lineStyle": {
                 "width": 2,
@@ -103,6 +112,7 @@
         {
             "type": "line",
             "name": "2\u7684\u6307\u6570",
+            "connectNulls": false,
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
@@ -145,11 +155,11 @@
                     256
                 ]
             ],
+            "hoverAnimation": true,
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8,
-                "fontSize": 12
+                "margin": 8
             },
             "lineStyle": {
                 "width": 2,
@@ -164,6 +174,7 @@
         {
             "type": "line",
             "name": "3\u7684\u6307\u6570",
+            "connectNulls": false,
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
@@ -206,11 +217,11 @@
                     6669
                 ]
             ],
+            "hoverAnimation": true,
             "label": {
                 "show": true,
                 "position": "top",
-                "margin": 8,
-                "fontSize": 12
+                "margin": 8
             },
             "lineStyle": {
                 "width": 2,
@@ -252,30 +263,6 @@
         },
         "borderWidth": 0
     },
-    "yAxis": [
-        {
-            "type": "log",
-            "name": "y",
-            "show": true,
-            "scale": true,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": true,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            }
-        }
-    ],
     "xAxis": [
         {
             "type": "category",
@@ -311,6 +298,30 @@
             ]
         }
     ],
+    "yAxis": [
+        {
+            "type": "log",
+            "name": "y",
+            "show": true,
+            "scale": true,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
     "title": [
         {
             "text": "\u5bf9\u6570\u8f74\u793a\u4f8b",
@@ -318,7 +329,7 @@
         }
     ]
 };
-        chart_8f4e7a906720406b9de627970d62cee7.setOption(option_8f4e7a906720406b9de627970d62cee7);
+        chart_c83486d6891641fe9bbaccb9f807f907.setOption(option_c83486d6891641fe9bbaccb9f807f907);
     </script>
 </body>
 </html>
