@@ -149,15 +149,20 @@ def get_year_chart(year: int):
     )
 
     bar_x_data = [x[0] for x in map_data]
-    bar_y_data = [x[1][0] for x in map_data]
+
+    # 这里注释的部分会导致 label 和 value 与 饼图不一致
+    # 使用下面的 List[Dict] 就可以解决这个问题了。
+    # bar_y_data = [x[1][0] for x in map_data]
+    bar_y_data = [{"name": x[0], "value": x[1][0]} for x in map_data]
     bar = (
         Bar()
         .add_xaxis(xaxis_data=bar_x_data)
         .add_yaxis(
             series_name="",
+            yaxis_index=1,
             yaxis_data=bar_y_data,
             label_opts=opts.LabelOpts(
-                is_show=True, position="right", formatter="{b} : {c}"
+                is_show=True, position="right", formatter="{b}: {c}"
             ),
         )
         .reversal_axis()
@@ -187,7 +192,6 @@ def get_year_chart(year: int):
         rest_percent = rest_percent - percent_sum
         rest_value = d[1][0] * (rest_percent / d[1][1])
     pie_data.append(["其他省份", rest_value])
-
     pie = (
         Pie()
         .add(
