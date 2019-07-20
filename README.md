@@ -2,7 +2,7 @@
 
 ---
 
-* [English Introduction is Here](https://github.com/pyecharts/pyecharts-gallery/blob/master/README_EN.md)
+* [英文文档在这 English Introduction is Here](https://github.com/pyecharts/pyecharts-gallery/blob/master/README_EN.md)
 
 ---
 
@@ -52,10 +52,12 @@
     * [Basic Scatter Chart](https://echarts.baidu.com/examples/editor.html?c=scatter-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Scatter/basic_scatter_chart.py)
 
 * 地理坐标/地图/百度地图 GEO / Map / BMap
-    * [Population Density of HongKong](https://echarts.baidu.com/examples/editor.html?c=map-HK) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/population_density_of_HongKong.py)。
+    * [Population Density of HongKong](https://echarts.baidu.com/examples/editor.html?c=map-HK) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/population_density_of_HongKong.py)
     * [Population Density of HongKong Version 2](https://echarts.baidu.com/examples/editor.html?c=map-HK) -- [实现的代码2](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/population_density_of_HongKong_v2.py) [echarts-china-cities-js](https://github.com/echarts-map/echarts-china-cities-js)
     * [BMap of hiking train in HangZhou](https://echarts.baidu.com/examples/editor.html?c=lines-bmap) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/hiking_trail_in_hangzhou.py)
     * [China GDP FROM 1980](https://gallery.echartsjs.com/editor.html?c=xSkGI6zLmb) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/china_gdp_from_1980.py)
+    * China GDP FROM 1993 TO 2018 -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/china_gdp_from_1993_to_2018.py)
+
 
 * K 线图 Candlestick
     * [Basic Candlestick](https://echarts.baidu.com/examples/editor.html?c=candlestick-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py)

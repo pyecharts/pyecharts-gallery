@@ -47,11 +47,12 @@
 * Scatter
     * [Basic Scatter Chart](https://echarts.baidu.com/examples/editor.html?c=scatter-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Scatter/basic_scatter_chart.py) 
 
-* GEO / Map / BMap
+* GEO / Map / BMap (BMap is BaiduMap)
     * [Population Density of HongKong](https://echarts.baidu.com/examples/editor.html?c=map-HK) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map/population_density_of_HongKong.py)
     * [Population Density of HongKong Version 2](https://echarts.baidu.com/examples/editor.html?c=map-HK) -- [pyecharts Code + echarts-china-cities-js](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/population_density_of_HongKong_v2.py)
-    * [BMap of hiking train in HangZhou](https://echarts.baidu.com/examples/editor.html?c=lines-bmap) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/hiking_trail_in_hangzhou.py). 
-    * [China GDP FROM 1980](https://gallery.echartsjs.com/editor.html?c=xSkGI6zLmb) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/china_gdp_from_1980.py). 
+    * [BMap of hiking train in HangZhou](https://echarts.baidu.com/examples/editor.html?c=lines-bmap) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/hiking_trail_in_hangzhou.py)
+    * [China GDP FROM 1980](https://gallery.echartsjs.com/editor.html?c=xSkGI6zLmb) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/china_gdp_from_1980.py)
+    * [China GDP FROM 1993 TO 2018](Maded by our fans) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/china_gdp_from_1993_to_2018.py)
 
 * Candlestick
     * [Basic Candlestick](https://echarts.baidu.com/examples/editor.html?c=candlestick-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py)
