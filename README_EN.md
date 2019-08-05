@@ -57,6 +57,7 @@
 * Candlestick
     * [Basic Candlestick](https://echarts.baidu.com/examples/editor.html?c=candlestick-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py)
     * [Professional Candlestick](https://gallery.echartsjs.com/editor.html?c=xByOFPcjBe) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/professional_kline_chart.py)
+    * [Professional Kline Brush](Maded By Data) -- [pyecharts_Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/professional_kline_brush.py)
 
 * Radar
     * [Basic Radar Chart](https://echarts.baidu.com/examples/editor.html?c=radar) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Radar/basic_radar_chart.py) 
