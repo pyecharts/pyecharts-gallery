@@ -53,7 +53,8 @@
     * [BMap of hiking train in HangZhou](https://echarts.baidu.com/examples/editor.html?c=lines-bmap) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/hiking_trail_in_hangzhou.py)
     * [China GDP FROM 1980](https://gallery.echartsjs.com/editor.html?c=xSkGI6zLmb) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/china_gdp_from_1980.py)
     * [China GDP FROM 1993 TO 2018](Maded by our fans) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/china_gdp_from_1993_to_2018.py)
-
+    * [BMap of Beijing Bus Routines](https://gallery.echartsjs.com/editor.html?c=bmap-bus) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/bmap_beijing_bus_routines.py)
+    
 * Candlestick
     * [Basic Candlestick](https://echarts.baidu.com/examples/editor.html?c=candlestick-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py)
     * [Professional Candlestick](https://gallery.echartsjs.com/editor.html?c=xByOFPcjBe) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/professional_kline_chart.py)
