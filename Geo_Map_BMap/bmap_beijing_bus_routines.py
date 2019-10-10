@@ -118,7 +118,7 @@ c = (
         linestyle_opts=opts.LineStyleOpts(opacity=0.2, width=0.5),
         # 如果不是最新版本的话可以注释下面的参数（效果差距不大）
         progressive=200,
-        pregressive_threshold=500,
+        progressive_threshold=500,
     )
     .render("bmap_beijing_bus_routines.html")
 )
