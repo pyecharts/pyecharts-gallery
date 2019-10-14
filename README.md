@@ -8,13 +8,13 @@
 
 ## 项目简介
 
-* **项目基于 pyecharts `1.3.1` 版本进行展示**
+* **项目基于 pyecharts `1.5.1` 版本进行展示**
 * 百度官方 Echarts [官方实例](https://echarts.baidu.com/examples/)
 
 ## 项目须知
 
 * 项目代码结构按照 Echarts 官网的实例模块进行划分
-* 代码内有根据 `1.3.1` 版本的 pyecharts 所生成的可视化数据视图和官方的进行对比, 有列出能实现的功能以及未实现的功能
+* 代码内有根据 `1.5.1` 版本的 pyecharts 所生成的可视化数据视图和官方的进行对比, 有列出能实现的功能以及未实现的功能
 * 以下图例多数会基于 Echarts 的官方实例，不过也有部分会基于 Echarts 的社区 Gallery 实现
 
 ## 目前进度
@@ -32,6 +32,7 @@
     * [Distribution of Electricity](https://www.echartsjs.com/examples/editor.html?c=line-sections) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/distribution_of_electricity.py)
     * [Line Style and Item Style](https://echarts.baidu.com/examples/editor.html?c=line-style) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/line_style_and_item_style.py)
     * [Multiple X Axes](https://echarts.baidu.com/examples/editor.html?c=multiple-x-axis) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/multiple_x_axes.py)
+    * [Beautiful Line Chart](https://gallery.echartsjs.com/editor.html?c=xEyDk1hwBx) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/beautiful_line_chart.py)
 
 * 极坐标 Polar
     * [Two Value-Axes in Polar](https://www.echartsjs.com/examples/editor.html?c=line-polar) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Polar/two_value_axes_in_polar.py)

@@ -4,7 +4,7 @@
 
 ## Project Introduction
 
-* **Project based on pyecharts 1.3.1**
+* **Project based on pyecharts 1.5.1**
 * Baidu Echarts [Official Example](https://echarts.baidu.com/examples/)
 
 ## Project Notification
@@ -28,6 +28,7 @@
     * [Distribution of Electricity](https://www.echartsjs.com/examples/editor.html?c=line-sections) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/distribution_of_electricity.py) 
     * [Line Style and Item Style](https://echarts.baidu.com/examples/editor.html?c=line-style) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/line_style_and_item_style.py) 
     * [Multiple X Axes](https://echarts.baidu.com/examples/editor.html?c=multiple-x-axis) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/multiple_x_axes.py) 
+    * [Beautiful Line Chart](https://gallery.echartsjs.com/editor.html?c=xEyDk1hwBx) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/beautiful_line_chart.py)
 
 * Polar
     * [Two Value-Axes in Polar](https://www.echartsjs.com/examples/editor.html?c=line-polar) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Polar/two_value_axes_in_polar.py)
