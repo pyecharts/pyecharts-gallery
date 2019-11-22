@@ -1,19 +1,16 @@
+## Echarts 代码 / 效果
+
+[echarts](https://echarts.baidu.com/examples/editor.html?c=lines-bmap ':include :type=iframe width=100% height=800px')
+
+## pyecharts 代码 / 效果
+
+```python
 import asyncio
 from aiohttp import TCPConnector, ClientSession
 
 from pyecharts.charts import BMap
 from pyecharts import options as opts
 from pyecharts.globals import BMapType, ChartType
-
-"""
-Gallery 使用 pyecharts 1.1.0
-参考地址: https://echarts.baidu.com/examples/editor.html?c=lines-bmap
-
-目前无法实现的功能:
-
-1、
-"""
-
 
 async def get_json_data(url: str) -> dict:
     async with ClientSession(connector=TCPConnector(ssl=False)) as session:
@@ -143,3 +140,6 @@ map_data = [[y["coord"] for y in x] for x in data]
     )
     .render("hiking_trail_in_hangzhou.html")
 )
+```
+
+<iframe width="100%" height="800px" src="Geo_Map_BMap/hiking_trail_in_hangzhou.html"></iframe>

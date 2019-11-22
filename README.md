@@ -2,19 +2,19 @@
 
 ---
 
-* [英文文档在这 English Introduction is Here](https://github.com/pyecharts/pyecharts-gallery/blob/master/README_EN.md)
+* [英文文档在这 - English Introduction is Here](https://github.com/pyecharts/pyecharts-gallery/blob/master/README_EN.md)
 
 ---
 
 ## 项目简介
 
-* **项目基于 pyecharts `1.5.1` 版本进行展示**
+* **项目基于 pyecharts `1.6.0` 版本进行展示**
 * 百度官方 Echarts [官方实例](https://echarts.baidu.com/examples/)
 
 ## 项目须知
 
 * 项目代码结构按照 Echarts 官网的实例模块进行划分
-* 代码内有根据 `1.5.1` 版本的 pyecharts 所生成的可视化数据视图和官方的进行对比, 有列出能实现的功能以及未实现的功能
+* 代码内有根据 `1.6.0` 版本的 pyecharts 所生成的可视化数据视图和官方的进行对比, 有列出能实现的功能以及未实现的功能
 * 以下图例多数会基于 Echarts 的官方实例，不过也有部分会基于 Echarts 的社区 Gallery 实现
 
 ## 目前进度
@@ -86,7 +86,7 @@
     
 * 旭日图 Sunburst
     * [Basic Sunburst](https://www.echartsjs.com/examples/editor.html?c=sunburst-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Sunburst/basic_sunburst.py)
-    * [Drink Flavors](https://www.echartsjs.com/examples/editor.html?c=sunburst-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Sunburst/drink_flavors.py)
+    * [Drink Flavors](https://www.echartsjs.com/examples/zh/editor.html?c=sunburst-drink) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Sunburst/drink_flavors.py)
 
 * 平行坐标系 Parallel
     * [Basic Parallel](https://echarts.baidu.com/examples/editor.html?c=parallel-simple) -- [实现的代码](https://github.com/pyecharts/pyecharts-gallery/blob/master/Parallel/basic_parallel.py)

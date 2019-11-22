@@ -1,0 +1,3 @@
+- [Customized Pie](Pie/customized_pie ':include :type=code')
+- [Doughnut Chart](Pie/doughnut_chart ':include :type=code')
+- [Nested Pies](Pie/nested_pies ':include :type=code')

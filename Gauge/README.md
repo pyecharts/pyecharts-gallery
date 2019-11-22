@@ -1,0 +1,2 @@
+- [Gauge](Gauge/gauge 'include :type=code')
+- [Gauge Change Color](Gauge/gauge_change_color 'include :type=code')

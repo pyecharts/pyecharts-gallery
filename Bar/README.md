@@ -1,0 +1,4 @@
+- [Bar Chart Display Delay](Bar/bar_chart_display_delay ':include :type=code')
+- [Mixed Line and Bar](Bar/mixed_bar_and_line ':include :type=code')
+- [Multiple Y Axes](Bar/multiple_y_axes ':include :type=code')
+- [Finance Indices 2002](Bar/finance_indices_2002 ':include :type=code')
