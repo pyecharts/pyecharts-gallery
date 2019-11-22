@@ -1,6 +1,6 @@
 ## Echarts 代码 / 效果
 
-[echarts](https://echarts.baidu.com/examples/editor.html?c=pie-custom ':include :type=iframe width=100% height=800px')
+[echarts](https://echarts.baidu.com/examples/editor.html?c=pie-nest ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
