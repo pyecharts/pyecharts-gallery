@@ -1,6 +1,6 @@
 ## Echarts 代码 / 效果
 
-[echarts](https://www.echartsjs.com/examples/editor.html?c=multiple-y-axis ':include :type=iframe width=100% height=800px')
+[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=multiple-y-axis ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 

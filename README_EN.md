@@ -5,7 +5,7 @@
 ## Project Introduction
 
 * **Project based on pyecharts 1.6.0**
-* Baidu Echarts [Official Example](https://echarts.baidu.com/examples/)
+* Baidu Echarts [Official Example](https://www.echartsjs.com/examples/zh/)
 
 ## Project Notification
 
@@ -16,104 +16,104 @@
 ## Current Process
 
 * Line
-    * [Basic Line Chart](https://echarts.baidu.com/examples/editor.html?c=line-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/basic_line_chart.py) 
-    * [Basic Area Chart](https://echarts.baidu.com/examples/editor.html?c=area-basic) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/basic_area_chart.py) 
-    * [Smoothed Line Chart](https://echarts.baidu.com/examples/editor.html?c=line-smooth) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/smoothed_line_chart.py) 
-    * [Stacked Area Chart](https://echarts.baidu.com/examples/editor.html?c=area-stack) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/stacked_area_chart.py) 
-    * [Stacked Line Chart](https://echarts.baidu.com/examples/editor.html?c=line-stack) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/stacked_line_chart.py) 
-    * [Rainfall](https://echarts.baidu.com/examples/editor.html?c=area-rainfall) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/rainfall.py) 
-    * [Beijing AQI](https://echarts.baidu.com/examples/editor.html?c=line-aqi) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/beijing_aqi.py) 
-    * [Log Axis](https://www.echartsjs.com/examples/editor.html?c=line-log) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/log_axis.py) 
-    * [Temperature Change In The Coming Week](https://echarts.baidu.com/examples/editor.html?c=line-marker) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/temperature_change_line_chart.py) 
-    * [Distribution of Electricity](https://www.echartsjs.com/examples/editor.html?c=line-sections) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/distribution_of_electricity.py) 
-    * [Line Style and Item Style](https://echarts.baidu.com/examples/editor.html?c=line-style) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/line_style_and_item_style.py) 
-    * [Multiple X Axes](https://echarts.baidu.com/examples/editor.html?c=multiple-x-axis) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/multiple_x_axes.py) 
+    * [Basic Line Chart](https://www.echartsjs.com/examples/zh/editor.html?c=line-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/basic_line_chart.py) 
+    * [Basic Area Chart](https://www.echartsjs.com/examples/zh/editor.html?c=area-basic) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/basic_area_chart.py) 
+    * [Smoothed Line Chart](https://www.echartsjs.com/examples/zh/editor.html?c=line-smooth) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/smoothed_line_chart.py) 
+    * [Stacked Area Chart](https://www.echartsjs.com/examples/zh/editor.html?c=area-stack) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/stacked_area_chart.py) 
+    * [Stacked Line Chart](https://www.echartsjs.com/examples/zh/editor.html?c=line-stack) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/stacked_line_chart.py) 
+    * [Rainfall](https://www.echartsjs.com/examples/zh/editor.html?c=area-rainfall) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/rainfall.py) 
+    * [Beijing AQI](https://www.echartsjs.com/examples/zh/editor.html?c=line-aqi) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/beijing_aqi.py) 
+    * [Log Axis](https://www.echartsjs.com/examples/zh/editor.html?c=line-log) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/log_axis.py) 
+    * [Temperature Change In The Coming Week](https://www.echartsjs.com/examples/zh/editor.html?c=line-marker) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/temperature_change_line_chart.py) 
+    * [Distribution of Electricity](https://www.echartsjs.com/examples/zh/editor.html?c=line-sections) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/distribution_of_electricity.py) 
+    * [Line Style and Item Style](https://www.echartsjs.com/examples/zh/editor.html?c=line-style) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/line_style_and_item_style.py) 
+    * [Multiple X Axes](https://www.echartsjs.com/examples/zh/editor.html?c=multiple-x-axis) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/multiple_x_axes.py) 
     * [Beautiful Line Chart](https://gallery.echartsjs.com/editor.html?c=xEyDk1hwBx) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line/beautiful_line_chart.py)
 
 * Polar
-    * [Two Value-Axes in Polar](https://www.echartsjs.com/examples/editor.html?c=line-polar) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Polar/two_value_axes_in_polar.py)
-    * [Two Value-Axes in Polar 2](https://www.echartsjs.com/examples/editor.html?c=line-polar2) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Polar/two_value_axes_in_polar_2.py)
+    * [Two Value-Axes in Polar](https://www.echartsjs.com/examples/zh/editor.html?c=line-polar) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Polar/two_value_axes_in_polar.py)
+    * [Two Value-Axes in Polar 2](https://www.echartsjs.com/examples/zh/editor.html?c=line-polar2) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Polar/two_value_axes_in_polar_2.py)
     
 * Bar
-    * [Bar Chart Display Delay](https://echarts.baidu.com/examples/editor.html?c=bar-animation-delay) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/bar_chart_display_delay.py) 
-    * [Mixed Line and Bar](https://echarts.baidu.com/examples/editor.html?c=mix-line-bar) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/mixed_bar_and_line.py) 
-    * [Multiple Y Axes](https://www.echartsjs.com/examples/editor.html?c=multiple-y-axis) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/multiple_y_axes.py)
-    * [Finance Indices 2002](https://www.echartsjs.com/examples/editor.html?c=mix-timeline-finance) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/finance_indices_2002.py)
+    * [Bar Chart Display Delay](https://www.echartsjs.com/examples/zh/editor.html?c=bar-animation-delay) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/bar_chart_display_delay.py) 
+    * [Mixed Line and Bar](https://www.echartsjs.com/examples/zh/editor.html?c=mix-line-bar) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/mixed_bar_and_line.py) 
+    * [Multiple Y Axes](https://www.echartsjs.com/examples/zh/editor.html?c=multiple-y-axis) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/multiple_y_axes.py)
+    * [Finance Indices 2002](https://www.echartsjs.com/examples/zh/editor.html?c=mix-timeline-finance) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar/finance_indices_2002.py)
 
 * Pie
-    * [Customized Pie](https://echarts.baidu.com/examples/editor.html?c=pie-custom) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/customized_pie.py) 
-    * [Doughnut Chart](https://echarts.baidu.com/examples/editor.html?c=pie-doughnut) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/doughnut_chart.py) 
-    * [Nested Pies](https://echarts.baidu.com/examples/editor.html?c=pie-nest) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/nested_pies.py) 
+    * [Customized Pie](https://www.echartsjs.com/examples/zh/editor.html?c=pie-custom) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/customized_pie.py) 
+    * [Doughnut Chart](https://www.echartsjs.com/examples/zh/editor.html?c=pie-doughnut) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/doughnut_chart.py) 
+    * [Nested Pies](https://www.echartsjs.com/examples/zh/editor.html?c=pie-nest) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Pie/nested_pies.py) 
 
 * Scatter
-    * [Basic Scatter Chart](https://echarts.baidu.com/examples/editor.html?c=scatter-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Scatter/basic_scatter_chart.py) 
+    * [Basic Scatter Chart](https://www.echartsjs.com/examples/zh/editor.html?c=scatter-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Scatter/basic_scatter_chart.py) 
 
 * GEO / Map / BMap (BMap is BaiduMap)
-    * [Population Density of HongKong](https://echarts.baidu.com/examples/editor.html?c=map-HK) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map/population_density_of_HongKong.py)
-    * [Population Density of HongKong Version 2](https://echarts.baidu.com/examples/editor.html?c=map-HK) -- [pyecharts Code + echarts-china-cities-js](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/population_density_of_HongKong_v2.py)
-    * [BMap of hiking train in HangZhou](https://echarts.baidu.com/examples/editor.html?c=lines-bmap) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/hiking_trail_in_hangzhou.py)
+    * [Population Density of HongKong](https://www.echartsjs.com/examples/zh/editor.html?c=map-HK) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map/population_density_of_HongKong.py)
+    * [Population Density of HongKong Version 2](https://www.echartsjs.com/examples/zh/editor.html?c=map-HK) -- [pyecharts Code + echarts-china-cities-js](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/population_density_of_HongKong_v2.py)
+    * [BMap of hiking train in HangZhou](https://www.echartsjs.com/examples/zh/editor.html?c=lines-bmap) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/hiking_trail_in_hangzhou.py)
     * [China GDP FROM 1980](https://gallery.echartsjs.com/editor.html?c=xSkGI6zLmb) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/china_gdp_from_1980.py)
     * [China GDP FROM 1993 TO 2018](Maded by our fans) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/china_gdp_from_1993_to_2018.py)
     * [BMap of Beijing Bus Routines](https://gallery.echartsjs.com/editor.html?c=bmap-bus) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Geo_Map_BMap/bmap_beijing_bus_routines.py)
     
 * Candlestick
-    * [Basic Candlestick](https://echarts.baidu.com/examples/editor.html?c=candlestick-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py)
+    * [Basic Candlestick](https://www.echartsjs.com/examples/zh/editor.html?c=candlestick-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/basic_candlestick.py)
     * [Professional Candlestick](https://gallery.echartsjs.com/editor.html?c=xByOFPcjBe) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/professional_kline_chart.py)
     * [Professional Kline Brush](Maded By Data) -- [pyecharts_Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Candlestick/professional_kline_brush.py)
 
 * Radar
-    * [Basic Radar Chart](https://echarts.baidu.com/examples/editor.html?c=radar) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Radar/basic_radar_chart.py) 
+    * [Basic Radar Chart](https://www.echartsjs.com/examples/zh/editor.html?c=radar) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Radar/basic_radar_chart.py) 
 
 * Boxplot
-    * [Boxplot Light Velocity](https://echarts.baidu.com/examples/editor.html?c=boxplot-light-velocity) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Boxplot/boxplot_light_velocity.py) 
-    * [Multiple Categories](https://www.echartsjs.com/examples/editor.html?c=boxplot-multi) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Boxplot/multiple_categories.py)
+    * [Boxplot Light Velocity](https://www.echartsjs.com/examples/zh/editor.html?c=boxplot-light-velocity) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Boxplot/boxplot_light_velocity.py) 
+    * [Multiple Categories](https://www.echartsjs.com/examples/zh/editor.html?c=boxplot-multi) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Boxplot/multiple_categories.py)
     
 * Heatmap
-    * [HeatMap on Cartesian](https://echarts.baidu.com/examples/editor.html?c=heatmap-cartesian) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Heatmap/heatmap_on_cartesian.py) 
+    * [HeatMap on Cartesian](https://www.echartsjs.com/examples/zh/editor.html?c=heatmap-cartesian) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Heatmap/heatmap_on_cartesian.py) 
     
 * Graph
-    * [NPM Dependencies](https://echarts.baidu.com/examples/editor.html?c=graph-npm) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Graph/npm_dependencies.py) 
+    * [NPM Dependencies](https://www.echartsjs.com/examples/zh/editor.html?c=graph-npm) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Graph/npm_dependencies.py) 
     
 * Tree
-    * [Radial Tree](https://echarts.baidu.com/examples/editor.html?c=tree-radial) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Tree/radial_tree.py) 
+    * [Radial Tree](https://www.echartsjs.com/examples/zh/editor.html?c=tree-radial) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Tree/radial_tree.py) 
 
 * Treemap
-    * [Echarts Option Query](https://echarts.baidu.com/examples/editor.html?c=treemap-drill-down) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Treemap/echarts_option_query.py) 
+    * [Echarts Option Query](https://www.echartsjs.com/examples/zh/editor.html?c=treemap-drill-down) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Treemap/echarts_option_query.py) 
     
 * Sunburst
-    * [Basic Sunburst](https://www.echartsjs.com/examples/editor.html?c=sunburst-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Sunburst/basic_sunburst.py)
+    * [Basic Sunburst](https://www.echartsjs.com/examples/zh/editor.html?c=sunburst-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Sunburst/basic_sunburst.py)
     * [Drink Flavors](https://www.echartsjs.com/examples/zh/editor.html?c=sunburst-drink) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Sunburst/drink_flavors.py)
 
 * Parallel
-    * [Basic Parallel](https://echarts.baidu.com/examples/editor.html?c=parallel-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Parallel/basic_parallel.py) 
+    * [Basic Parallel](https://www.echartsjs.com/examples/zh/editor.html?c=parallel-simple) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Parallel/basic_parallel.py) 
 
 * Sankey
-    * [Sankey Diagram](https://echarts.baidu.com/examples/editor.html?c=sankey-energy) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Sankey/sankey_diagram.py) 
+    * [Sankey Diagram](https://www.echartsjs.com/examples/zh/editor.html?c=sankey-energy) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Sankey/sankey_diagram.py) 
 
 * Funnel
-    * [Funnel Chart](https://echarts.baidu.com/examples/editor.html?c=funnel) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Funnel/funnel_chart.py) 
+    * [Funnel Chart](https://www.echartsjs.com/examples/zh/editor.html?c=funnel) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Funnel/funnel_chart.py) 
 
 * Gauge
-    * [Gauge](https://echarts.baidu.com/examples/editor.html?c=gauge) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Gauge/gauge.py) 
+    * [Gauge](https://www.echartsjs.com/examples/zh/editor.html?c=gauge) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Gauge/gauge.py) 
     * [Gauge Change Color](https://gallery.echartsjs.com/editor.html?c=xH1vxib94f) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Gauge/gauge_change_color.py)
     
 * ThemeRiver
-    * [ThemeRiver](https://echarts.baidu.com/examples/editor.html?c=themeRiver-basic) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/ThemeRiver/theme_river.py) 
+    * [ThemeRiver](https://www.echartsjs.com/examples/zh/editor.html?c=themeRiver-basic) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/ThemeRiver/theme_river.py) 
 
 * Calendar
-    * [Calendar Heatmap](https://echarts.baidu.com/examples/editor.html?c=calendar-heatmap) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Calendar/calendar_heatmap.py) 
+    * [Calendar Heatmap](https://www.echartsjs.com/examples/zh/editor.html?c=calendar-heatmap) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Calendar/calendar_heatmap.py) 
 
 * 3D Bar
-    * [Bar3D - Punch Card](https://echarts.baidu.com/examples/editor.html?c=bar3d-punch-card&gl=1) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar3D/bar3d_punch_card.py) 
+    * [Bar3D - Punch Card](https://www.echartsjs.com/examples/zh/editor.html?c=bar3d-punch-card&gl=1) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Bar3D/bar3d_punch_card.py) 
 
 * 3D Scatter
-    * [Scatter3D](https://echarts.baidu.com/examples/editor.html?c=scatter3d&gl=1&theme=dark) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Scatter3D/scatter3d.py) 
+    * [Scatter3D](https://www.echartsjs.com/examples/zh/editor.html?c=scatter3d&gl=1&theme=dark) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Scatter3D/scatter3d.py) 
 
 * 3D Surface
-    * [Surface Wave](https://echarts.baidu.com/examples/editor.html?c=surface-wave&gl=1) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Surface3D/surface_wave.py) 
+    * [Surface Wave](https://www.echartsjs.com/examples/zh/editor.html?c=surface-wave&gl=1) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Surface3D/surface_wave.py) 
 
 * 3D Line
-    * [3D Line Orthogonal projection](https://echarts.baidu.com/examples/editor.html?c=line3d-orthographic&gl=1) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line3D/line3d_rectangular_projection.py) 
+    * [3D Line Orthogonal projection](https://www.echartsjs.com/examples/zh/editor.html?c=line3d-orthographic&gl=1) -- [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/Line3D/line3d_rectangular_projection.py) 
 
 * WordCloud
     * [pyecharts Code](https://github.com/pyecharts/pyecharts-gallery/blob/master/WordCloud/basic_wordcloud.py)
