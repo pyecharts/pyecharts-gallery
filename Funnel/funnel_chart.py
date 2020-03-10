@@ -15,7 +15,7 @@ y_data = [100, 80, 60, 40, 20]
 data = [[x_data[i], y_data[i]] for i in range(len(x_data))]
 
 (
-    Funnel(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Funnel()
     .add(
         series_name="",
         data_pair=data,

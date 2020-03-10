@@ -21,7 +21,7 @@
         - [Bar - Bar_datazoom_slider](Bar/bar_datazoom_slider.md 'include :type=code')
         - [Bar - Bar_toolbox](Bar/bar_toolbox.md 'include :type=code')
         - [Bar - Mixed_bar_and_line](Bar/mixed_bar_and_line.md 'include :type=code')
-        - [Bar - Bar_grahic_component](Bar/bar_grahic_component.md 'include :type=code')
+        - [Bar - Bar_grahic_component](Bar/bar_graphic_component.md 'include :type=code')
         - [Bar - Bar_stack1](Bar/bar_stack1.md 'include :type=code')
         - [Bar - Bar_xyaxis_name](Bar/bar_xyaxis_name.md 'include :type=code')
         - [Bar - Bar_base_with_custom_background_image](Bar/bar_base_with_custom_background_image.md 'include :type=code')

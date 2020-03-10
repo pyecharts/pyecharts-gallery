@@ -19,7 +19,7 @@ outer_y_data = [335, 310, 234, 135, 1048, 251, 147, 102]
 outer_data_pair = [list(z) for z in zip(outer_x_data, outer_y_data)]
 
 (
-    Pie(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Pie()
     .add(
         series_name="访问来源",
         data_pair=inner_data_pair,

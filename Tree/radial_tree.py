@@ -26,7 +26,7 @@ data = asyncio.run(
 )
 
 (
-    Tree(init_opts=opts.InitOpts(width="1400px", height="800px"))
+    Tree()
     .add(
         series_name="",
         data=[data],

@@ -11,7 +11,7 @@ Gallery 使用 pyecharts 1.1.0
 """
 
 (
-    Gauge(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Gauge()
     .add(series_name="业务指标", data_pair=[["完成率", 55.5]])
     .set_global_opts(
         legend_opts=opts.LegendOpts(is_show=False),

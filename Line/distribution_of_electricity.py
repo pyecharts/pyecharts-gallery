@@ -56,7 +56,7 @@ y_data = [
 ]
 
 (
-    Line(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Line()
     .add_xaxis(xaxis_data=x_data)
     .add_yaxis(
         series_name="用电量",

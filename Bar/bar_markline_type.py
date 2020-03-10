@@ -18,4 +18,5 @@ c = (
             ]
         ),
     )
+    .render("bar_markline_type.html")
 )

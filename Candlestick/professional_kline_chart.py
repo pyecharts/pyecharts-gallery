@@ -626,7 +626,7 @@ def draw_chart():
     overlap_bar_line = bar_2.overlap(line_2)
 
     # 最后的 Grid
-    grid_chart = Grid(init_opts=opts.InitOpts(width="1400px", height="800px"))
+    grid_chart = Grid()
 
     # 这个是为了把 data.datas 这个数据写入到 html 中,还没想到怎么跨 series 传值
     # demo 中的代码也是用全局变量传的

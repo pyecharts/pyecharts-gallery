@@ -17,7 +17,7 @@ y_data_05 = [1 / 2, 1 / 4, 1 / 8, 1 / 16, 1 / 32, 1 / 64, 1 / 128, 1 / 256, 1 / 
 
 
 (
-    Line(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Line()
     .add_xaxis(xaxis_data=x_data)
     .add_yaxis(
         series_name="1/2的指数",

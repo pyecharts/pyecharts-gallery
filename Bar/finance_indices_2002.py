@@ -2135,7 +2135,7 @@ def get_year_overlap_chart(year: int) -> Bar:
 
 
 # 生成时间轴的图
-timeline = Timeline(init_opts=opts.InitOpts(width="1600px", height="800px"))
+timeline = Timeline()
 
 for y in range(2002, 2012):
     timeline.add(get_year_overlap_chart(year=y), time_point=str(y))

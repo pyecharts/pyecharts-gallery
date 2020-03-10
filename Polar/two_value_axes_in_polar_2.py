@@ -19,7 +19,7 @@ for i in range(0, 360 + 1):
     data.append([r, i])
 
 (
-    Polar(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Polar()
     .add(
         series_name="line",
         data=data,

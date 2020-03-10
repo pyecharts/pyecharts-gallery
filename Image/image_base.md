@@ -9,8 +9,8 @@ from pyecharts.options import ComponentTitleOpts
 image = Image()
 
 img_src = (
-    "https://user-images.githubusercontent.com/19553554/396123"
-    "58-499eb2ae-4f91-11e8-8f56-179c4f0bf2df.png"
+    "https://user-images.githubusercontent.com/19553554/"
+    "71825144-2d568180-30d6-11ea-8ee0-63c849cfd934.png"
 )
 image.add(
     src=img_src,

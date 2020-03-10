@@ -16,7 +16,7 @@ data_pair = [list(z) for z in zip(x_data, y_data)]
 data_pair.sort(key=lambda x: x[1])
 
 (
-    Pie(init_opts=opts.InitOpts(width="1600px", height="800px", bg_color="#2c343c"))
+    Pie(init_opts=opts.InitOpts(bg_color="#2c343c"))
     .add(
         series_name="访问来源",
         data_pair=data_pair,

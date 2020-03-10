@@ -9,4 +9,5 @@ c = (
         title_opts=opts.TitleOpts(title="Map-VisualMap（连续型）"),
         visualmap_opts=opts.VisualMapOpts(max_=200),
     )
+    .render("map_visualmap.html")
 )

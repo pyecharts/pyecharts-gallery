@@ -213,7 +213,7 @@ data = [[d[1], d[0], d[2] or "-"] for d in data]
 
 
 (
-    HeatMap(init_opts=opts.InitOpts(width="1440px", height="720px"))
+    HeatMap()
     .add_xaxis(xaxis_data=hours)
     .add_yaxis(
         series_name="Punch Card",

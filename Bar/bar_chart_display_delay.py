@@ -218,7 +218,7 @@ blue_bar = [
 
 
 (
-    Bar(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Bar()
     .add_xaxis(xaxis_data=category)
     .add_yaxis(
         series_name="bar", yaxis_data=red_bar, label_opts=opts.LabelOpts(is_show=False)

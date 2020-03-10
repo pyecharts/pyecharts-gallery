@@ -212,7 +212,7 @@ data = [[d[1], d[0], d[2]] for d in data]
 
 
 (
-    Bar3D(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Bar3D()
     .add(
         series_name="",
         data=data,

@@ -13,7 +13,7 @@ Gallery 使用 pyecharts 1.1.0
 x_data = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"]
 
 bar = (
-    Bar(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Bar()
     .add_xaxis(xaxis_data=x_data)
     .add_yaxis(
         series_name="蒸发量",

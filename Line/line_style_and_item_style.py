@@ -12,7 +12,7 @@ Gallery 使用 pyecharts 1.1.0
 
 
 (
-    Line(init_opts=opts.InitOpts(width="1280px", height="720px"))
+    Line(init_opts=opts.InitOpts(width="1200px", height="720px"))
     .add_xaxis(xaxis_data=["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"])
     .add_yaxis(
         series_name="",

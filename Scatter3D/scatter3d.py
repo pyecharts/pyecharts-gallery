@@ -69,9 +69,7 @@ data = [
 ]
 
 (
-    Scatter3D(
-        init_opts=opts.InitOpts(width="1440px", height="720px")
-    )  # bg_color="black"
+    Scatter3D()  # bg_color="black"
     .add(
         series_name="",
         data=data,

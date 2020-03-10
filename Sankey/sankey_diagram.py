@@ -26,7 +26,7 @@ data = asyncio.run(
 )
 
 (
-    Sankey(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Sankey()
     .add(
         series_name="",
         nodes=data["nodes"],

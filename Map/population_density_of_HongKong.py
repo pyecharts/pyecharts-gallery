@@ -72,7 +72,7 @@ NAME_MAP_DATA = {
 }
 
 (
-    Map(init_opts=opts.InitOpts(width="1400px", height="800px"))
+    Map()
     .add_js_funcs("echarts.registerMap('HK', {});".format(data))
     .add(
         series_name="香港18区人口密度",

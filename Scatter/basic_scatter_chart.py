@@ -28,7 +28,7 @@ x_data = [d[0] for d in data]
 y_data = [d[1] for d in data]
 
 (
-    Scatter(init_opts=opts.InitOpts(width="1600px", height="1000px"))
+    Scatter()
     .add_xaxis(xaxis_data=x_data)
     .add_yaxis(
         series_name="",
