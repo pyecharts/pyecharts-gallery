@@ -1,12 +1,10 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=boxplot-light-velocity ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Grid, Boxplot, Scatter
+
 
 y_data = [
     [
@@ -182,6 +180,7 @@ grid = (
     )
     .render("boxplot_light_velocity.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Boxplot/boxplot_light_velocity.html"></iframe>

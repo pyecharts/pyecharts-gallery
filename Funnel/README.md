@@ -1,1 +1,4 @@
-- [Funnel Chart](Funnel/funnel_chart ':include :type=code')
+- [Funnel - Funnel_sort_ascending](Funnel/funnel_sort_ascending.md 'include :type=code')
+- [Funnel - Funnel_base](Funnel/funnel_base.md 'include :type=code')
+- [Funnel - Funnel_chart](Funnel/funnel_chart.md 'include :type=code')
+- [Funnel - Funnel_label_inside](Funnel/funnel_label_inside.md 'include :type=code')

@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="569d435d94b94bc38b393c61068fd0cc" style="width:1600px; height:800px;"></div>
+    <div id="98b969788b45409ba6cbde1f7d1037aa" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_569d435d94b94bc38b393c61068fd0cc = echarts.init(
-            document.getElementById('569d435d94b94bc38b393c61068fd0cc'), 'white', {renderer: 'canvas'});
-        var option_569d435d94b94bc38b393c61068fd0cc = {
+        var chart_98b969788b45409ba6cbde1f7d1037aa = echarts.init(
+            document.getElementById('98b969788b45409ba6cbde1f7d1037aa'), 'white', {renderer: 'canvas'});
+        var option_98b969788b45409ba6cbde1f7d1037aa = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -714,7 +714,11 @@
                 "SY": true,
                 "DD": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -735,10 +739,13 @@
         "type": "time"
     },
     "title": [
-        {}
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
     ]
 };
-        chart_569d435d94b94bc38b393c61068fd0cc.setOption(option_569d435d94b94bc38b393c61068fd0cc);
+        chart_98b969788b45409ba6cbde1f7d1037aa.setOption(option_98b969788b45409ba6cbde1f7d1037aa);
     </script>
 </body>
 </html>

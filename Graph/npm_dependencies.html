@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="90fe159b165a40bd8bbafe9514bb7335" style="width:1600px; height:800px;"></div>
+    <div id="0a95fa0185b64544871e1cbf65964fdd" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_90fe159b165a40bd8bbafe9514bb7335 = echarts.init(
-            document.getElementById('90fe159b165a40bd8bbafe9514bb7335'), 'white', {renderer: 'canvas'});
-        var option_90fe159b165a40bd8bbafe9514bb7335 = {
+        var chart_0a95fa0185b64544871e1cbf65964fdd = echarts.init(
+            document.getElementById('0a95fa0185b64544871e1cbf65964fdd'), 'white', {renderer: 'canvas'});
+        var option_0a95fa0185b64544871e1cbf65964fdd = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -50,6 +50,7 @@
         {
             "type": "graph",
             "layout": "none",
+            "symbolSize": 10,
             "circular": {
                 "rotateLabel": false
             },
@@ -64,12 +65,14 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 0.5,
                 "opacity": 0.7,
                 "curveness": 0.3,
                 "type": "solid"
             },
             "roam": true,
+            "draggable": false,
             "focusNodeAdjacency": true,
             "data": [
                 {
@@ -8677,6 +8680,11 @@
                     }
                 }
             ],
+            "edgeLabel": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
             "edgeSymbol": [
                 null,
                 null
@@ -12458,7 +12466,11 @@
         {
             "data": [],
             "selected": {},
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -12475,11 +12487,13 @@
     },
     "title": [
         {
-            "text": "NPM Dependencies"
+            "text": "NPM Dependencies",
+            "padding": 5,
+            "itemGap": 10
         }
     ]
 };
-        chart_90fe159b165a40bd8bbafe9514bb7335.setOption(option_90fe159b165a40bd8bbafe9514bb7335);
+        chart_0a95fa0185b64544871e1cbf65964fdd.setOption(option_0a95fa0185b64544871e1cbf65964fdd);
     </script>
 </body>
 </html>

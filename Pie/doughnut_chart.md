@@ -1,12 +1,18 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=pie-doughnut ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Pie
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=pie-doughnut
+
+目前无法实现的功能:
+
+1、饼状图中间的图例名称暂时无法显示
+"""
 
 x_data = ["直接访问", "邮件营销", "联盟广告", "视频广告", "搜索引擎"]
 y_data = [335, 310, 234, 135, 1548]
@@ -28,6 +34,7 @@ y_data = [335, 310, 234, 135, 1548]
     )
     .render("doughnut_chart.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Pie/doughnut_chart.html"></iframe>

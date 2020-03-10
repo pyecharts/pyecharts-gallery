@@ -1,6 +1,3 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=candlestick-simple ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
@@ -25,6 +22,7 @@ y_data = [[20, 30, 10, 35], [40, 35, 30, 55], [33, 38, 33, 40], [40, 40, 32, 42]
     )
     .render("basic_candlestick.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Candlestick/basic_candlestick.html"></iframe>

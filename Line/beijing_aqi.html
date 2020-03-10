@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="c5fc8c41c5704135a621625763b1043a" class="chart-container" style="width:1680px; height:800px;"></div>
+    <div id="f9c60c6d6a9d4eeaa5b88949b65a06de" class="chart-container" style="width:1680px; height:800px;"></div>
     <script>
-        var chart_c5fc8c41c5704135a621625763b1043a = echarts.init(
-            document.getElementById('c5fc8c41c5704135a621625763b1043a'), 'white', {renderer: 'canvas'});
-        var option_c5fc8c41c5704135a621625763b1043a = {
+        var chart_f9c60c6d6a9d4eeaa5b88949b65a06de = echarts.init(
+            document.getElementById('f9c60c6d6a9d4eeaa5b88949b65a06de'), 'white', {renderer: 'canvas'});
+        var option_f9c60c6d6a9d4eeaa5b88949b65a06de = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -19776,6 +19776,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 1,
                 "curveness": 0,
@@ -19810,6 +19811,8 @@
                     }
                 ]
             },
+            "zlevel": 0,
+            "z": 0,
             "rippleEffect": {
                 "show": true,
                 "brushType": "stroke",
@@ -19826,7 +19829,11 @@
             "selected": {
                 "": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -19856,6 +19863,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -24816,6 +24824,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -24826,7 +24835,9 @@
     ],
     "title": [
         {
-            "text": "Beijing AQI"
+            "text": "Beijing AQI",
+            "padding": 5,
+            "itemGap": 10
         }
     ],
     "visualMap": {
@@ -24842,14 +24853,18 @@
             ]
         },
         "calculable": true,
+        "inverse": false,
         "splitNumber": 5,
         "orient": "vertical",
         "top": "10",
         "right": "10",
         "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
         "outOfRange": {
             "color": "#999"
         },
+        "borderWidth": 0,
         "pieces": [
             {
                 "gt": 0,
@@ -24905,7 +24920,7 @@
         }
     ]
 };
-        chart_c5fc8c41c5704135a621625763b1043a.setOption(option_c5fc8c41c5704135a621625763b1043a);
+        chart_f9c60c6d6a9d4eeaa5b88949b65a06de.setOption(option_f9c60c6d6a9d4eeaa5b88949b65a06de);
     </script>
 </body>
 </html>

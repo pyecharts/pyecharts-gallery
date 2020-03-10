@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="cb9cfe6be0764b9c855e7745b3c5c9c3" style="width:1600px; height:800px;"></div>
+    <div id="715994fc06d0467db2d4d34e3c43a11c" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_cb9cfe6be0764b9c855e7745b3c5c9c3 = echarts.init(
-            document.getElementById('cb9cfe6be0764b9c855e7745b3c5c9c3'), 'white', {renderer: 'canvas'});
-        var option_cb9cfe6be0764b9c855e7745b3c5c9c3 = {
+        var chart_715994fc06d0467db2d4d34e3c43a11c = echarts.init(
+            document.getElementById('715994fc06d0467db2d4d34e3c43a11c'), 'white', {renderer: 'canvas'});
+        var option_715994fc06d0467db2d4d34e3c43a11c = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -476,7 +476,11 @@
             "selected": {
                 "line": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -497,16 +501,20 @@
     "angleAxis": {
         "startAngle": 0,
         "clockwise": true,
-        "type": "value"
+        "type": "value",
+        "scale": false,
+        "splitNumber": 5
     },
     "polar": {},
     "title": [
         {
-            "text": "\u6781\u5750\u6807\u53cc\u6570\u503c\u8f74"
+            "text": "\u6781\u5750\u6807\u53cc\u6570\u503c\u8f74",
+            "padding": 5,
+            "itemGap": 10
         }
     ]
 };
-        chart_cb9cfe6be0764b9c855e7745b3c5c9c3.setOption(option_cb9cfe6be0764b9c855e7745b3c5c9c3);
+        chart_715994fc06d0467db2d4d34e3c43a11c.setOption(option_715994fc06d0467db2d4d34e3c43a11c);
     </script>
 </body>
 </html>

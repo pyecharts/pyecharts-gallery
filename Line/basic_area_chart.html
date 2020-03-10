@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="cdc885299e5248468951bfa3ca66a4cb" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="3b38276c414d4a0c86062bd6f6fe5a58" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_cdc885299e5248468951bfa3ca66a4cb = echarts.init(
-            document.getElementById('cdc885299e5248468951bfa3ca66a4cb'), 'white', {renderer: 'canvas'});
-        var option_cdc885299e5248468951bfa3ca66a4cb = {
+        var chart_3b38276c414d4a0c86062bd6f6fe5a58 = echarts.init(
+            document.getElementById('3b38276c414d4a0c86062bd6f6fe5a58'), 'white', {renderer: 'canvas'});
+        var option_3b38276c414d4a0c86062bd6f6fe5a58 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -92,6 +92,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 1,
                 "curveness": 0,
@@ -100,7 +101,9 @@
             "areaStyle": {
                 "opacity": 1,
                 "color": "#C67570"
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         }
     ],
     "legend": [
@@ -111,7 +114,11 @@
             "selected": {
                 "": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -142,6 +149,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -179,6 +187,7 @@
             "splitLine": {
                 "show": true,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -188,10 +197,13 @@
         }
     ],
     "title": [
-        {}
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
     ]
 };
-        chart_cdc885299e5248468951bfa3ca66a4cb.setOption(option_cdc885299e5248468951bfa3ca66a4cb);
+        chart_3b38276c414d4a0c86062bd6f6fe5a58.setOption(option_3b38276c414d4a0c86062bd6f6fe5a58);
     </script>
 </body>
 </html>

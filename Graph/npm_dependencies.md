@@ -1,6 +1,3 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=graph-npm ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
@@ -10,6 +7,16 @@ from aiohttp import TCPConnector, ClientSession
 
 import pyecharts.options as opts
 from pyecharts.charts import Graph
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=graph-npm
+
+目前无法实现的功能:
+
+1、暂无
+"""
+
 
 async def get_json_data(url: str) -> dict:
     async with ClientSession(connector=TCPConnector(ssl=False)) as session:
@@ -56,6 +63,7 @@ edges = [
     .set_global_opts(title_opts=opts.TitleOpts(title="NPM Dependencies"))
     .render("npm_dependencies.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Graph/npm_dependencies.html"></iframe>

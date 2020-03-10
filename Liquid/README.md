@@ -1,0 +1,7 @@
+- [Liquid - Liquid_shape_diamond](Liquid/liquid_shape_diamond.md 'include :type=code')
+- [Liquid - Multiple_liquid](Liquid/multiple_liquid.md 'include :type=code')
+- [Liquid - Liquid_shape_rect](Liquid/liquid_shape_rect.md 'include :type=code')
+- [Liquid - Liquid_base](Liquid/liquid_base.md 'include :type=code')
+- [Liquid - Liquid_data_precision](Liquid/liquid_data_precision.md 'include :type=code')
+- [Liquid - Liquid_without_outline](Liquid/liquid_without_outline.md 'include :type=code')
+- [Liquid - Liquid_shape_arrow](Liquid/liquid_shape_arrow.md 'include :type=code')

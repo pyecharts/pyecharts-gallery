@@ -8,11 +8,11 @@
 
 </head>
 <body>
-    <div id="5644455455b84cf8a9d66c6acb2a1771" style="width:1600px; height:800px;"></div>
+    <div id="5fd699598d474325825fbca517ac92a2" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_5644455455b84cf8a9d66c6acb2a1771 = echarts.init(
-            document.getElementById('5644455455b84cf8a9d66c6acb2a1771'), 'white', {renderer: 'canvas'});
-        var option_5644455455b84cf8a9d66c6acb2a1771 = {
+        var chart_5fd699598d474325825fbca517ac92a2 = echarts.init(
+            document.getElementById('5fd699598d474325825fbca517ac92a2'), 'white', {renderer: 'canvas'});
+        var option_5fd699598d474325825fbca517ac92a2 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -73271,7 +73271,11 @@
                 ""
             ],
             "selected": {},
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -73307,10 +73311,14 @@
             ]
         },
         "calculable": true,
+        "inverse": false,
         "splitNumber": 5,
         "dimension": 2,
         "orient": "vertical",
-        "showLabel": true
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
     },
     "xAxis3D": {
         "nameGap": 20,
@@ -73344,10 +73352,13 @@
         }
     },
     "title": [
-        {}
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
     ]
 };
-        chart_5644455455b84cf8a9d66c6acb2a1771.setOption(option_5644455455b84cf8a9d66c6acb2a1771);
+        chart_5fd699598d474325825fbca517ac92a2.setOption(option_5fd699598d474325825fbca517ac92a2);
     </script>
 </body>
 </html>

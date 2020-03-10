@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="888205e66c064df681a19bdefa8fec98" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="0110e88f0cba452ab8ef77d6f72a5f94" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_888205e66c064df681a19bdefa8fec98 = echarts.init(
-            document.getElementById('888205e66c064df681a19bdefa8fec98'), 'white', {renderer: 'canvas'});
-        var option_888205e66c064df681a19bdefa8fec98 = {
+        var chart_0110e88f0cba452ab8ef77d6f72a5f94 = echarts.init(
+            document.getElementById('0110e88f0cba452ab8ef77d6f72a5f94'), 'white', {renderer: 'canvas'});
+        var option_0110e88f0cba452ab8ef77d6f72a5f94 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -93,6 +93,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 1,
                 "curveness": 0,
@@ -100,7 +101,9 @@
             },
             "areaStyle": {
                 "opacity": 0
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         },
         {
             "type": "line",
@@ -148,6 +151,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 1,
                 "curveness": 0,
@@ -155,7 +159,9 @@
             },
             "areaStyle": {
                 "opacity": 0
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         },
         {
             "type": "line",
@@ -203,6 +209,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 1,
                 "curveness": 0,
@@ -210,7 +217,9 @@
             },
             "areaStyle": {
                 "opacity": 0
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         },
         {
             "type": "line",
@@ -258,6 +267,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 1,
                 "curveness": 0,
@@ -265,7 +275,9 @@
             },
             "areaStyle": {
                 "opacity": 0
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         },
         {
             "type": "line",
@@ -313,6 +325,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 1,
                 "curveness": 0,
@@ -320,7 +333,9 @@
             },
             "areaStyle": {
                 "opacity": 0
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         }
     ],
     "legend": [
@@ -339,7 +354,11 @@
                 "\u76f4\u63a5\u8bbf\u95ee": true,
                 "\u641c\u7d22\u5f15\u64ce": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -370,6 +389,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -407,6 +427,7 @@
             "splitLine": {
                 "show": true,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -417,11 +438,13 @@
     ],
     "title": [
         {
-            "text": "\u6298\u7ebf\u56fe\u5806\u53e0"
+            "text": "\u6298\u7ebf\u56fe\u5806\u53e0",
+            "padding": 5,
+            "itemGap": 10
         }
     ]
 };
-        chart_888205e66c064df681a19bdefa8fec98.setOption(option_888205e66c064df681a19bdefa8fec98);
+        chart_0110e88f0cba452ab8ef77d6f72a5f94.setOption(option_0110e88f0cba452ab8ef77d6f72a5f94);
     </script>
 </body>
 </html>

@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="dbb6081c691648c4b965516e3089b4a1" style="width:1600px; height:800px;"></div>
+    <div id="4d126396f7b046b88aae5343cfa57db6" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_dbb6081c691648c4b965516e3089b4a1 = echarts.init(
-            document.getElementById('dbb6081c691648c4b965516e3089b4a1'), 'white', {renderer: 'canvas'});
-        var option_dbb6081c691648c4b965516e3089b4a1 = {
+        var chart_4d126396f7b046b88aae5343cfa57db6 = echarts.init(
+            document.getElementById('4d126396f7b046b88aae5343cfa57db6'), 'white', {renderer: 'canvas'});
+        var option_4d126396f7b046b88aae5343cfa57db6 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -144,6 +144,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 2,
                 "opacity": 1,
                 "curveness": 0,
@@ -152,6 +153,8 @@
             "areaStyle": {
                 "opacity": 0
             },
+            "zlevel": 0,
+            "z": 0,
             "markArea": {
                 "silent": false,
                 "label": {
@@ -196,7 +199,11 @@
             "selected": {
                 "\u7528\u7535\u91cf": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -226,6 +233,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -276,6 +284,7 @@
             "splitLine": {
                 "show": true,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -287,7 +296,9 @@
     "title": [
         {
             "text": "\u4e00\u5929\u7528\u7535\u91cf\u5206\u5e03",
-            "subtext": "\u7eaf\u5c5e\u865a\u6784"
+            "subtext": "\u7eaf\u5c5e\u865a\u6784",
+            "padding": 5,
+            "itemGap": 10
         }
     ],
     "visualMap": {
@@ -303,10 +314,14 @@
             ]
         },
         "calculable": true,
+        "inverse": false,
         "splitNumber": 5,
         "dimension": 0,
         "orient": "vertical",
         "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0,
         "pieces": [
             {
                 "lte": 6,
@@ -334,7 +349,7 @@
         ]
     }
 };
-        chart_dbb6081c691648c4b965516e3089b4a1.setOption(option_dbb6081c691648c4b965516e3089b4a1);
+        chart_4d126396f7b046b88aae5343cfa57db6.setOption(option_4d126396f7b046b88aae5343cfa57db6);
     </script>
 </body>
 </html>

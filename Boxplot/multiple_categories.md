@@ -1,14 +1,11 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/editor.html?c=boxplot-multi ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Boxplot
-
 from pyecharts.commons.utils import JsCode
+
 axis_data = [
     "0",
     "1",
@@ -770,6 +767,7 @@ data = [
     )
     .render("multiple_categories.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Boxplot/multiple_categories.html"></iframe>

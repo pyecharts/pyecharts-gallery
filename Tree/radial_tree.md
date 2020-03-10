@@ -1,6 +1,3 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=tree-radial ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
@@ -10,6 +7,16 @@ from aiohttp import TCPConnector, ClientSession
 
 import pyecharts.options as opts
 from pyecharts.charts import Tree
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=tree-radial
+
+目前无法实现的功能:
+
+1、
+"""
+
 
 async def get_json_data(url: str) -> dict:
     async with ClientSession(connector=TCPConnector(ssl=False)) as session:
@@ -38,6 +45,7 @@ data = asyncio.run(
     )
     .render("radial_tree.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Tree/radial_tree.html"></iframe>

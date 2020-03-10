@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="191450718f7640708d18c3100872228d" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="00a4032849fa48f79a10bf7cd0bb901e" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_191450718f7640708d18c3100872228d = echarts.init(
-            document.getElementById('191450718f7640708d18c3100872228d'), 'white', {renderer: 'canvas'});
-        var option_191450718f7640708d18c3100872228d = {
+        var chart_00a4032849fa48f79a10bf7cd0bb901e = echarts.init(
+            document.getElementById('00a4032849fa48f79a10bf7cd0bb901e'), 'white', {renderer: 'canvas'});
+        var option_00a4032849fa48f79a10bf7cd0bb901e = {
     "backgroundColor": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{offset: 0, color: '#c86589'}, {offset: 1, color: '#06a7ff'}], false),
     "animation": true,
     "animationThreshold": 2000,
@@ -109,6 +109,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 1,
                 "curveness": 0,
@@ -135,7 +136,9 @@
                 "color": "red",
                 "borderColor": "#fff",
                 "borderWidth": 3
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         }
     ],
     "legend": [
@@ -146,7 +149,11 @@
             "selected": {
                 "\u6ce8\u518c\u603b\u91cf": true
             },
-            "show": false
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -180,6 +187,7 @@
                 "inside": false,
                 "length": 25,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -201,6 +209,7 @@
             "splitLine": {
                 "show": true,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -235,6 +244,7 @@
                 "onZero": true,
                 "onZeroAxisIndex": 0,
                 "lineStyle": {
+                    "show": true,
                     "width": 2,
                     "opacity": 1,
                     "curveness": 0,
@@ -248,6 +258,7 @@
                 "inside": false,
                 "length": 15,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -269,6 +280,7 @@
             "splitLine": {
                 "show": true,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -283,6 +295,8 @@
             "text": "OCTOBER 2015",
             "left": "center",
             "bottom": "5%",
+            "padding": 5,
+            "itemGap": 10,
             "textStyle": {
                 "color": "#fff",
                 "fontSize": 16
@@ -299,7 +313,7 @@
         }
     ]
 };
-        chart_191450718f7640708d18c3100872228d.setOption(option_191450718f7640708d18c3100872228d);
+        chart_00a4032849fa48f79a10bf7cd0bb901e.setOption(option_00a4032849fa48f79a10bf7cd0bb901e);
     </script>
 </body>
 </html>

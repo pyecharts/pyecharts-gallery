@@ -1,12 +1,18 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=parallel-simple ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Parallel
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=parallel-simple
+
+目前无法实现的功能:
+
+1、
+"""
 
 parallel_axis = [
     {"dim": 0, "name": "Price"},
@@ -33,6 +39,7 @@ data = [[12.99, 100, 82, "Good"], [9.99, 80, 77, "OK"], [20, 120, 60, "Excellent
     )
     .render("basic_parallel.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Parallel/basic_parallel.html"></iframe>

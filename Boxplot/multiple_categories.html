@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="0a1d069797844a2b9a8993deedf746fc" style="width:1600px; height:800px;"></div>
+    <div id="88d0e2b3cec5478a9902809504e57e9a" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_0a1d069797844a2b9a8993deedf746fc = echarts.init(
-            document.getElementById('0a1d069797844a2b9a8993deedf746fc'), 'white', {renderer: 'canvas'});
-        var option_0a1d069797844a2b9a8993deedf746fc = {
+        var chart_88d0e2b3cec5478a9902809504e57e9a = echarts.init(
+            document.getElementById('88d0e2b3cec5478a9902809504e57e9a'), 'white', {renderer: 'canvas'});
+        var option_88d0e2b3cec5478a9902809504e57e9a = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -562,7 +562,11 @@
                 "category2": true
             },
             "show": true,
-            "top": "3%"
+            "top": "3%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -598,6 +602,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -649,6 +654,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -666,7 +672,9 @@
     "title": [
         {
             "text": "Multiple Categories",
-            "left": "center"
+            "left": "center",
+            "padding": 5,
+            "itemGap": 10
         }
     ],
     "dataZoom": [
@@ -691,7 +699,7 @@
         }
     ]
 };
-        chart_0a1d069797844a2b9a8993deedf746fc.setOption(option_0a1d069797844a2b9a8993deedf746fc);
+        chart_88d0e2b3cec5478a9902809504e57e9a.setOption(option_88d0e2b3cec5478a9902809504e57e9a);
     </script>
 </body>
 </html>

@@ -1,16 +1,7 @@
 import pyecharts.options as opts
 from pyecharts.charts import Boxplot
-
 from pyecharts.commons.utils import JsCode
 
-"""
-Gallery 使用 pyecharts 1.1.0
-参考地址: https://www.echartsjs.com/examples/editor.html?c=boxplot-multi
-
-目前无法实现的功能:
-
-1、暂无
-"""
 axis_data = [
     "0",
     "1",

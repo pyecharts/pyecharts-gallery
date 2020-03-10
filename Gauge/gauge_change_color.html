@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="d12a5feb48bf4d8aad5ea89c3614f591" style="width:1600px; height:800px;"></div>
+    <div id="3d863c68f4a54bf8a3ae3c5bb9d46a96" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_d12a5feb48bf4d8aad5ea89c3614f591 = echarts.init(
-            document.getElementById('d12a5feb48bf4d8aad5ea89c3614f591'), 'white', {renderer: 'canvas'});
-        var option_d12a5feb48bf4d8aad5ea89c3614f591 = {
+        var chart_3d863c68f4a54bf8a3ae3c5bb9d46a96 = echarts.init(
+            document.getElementById('3d863c68f4a54bf8a3ae3c5bb9d46a96'), 'white', {renderer: 'canvas'});
+        var option_3d863c68f4a54bf8a3ae3c5bb9d46a96 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -49,6 +49,11 @@
     "series": [
         {
             "type": "gauge",
+            "title": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
             "detail": {
                 "show": true,
                 "position": "top",
@@ -59,6 +64,7 @@
             "min": 0,
             "max": 100,
             "splitNumber": 10,
+            "radius": "75%",
             "startAngle": 225,
             "endAngle": -45,
             "data": [
@@ -72,6 +78,7 @@
                 "onZero": true,
                 "onZeroAxisIndex": 0,
                 "lineStyle": {
+                    "show": true,
                     "width": 30,
                     "opacity": 1,
                     "curveness": 0,
@@ -108,7 +115,11 @@
             "selected": {
                 "\u4e1a\u52a1\u6307\u6807": true
             },
-            "show": false
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -125,10 +136,13 @@
         "borderWidth": 0
     },
     "title": [
-        {}
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
     ]
 };
-        chart_d12a5feb48bf4d8aad5ea89c3614f591.setOption(option_d12a5feb48bf4d8aad5ea89c3614f591);
+        chart_3d863c68f4a54bf8a3ae3c5bb9d46a96.setOption(option_3d863c68f4a54bf8a3ae3c5bb9d46a96);
     </script>
 </body>
 </html>

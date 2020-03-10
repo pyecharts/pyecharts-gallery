@@ -1,12 +1,19 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=line-stack ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Line
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=line-stack
+
+目前无法实现的功能:
+
+暂无
+"""
+
 
 x_data = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
 y_data = [820, 932, 901, 934, 1290, 1330, 1320]
@@ -57,6 +64,7 @@ y_data = [820, 932, 901, 934, 1290, 1330, 1320]
     )
     .render("stacked_line_chart.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Line/stacked_line_chart.html"></iframe>

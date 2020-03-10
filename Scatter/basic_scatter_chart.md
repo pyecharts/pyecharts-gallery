@@ -1,12 +1,18 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=scatter-simple ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Scatter
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=scatter-simple
+
+目前无法实现的功能:
+
+1、暂无
+"""
 
 data = [
     [10.0, 8.04],
@@ -48,6 +54,7 @@ y_data = [d[1] for d in data]
     )
     .render("basic_scatter_chart.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Scatter/basic_scatter_chart.html"></iframe>

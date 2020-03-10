@@ -1,12 +1,18 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=area-basic ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Line
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=area-basic
+
+目前无法实现的功能:
+
+暂无
+"""
 
 x_data = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 y_data = [820, 932, 901, 934, 1290, 1330, 1320]
@@ -35,6 +41,7 @@ y_data = [820, 932, 901, 934, 1290, 1330, 1320]
     # 设置 boundary_gap 的时候一定要放在最后一个配置项里, 不然会被覆盖
     .render("basic_area_chart.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Line/basic_area_chart.html"></iframe>

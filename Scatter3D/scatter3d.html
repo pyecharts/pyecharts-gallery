@@ -8,11 +8,11 @@
 
 </head>
 <body>
-    <div id="3a39e34247194cbba623fa9e03c8eb54" style="width:1440px; height:720px;"></div>
+    <div id="2ccd0e9ed4db49d9a71977d4f3484ba8" class="chart-container" style="width:1440px; height:720px;"></div>
     <script>
-        var chart_3a39e34247194cbba623fa9e03c8eb54 = echarts.init(
-            document.getElementById('3a39e34247194cbba623fa9e03c8eb54'), 'white', {renderer: 'canvas'});
-        var option_3a39e34247194cbba623fa9e03c8eb54 = {
+        var chart_2ccd0e9ed4db49d9a71977d4f3484ba8 = echarts.init(
+            document.getElementById('2ccd0e9ed4db49d9a71977d4f3484ba8'), 'white', {renderer: 'canvas'});
+        var option_2ccd0e9ed4db49d9a71977d4f3484ba8 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -61161,7 +61161,11 @@
                 ""
             ],
             "selected": {},
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -61194,11 +61198,15 @@
                 ]
             },
             "calculable": true,
+            "inverse": false,
             "splitNumber": 5,
             "dimension": 3,
             "orient": "vertical",
             "top": "10",
-            "showLabel": true
+            "showLabel": true,
+            "itemWidth": 20,
+            "itemHeight": 140,
+            "borderWidth": 0
         },
         {
             "show": true,
@@ -61212,11 +61220,15 @@
                 ]
             },
             "calculable": true,
+            "inverse": false,
             "splitNumber": 5,
             "dimension": 4,
             "orient": "vertical",
             "bottom": "10",
-            "showLabel": true
+            "showLabel": true,
+            "itemWidth": 20,
+            "itemHeight": 140,
+            "borderWidth": 0
         }
     ],
     "xAxis3D": {
@@ -61254,10 +61266,13 @@
         }
     },
     "title": [
-        {}
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
     ]
 };
-        chart_3a39e34247194cbba623fa9e03c8eb54.setOption(option_3a39e34247194cbba623fa9e03c8eb54);
+        chart_2ccd0e9ed4db49d9a71977d4f3484ba8.setOption(option_2ccd0e9ed4db49d9a71977d4f3484ba8);
     </script>
 </body>
 </html>

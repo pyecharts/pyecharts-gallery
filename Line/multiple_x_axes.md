@@ -1,6 +1,3 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=multiple-x-axis ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
@@ -10,6 +7,15 @@ from pyecharts.charts import Line
 
 # 将在 v1.1.0 中更改
 from pyecharts.commons.utils import JsCode
+
+"""
+Gallery 使用 pyecharts 1.0.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=multiple-x-axis
+
+目前无法实现的功能:
+
+1、暂无
+"""
 
 js_formatter = """function (params) {
         console.log(params);
@@ -103,6 +109,7 @@ js_formatter = """function (params) {
     )
     .render("multiple_x_axes.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Line/multiple_x_axes.html"></iframe>

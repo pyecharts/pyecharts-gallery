@@ -1,12 +1,18 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=bar3d-punch-card&gl=1 ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Bar3D
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=bar3d-punch-card&gl=1
+
+目前无法实现的功能:
+
+1、光照和阴影暂时无法设置
+"""
 
 hours = [
     "12a",
@@ -238,6 +244,7 @@ data = [[d[1], d[0], d[2]] for d in data]
     )
     .render("bar3d_punch_card.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Bar3D/bar3d_punch_card.html"></iframe>

@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="3e45eb8979c64c02bb7b66450992f2cb" style="width:1280px; height:720px;"></div>
+    <div id="c2e75e99d217411291ebaae8d5fd263d" class="chart-container" style="width:1280px; height:720px;"></div>
     <script>
-        var chart_3e45eb8979c64c02bb7b66450992f2cb = echarts.init(
-            document.getElementById('3e45eb8979c64c02bb7b66450992f2cb'), 'white', {renderer: 'canvas'});
-        var option_3e45eb8979c64c02bb7b66450992f2cb = {
+        var chart_c2e75e99d217411291ebaae8d5fd263d = echarts.init(
+            document.getElementById('c2e75e99d217411291ebaae8d5fd263d'), 'white', {renderer: 'canvas'});
+        var option_c2e75e99d217411291ebaae8d5fd263d = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -39007,14 +39007,26 @@
                     "value": 1534
                 }
             ],
+            "width": "80%",
+            "height": "80%",
             "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8
+            },
+            "upperlabel": {
                 "show": true,
                 "position": "inside",
                 "margin": 8
             },
             "leafDepth": 1,
             "drillDownIcon": "\u25b6",
-            "visualMin": 300
+            "roam": true,
+            "nodeClick": "zoomToNode",
+            "zoomToNodeRatio": 0.1024,
+            "visualMin": 300,
+            "colorMappingBy": "index",
+            "visibleMin": 10
         }
     ],
     "legend": [
@@ -39025,7 +39037,11 @@
             "selected": {
                 "option": true
             },
-            "show": false
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -39044,11 +39060,13 @@
         {
             "text": "Echarts \u914d\u7f6e\u9879\u67e5\u8be2\u5206\u5e03",
             "subtext": "2016/04",
-            "left": "leafDepth"
+            "left": "leafDepth",
+            "padding": 5,
+            "itemGap": 10
         }
     ]
 };
-        chart_3e45eb8979c64c02bb7b66450992f2cb.setOption(option_3e45eb8979c64c02bb7b66450992f2cb);
+        chart_c2e75e99d217411291ebaae8d5fd263d.setOption(option_c2e75e99d217411291ebaae8d5fd263d);
     </script>
 </body>
 </html>

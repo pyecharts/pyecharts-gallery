@@ -1,14 +1,6 @@
 import pyecharts.options as opts
 from pyecharts.charts import Grid, Boxplot, Scatter
 
-"""
-Gallery 使用 pyecharts 1.1.0
-参考地址: https://echarts.baidu.com/examples/editor.html?c=boxplot-light-velocity
-
-目前无法实现的功能:
-
-1、官方示例左小角的公式边框暂时没有实现，titleOpts 暂时没有 border 的相关配置
-"""
 
 y_data = [
     [

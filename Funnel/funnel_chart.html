@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="25a0f75e8a89496b949336e134c99f5c" style="width:1600px; height:800px;"></div>
+    <div id="326b8ce1019e4aa4a056be8e25f14bc0" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_25a0f75e8a89496b949336e134c99f5c = echarts.init(
-            document.getElementById('25a0f75e8a89496b949336e134c99f5c'), 'white', {renderer: 'canvas'});
-        var option_25a0f75e8a89496b949336e134c99f5c = {
+        var chart_326b8ce1019e4aa4a056be8e25f14bc0 = echarts.init(
+            document.getElementById('326b8ce1019e4aa4a056be8e25f14bc0'), 'white', {renderer: 'canvas'});
+        var option_326b8ce1019e4aa4a056be8e25f14bc0 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -100,11 +100,11 @@
     "legend": [
         {
             "data": [
-                "\u70b9\u51fb",
-                "\u8ba2\u5355",
-                "\u5c55\u73b0",
                 "\u54a8\u8be2",
-                "\u8bbf\u95ee"
+                "\u8bbf\u95ee",
+                "\u70b9\u51fb",
+                "\u5c55\u73b0",
+                "\u8ba2\u5355"
             ],
             "selected": {
                 "\u5c55\u73b0": true,
@@ -113,7 +113,11 @@
                 "\u54a8\u8be2": true,
                 "\u8ba2\u5355": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -131,11 +135,13 @@
     "title": [
         {
             "text": "\u6f0f\u6597\u56fe",
-            "subtext": "\u7eaf\u5c5e\u865a\u6784"
+            "subtext": "\u7eaf\u5c5e\u865a\u6784",
+            "padding": 5,
+            "itemGap": 10
         }
     ]
 };
-        chart_25a0f75e8a89496b949336e134c99f5c.setOption(option_25a0f75e8a89496b949336e134c99f5c);
+        chart_326b8ce1019e4aa4a056be8e25f14bc0.setOption(option_326b8ce1019e4aa4a056be8e25f14bc0);
     </script>
 </body>
 </html>

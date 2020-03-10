@@ -1,6 +1,3 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=surface-wave&gl=1 ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
@@ -10,6 +7,16 @@ from typing import Union
 
 import pyecharts.options as opts
 from pyecharts.charts import Surface3D
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=surface-wave&gl=1
+
+目前无法实现的功能:
+
+1、暂时无法设置光滑表面 wireframe
+2、暂时无法把 visualmap 进行隐藏
+"""
 
 
 def float_range(start: int, end: int, step: Union[int, float], round_number: int = 2):
@@ -72,6 +79,7 @@ def surface3d_data():
     )
     .render("surface_wave.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Surface3D/surface_wave.html"></iframe>

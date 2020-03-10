@@ -1,1 +1,4 @@
-- [Basic Radar Chart](Radar/basic_radar_chart 'include :type=code')
+- [Radar - Basic_radar_chart](Radar/basic_radar_chart.md 'include :type=code')
+- [Radar - Radar_selected_mode](Radar/radar_selected_mode.md 'include :type=code')
+- [Radar - Radar_air_quality](Radar/radar_air_quality.md 'include :type=code')
+- [Radar - Radar_angle_radius_axis](Radar/radar_angle_radius_axis.md 'include :type=code')

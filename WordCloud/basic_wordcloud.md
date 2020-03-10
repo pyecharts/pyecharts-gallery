@@ -1,9 +1,18 @@
+
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import WordCloud
 
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://gallery.echartsjs.com/editor.html?c=xS1jMxuOVm
+
+目前无法实现的功能:
+
+1、暂无
+"""
 
 data = [
     ("生活资源", "999"),
@@ -153,6 +162,7 @@ data = [
     )
     .render("basic_wordcloud.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="WordCloud/basic_wordcloud.html"></iframe>

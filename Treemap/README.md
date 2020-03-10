@@ -1,1 +1,3 @@
-- [Echarts Option Query](Treemap/echarts_option_query 'include :type=code')
+- [Treemap - Echarts_option_query](Treemap/echarts_option_query.md 'include :type=code')
+- [Treemap - Treemap_levels](Treemap/treemap_levels.md 'include :type=code')
+- [Treemap - Treemap_base](Treemap/treemap_base.md 'include :type=code')

@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="bfc19030c7f04dd29af15391b43d3e65" style="width:1600px; height:800px;"></div>
+    <div id="89b9a457e25b43fea08fb6e46fc4d798" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_bfc19030c7f04dd29af15391b43d3e65 = echarts.init(
-            document.getElementById('bfc19030c7f04dd29af15391b43d3e65'), 'white', {renderer: 'canvas'});
-        var option_bfc19030c7f04dd29af15391b43d3e65 = {
+        var chart_89b9a457e25b43fea08fb6e46fc4d798 = echarts.init(
+            document.getElementById('89b9a457e25b43fea08fb6e46fc4d798'), 'white', {renderer: 'canvas'});
+        var option_89b9a457e25b43fea08fb6e46fc4d798 = {
     "baseOption": {
         "series": [
             {
@@ -882,6 +882,7 @@
             "axisType": "category",
             "orient": "horizontal",
             "autoPlay": true,
+            "controlPosition": "left",
             "loop": true,
             "rewind": false,
             "show": true,
@@ -915,6 +916,7 @@
                 "splitLine": {
                     "show": false,
                     "lineStyle": {
+                        "show": true,
                         "width": 1,
                         "opacity": 1,
                         "curveness": 0,
@@ -970,6 +972,7 @@
                 "splitLine": {
                     "show": false,
                     "lineStyle": {
+                        "show": true,
                         "width": 1,
                         "opacity": 1,
                         "curveness": 0,
@@ -1002,11 +1005,17 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a": true,
                         "\u7b2c\u4e09\u4ea7\u4e1a": true
                     },
-                    "show": true
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
                 }
             ],
             "series": [
                 {
+                    "type": "bar",
+                    "name": "GDP",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -1132,9 +1141,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1612.6
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u91d1\u878d",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -1260,9 +1277,17 @@
                             "name": "\u65b0\u7586",
                             "value": 704.5
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u623f\u5730\u4ea7",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -1388,9 +1413,17 @@
                             "name": "\u65b0\u7586",
                             "value": 704.5
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e00\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -1516,9 +1549,17 @@
                             "name": "\u65b0\u7586",
                             "value": 305
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e8c\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -1644,9 +1685,17 @@
                             "name": "\u65b0\u7586",
                             "value": 603.15
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -1772,9 +1821,18 @@
                             "name": "\u65b0\u7586",
                             "value": 704.5
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "pie",
+                    "name": "GDP\u5360\u6bd4",
+                    "clockwise": true,
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -1788,13 +1846,122 @@
                             "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                             "value": 50599.270000000004
                         }
+                    ],
+                    "radius": "28%",
+                    "center": [
+                        "75%",
+                        "35%"
+                    ],
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8
+                    },
+                    "tooltip": {
+                        "show": true,
+                        "trigger": "item",
+                        "triggerOn": "mousemove|click",
+                        "axisPointer": {
+                            "type": "line"
+                        },
+                        "textStyle": {
+                            "fontSize": 14
+                        },
+                        "borderWidth": 0
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\u5317\u4eac",
+                        "\u5929\u6d25",
+                        "\u6cb3\u5317",
+                        "\u5c71\u897f",
+                        "\u5185\u8499\u53e4",
+                        "\u8fbd\u5b81",
+                        "\u5409\u6797",
+                        "\u9ed1\u9f99\u6c5f",
+                        "\u4e0a\u6d77",
+                        "\u6c5f\u82cf",
+                        "\u6d59\u6c5f",
+                        "\u5b89\u5fbd",
+                        "\u798f\u5efa",
+                        "\u6c5f\u897f",
+                        "\u5c71\u4e1c",
+                        "\u6cb3\u5357",
+                        "\u6e56\u5317",
+                        "\u6e56\u5357",
+                        "\u5e7f\u4e1c",
+                        "\u5e7f\u897f",
+                        "\u6d77\u5357",
+                        "\u91cd\u5e86",
+                        "\u56db\u5ddd",
+                        "\u8d35\u5dde",
+                        "\u4e91\u5357",
+                        "\u897f\u85cf",
+                        "\u9655\u897f",
+                        "\u7518\u8083",
+                        "\u9752\u6d77",
+                        "\u5b81\u590f",
+                        "\u65b0\u7586"
                     ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
                 }
             ],
             "title": [
                 {
                     "text": "2002\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
-                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40"
+                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
+                    "padding": 5,
+                    "itemGap": 10
                 }
             ],
             "tooltip": {
@@ -1808,7 +1975,33 @@
                     "fontSize": 14
                 },
                 "borderWidth": 0
-            }
+            },
+            "color": [
+                "#c23531",
+                "#2f4554",
+                "#61a0a8",
+                "#d48265",
+                "#749f83",
+                "#ca8622",
+                "#bda29a",
+                "#6e7074",
+                "#546570",
+                "#c4ccd3",
+                "#f05b72",
+                "#ef5b9c",
+                "#f47920",
+                "#905a3d",
+                "#fab27b",
+                "#2a5caa",
+                "#444693",
+                "#726930",
+                "#b2d235",
+                "#6d8346",
+                "#ac6767",
+                "#1d953f",
+                "#6950a1",
+                "#918597"
+            ]
         },
         {
             "legend": [
@@ -1832,11 +2025,17 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a": true,
                         "\u7b2c\u4e09\u4ea7\u4e1a": true
                     },
-                    "show": true
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
                 }
             ],
             "series": [
                 {
+                    "type": "bar",
+                    "name": "GDP",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -1962,9 +2161,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1886.35
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u91d1\u878d",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -2090,9 +2297,17 @@
                             "name": "\u65b0\u7586",
                             "value": 753.91
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u623f\u5730\u4ea7",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -2218,9 +2433,17 @@
                             "name": "\u65b0\u7586",
                             "value": 753.91
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e00\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -2346,9 +2569,17 @@
                             "name": "\u65b0\u7586",
                             "value": 412.9
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e8c\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -2474,9 +2705,17 @@
                             "name": "\u65b0\u7586",
                             "value": 719.54
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -2602,9 +2841,18 @@
                             "name": "\u65b0\u7586",
                             "value": 753.91
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "pie",
+                    "name": "GDP\u5360\u6bd4",
+                    "clockwise": true,
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -2618,13 +2866,122 @@
                             "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                             "value": 57488.810000000005
                         }
+                    ],
+                    "radius": "28%",
+                    "center": [
+                        "75%",
+                        "35%"
+                    ],
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8
+                    },
+                    "tooltip": {
+                        "show": true,
+                        "trigger": "item",
+                        "triggerOn": "mousemove|click",
+                        "axisPointer": {
+                            "type": "line"
+                        },
+                        "textStyle": {
+                            "fontSize": 14
+                        },
+                        "borderWidth": 0
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\u5317\u4eac",
+                        "\u5929\u6d25",
+                        "\u6cb3\u5317",
+                        "\u5c71\u897f",
+                        "\u5185\u8499\u53e4",
+                        "\u8fbd\u5b81",
+                        "\u5409\u6797",
+                        "\u9ed1\u9f99\u6c5f",
+                        "\u4e0a\u6d77",
+                        "\u6c5f\u82cf",
+                        "\u6d59\u6c5f",
+                        "\u5b89\u5fbd",
+                        "\u798f\u5efa",
+                        "\u6c5f\u897f",
+                        "\u5c71\u4e1c",
+                        "\u6cb3\u5357",
+                        "\u6e56\u5317",
+                        "\u6e56\u5357",
+                        "\u5e7f\u4e1c",
+                        "\u5e7f\u897f",
+                        "\u6d77\u5357",
+                        "\u91cd\u5e86",
+                        "\u56db\u5ddd",
+                        "\u8d35\u5dde",
+                        "\u4e91\u5357",
+                        "\u897f\u85cf",
+                        "\u9655\u897f",
+                        "\u7518\u8083",
+                        "\u9752\u6d77",
+                        "\u5b81\u590f",
+                        "\u65b0\u7586"
                     ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
                 }
             ],
             "title": [
                 {
                     "text": "2003\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
-                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40"
+                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
+                    "padding": 5,
+                    "itemGap": 10
                 }
             ],
             "tooltip": {
@@ -2638,7 +2995,33 @@
                     "fontSize": 14
                 },
                 "borderWidth": 0
-            }
+            },
+            "color": [
+                "#c23531",
+                "#2f4554",
+                "#61a0a8",
+                "#d48265",
+                "#749f83",
+                "#ca8622",
+                "#bda29a",
+                "#6e7074",
+                "#546570",
+                "#c4ccd3",
+                "#f05b72",
+                "#ef5b9c",
+                "#f47920",
+                "#905a3d",
+                "#fab27b",
+                "#2a5caa",
+                "#444693",
+                "#726930",
+                "#b2d235",
+                "#6d8346",
+                "#ac6767",
+                "#1d953f",
+                "#6950a1",
+                "#918597"
+            ]
         },
         {
             "legend": [
@@ -2662,11 +3045,17 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a": true,
                         "\u7b2c\u4e09\u4ea7\u4e1a": true
                     },
-                    "show": true
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
                 }
             ],
             "series": [
                 {
+                    "type": "bar",
+                    "name": "GDP",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -2792,9 +3181,17 @@
                             "name": "\u65b0\u7586",
                             "value": 2209.09
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u91d1\u878d",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -2920,9 +3317,17 @@
                             "name": "\u65b0\u7586",
                             "value": 833.36
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u623f\u5730\u4ea7",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -3048,9 +3453,17 @@
                             "name": "\u65b0\u7586",
                             "value": 833.36
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e00\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -3176,9 +3589,17 @@
                             "name": "\u65b0\u7586",
                             "value": 461.26
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e8c\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -3304,9 +3725,17 @@
                             "name": "\u65b0\u7586",
                             "value": 914.47
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -3432,9 +3861,18 @@
                             "name": "\u65b0\u7586",
                             "value": 833.36
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "pie",
+                    "name": "GDP\u5360\u6bd4",
+                    "clockwise": true,
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -3448,13 +3886,122 @@
                             "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                             "value": 66968.23000000001
                         }
+                    ],
+                    "radius": "28%",
+                    "center": [
+                        "75%",
+                        "35%"
+                    ],
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8
+                    },
+                    "tooltip": {
+                        "show": true,
+                        "trigger": "item",
+                        "triggerOn": "mousemove|click",
+                        "axisPointer": {
+                            "type": "line"
+                        },
+                        "textStyle": {
+                            "fontSize": 14
+                        },
+                        "borderWidth": 0
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\u5317\u4eac",
+                        "\u5929\u6d25",
+                        "\u6cb3\u5317",
+                        "\u5c71\u897f",
+                        "\u5185\u8499\u53e4",
+                        "\u8fbd\u5b81",
+                        "\u5409\u6797",
+                        "\u9ed1\u9f99\u6c5f",
+                        "\u4e0a\u6d77",
+                        "\u6c5f\u82cf",
+                        "\u6d59\u6c5f",
+                        "\u5b89\u5fbd",
+                        "\u798f\u5efa",
+                        "\u6c5f\u897f",
+                        "\u5c71\u4e1c",
+                        "\u6cb3\u5357",
+                        "\u6e56\u5317",
+                        "\u6e56\u5357",
+                        "\u5e7f\u4e1c",
+                        "\u5e7f\u897f",
+                        "\u6d77\u5357",
+                        "\u91cd\u5e86",
+                        "\u56db\u5ddd",
+                        "\u8d35\u5dde",
+                        "\u4e91\u5357",
+                        "\u897f\u85cf",
+                        "\u9655\u897f",
+                        "\u7518\u8083",
+                        "\u9752\u6d77",
+                        "\u5b81\u590f",
+                        "\u65b0\u7586"
                     ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
                 }
             ],
             "title": [
                 {
                     "text": "2004\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
-                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40"
+                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
+                    "padding": 5,
+                    "itemGap": 10
                 }
             ],
             "tooltip": {
@@ -3468,7 +4015,33 @@
                     "fontSize": 14
                 },
                 "borderWidth": 0
-            }
+            },
+            "color": [
+                "#c23531",
+                "#2f4554",
+                "#61a0a8",
+                "#d48265",
+                "#749f83",
+                "#ca8622",
+                "#bda29a",
+                "#6e7074",
+                "#546570",
+                "#c4ccd3",
+                "#f05b72",
+                "#ef5b9c",
+                "#f47920",
+                "#905a3d",
+                "#fab27b",
+                "#2a5caa",
+                "#444693",
+                "#726930",
+                "#b2d235",
+                "#6d8346",
+                "#ac6767",
+                "#1d953f",
+                "#6950a1",
+                "#918597"
+            ]
         },
         {
             "legend": [
@@ -3492,11 +4065,17 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a": true,
                         "\u7b2c\u4e09\u4ea7\u4e1a": true
                     },
-                    "show": true
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
                 }
             ],
             "series": [
                 {
+                    "type": "bar",
+                    "name": "GDP",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -3622,9 +4201,17 @@
                             "name": "\u65b0\u7586",
                             "value": 2604.19
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u91d1\u878d",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -3750,9 +4337,17 @@
                             "name": "\u65b0\u7586",
                             "value": 929.41
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u623f\u5730\u4ea7",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -3878,9 +4473,17 @@
                             "name": "\u65b0\u7586",
                             "value": 929.41
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e00\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -4006,9 +4609,17 @@
                             "name": "\u65b0\u7586",
                             "value": 509.99
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e8c\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -4134,9 +4745,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1164.79
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -4262,9 +4881,18 @@
                             "name": "\u65b0\u7586",
                             "value": 929.41
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "pie",
+                    "name": "GDP\u5360\u6bd4",
+                    "clockwise": true,
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -4278,13 +4906,122 @@
                             "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                             "value": 79118.57999999999
                         }
+                    ],
+                    "radius": "28%",
+                    "center": [
+                        "75%",
+                        "35%"
+                    ],
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8
+                    },
+                    "tooltip": {
+                        "show": true,
+                        "trigger": "item",
+                        "triggerOn": "mousemove|click",
+                        "axisPointer": {
+                            "type": "line"
+                        },
+                        "textStyle": {
+                            "fontSize": 14
+                        },
+                        "borderWidth": 0
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\u5317\u4eac",
+                        "\u5929\u6d25",
+                        "\u6cb3\u5317",
+                        "\u5c71\u897f",
+                        "\u5185\u8499\u53e4",
+                        "\u8fbd\u5b81",
+                        "\u5409\u6797",
+                        "\u9ed1\u9f99\u6c5f",
+                        "\u4e0a\u6d77",
+                        "\u6c5f\u82cf",
+                        "\u6d59\u6c5f",
+                        "\u5b89\u5fbd",
+                        "\u798f\u5efa",
+                        "\u6c5f\u897f",
+                        "\u5c71\u4e1c",
+                        "\u6cb3\u5357",
+                        "\u6e56\u5317",
+                        "\u6e56\u5357",
+                        "\u5e7f\u4e1c",
+                        "\u5e7f\u897f",
+                        "\u6d77\u5357",
+                        "\u91cd\u5e86",
+                        "\u56db\u5ddd",
+                        "\u8d35\u5dde",
+                        "\u4e91\u5357",
+                        "\u897f\u85cf",
+                        "\u9655\u897f",
+                        "\u7518\u8083",
+                        "\u9752\u6d77",
+                        "\u5b81\u590f",
+                        "\u65b0\u7586"
                     ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
                 }
             ],
             "title": [
                 {
                     "text": "2005\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
-                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40"
+                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
+                    "padding": 5,
+                    "itemGap": 10
                 }
             ],
             "tooltip": {
@@ -4298,7 +5035,33 @@
                     "fontSize": 14
                 },
                 "borderWidth": 0
-            }
+            },
+            "color": [
+                "#c23531",
+                "#2f4554",
+                "#61a0a8",
+                "#d48265",
+                "#749f83",
+                "#ca8622",
+                "#bda29a",
+                "#6e7074",
+                "#546570",
+                "#c4ccd3",
+                "#f05b72",
+                "#ef5b9c",
+                "#f47920",
+                "#905a3d",
+                "#fab27b",
+                "#2a5caa",
+                "#444693",
+                "#726930",
+                "#b2d235",
+                "#6d8346",
+                "#ac6767",
+                "#1d953f",
+                "#6950a1",
+                "#918597"
+            ]
         },
         {
             "legend": [
@@ -4322,11 +5085,17 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a": true,
                         "\u7b2c\u4e09\u4ea7\u4e1a": true
                     },
-                    "show": true
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
                 }
             ],
             "series": [
                 {
+                    "type": "bar",
+                    "name": "GDP",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -4452,9 +5221,17 @@
                             "name": "\u65b0\u7586",
                             "value": 3045.26
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u91d1\u878d",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -4580,9 +5357,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1058.16
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u623f\u5730\u4ea7",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -4708,9 +5493,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1058.16
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e00\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -4836,9 +5629,17 @@
                             "name": "\u65b0\u7586",
                             "value": 527.8
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e8c\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -4964,9 +5765,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1459.3
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -5092,9 +5901,18 @@
                             "name": "\u65b0\u7586",
                             "value": 1058.16
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "pie",
+                    "name": "GDP\u5360\u6bd4",
+                    "clockwise": true,
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -5108,13 +5926,122 @@
                             "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                             "value": 92818.63
                         }
+                    ],
+                    "radius": "28%",
+                    "center": [
+                        "75%",
+                        "35%"
+                    ],
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8
+                    },
+                    "tooltip": {
+                        "show": true,
+                        "trigger": "item",
+                        "triggerOn": "mousemove|click",
+                        "axisPointer": {
+                            "type": "line"
+                        },
+                        "textStyle": {
+                            "fontSize": 14
+                        },
+                        "borderWidth": 0
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\u5317\u4eac",
+                        "\u5929\u6d25",
+                        "\u6cb3\u5317",
+                        "\u5c71\u897f",
+                        "\u5185\u8499\u53e4",
+                        "\u8fbd\u5b81",
+                        "\u5409\u6797",
+                        "\u9ed1\u9f99\u6c5f",
+                        "\u4e0a\u6d77",
+                        "\u6c5f\u82cf",
+                        "\u6d59\u6c5f",
+                        "\u5b89\u5fbd",
+                        "\u798f\u5efa",
+                        "\u6c5f\u897f",
+                        "\u5c71\u4e1c",
+                        "\u6cb3\u5357",
+                        "\u6e56\u5317",
+                        "\u6e56\u5357",
+                        "\u5e7f\u4e1c",
+                        "\u5e7f\u897f",
+                        "\u6d77\u5357",
+                        "\u91cd\u5e86",
+                        "\u56db\u5ddd",
+                        "\u8d35\u5dde",
+                        "\u4e91\u5357",
+                        "\u897f\u85cf",
+                        "\u9655\u897f",
+                        "\u7518\u8083",
+                        "\u9752\u6d77",
+                        "\u5b81\u590f",
+                        "\u65b0\u7586"
                     ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
                 }
             ],
             "title": [
                 {
                     "text": "2006\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
-                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40"
+                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
+                    "padding": 5,
+                    "itemGap": 10
                 }
             ],
             "tooltip": {
@@ -5128,7 +6055,33 @@
                     "fontSize": 14
                 },
                 "borderWidth": 0
-            }
+            },
+            "color": [
+                "#c23531",
+                "#2f4554",
+                "#61a0a8",
+                "#d48265",
+                "#749f83",
+                "#ca8622",
+                "#bda29a",
+                "#6e7074",
+                "#546570",
+                "#c4ccd3",
+                "#f05b72",
+                "#ef5b9c",
+                "#f47920",
+                "#905a3d",
+                "#fab27b",
+                "#2a5caa",
+                "#444693",
+                "#726930",
+                "#b2d235",
+                "#6d8346",
+                "#ac6767",
+                "#1d953f",
+                "#6950a1",
+                "#918597"
+            ]
         },
         {
             "legend": [
@@ -5152,11 +6105,17 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a": true,
                         "\u7b2c\u4e09\u4ea7\u4e1a": true
                     },
-                    "show": true
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
                 }
             ],
             "series": [
                 {
+                    "type": "bar",
+                    "name": "GDP",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -5282,9 +6241,17 @@
                             "name": "\u65b0\u7586",
                             "value": 3523.16
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u91d1\u878d",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -5410,9 +6377,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1246.89
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u623f\u5730\u4ea7",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -5538,9 +6513,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1246.89
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e00\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -5666,9 +6649,17 @@
                             "name": "\u65b0\u7586",
                             "value": 628.72
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e8c\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -5794,9 +6785,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1647.55
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -5922,9 +6921,18 @@
                             "name": "\u65b0\u7586",
                             "value": 1246.89
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "pie",
+                    "name": "GDP\u5360\u6bd4",
+                    "clockwise": true,
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -5938,13 +6946,122 @@
                             "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                             "value": 112231.99999999997
                         }
+                    ],
+                    "radius": "28%",
+                    "center": [
+                        "75%",
+                        "35%"
+                    ],
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8
+                    },
+                    "tooltip": {
+                        "show": true,
+                        "trigger": "item",
+                        "triggerOn": "mousemove|click",
+                        "axisPointer": {
+                            "type": "line"
+                        },
+                        "textStyle": {
+                            "fontSize": 14
+                        },
+                        "borderWidth": 0
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\u5317\u4eac",
+                        "\u5929\u6d25",
+                        "\u6cb3\u5317",
+                        "\u5c71\u897f",
+                        "\u5185\u8499\u53e4",
+                        "\u8fbd\u5b81",
+                        "\u5409\u6797",
+                        "\u9ed1\u9f99\u6c5f",
+                        "\u4e0a\u6d77",
+                        "\u6c5f\u82cf",
+                        "\u6d59\u6c5f",
+                        "\u5b89\u5fbd",
+                        "\u798f\u5efa",
+                        "\u6c5f\u897f",
+                        "\u5c71\u4e1c",
+                        "\u6cb3\u5357",
+                        "\u6e56\u5317",
+                        "\u6e56\u5357",
+                        "\u5e7f\u4e1c",
+                        "\u5e7f\u897f",
+                        "\u6d77\u5357",
+                        "\u91cd\u5e86",
+                        "\u56db\u5ddd",
+                        "\u8d35\u5dde",
+                        "\u4e91\u5357",
+                        "\u897f\u85cf",
+                        "\u9655\u897f",
+                        "\u7518\u8083",
+                        "\u9752\u6d77",
+                        "\u5b81\u590f",
+                        "\u65b0\u7586"
                     ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
                 }
             ],
             "title": [
                 {
                     "text": "2007\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
-                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40"
+                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
+                    "padding": 5,
+                    "itemGap": 10
                 }
             ],
             "tooltip": {
@@ -5958,7 +7075,33 @@
                     "fontSize": 14
                 },
                 "borderWidth": 0
-            }
+            },
+            "color": [
+                "#c23531",
+                "#2f4554",
+                "#61a0a8",
+                "#d48265",
+                "#749f83",
+                "#ca8622",
+                "#bda29a",
+                "#6e7074",
+                "#546570",
+                "#c4ccd3",
+                "#f05b72",
+                "#ef5b9c",
+                "#f47920",
+                "#905a3d",
+                "#fab27b",
+                "#2a5caa",
+                "#444693",
+                "#726930",
+                "#b2d235",
+                "#6d8346",
+                "#ac6767",
+                "#1d953f",
+                "#6950a1",
+                "#918597"
+            ]
         },
         {
             "legend": [
@@ -5982,11 +7125,17 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a": true,
                         "\u7b2c\u4e09\u4ea7\u4e1a": true
                     },
-                    "show": true
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
                 }
             ],
             "series": [
                 {
+                    "type": "bar",
+                    "name": "GDP",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -6112,9 +7261,17 @@
                             "name": "\u65b0\u7586",
                             "value": 4183.21
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u91d1\u878d",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -6240,9 +7397,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1421.38
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u623f\u5730\u4ea7",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -6368,9 +7533,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1421.38
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e00\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -6496,9 +7669,17 @@
                             "name": "\u65b0\u7586",
                             "value": 691.07
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e8c\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -6624,9 +7805,17 @@
                             "name": "\u65b0\u7586",
                             "value": 2070.76
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -6752,9 +7941,18 @@
                             "name": "\u65b0\u7586",
                             "value": 1421.38
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "pie",
+                    "name": "GDP\u5360\u6bd4",
+                    "clockwise": true,
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -6768,13 +7966,122 @@
                             "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                             "value": 132584.20999999996
                         }
+                    ],
+                    "radius": "28%",
+                    "center": [
+                        "75%",
+                        "35%"
+                    ],
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8
+                    },
+                    "tooltip": {
+                        "show": true,
+                        "trigger": "item",
+                        "triggerOn": "mousemove|click",
+                        "axisPointer": {
+                            "type": "line"
+                        },
+                        "textStyle": {
+                            "fontSize": 14
+                        },
+                        "borderWidth": 0
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\u5317\u4eac",
+                        "\u5929\u6d25",
+                        "\u6cb3\u5317",
+                        "\u5c71\u897f",
+                        "\u5185\u8499\u53e4",
+                        "\u8fbd\u5b81",
+                        "\u5409\u6797",
+                        "\u9ed1\u9f99\u6c5f",
+                        "\u4e0a\u6d77",
+                        "\u6c5f\u82cf",
+                        "\u6d59\u6c5f",
+                        "\u5b89\u5fbd",
+                        "\u798f\u5efa",
+                        "\u6c5f\u897f",
+                        "\u5c71\u4e1c",
+                        "\u6cb3\u5357",
+                        "\u6e56\u5317",
+                        "\u6e56\u5357",
+                        "\u5e7f\u4e1c",
+                        "\u5e7f\u897f",
+                        "\u6d77\u5357",
+                        "\u91cd\u5e86",
+                        "\u56db\u5ddd",
+                        "\u8d35\u5dde",
+                        "\u4e91\u5357",
+                        "\u897f\u85cf",
+                        "\u9655\u897f",
+                        "\u7518\u8083",
+                        "\u9752\u6d77",
+                        "\u5b81\u590f",
+                        "\u65b0\u7586"
                     ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
                 }
             ],
             "title": [
                 {
                     "text": "2008\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
-                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40"
+                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
+                    "padding": 5,
+                    "itemGap": 10
                 }
             ],
             "tooltip": {
@@ -6788,7 +8095,33 @@
                     "fontSize": 14
                 },
                 "borderWidth": 0
-            }
+            },
+            "color": [
+                "#c23531",
+                "#2f4554",
+                "#61a0a8",
+                "#d48265",
+                "#749f83",
+                "#ca8622",
+                "#bda29a",
+                "#6e7074",
+                "#546570",
+                "#c4ccd3",
+                "#f05b72",
+                "#ef5b9c",
+                "#f47920",
+                "#905a3d",
+                "#fab27b",
+                "#2a5caa",
+                "#444693",
+                "#726930",
+                "#b2d235",
+                "#6d8346",
+                "#ac6767",
+                "#1d953f",
+                "#6950a1",
+                "#918597"
+            ]
         },
         {
             "legend": [
@@ -6812,11 +8145,17 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a": true,
                         "\u7b2c\u4e09\u4ea7\u4e1a": true
                     },
-                    "show": true
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
                 }
             ],
             "series": [
                 {
+                    "type": "bar",
+                    "name": "GDP",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -6942,9 +8281,17 @@
                             "name": "\u65b0\u7586",
                             "value": 4277.05
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u91d1\u878d",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -7070,9 +8417,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1587.72
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u623f\u5730\u4ea7",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -7198,9 +8553,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1587.72
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e00\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -7326,9 +8689,17 @@
                             "name": "\u65b0\u7586",
                             "value": 759.74
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e8c\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -7454,9 +8825,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1929.59
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -7582,9 +8961,18 @@
                             "name": "\u65b0\u7586",
                             "value": 1587.72
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "pie",
+                    "name": "GDP\u5360\u6bd4",
+                    "clockwise": true,
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -7598,13 +8986,122 @@
                             "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                             "value": 150177.93999999997
                         }
+                    ],
+                    "radius": "28%",
+                    "center": [
+                        "75%",
+                        "35%"
+                    ],
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8
+                    },
+                    "tooltip": {
+                        "show": true,
+                        "trigger": "item",
+                        "triggerOn": "mousemove|click",
+                        "axisPointer": {
+                            "type": "line"
+                        },
+                        "textStyle": {
+                            "fontSize": 14
+                        },
+                        "borderWidth": 0
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\u5317\u4eac",
+                        "\u5929\u6d25",
+                        "\u6cb3\u5317",
+                        "\u5c71\u897f",
+                        "\u5185\u8499\u53e4",
+                        "\u8fbd\u5b81",
+                        "\u5409\u6797",
+                        "\u9ed1\u9f99\u6c5f",
+                        "\u4e0a\u6d77",
+                        "\u6c5f\u82cf",
+                        "\u6d59\u6c5f",
+                        "\u5b89\u5fbd",
+                        "\u798f\u5efa",
+                        "\u6c5f\u897f",
+                        "\u5c71\u4e1c",
+                        "\u6cb3\u5357",
+                        "\u6e56\u5317",
+                        "\u6e56\u5357",
+                        "\u5e7f\u4e1c",
+                        "\u5e7f\u897f",
+                        "\u6d77\u5357",
+                        "\u91cd\u5e86",
+                        "\u56db\u5ddd",
+                        "\u8d35\u5dde",
+                        "\u4e91\u5357",
+                        "\u897f\u85cf",
+                        "\u9655\u897f",
+                        "\u7518\u8083",
+                        "\u9752\u6d77",
+                        "\u5b81\u590f",
+                        "\u65b0\u7586"
                     ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
                 }
             ],
             "title": [
                 {
                     "text": "2009\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
-                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40"
+                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
+                    "padding": 5,
+                    "itemGap": 10
                 }
             ],
             "tooltip": {
@@ -7618,7 +9115,33 @@
                     "fontSize": 14
                 },
                 "borderWidth": 0
-            }
+            },
+            "color": [
+                "#c23531",
+                "#2f4554",
+                "#61a0a8",
+                "#d48265",
+                "#749f83",
+                "#ca8622",
+                "#bda29a",
+                "#6e7074",
+                "#546570",
+                "#c4ccd3",
+                "#f05b72",
+                "#ef5b9c",
+                "#f47920",
+                "#905a3d",
+                "#fab27b",
+                "#2a5caa",
+                "#444693",
+                "#726930",
+                "#b2d235",
+                "#6d8346",
+                "#ac6767",
+                "#1d953f",
+                "#6950a1",
+                "#918597"
+            ]
         },
         {
             "legend": [
@@ -7642,11 +9165,17 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a": true,
                         "\u7b2c\u4e09\u4ea7\u4e1a": true
                     },
-                    "show": true
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
                 }
             ],
             "series": [
                 {
+                    "type": "bar",
+                    "name": "GDP",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -7772,9 +9301,17 @@
                             "name": "\u65b0\u7586",
                             "value": 5437.47
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u91d1\u878d",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -7900,9 +9437,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1766.69
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u623f\u5730\u4ea7",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -8028,9 +9573,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1766.69
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e00\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -8156,9 +9709,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1078.63
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e8c\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -8284,9 +9845,17 @@
                             "name": "\u65b0\u7586",
                             "value": 2592.15
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -8412,9 +9981,18 @@
                             "name": "\u65b0\u7586",
                             "value": 1766.69
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "pie",
+                    "name": "GDP\u5360\u6bd4",
+                    "clockwise": true,
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -8428,13 +10006,122 @@
                             "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                             "value": 176623.34000000003
                         }
+                    ],
+                    "radius": "28%",
+                    "center": [
+                        "75%",
+                        "35%"
+                    ],
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8
+                    },
+                    "tooltip": {
+                        "show": true,
+                        "trigger": "item",
+                        "triggerOn": "mousemove|click",
+                        "axisPointer": {
+                            "type": "line"
+                        },
+                        "textStyle": {
+                            "fontSize": 14
+                        },
+                        "borderWidth": 0
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\u5317\u4eac",
+                        "\u5929\u6d25",
+                        "\u6cb3\u5317",
+                        "\u5c71\u897f",
+                        "\u5185\u8499\u53e4",
+                        "\u8fbd\u5b81",
+                        "\u5409\u6797",
+                        "\u9ed1\u9f99\u6c5f",
+                        "\u4e0a\u6d77",
+                        "\u6c5f\u82cf",
+                        "\u6d59\u6c5f",
+                        "\u5b89\u5fbd",
+                        "\u798f\u5efa",
+                        "\u6c5f\u897f",
+                        "\u5c71\u4e1c",
+                        "\u6cb3\u5357",
+                        "\u6e56\u5317",
+                        "\u6e56\u5357",
+                        "\u5e7f\u4e1c",
+                        "\u5e7f\u897f",
+                        "\u6d77\u5357",
+                        "\u91cd\u5e86",
+                        "\u56db\u5ddd",
+                        "\u8d35\u5dde",
+                        "\u4e91\u5357",
+                        "\u897f\u85cf",
+                        "\u9655\u897f",
+                        "\u7518\u8083",
+                        "\u9752\u6d77",
+                        "\u5b81\u590f",
+                        "\u65b0\u7586"
                     ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
                 }
             ],
             "title": [
                 {
                     "text": "2010\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
-                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40"
+                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
+                    "padding": 5,
+                    "itemGap": 10
                 }
             ],
             "tooltip": {
@@ -8448,7 +10135,33 @@
                     "fontSize": 14
                 },
                 "borderWidth": 0
-            }
+            },
+            "color": [
+                "#c23531",
+                "#2f4554",
+                "#61a0a8",
+                "#d48265",
+                "#749f83",
+                "#ca8622",
+                "#bda29a",
+                "#6e7074",
+                "#546570",
+                "#c4ccd3",
+                "#f05b72",
+                "#ef5b9c",
+                "#f47920",
+                "#905a3d",
+                "#fab27b",
+                "#2a5caa",
+                "#444693",
+                "#726930",
+                "#b2d235",
+                "#6d8346",
+                "#ac6767",
+                "#1d953f",
+                "#6950a1",
+                "#918597"
+            ]
         },
         {
             "legend": [
@@ -8472,11 +10185,17 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a": true,
                         "\u7b2c\u4e09\u4ea7\u4e1a": true
                     },
-                    "show": true
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
                 }
             ],
             "series": [
                 {
+                    "type": "bar",
+                    "name": "GDP",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -8602,9 +10321,17 @@
                             "name": "\u65b0\u7586",
                             "value": 6610.05
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u91d1\u878d",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -8730,9 +10457,17 @@
                             "name": "\u65b0\u7586",
                             "value": 2245.12
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u623f\u5730\u4ea7",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -8858,9 +10593,17 @@
                             "name": "\u65b0\u7586",
                             "value": 2245.12
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e00\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -8986,9 +10729,17 @@
                             "name": "\u65b0\u7586",
                             "value": 1139.03
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e8c\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -9114,9 +10865,17 @@
                             "name": "\u65b0\u7586",
                             "value": 3225.9
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "bar",
+                    "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                     "data": [
                         {
                             "name": "\u5317\u4eac",
@@ -9242,9 +11001,18 @@
                             "name": "\u65b0\u7586",
                             "value": 2245.12
                         }
-                    ]
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
                 },
                 {
+                    "type": "pie",
+                    "name": "GDP\u5360\u6bd4",
+                    "clockwise": true,
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -9258,13 +11026,122 @@
                             "name": "\u7b2c\u4e09\u4ea7\u4e1a",
                             "value": 210544.98
                         }
+                    ],
+                    "radius": "28%",
+                    "center": [
+                        "75%",
+                        "35%"
+                    ],
+                    "label": {
+                        "show": true,
+                        "position": "top",
+                        "margin": 8
+                    },
+                    "tooltip": {
+                        "show": true,
+                        "trigger": "item",
+                        "triggerOn": "mousemove|click",
+                        "axisPointer": {
+                            "type": "line"
+                        },
+                        "textStyle": {
+                            "fontSize": 14
+                        },
+                        "borderWidth": 0
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "xAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\u5317\u4eac",
+                        "\u5929\u6d25",
+                        "\u6cb3\u5317",
+                        "\u5c71\u897f",
+                        "\u5185\u8499\u53e4",
+                        "\u8fbd\u5b81",
+                        "\u5409\u6797",
+                        "\u9ed1\u9f99\u6c5f",
+                        "\u4e0a\u6d77",
+                        "\u6c5f\u82cf",
+                        "\u6d59\u6c5f",
+                        "\u5b89\u5fbd",
+                        "\u798f\u5efa",
+                        "\u6c5f\u897f",
+                        "\u5c71\u4e1c",
+                        "\u6cb3\u5357",
+                        "\u6e56\u5317",
+                        "\u6e56\u5357",
+                        "\u5e7f\u4e1c",
+                        "\u5e7f\u897f",
+                        "\u6d77\u5357",
+                        "\u91cd\u5e86",
+                        "\u56db\u5ddd",
+                        "\u8d35\u5dde",
+                        "\u4e91\u5357",
+                        "\u897f\u85cf",
+                        "\u9655\u897f",
+                        "\u7518\u8083",
+                        "\u9752\u6d77",
+                        "\u5b81\u590f",
+                        "\u65b0\u7586"
                     ]
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
                 }
             ],
             "title": [
                 {
                     "text": "2011\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
-                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40"
+                    "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
+                    "padding": 5,
+                    "itemGap": 10
                 }
             ],
             "tooltip": {
@@ -9278,11 +11155,37 @@
                     "fontSize": 14
                 },
                 "borderWidth": 0
-            }
+            },
+            "color": [
+                "#c23531",
+                "#2f4554",
+                "#61a0a8",
+                "#d48265",
+                "#749f83",
+                "#ca8622",
+                "#bda29a",
+                "#6e7074",
+                "#546570",
+                "#c4ccd3",
+                "#f05b72",
+                "#ef5b9c",
+                "#f47920",
+                "#905a3d",
+                "#fab27b",
+                "#2a5caa",
+                "#444693",
+                "#726930",
+                "#b2d235",
+                "#6d8346",
+                "#ac6767",
+                "#1d953f",
+                "#6950a1",
+                "#918597"
+            ]
         }
     ]
 };
-        chart_bfc19030c7f04dd29af15391b43d3e65.setOption(option_bfc19030c7f04dd29af15391b43d3e65);
+        chart_89b9a457e25b43fea08fb6e46fc4d798.setOption(option_89b9a457e25b43fea08fb6e46fc4d798);
     </script>
 </body>
 </html>

@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="a13a4e5f8175410aaa6210b4051db2bb" style="width:1440px; height:720px;"></div>
+    <div id="7755acb8206e4ac082a812ed82b2df25" class="chart-container" style="width:1440px; height:720px;"></div>
     <script>
-        var chart_a13a4e5f8175410aaa6210b4051db2bb = echarts.init(
-            document.getElementById('a13a4e5f8175410aaa6210b4051db2bb'), 'white', {renderer: 'canvas'});
-        var option_a13a4e5f8175410aaa6210b4051db2bb = {
+        var chart_7755acb8206e4ac082a812ed82b2df25 = echarts.init(
+            document.getElementById('7755acb8206e4ac082a812ed82b2df25'), 'white', {renderer: 'canvas'});
+        var option_7755acb8206e4ac082a812ed82b2df25 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -915,7 +915,11 @@
             "selected": {
                 "Punch Card": true
             },
-            "show": false
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -945,6 +949,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -1000,6 +1005,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -1024,7 +1030,10 @@
         }
     ],
     "title": [
-        {}
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
     ],
     "visualMap": {
         "show": true,
@@ -1039,13 +1048,17 @@
             ]
         },
         "calculable": true,
+        "inverse": false,
         "splitNumber": 5,
         "orient": "horizontal",
         "left": "center",
-        "showLabel": true
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
     }
 };
-        chart_a13a4e5f8175410aaa6210b4051db2bb.setOption(option_a13a4e5f8175410aaa6210b4051db2bb);
+        chart_7755acb8206e4ac082a812ed82b2df25.setOption(option_7755acb8206e4ac082a812ed82b2df25);
     </script>
 </body>
 </html>

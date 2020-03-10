@@ -1,11 +1,9 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=line3d-orthographic&gl=1 ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import math
+
 import pyecharts.options as opts
 from pyecharts.charts import Line3D
 
@@ -54,6 +52,7 @@ for t in range(0, 25000):
     )
     .render("line3d_rectangular_projection.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Line3D/line3d_rectangular_projection.html"></iframe>

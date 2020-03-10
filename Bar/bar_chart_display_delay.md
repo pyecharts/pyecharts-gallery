@@ -1,12 +1,18 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=bar-animation-delay ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Bar
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://www.echartsjs.com/examples/editor.html?c=bar-animation-delay
+
+目前无法实现的功能:
+
+1、动画延迟效果暂时没有加入到代码中
+"""
 
 category = ["类目{}".format(i) for i in range(0, 100)]
 red_bar = [
@@ -236,6 +242,7 @@ blue_bar = [
     )
     .render("bar_chart_display_delay.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Bar/bar_chart_display_delay.html"></iframe>

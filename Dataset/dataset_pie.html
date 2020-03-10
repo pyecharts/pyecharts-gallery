@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="0a69b6a28ccf46ccadb182b0d0d74d8c" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_0a69b6a28ccf46ccadb182b0d0d74d8c = echarts.init(
+            document.getElementById('0a69b6a28ccf46ccadb182b0d0d74d8c'), 'white', {renderer: 'canvas'});
+        var option_0a69b6a28ccf46ccadb182b0d0d74d8c = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "Matcha Latte",
+            "clockwise": true,
+            "radius": 60,
+            "center": [
+                "25%",
+                "30%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "encode": {
+                "itemName": "product",
+                "value": "2012"
+            }
+        },
+        {
+            "type": "pie",
+            "name": "Milk Tea",
+            "clockwise": true,
+            "radius": 60,
+            "center": [
+                "75%",
+                "30%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "encode": {
+                "itemName": "product",
+                "value": "2013"
+            }
+        },
+        {
+            "type": "pie",
+            "name": "Cheese Cocoa",
+            "clockwise": true,
+            "radius": 60,
+            "center": [
+                "25%",
+                "75%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "encode": {
+                "itemName": "product",
+                "value": "2014"
+            }
+        },
+        {
+            "type": "pie",
+            "name": "Walnut Brownie",
+            "clockwise": true,
+            "radius": 60,
+            "center": [
+                "75%",
+                "75%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "encode": {
+                "itemName": "product",
+                "value": "2015"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Matcha Latte",
+                "Milk Tea",
+                "Cheese Cocoa",
+                "Walnut Brownie"
+            ],
+            "selected": {},
+            "show": true,
+            "left": "30%",
+            "top": "2%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "dataset": {
+        "source": [
+            [
+                "product",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ],
+            [
+                "Matcha Latte",
+                41.1,
+                30.4,
+                65.1,
+                53.3,
+                83.8,
+                98.7
+            ],
+            [
+                "Milk Tea",
+                86.5,
+                92.1,
+                85.7,
+                83.1,
+                73.4,
+                55.1
+            ],
+            [
+                "Cheese Cocoa",
+                24.1,
+                67.2,
+                79.5,
+                86.4,
+                65.2,
+                82.5
+            ],
+            [
+                "Walnut Brownie",
+                55.2,
+                67.1,
+                69.2,
+                72.4,
+                53.9,
+                39.1
+            ]
+        ]
+    },
+    "title": [
+        {
+            "text": "Dataset simple pie example",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_0a69b6a28ccf46ccadb182b0d0d74d8c.setOption(option_0a69b6a28ccf46ccadb182b0d0d74d8c);
+    </script>
+</body>
+</html>

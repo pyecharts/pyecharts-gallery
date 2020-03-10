@@ -1,6 +1,3 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=line-marker ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
@@ -8,6 +5,14 @@
 import pyecharts.options as opts
 from pyecharts.charts import Line
 
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://www.echartsjs.com/examples/editor.html?c=line-marker
+
+目前无法实现的功能:
+
+1、最低气温的最高值暂时无法和 Echarts 的示例完全复刻
+"""
 
 week_name_list = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
 high_temperature = [11, 11, 15, 13, 12, 13, 10]
@@ -52,6 +57,7 @@ low_temperature = [1, -2, 2, 5, 3, 2, 0]
     )
     .render("temperature_change_line_chart.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Line/temperature_change_line_chart.html"></iframe>

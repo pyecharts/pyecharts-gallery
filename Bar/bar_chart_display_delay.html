@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="899305d2d9864c3f9dcce68e6cf055b7" style="width:1600px; height:800px;"></div>
+    <div id="919eee9c90b6466ba71e24041dd4b626" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_899305d2d9864c3f9dcce68e6cf055b7 = echarts.init(
-            document.getElementById('899305d2d9864c3f9dcce68e6cf055b7'), 'white', {renderer: 'canvas'});
-        var option_899305d2d9864c3f9dcce68e6cf055b7 = {
+        var chart_919eee9c90b6466ba71e24041dd4b626 = echarts.init(
+            document.getElementById('919eee9c90b6466ba71e24041dd4b626'), 'white', {renderer: 'canvas'});
+        var option_919eee9c90b6466ba71e24041dd4b626 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -282,7 +282,11 @@
                 "bar": true,
                 "bar2": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -311,6 +315,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -440,6 +445,7 @@
             "splitLine": {
                 "show": true,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -450,11 +456,13 @@
     ],
     "title": [
         {
-            "text": "\u67f1\u72b6\u56fe\u52a8\u753b\u5ef6\u8fdf"
+            "text": "\u67f1\u72b6\u56fe\u52a8\u753b\u5ef6\u8fdf",
+            "padding": 5,
+            "itemGap": 10
         }
     ]
 };
-        chart_899305d2d9864c3f9dcce68e6cf055b7.setOption(option_899305d2d9864c3f9dcce68e6cf055b7);
+        chart_919eee9c90b6466ba71e24041dd4b626.setOption(option_919eee9c90b6466ba71e24041dd4b626);
     </script>
 </body>
 </html>

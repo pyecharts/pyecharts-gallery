@@ -1,12 +1,18 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=line-sections ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Line
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://www.echartsjs.com/examples/editor.html?c=line-sections
+
+目前无法实现的功能:
+
+1、visualMap 暂时无法设置隐藏
+"""
 
 x_data = [
     "00:00",
@@ -93,6 +99,7 @@ y_data = [
     )
     .render("distribution_of_electricity.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Line/distribution_of_electricity.html"></iframe>

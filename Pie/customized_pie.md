@@ -1,12 +1,18 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=pie-custom ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Pie
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=pie-doughnut
+
+目前无法实现的功能:
+
+1、迷之颜色映射的问题
+"""
 
 x_data = ["直接访问", "邮件营销", "联盟广告", "视频广告", "搜索引擎"]
 y_data = [335, 310, 274, 235, 400]
@@ -40,6 +46,7 @@ data_pair.sort(key=lambda x: x[1])
     )
     .render("customized_pie.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Pie/customized_pie.html"></iframe>

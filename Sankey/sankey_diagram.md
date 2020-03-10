@@ -1,6 +1,3 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=sankey-energy ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
@@ -10,6 +7,15 @@ from aiohttp import TCPConnector, ClientSession
 
 import pyecharts.options as opts
 from pyecharts.charts import Sankey
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=sankey-energy
+
+目前无法实现的功能:
+
+1、label 和图的层次有点问题
+"""
 
 
 async def get_json_data(url: str) -> dict:
@@ -36,6 +42,7 @@ data = asyncio.run(
     .set_global_opts(title_opts=opts.TitleOpts(title="Sankey Diagram"))
     .render("sankey_diagram.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Sankey/sankey_diagram.html"></iframe>

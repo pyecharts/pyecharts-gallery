@@ -1,15 +1,8 @@
 import math
+
 import pyecharts.options as opts
 from pyecharts.charts import Line3D
 
-"""
-Gallery 使用 pyecharts 1.1.0
-参考地址: https://echarts.baidu.com/examples/editor.html?c=line3d-orthographic&gl=1
-
-目前无法实现的功能:
-
-1、
-"""
 week_en = "Saturday Friday Thursday Wednesday Tuesday Monday Sunday".split()
 clock = (
     "12a 1a 2a 3a 4a 5a 6a 7a 8a 9a 10a 11a 12p "

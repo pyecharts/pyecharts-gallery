@@ -1,12 +1,18 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=mix-line-bar ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Bar, Line
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://www.echartsjs.com/examples/editor.html?c=mix-line-bar
+
+目前无法实现的功能:
+
+1、暂无
+"""
 
 x_data = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"]
 
@@ -92,6 +98,7 @@ line = (
 )
 
 bar.overlap(line).render("mixed_bar_and_line.html")
+
 ```
 
 <iframe width="100%" height="800px" src="Bar/mixed_bar_and_line.html"></iframe>

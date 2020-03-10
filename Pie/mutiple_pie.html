@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="3dcad21f6a714a0481d62885ffac2e7b" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_3dcad21f6a714a0481d62885ffac2e7b = echarts.init(
+            document.getElementById('3dcad21f6a714a0481d62885ffac2e7b'), 'white', {renderer: 'canvas'});
+        var option_3dcad21f6a714a0481d62885ffac2e7b = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5267\u60c5",
+                    "value": 25
+                },
+                {
+                    "name": "\u5176\u4ed6",
+                    "value": 75
+                }
+            ],
+            "radius": [
+                60,
+                80
+            ],
+            "center": [
+                "20%",
+                "30%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+            }
+        },
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5947\u5e7b",
+                    "value": 24
+                },
+                {
+                    "name": "\u5176\u4ed6",
+                    "value": 76
+                }
+            ],
+            "radius": [
+                60,
+                80
+            ],
+            "center": [
+                "55%",
+                "30%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+            }
+        },
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u7231\u60c5",
+                    "value": 14
+                },
+                {
+                    "name": "\u5176\u4ed6",
+                    "value": 86
+                }
+            ],
+            "radius": [
+                60,
+                80
+            ],
+            "center": [
+                "20%",
+                "70%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+            }
+        },
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u60ca\u609a",
+                    "value": 11
+                },
+                {
+                    "name": "\u5176\u4ed6",
+                    "value": 89
+                }
+            ],
+            "radius": [
+                60,
+                80
+            ],
+            "center": [
+                "55%",
+                "70%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5267\u60c5",
+                "\u5176\u4ed6",
+                "\u5947\u5e7b",
+                "\u7231\u60c5",
+                "\u60ca\u609a"
+            ],
+            "selected": {},
+            "type": "scroll",
+            "show": true,
+            "left": "80%",
+            "top": "20%",
+            "orient": "vertical",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "Pie-\u591a\u997c\u56fe\u57fa\u672c\u793a\u4f8b",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_3dcad21f6a714a0481d62885ffac2e7b.setOption(option_3dcad21f6a714a0481d62885ffac2e7b);
+    </script>
+</body>
+</html>

@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="b671a32c92734701818fb73ae4ce49ce" style="width:1600px; height:800px;"></div>
+    <div id="85ab4efb33fc4ff58a35d0858538802e" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_b671a32c92734701818fb73ae4ce49ce = echarts.init(
-            document.getElementById('b671a32c92734701818fb73ae4ce49ce'), 'white', {renderer: 'canvas'});
-        var option_b671a32c92734701818fb73ae4ce49ce = {
+        var chart_85ab4efb33fc4ff58a35d0858538802e = echarts.init(
+            document.getElementById('85ab4efb33fc4ff58a35d0858538802e'), 'white', {renderer: 'canvas'});
+        var option_85ab4efb33fc4ff58a35d0858538802e = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -92,6 +92,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 1,
                 "curveness": 0,
@@ -132,7 +133,9 @@
                         "type": "average"
                     }
                 ]
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         },
         {
             "type": "line",
@@ -179,6 +182,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 1,
                 "curveness": 0,
@@ -227,7 +231,9 @@
                         "symbol": "circle"
                     }
                 ]
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         }
     ],
     "legend": [
@@ -240,7 +246,11 @@
                 "\u6700\u9ad8\u6c14\u6e29": true,
                 "\u6700\u4f4e\u6c14\u6e29": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -271,6 +281,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -302,6 +313,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -313,7 +325,9 @@
     "title": [
         {
             "text": "\u672a\u6765\u4e00\u5468\u6c14\u6e29\u53d8\u5316",
-            "subtext": "\u7eaf\u5c5e\u865a\u6784"
+            "subtext": "\u7eaf\u5c5e\u865a\u6784",
+            "padding": 5,
+            "itemGap": 10
         }
     ],
     "toolbox": {
@@ -324,30 +338,72 @@
         "left": "80%",
         "feature": {
             "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
                 "show": true,
-                "title": "save as image",
-                "type": "png"
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
             },
             "restore": {
                 "show": true,
-                "title": "restore"
+                "title": "\u8fd8\u539f"
             },
             "dataView": {
                 "show": true,
-                "title": "data view",
-                "readOnly": false
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
             },
             "dataZoom": {
                 "show": true,
                 "title": {
-                    "zoom": "data zoom",
-                    "back": "data zoom restore"
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {}
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            },
+            "brush": {
+                "icon": {},
+                "title": {
+                    "rect": "\u77e9\u5f62\u9009\u62e9",
+                    "polygon": "\u5708\u9009",
+                    "lineX": "\u6a2a\u5411\u9009\u62e9",
+                    "lineY": "\u7eb5\u5411\u9009\u62e9",
+                    "keep": "\u4fdd\u6301\u9009\u62e9",
+                    "clear": "\u6e05\u9664\u9009\u62e9"
                 }
             }
         }
     }
 };
-        chart_b671a32c92734701818fb73ae4ce49ce.setOption(option_b671a32c92734701818fb73ae4ce49ce);
+        chart_85ab4efb33fc4ff58a35d0858538802e.setOption(option_85ab4efb33fc4ff58a35d0858538802e);
     </script>
 </body>
 </html>

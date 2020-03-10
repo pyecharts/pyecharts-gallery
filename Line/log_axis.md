@@ -1,12 +1,18 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=line-log ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Line
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://www.echartsjs.com/examples/editor.html?c=line-log
+
+目前无法实现的功能:
+
+1、暂无
+"""
 
 x_data = ["一", "二", "三", "四", "五", "六", "七", "八", "九"]
 y_data_3 = [1, 3, 9, 27, 81, 247, 741, 2223, 6669]
@@ -42,6 +48,7 @@ y_data_05 = [1 / 2, 1 / 4, 1 / 8, 1 / 16, 1 / 32, 1 / 64, 1 / 128, 1 / 256, 1 / 
     )
     .render("log_axis.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Line/log_axis.html"></iframe>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="ed209545bbd142518cd7b193bd6fb616" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_ed209545bbd142518cd7b193bd6fb616 = echarts.init(
+            document.getElementById('ed209545bbd142518cd7b193bd6fb616'), 'white', {renderer: 'canvas'});
+        var option_ed209545bbd142518cd7b193bd6fb616 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#67001f",
+        "#b2182b",
+        "#d6604d",
+        "#f4a582",
+        "#fddbc7",
+        "#d1e5f0",
+        "#92c5de",
+        "#4393c3",
+        "#2166ac",
+        "#053061"
+    ],
+    "series": [
+        {
+            "type": "sankey",
+            "name": "sankey",
+            "data": [
+                {
+                    "name": "a"
+                },
+                {
+                    "name": "b"
+                },
+                {
+                    "name": "a1"
+                },
+                {
+                    "name": "b1"
+                },
+                {
+                    "name": "c"
+                },
+                {
+                    "name": "e"
+                }
+            ],
+            "links": [
+                {
+                    "source": "a",
+                    "target": "a1",
+                    "value": 5
+                },
+                {
+                    "source": "e",
+                    "target": "b",
+                    "value": 3
+                },
+                {
+                    "source": "a",
+                    "target": "b1",
+                    "value": 3
+                },
+                {
+                    "source": "b1",
+                    "target": "a1",
+                    "value": 1
+                },
+                {
+                    "source": "b1",
+                    "target": "c",
+                    "value": 2
+                },
+                {
+                    "source": "b",
+                    "target": "c",
+                    "value": 1
+                }
+            ],
+            "left": "5%",
+            "top": "5%",
+            "right": "20%",
+            "bottom": "10%",
+            "nodeWidth": 20,
+            "nodeGap": 8,
+            "nodeAlign": "justify",
+            "layoutIteration": 32,
+            "orient": "vertical",
+            "draggable": true,
+            "focusNodeAdjacency": "allEdges",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 0.2,
+                "curveness": 0.5,
+                "type": "solid",
+                "color": "source"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "sankey"
+            ],
+            "selected": {
+                "sankey": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "Sankey-Vertical",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_ed209545bbd142518cd7b193bd6fb616.setOption(option_ed209545bbd142518cd7b193bd6fb616);
+    </script>
+</body>
+</html>

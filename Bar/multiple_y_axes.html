@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="d8c84a460d4d45598bc0d0dd9d9c42ea" style="width:1680px; height:800px;"></div>
+    <div id="3b6d586378df40f5bb94a99515b815f4" class="chart-container" style="width:1680px; height:800px;"></div>
     <script>
-        var chart_d8c84a460d4d45598bc0d0dd9d9c42ea = echarts.init(
-            document.getElementById('d8c84a460d4d45598bc0d0dd9d9c42ea'), 'white', {renderer: 'canvas'});
-        var option_d8c84a460d4d45598bc0d0dd9d9c42ea = {
+        var chart_3b6d586378df40f5bb94a99515b815f4 = echarts.init(
+            document.getElementById('3b6d586378df40f5bb94a99515b815f4'), 'white', {renderer: 'canvas'});
+        var option_3b6d586378df40f5bb94a99515b815f4 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -165,6 +165,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 1,
                 "curveness": 0,
@@ -172,7 +173,9 @@
             },
             "areaStyle": {
                 "opacity": 0
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         }
     ],
     "legend": [
@@ -186,7 +189,11 @@
                 "\u84b8\u53d1\u91cf": true,
                 "\u964d\u6c34\u91cf": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -215,6 +222,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -251,6 +259,7 @@
                 "onZero": true,
                 "onZeroAxisIndex": 0,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -274,6 +283,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -294,6 +304,7 @@
                 "onZero": true,
                 "onZeroAxisIndex": 0,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -317,6 +328,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -337,6 +349,7 @@
                 "onZero": true,
                 "onZeroAxisIndex": 0,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -360,6 +373,7 @@
             "splitLine": {
                 "show": true,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -369,10 +383,13 @@
         }
     ],
     "title": [
-        {}
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
     ]
 };
-        chart_d8c84a460d4d45598bc0d0dd9d9c42ea.setOption(option_d8c84a460d4d45598bc0d0dd9d9c42ea);
+        chart_3b6d586378df40f5bb94a99515b815f4.setOption(option_3b6d586378df40f5bb94a99515b815f4);
     </script>
 </body>
 </html>

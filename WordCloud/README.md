@@ -1,1 +1,4 @@
-- [WordCloud-Example](WordCloud/basic_wordcloud 'include :type=code')
+- [Wordcloud - Wordcloud_custom_mask_image](WordCloud/wordcloud_custom_mask_image.md 'include :type=code')
+- [Wordcloud - Basic_wordcloud](WordCloud/basic_wordcloud.md 'include :type=code')
+- [Wordcloud - Wordcloud_diamond](WordCloud/wordcloud_diamond.md 'include :type=code')
+- [Wordcloud - Wordcloud_custom_font_style](WordCloud/wordcloud_custom_font_style.md 'include :type=code')

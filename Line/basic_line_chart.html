@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="35e0f1a3fbd54ebb83cf717f3f8cff2c" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="39365b77ab4f46aaa6ea9a399e50d02a" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_35e0f1a3fbd54ebb83cf717f3f8cff2c = echarts.init(
-            document.getElementById('35e0f1a3fbd54ebb83cf717f3f8cff2c'), 'white', {renderer: 'canvas'});
-        var option_35e0f1a3fbd54ebb83cf717f3f8cff2c = {
+        var chart_39365b77ab4f46aaa6ea9a399e50d02a = echarts.init(
+            document.getElementById('39365b77ab4f46aaa6ea9a399e50d02a'), 'white', {renderer: 'canvas'});
+        var option_39365b77ab4f46aaa6ea9a399e50d02a = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -92,6 +92,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 1,
                 "curveness": 0,
@@ -99,7 +100,9 @@
             },
             "areaStyle": {
                 "opacity": 0
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         }
     ],
     "legend": [
@@ -110,7 +113,11 @@
             "selected": {
                 "": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -140,6 +147,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -177,6 +185,7 @@
             "splitLine": {
                 "show": true,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -186,10 +195,13 @@
         }
     ],
     "title": [
-        {}
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
     ]
 };
-        chart_35e0f1a3fbd54ebb83cf717f3f8cff2c.setOption(option_35e0f1a3fbd54ebb83cf717f3f8cff2c);
+        chart_39365b77ab4f46aaa6ea9a399e50d02a.setOption(option_39365b77ab4f46aaa6ea9a399e50d02a);
     </script>
 </body>
 </html>

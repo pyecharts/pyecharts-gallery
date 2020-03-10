@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="df273dcd13c1481b86dfd574d9ff449f" style="width:1600px; height:800px;"></div>
+    <div id="3ced049eca5d409c8ea6ca4f22196c49" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_df273dcd13c1481b86dfd574d9ff449f = echarts.init(
-            document.getElementById('df273dcd13c1481b86dfd574d9ff449f'), 'white', {renderer: 'canvas'});
-        var option_df273dcd13c1481b86dfd574d9ff449f = {
+        var chart_3ced049eca5d409c8ea6ca4f22196c49 = echarts.init(
+            document.getElementById('3ced049eca5d409c8ea6ca4f22196c49'), 'white', {renderer: 'canvas'});
+        var option_3ced049eca5d409c8ea6ca4f22196c49 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -537,14 +537,24 @@
                     "value": 289.366
                 }
             ],
+            "left": "5%",
+            "top": "5%",
+            "right": "20%",
+            "bottom": "5%",
             "nodeWidth": 20,
             "nodeGap": 8,
+            "nodeAlign": "justify",
+            "layoutIteration": 32,
+            "orient": "horizontal",
+            "draggable": true,
+            "focusNodeAdjacency": false,
             "label": {
                 "show": true,
                 "position": "top",
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 0.5,
                 "curveness": 0.5,
@@ -577,7 +587,11 @@
             "selected": {
                 "": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -594,11 +608,13 @@
     },
     "title": [
         {
-            "text": "Sankey Diagram"
+            "text": "Sankey Diagram",
+            "padding": 5,
+            "itemGap": 10
         }
     ]
 };
-        chart_df273dcd13c1481b86dfd574d9ff449f.setOption(option_df273dcd13c1481b86dfd574d9ff449f);
+        chart_3ced049eca5d409c8ea6ca4f22196c49.setOption(option_3ced049eca5d409c8ea6ca4f22196c49);
     </script>
 </body>
 </html>

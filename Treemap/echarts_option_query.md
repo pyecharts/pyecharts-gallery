@@ -1,6 +1,3 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=treemap-drill-down ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
@@ -11,6 +8,16 @@ from aiohttp import TCPConnector, ClientSession
 
 import pyecharts.options as opts
 from pyecharts.charts import TreeMap
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=treemap-drill-down
+
+目前无法实现的功能:
+
+1、层级的样式配置
+"""
+
 
 async def get_json_data(url: str) -> dict:
     async with ClientSession(connector=TCPConnector(ssl=False)) as session:
@@ -67,6 +74,7 @@ convert(source=data, target=tree_map_data, base_path="")
     )
     .render("echarts_option_query.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Treemap/echarts_option_query.html"></iframe>

@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="d514c2bac12f4e61a6c3c847dcc222e4" style="width:1600px; height:800px;"></div>
+    <div id="5b10dede4ee0422aafc12a0cdcecba31" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_d514c2bac12f4e61a6c3c847dcc222e4 = echarts.init(
-            document.getElementById('d514c2bac12f4e61a6c3c847dcc222e4'), 'white', {renderer: 'canvas'});
-        var option_d514c2bac12f4e61a6c3c847dcc222e4 = {
+        var chart_5b10dede4ee0422aafc12a0cdcecba31 = echarts.init(
+            document.getElementById('5b10dede4ee0422aafc12a0cdcecba31'), 'white', {renderer: 'canvas'});
+        var option_5b10dede4ee0422aafc12a0cdcecba31 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -49,6 +49,11 @@
     "series": [
         {
             "type": "gauge",
+            "title": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
             "detail": {
                 "show": true,
                 "position": "top",
@@ -59,6 +64,7 @@
             "min": 0,
             "max": 100,
             "splitNumber": 10,
+            "radius": "75%",
             "startAngle": 225,
             "endAngle": -45,
             "data": [
@@ -77,7 +83,11 @@
             "selected": {
                 "\u4e1a\u52a1\u6307\u6807": true
             },
-            "show": false
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -94,10 +104,13 @@
         "borderWidth": 0
     },
     "title": [
-        {}
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
     ]
 };
-        chart_d514c2bac12f4e61a6c3c847dcc222e4.setOption(option_d514c2bac12f4e61a6c3c847dcc222e4);
+        chart_5b10dede4ee0422aafc12a0cdcecba31.setOption(option_5b10dede4ee0422aafc12a0cdcecba31);
     </script>
 </body>
 </html>

@@ -1,16 +1,9 @@
 import random
 import datetime
+
 import pyecharts.options as opts
 from pyecharts.charts import Calendar
 
-"""
-Gallery 使用 pyecharts 1.1.0
-参考地址: https://echarts.baidu.com/examples/editor.html?c=calendar-lunar
-
-目前无法实现的功能:
-
-1、暂时无法设置 legend
-"""
 
 begin = datetime.date(2017, 1, 1)
 end = datetime.date(2017, 12, 31)
@@ -29,7 +22,7 @@ data = [
             pos_left="30",
             pos_right="30",
             range_="2017",
-            yearlabel_opts=opts.LabelOpts(is_show=False),
+            yearlabel_opts=opts.CalendarYearLabelOpts(is_show=False),
         ),
     )
     .set_global_opts(

@@ -1,12 +1,19 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=heatmap-cartesian ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import HeatMap
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=heatmap-cartesian
+
+目前无法实现的功能:
+
+1、官方示例中的 label 暂时无法居中，待解决
+2、暂时无法对块设置 itemStyle
+"""
 
 hours = [
     "12a",
@@ -241,6 +248,7 @@ data = [[d[1], d[0], d[2] or "-"] for d in data]
     )
     .render("heatmap_on_cartesian.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Heatmap/heatmap_on_cartesian.html"></iframe>

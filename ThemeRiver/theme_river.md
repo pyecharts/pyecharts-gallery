@@ -1,6 +1,3 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=themeRiver-basic ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
@@ -8,6 +5,14 @@
 import pyecharts.options as opts
 from pyecharts.charts import ThemeRiver
 
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=themeRiver-basic
+
+目前无法实现的功能:
+
+1、暂时无法设置阴影样式
+"""
 x_data = ["DQ", "TY", "SS", "QG", "SY", "DD"]
 y_data = [
     ["2015/11/08", 10, "DQ"],
@@ -153,6 +158,7 @@ y_data = [
     )
     .render("theme_river.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="ThemeRiver/theme_river.html"></iframe>

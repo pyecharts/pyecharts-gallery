@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="c83486d6891641fe9bbaccb9f807f907" style="width:1600px; height:800px;"></div>
+    <div id="27f74a957f3b41758fd6fa7541bb8c72" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_c83486d6891641fe9bbaccb9f807f907 = echarts.init(
-            document.getElementById('c83486d6891641fe9bbaccb9f807f907'), 'white', {renderer: 'canvas'});
-        var option_c83486d6891641fe9bbaccb9f807f907 = {
+        var chart_27f74a957f3b41758fd6fa7541bb8c72 = echarts.init(
+            document.getElementById('27f74a957f3b41758fd6fa7541bb8c72'), 'white', {renderer: 'canvas'});
+        var option_27f74a957f3b41758fd6fa7541bb8c72 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -100,6 +100,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 2,
                 "opacity": 1,
                 "curveness": 0,
@@ -107,7 +108,9 @@
             },
             "areaStyle": {
                 "opacity": 0
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         },
         {
             "type": "line",
@@ -162,6 +165,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 2,
                 "opacity": 1,
                 "curveness": 0,
@@ -169,7 +173,9 @@
             },
             "areaStyle": {
                 "opacity": 0
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         },
         {
             "type": "line",
@@ -224,6 +230,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 2,
                 "opacity": 1,
                 "curveness": 0,
@@ -231,7 +238,9 @@
             },
             "areaStyle": {
                 "opacity": 0
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         }
     ],
     "legend": [
@@ -247,7 +256,11 @@
                 "3\u7684\u6307\u6570": true
             },
             "show": true,
-            "left": "left"
+            "left": "left",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -279,6 +292,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -314,6 +328,7 @@
             "splitLine": {
                 "show": true,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -325,11 +340,13 @@
     "title": [
         {
             "text": "\u5bf9\u6570\u8f74\u793a\u4f8b",
-            "left": "center"
+            "left": "center",
+            "padding": 5,
+            "itemGap": 10
         }
     ]
 };
-        chart_c83486d6891641fe9bbaccb9f807f907.setOption(option_c83486d6891641fe9bbaccb9f807f907);
+        chart_27f74a957f3b41758fd6fa7541bb8c72.setOption(option_27f74a957f3b41758fd6fa7541bb8c72);
     </script>
 </body>
 </html>

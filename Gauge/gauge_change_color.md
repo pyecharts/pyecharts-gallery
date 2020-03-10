@@ -1,12 +1,18 @@
-## Echarts 代码 / 效果
-
-[echarts](https://gallery.echartsjs.com/editor.html?c=xH1vxib94f ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Gauge
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://gallery.echartsjs.com/editor.html?c=xH1vxib94f
+
+目前无法实现的功能:
+
+1、暂无
+"""
 
 (
     Gauge(init_opts=opts.InitOpts(width="1600px", height="800px"))
@@ -24,6 +30,7 @@ from pyecharts.charts import Gauge
     )
     .render("gauge_change_color.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Gauge/gauge_change_color.html"></iframe>

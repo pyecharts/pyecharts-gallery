@@ -1,15 +1,6 @@
 import pyecharts.options as opts
 from pyecharts.charts import Candlestick
 
-"""
-Gallery 使用 pyecharts 1.1.0
-参考地址: https://echarts.baidu.com/examples/editor.html?c=candlestick-simple
-
-目前无法实现的功能:
-
-1、暂无
-"""
-
 x_data = ["2017-10-24", "2017-10-25", "2017-10-26", "2017-10-27"]
 y_data = [[20, 30, 10, 35], [40, 35, 30, 55], [33, 38, 33, 40], [40, 40, 32, 42]]
 

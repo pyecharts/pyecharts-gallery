@@ -1,1 +1,2 @@
-- [Basic Parallel](Parallel/basic_parallel ':include :type=code')
+- [Parallel - Basic_parallel](Parallel/basic_parallel.md 'include :type=code')
+- [Parallel - Parallel_category](Parallel/parallel_category.md 'include :type=code')

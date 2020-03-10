@@ -1,0 +1,1 @@
+- [Mapglobe - Map_globe_base](MapGlobe/map_globe_base.md 'include :type=code')

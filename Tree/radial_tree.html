@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="7797965c990249438192c14634d968a0" style="width:1400px; height:800px;"></div>
+    <div id="8f65dc425f2e4f4c8432c10e91d5b43f" class="chart-container" style="width:1400px; height:800px;"></div>
     <script>
-        var chart_7797965c990249438192c14634d968a0 = echarts.init(
-            document.getElementById('7797965c990249438192c14634d968a0'), 'white', {renderer: 'canvas'});
-        var option_7797965c990249438192c14634d968a0 = {
+        var chart_8f65dc425f2e4f4c8432c10e91d5b43f = echarts.init(
+            document.getElementById('8f65dc425f2e4f4c8432c10e91d5b43f'), 'white', {renderer: 'canvas'});
+        var option_8f65dc425f2e4f4c8432c10e91d5b43f = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -1095,6 +1095,8 @@
             "bottom": "14%",
             "symbol": "emptyCircle",
             "symbolSize": 7,
+            "roam": false,
+            "expandAndCollapse": true,
             "layout": "radial",
             "orient": "LR",
             "label": {
@@ -1115,7 +1117,11 @@
         {
             "data": [],
             "selected": {},
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -1131,10 +1137,13 @@
         "borderWidth": 0
     },
     "title": [
-        {}
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
     ]
 };
-        chart_7797965c990249438192c14634d968a0.setOption(option_7797965c990249438192c14634d968a0);
+        chart_8f65dc425f2e4f4c8432c10e91d5b43f.setOption(option_8f65dc425f2e4f4c8432c10e91d5b43f);
     </script>
 </body>
 </html>

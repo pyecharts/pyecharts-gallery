@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="ed5aa4af14a446ffab58c1e31a7b14c9" style="width:1600px; height:800px;"></div>
+    <div id="421191eab92d4e208aa63e1ea4bb70f3" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_ed5aa4af14a446ffab58c1e31a7b14c9 = echarts.init(
-            document.getElementById('ed5aa4af14a446ffab58c1e31a7b14c9'), 'white', {renderer: 'canvas'});
-        var option_ed5aa4af14a446ffab58c1e31a7b14c9 = {
+        var chart_421191eab92d4e208aa63e1ea4bb70f3 = echarts.init(
+            document.getElementById('421191eab92d4e208aa63e1ea4bb70f3'), 'white', {renderer: 'canvas'});
+        var option_421191eab92d4e208aa63e1ea4bb70f3 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -115,6 +115,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 2,
                 "opacity": 1,
                 "curveness": 0,
@@ -122,7 +123,9 @@
             },
             "areaStyle": {
                 "opacity": 0
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         },
         {
             "type": "line",
@@ -190,6 +193,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 2,
                 "opacity": 1,
                 "curveness": 0,
@@ -197,7 +201,9 @@
             },
             "areaStyle": {
                 "opacity": 0
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         }
     ],
     "legend": [
@@ -210,7 +216,11 @@
                 "2015 \u964d\u6c34\u91cf": true,
                 "2016 \u964d\u6c34\u91cf": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -238,6 +248,7 @@
                 "onZero": false,
                 "onZeroAxisIndex": 0,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -267,6 +278,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -300,6 +312,7 @@
                 "onZero": false,
                 "onZeroAxisIndex": 0,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -329,6 +342,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -366,6 +380,7 @@
             "splitLine": {
                 "show": true,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -375,10 +390,13 @@
         }
     ],
     "title": [
-        {}
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
     ]
 };
-        chart_ed5aa4af14a446ffab58c1e31a7b14c9.setOption(option_ed5aa4af14a446ffab58c1e31a7b14c9);
+        chart_421191eab92d4e208aa63e1ea4bb70f3.setOption(option_421191eab92d4e208aa63e1ea4bb70f3);
     </script>
 </body>
 </html>

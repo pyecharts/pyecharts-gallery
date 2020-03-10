@@ -1,6 +1,3 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/editor.html?c=mix-timeline-finance ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
@@ -8,6 +5,14 @@
 import pyecharts.options as opts
 from pyecharts.charts import Timeline, Bar, Pie
 
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://www.echartsjs.com/examples/editor.html?c=mix-timeline-finance
+
+目前无法实现的功能:
+
+1、暂无
+"""
 total_data = {}
 name_list = [
     "北京",
@@ -2142,6 +2147,7 @@ for y in range(2002, 2012):
 # 1.0.0 版本的 add_schema 暂时没有补上 return self 所以只能这么写着
 timeline.add_schema(is_auto_play=True, play_interval=1000)
 timeline.render("finance_indices_2002.html")
+
 ```
 
 <iframe width="100%" height="800px" src="Bar/finance_indices_2002.html"></iframe>

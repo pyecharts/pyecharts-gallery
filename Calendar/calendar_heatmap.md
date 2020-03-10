@@ -1,12 +1,10 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=calendar-heatmap ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import random
 import datetime
+
 import pyecharts.options as opts
 from pyecharts.charts import Calendar
 
@@ -28,7 +26,7 @@ data = [
             pos_left="30",
             pos_right="30",
             range_="2017",
-            yearlabel_opts=opts.LabelOpts(is_show=False),
+            yearlabel_opts=opts.CalendarYearLabelOpts(is_show=False),
         ),
     )
     .set_global_opts(
@@ -39,6 +37,7 @@ data = [
     )
     .render("calendar_heatmap.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Calendar/calendar_heatmap.html"></iframe>

@@ -1,1 +1,1 @@
-- [Surface Wave](Surface3D/surface_wave 'include :type=code')
+- [Surface3d - Surface_wave](Surface3D/surface_wave.md 'include :type=code')

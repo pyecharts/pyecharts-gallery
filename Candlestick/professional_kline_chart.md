@@ -1,10 +1,14 @@
-## Echarts 代码 / 效果
-
-[echarts](https://gallery.echartsjs.com/editor.html?c=xByOFPcjBe ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
+"""
+复刻的 Echarts 的 demo 链接
+https://gallery.echartsjs.com/editor.html?c=xByOFPcjBe
+
+@Author: sunhailin-Leo
+@Time: 2019年7月14日
+"""
 from typing import List, Sequence, Union
 
 from pyecharts import options as opts
@@ -657,6 +661,7 @@ def draw_chart():
 if __name__ == "__main__":
     data = split_data(origin_data=echarts_data)
     draw_chart()
+
 ```
 
 <iframe width="100%" height="800px" src="Candlestick/professional_kline_chart.html"></iframe>

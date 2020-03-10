@@ -1,6 +1,3 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=line-polar ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
@@ -8,6 +5,15 @@
 import math
 import pyecharts.options as opts
 from pyecharts.charts import Polar
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://www.echartsjs.com/examples/editor.html?c=line-polar
+
+目前无法实现的功能:
+
+1、赞无
+"""
 
 data = []
 
@@ -30,6 +36,7 @@ for i in range(0, 101):
     )
     .render("two_value_axes_in_polar.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Polar/two_value_axes_in_polar.html"></iframe>

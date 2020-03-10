@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="bedb37a34c1f46d7864936a32bd539d4" style="width:1600px; height:1000px;"></div>
+    <div id="58ddc64c42294ee493ea44038b261033" class="chart-container" style="width:1600px; height:1000px;"></div>
     <script>
-        var chart_bedb37a34c1f46d7864936a32bd539d4 = echarts.init(
-            document.getElementById('bedb37a34c1f46d7864936a32bd539d4'), 'white', {renderer: 'canvas'});
-        var option_bedb37a34c1f46d7864936a32bd539d4 = {
+        var chart_58ddc64c42294ee493ea44038b261033 = echarts.init(
+            document.getElementById('58ddc64c42294ee493ea44038b261033'), 'white', {renderer: 'canvas'});
+        var option_58ddc64c42294ee493ea44038b261033 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -117,7 +117,11 @@
             "selected": {
                 "": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -147,6 +151,7 @@
             "splitLine": {
                 "show": true,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -188,6 +193,7 @@
             "splitLine": {
                 "show": true,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -197,10 +203,13 @@
         }
     ],
     "title": [
-        {}
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
     ]
 };
-        chart_bedb37a34c1f46d7864936a32bd539d4.setOption(option_bedb37a34c1f46d7864936a32bd539d4);
+        chart_58ddc64c42294ee493ea44038b261033.setOption(option_58ddc64c42294ee493ea44038b261033);
     </script>
 </body>
 </html>

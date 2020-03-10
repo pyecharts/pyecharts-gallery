@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="9c73e233b23f4ef4b7c44a7756275e36" style="width:1600px; height:800px;"></div>
+    <div id="2bc40ae9c649404a87ae4330fb54e768" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_9c73e233b23f4ef4b7c44a7756275e36 = echarts.init(
-            document.getElementById('9c73e233b23f4ef4b7c44a7756275e36'), 'white', {renderer: 'canvas'});
-        var option_9c73e233b23f4ef4b7c44a7756275e36 = {
+        var chart_2bc40ae9c649404a87ae4330fb54e768 = echarts.init(
+            document.getElementById('2bc40ae9c649404a87ae4330fb54e768'), 'white', {renderer: 'canvas'});
+        var option_2bc40ae9c649404a87ae4330fb54e768 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -161,6 +161,7 @@
                 "margin": 8
             },
             "lineStyle": {
+                "show": true,
                 "width": 1,
                 "opacity": 1,
                 "curveness": 0,
@@ -168,7 +169,9 @@
             },
             "areaStyle": {
                 "opacity": 0
-            }
+            },
+            "zlevel": 0,
+            "z": 0
         }
     ],
     "legend": [
@@ -182,7 +185,11 @@
                 "\u84b8\u53d1\u91cf": true,
                 "\u964d\u6c34\u91cf": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -216,6 +223,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -268,6 +276,7 @@
             "splitLine": {
                 "show": true,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -299,6 +308,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -308,10 +318,13 @@
         }
     ],
     "title": [
-        {}
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
     ]
 };
-        chart_9c73e233b23f4ef4b7c44a7756275e36.setOption(option_9c73e233b23f4ef4b7c44a7756275e36);
+        chart_2bc40ae9c649404a87ae4330fb54e768.setOption(option_2bc40ae9c649404a87ae4330fb54e768);
     </script>
 </body>
 </html>

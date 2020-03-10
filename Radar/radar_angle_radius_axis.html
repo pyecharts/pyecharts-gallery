@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="5083293b05464cac9b5c5d7222573f21" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_5083293b05464cac9b5c5d7222573f21 = echarts.init(
+            document.getElementById('5083293b05464cac9b5c5d7222573f21'), 'white', {renderer: 'canvas'});
+        var option_5083293b05464cac9b5c5d7222573f21 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#4587E7"
+    ],
+    "series": [
+        {
+            "type": "radar",
+            "name": "\u9884\u7b97",
+            "data": [
+                {
+                    "value": [
+                        4,
+                        -4,
+                        2,
+                        3,
+                        0,
+                        1
+                    ],
+                    "name": "\u9884\u7b97\u5206\u914d"
+                }
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0.1
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u9884\u7b97"
+            ],
+            "selected": {
+                "\u9884\u7b97": true
+            }
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "radiusAxis": {
+        "min": -4,
+        "max": 4,
+        "scale": false,
+        "interval": 2,
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 1
+            }
+        }
+    },
+    "angleAxis": {
+        "clockwise": false,
+        "min": 0,
+        "max": 360,
+        "scale": false,
+        "splitNumber": 5,
+        "interval": 5,
+        "splitLine": {
+            "show": false,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "axisLine": {
+            "show": false,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        },
+        "axisTick": {
+            "show": false,
+            "alignWithLabel": false,
+            "inside": false
+        },
+        "axisLabel": {
+            "show": false,
+            "position": "top",
+            "margin": 8
+        }
+    },
+    "polar": {},
+    "radar": {
+        "indicator": [
+            {
+                "name": "\u9500\u552e",
+                "max": 4,
+                "min": -4
+            },
+            {
+                "name": "\u7ba1\u7406",
+                "max": 4,
+                "min": -4
+            },
+            {
+                "name": "\u6280\u672f",
+                "max": 4,
+                "min": -4
+            },
+            {
+                "name": "\u5ba2\u670d",
+                "max": 4,
+                "min": -4
+            },
+            {
+                "name": "\u7814\u53d1",
+                "max": 4,
+                "min": -4
+            },
+            {
+                "name": "\u5e02\u573a",
+                "max": 4,
+                "min": -4
+            }
+        ],
+        "shape": "circle",
+        "center": [
+            "50%",
+            "50%"
+        ],
+        "radius": "80%",
+        "name": {
+            "textStyle": {}
+        },
+        "splitLine": {
+            "show": false,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": false,
+            "areaStyle": {
+                "opacity": 0
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    }
+};
+        chart_5083293b05464cac9b5c5d7222573f21.setOption(option_5083293b05464cac9b5c5d7222573f21);
+    </script>
+</body>
+</html>

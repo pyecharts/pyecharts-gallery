@@ -1,12 +1,18 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=pie-nest ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
 ```python
 import pyecharts.options as opts
 from pyecharts.charts import Pie
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=pie-nest
+
+目前无法实现的功能:
+
+1、暂无
+"""
 
 inner_x_data = ["直达", "营销广告", "搜索引擎"]
 inner_y_data = [335, 679, 1548]
@@ -68,6 +74,7 @@ outer_data_pair = [list(z) for z in zip(outer_x_data, outer_y_data)]
     )
     .render("nested_pies.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Pie/nested_pies.html"></iframe>

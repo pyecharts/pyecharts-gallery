@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="44ae5a4f77974f1aa864ed3ecd323a9e" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_44ae5a4f77974f1aa864ed3ecd323a9e = echarts.init(
+            document.getElementById('44ae5a4f77974f1aa864ed3ecd323a9e'), 'white', {renderer: 'canvas'});
+        var option_44ae5a4f77974f1aa864ed3ecd323a9e = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "treemap",
+            "name": "\u6f14\u793a\u6570\u636e",
+            "data": [
+                {
+                    "value": 40,
+                    "name": "\u6211\u662fA"
+                },
+                {
+                    "value": 180,
+                    "name": "\u6211\u662fB",
+                    "children": [
+                        {
+                            "value": 76,
+                            "name": "\u6211\u662fB.children",
+                            "children": [
+                                {
+                                    "value": 12,
+                                    "name": "\u6211\u662fB.children.a"
+                                },
+                                {
+                                    "value": 28,
+                                    "name": "\u6211\u662fB.children.b"
+                                },
+                                {
+                                    "value": 20,
+                                    "name": "\u6211\u662fB.children.c"
+                                },
+                                {
+                                    "value": 16,
+                                    "name": "\u6211\u662fB.children.d"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "width": "80%",
+            "height": "80%",
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8
+            },
+            "upperlabel": {
+                "show": true,
+                "position": "inside",
+                "margin": 8
+            },
+            "drillDownIcon": "\u25b6",
+            "roam": true,
+            "nodeClick": "zoomToNode",
+            "zoomToNodeRatio": 0.1024,
+            "colorMappingBy": "index",
+            "visibleMin": 10
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6f14\u793a\u6570\u636e"
+            ],
+            "selected": {
+                "\u6f14\u793a\u6570\u636e": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "TreeMap-\u57fa\u672c\u793a\u4f8b",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_44ae5a4f77974f1aa864ed3ecd323a9e.setOption(option_44ae5a4f77974f1aa864ed3ecd323a9e);
+    </script>
+</body>
+</html>

@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="093ae77425784dda9b936213fe007197" style="width:1600px; height:1000px;"></div>
+    <div id="56ad9adbccaf41e98a9c2a0d17bd33a9" class="chart-container" style="width:1600px; height:1000px;"></div>
     <script>
-        var chart_093ae77425784dda9b936213fe007197 = echarts.init(
-            document.getElementById('093ae77425784dda9b936213fe007197'), 'white', {renderer: 'canvas'});
-        var option_093ae77425784dda9b936213fe007197 = {
+        var chart_56ad9adbccaf41e98a9c2a0d17bd33a9 = echarts.init(
+            document.getElementById('56ad9adbccaf41e98a9c2a0d17bd33a9'), 'white', {renderer: 'canvas'});
+        var option_56ad9adbccaf41e98a9c2a0d17bd33a9 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -172,7 +172,11 @@
             "selected": {
                 "": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         },
         {
             "data": [
@@ -181,7 +185,11 @@
             "selected": {
                 "": true
             },
-            "show": true
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -218,6 +226,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -251,6 +260,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -282,6 +292,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -318,6 +329,7 @@
             "splitLine": {
                 "show": false,
                 "lineStyle": {
+                    "show": true,
                     "width": 1,
                     "opacity": 1,
                     "curveness": 0,
@@ -329,12 +341,16 @@
     "title": [
         {
             "text": "Michelson-Morley Experiment",
-            "left": "center"
+            "left": "center",
+            "padding": 5,
+            "itemGap": 10
         },
         {
             "text": "upper: Q3 + 1.5 * IQR \nlower: Q1 - 1.5 * IQR",
             "left": "10%",
             "top": "90%",
+            "padding": 5,
+            "itemGap": 10,
             "textStyle": {
                 "fontSize": 14,
                 "borderColor": "#999",
@@ -346,16 +362,18 @@
         {
             "left": "10%",
             "right": "10%",
-            "bottom": "15%"
+            "bottom": "15%",
+            "containLabel": false
         },
         {
             "left": "10%",
             "right": "10%",
-            "bottom": "15%"
+            "bottom": "15%",
+            "containLabel": false
         }
     ]
 };
-        chart_093ae77425784dda9b936213fe007197.setOption(option_093ae77425784dda9b936213fe007197);
+        chart_56ad9adbccaf41e98a9c2a0d17bd33a9.setOption(option_56ad9adbccaf41e98a9c2a0d17bd33a9);
     </script>
 </body>
 </html>

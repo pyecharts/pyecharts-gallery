@@ -1,6 +1,3 @@
-## Echarts 代码 / 效果
-
-[basic_line_chart - echarts](https://gallery.echartsjs.com/editor.html?c=xEyDk1hwBx ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
@@ -8,6 +5,10 @@
 import pyecharts.options as opts
 from pyecharts.charts import Line, Grid
 from pyecharts.commons.utils import JsCode
+
+"""
+参考地址: https://gallery.echartsjs.com/editor.html?c=xEyDk1hwBx
+"""
 
 x_data = ["14", "15", "16", "17", "18", "19", "20", "21", "22", "23"]
 y_data = [393, 438, 485, 631, 689, 824, 987, 1000, 1100, 1200]
@@ -21,7 +22,7 @@ area_color_js = (
     "[{offset: 0, color: '#eb64fb'}, {offset: 1, color: '#3fbbff0d'}], false)"
 )
 
-l = (
+c = (
     Line(init_opts=opts.InitOpts(bg_color=JsCode(background_color_js)))
     .add_xaxis(xaxis_data=x_data)
     .add_yaxis(
@@ -83,13 +84,18 @@ l = (
 (
     Grid()
     .add(
-        l,
+        c,
         grid_opts=opts.GridOpts(
-            pos_top="20%", pos_left="10%", pos_right="10%", pos_bottom="15%", is_contain_label=True
+            pos_top="20%",
+            pos_left="10%",
+            pos_right="10%",
+            pos_bottom="15%",
+            is_contain_label=True,
         ),
     )
     .render("beautiful_line_chart.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Line/beautiful_line_chart.html"></iframe>

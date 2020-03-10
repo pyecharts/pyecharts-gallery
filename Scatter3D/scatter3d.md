@@ -1,6 +1,3 @@
-## Echarts 代码 / 效果
-
-[echarts](https://www.echartsjs.com/examples/zh/editor.html?c=scatter3d&gl=1&theme=dark ':include :type=iframe width=100% height=800px')
 
 ## pyecharts 代码 / 效果
 
@@ -10,6 +7,16 @@ from aiohttp import TCPConnector, ClientSession
 
 import pyecharts.options as opts
 from pyecharts.charts import Scatter3D
+
+"""
+Gallery 使用 pyecharts 1.1.0
+参考地址: https://echarts.baidu.com/examples/editor.html?c=scatter3d&gl=1&theme=dark
+
+目前无法实现的功能:
+
+1、暂时无法对 Grid3D 设置 轴线和轴坐标的 style (非白色背景下有问题)
+"""
+
 
 async def get_json_data(url: str) -> dict:
     async with ClientSession(connector=TCPConnector(ssl=False)) as session:
@@ -119,6 +126,7 @@ data = [
     )
     .render("scatter3d.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Scatter3D/scatter3d.html"></iframe>
