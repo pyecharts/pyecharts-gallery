@@ -5,15 +5,6 @@
 import pyecharts.options as opts
 from pyecharts.charts import BMap
 
-"""
-Gallery 使用 pyecharts 1.1.0
-参考地址: https://echarts.baidu.com/examples/editor.html?c=effectScatter-bmap
-
-目前无法实现的功能:
-
-1、
-"""
-
 data = [
     ["海门", 9],
     ["鄂尔多斯", 12],

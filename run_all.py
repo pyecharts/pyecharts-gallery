@@ -1,7 +1,10 @@
+import hashlib
+import json
 import os
 import operator
+import random
 import time
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 from jinja2 import Template
 
@@ -14,6 +17,7 @@ ClearCmd: str = (
 
 # 需要跳过的文件名
 SKIP_FILE: List = [
+    ".git",
     ".mypy_cache",
     ".idea",
     "run_all.py",
@@ -27,6 +31,8 @@ SKIP_FILE: List = [
     "_navbar.md",
     "_coverpage.md",
     ".nojekyll",
+    ".DS_Store",
+    "file_checker.json",
 ]
 
 # 当前 Demo 的模块
@@ -104,6 +110,33 @@ SidebarModel: str = """
 """
 
 
+def get_md5_of_file(filename: str) -> Optional[str]:
+    """
+    获取文件的 MD5
+    :param filename: 文件名
+    :return: None or md5 string
+    """
+    if not os.path.isfile(filename):
+        return None
+    md5_obj = hashlib.md5()
+    with open(filename, 'rb') as f:
+        while True:
+            b = f.read(8096)
+            if not b:
+                break
+            md5_obj.update(b)
+    return md5_obj.hexdigest()
+
+
+def save_md5_to_json(md5_json: dict):
+    """
+    保存所有的文件 md5 到 json 文件中
+    :param md5_json: md5 dict
+    """
+    with open("file_checker.json", "a") as md5_f:
+        md5_f.write(json.dumps(md5_json))
+
+
 # 清理删除命令
 # 命令解释：搜索当前目录下除根目录外的子文件夹中后缀不为 .py 和 .json 的文件，且忽略 .idea, .mypy_cache, .git 文件夹
 # find ./ -mindepth 2 -type f ! -name "*.py" ! -name "*.json" !
@@ -123,6 +156,12 @@ def clear_all():
 def write_chart_markdown_and_html(
     chart_script: str, chart_script_name: str, folder: str
 ):
+    """
+    保存各图的 markdown 和 html
+    :param chart_script: 路径
+    :param chart_script_name: 脚本名称
+    :param folder: 文件夹名字
+    """
     chart_model = ChartMarkdownModel
     with open(f"{chart_script_name}.md", "w") as md:
         with open(chart_script, "r") as f:
@@ -135,6 +174,11 @@ def write_chart_markdown_and_html(
 
 
 def update_chart_readme_markdown(chart_script_name: str, folder: str):
+    """
+    更新各图的 README.md
+    :param chart_script_name: 脚本名称
+    :param folder: 文件夹名字
+    """
     readme_model = ChartREADMEModel
     with open(f"README.md", "a") as readme:
         readme_model = readme_model.replace(
@@ -157,13 +201,14 @@ def run_all() -> List[Dict]:
             if ".py" not in chart_script:
                 continue
             else:
-                pass
-                # print(f"当前图的类型对应的示例: {folder}/{chart_script}")
-                # chart_script_name = chart_script.replace(".py", "")
-                # # 更新各板块图的 md 和对应的 html
-                # write_chart_markdown_and_html(chart_script, chart_script_name, folder)
-                # # 更新各板块图的 README.md
-                # update_chart_readme_markdown(chart_script_name, folder)
+                print(f"当前图的类型对应的示例: {folder}/{chart_script}")
+                # TODO 后续进行开发(新增图后局部更新)
+                # file_md5 = get_md5_of_file(filename=f"{chart_script}")
+                chart_script_name = chart_script.replace(".py", "")
+                # 更新各板块图的 md 和对应的 html
+                write_chart_markdown_and_html(chart_script, chart_script_name, folder)
+                # 更新各板块图的 README.md
+                update_chart_readme_markdown(chart_script_name, folder)
         # 封装数据
         with open(f"README.md", "r") as f:
             charts.append(
@@ -179,20 +224,16 @@ def run_all() -> List[Dict]:
     return charts
 
 
-def _run_black_format_code():
+def format_code():
     os.system("black .")
-
-
-def _run_flake_8_check():
     os.system("flake8 --max-line-length 89 --ignore=F401,E501")
 
 
-def format_code():
-    _run_black_format_code()
-    _run_flake_8_check()
-
-
 def write_sidebar_markdown(charts: Dict):
+    """
+    更新项目侧边栏的 Markdown
+    :param charts: 图的数据
+    """
     with open("_sidebar.md", "w") as sidebar_f:
         template = Template(SidebarModel)
         result = template.render(charts)

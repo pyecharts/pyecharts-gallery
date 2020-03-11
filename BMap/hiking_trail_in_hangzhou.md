@@ -9,15 +9,6 @@ from pyecharts.charts import BMap
 from pyecharts import options as opts
 from pyecharts.globals import BMapType, ChartType
 
-"""
-Gallery 使用 pyecharts 1.1.0
-参考地址: https://echarts.baidu.com/examples/editor.html?c=lines-bmap
-
-目前无法实现的功能:
-
-1、
-"""
-
 
 async def get_json_data(url: str) -> dict:
     async with ClientSession(connector=TCPConnector(ssl=False)) as session:

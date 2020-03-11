@@ -5,15 +5,6 @@ from pyecharts.charts import BMap
 from pyecharts import options as opts
 from pyecharts.globals import BMapType, ChartType
 
-"""
-Gallery 使用 pyecharts 1.1.0
-参考地址: https://echarts.baidu.com/examples/editor.html?c=lines-bmap
-
-目前无法实现的功能:
-
-1、
-"""
-
 
 async def get_json_data(url: str) -> dict:
     async with ClientSession(connector=TCPConnector(ssl=False)) as session:
@@ -31,7 +22,7 @@ data = asyncio.run(
 map_data = [[y["coord"] for y in x] for x in data]
 
 (
-    BMap(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    BMap(init_opts=opts.InitOpts(width="1200px", height="800px"))
     .add_schema(
         baidu_ak="FAKE_AK",
         center=[120.13066322374, 30.240018034923],
