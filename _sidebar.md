@@ -189,7 +189,7 @@
         - [Map - China_gdp_from_1980](Map/china_gdp_from_1980.md 'include :type=code')
         - [Map - Population_density_of_hongkong_v2](Map/population_density_of_HongKong_v2.md 'include :type=code')
         - [Map - Population_density_of_hongkong](Map/population_density_of_HongKong.md 'include :type=code')
-        - [Map - Map_china_citites](Map/map_china_citites.md 'include :type=code')
+        - [Map - Map_china_citites](Map/map_china_cities.md 'include :type=code')
         - [Map - Map_without_label](Map/map_without_label.md 'include :type=code')
         - [Map - Map_visualmap](Map/map_visualmap.md 'include :type=code')
         

@@ -23,4 +23,4 @@ c = (
 
 ```
 
-<iframe width="100%" height="800px" src="Map/map_china_citites.html"></iframe>
+<iframe width="100%" height="800px" src="Map/map_china_cities.html"></iframe>
