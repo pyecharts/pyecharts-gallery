@@ -44,7 +44,7 @@ rainfall_capacity = [
 average_temperature = [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
 
 bar = (
-    Bar()
+    Bar(init_opts=opts.InitOpts(width="1260px", height="720px"))
     .add_xaxis(xaxis_data=x_data)
     .add_yaxis(
         series_name="蒸发量",
