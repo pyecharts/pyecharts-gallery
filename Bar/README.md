@@ -6,6 +6,7 @@
 - [Bar - Bar_with_brush](Bar/bar_with_brush.md 'include :type=code')
 - [Bar - Bar_datazoom_slider](Bar/bar_datazoom_slider.md 'include :type=code')
 - [Bar - Bar_toolbox](Bar/bar_toolbox.md 'include :type=code')
+- [Bar - Bar_waterfall_plot](Bar/bar_waterfall_plot.md 'include :type=code')
 - [Bar - Mixed_bar_and_line](Bar/mixed_bar_and_line.md 'include :type=code')
 - [Bar - Bar_graphic_component](Bar/bar_graphic_component.md 'include :type=code')
 - [Bar - Bar_stack1](Bar/bar_stack1.md 'include :type=code')
