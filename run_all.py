@@ -93,7 +93,7 @@ ChartMarkdownModel: str = """
 """
 
 # 每个图的 README 的模版
-ChartREADMEModel: str = "- [{chart_name}]({path} 'include :type=code')"
+ChartREADMEModel: str = "- [{chart_name}]({path} ':type=code')"
 
 # 侧边栏模版
 SidebarModel: str = """
