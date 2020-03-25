@@ -19,7 +19,7 @@ c = (
                     id_="logo", right=20, top=20, z=-10, bounding="raw", origin=[75, 75]
                 ),
                 graphic_imagestyle_opts=opts.GraphicImageStyleOpts(
-                    image="http://echarts.baidu.com/images/favicon.png",
+                    image="https://www.echartsjs.com/zh/images/favicon.png",
                     width=150,
                     height=150,
                     opacity=0.4,

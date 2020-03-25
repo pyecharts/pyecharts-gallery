@@ -181,6 +181,34 @@ def get_year_chart(year: int):
                 min_=min_data,
                 max_=max_data,
             ),
+            graphic_opts=[
+                opts.GraphicGroup(
+                    graphic_item=opts.GraphicItem(
+                        rotation=JsCode("Math.PI / 4"),
+                        bounding="raw",
+                        right=110,
+                        bottom=110,
+                        z=100,
+                    ),
+                    children=[
+                        opts.GraphicRect(
+                            graphic_item=opts.GraphicItem(left="center", top="center", z=100),
+                            graphic_shape_opts=opts.GraphicShapeOpts(width=400, height=50),
+                            graphic_basicstyle_opts=opts.GraphicBasicStyleOpts(
+                                fill="rgba(0,0,0,0.3)"
+                            ),
+                        ),
+                        opts.GraphicText(
+                            graphic_item=opts.GraphicItem(left="center", top="center", z=100),
+                            graphic_textstyle_opts=opts.GraphicTextStyleOpts(
+                                text=f"{str(year)} 年",
+                                font="bold 26px Microsoft YaHei",
+                                graphic_basicstyle_opts=opts.GraphicBasicStyleOpts(fill="#fff"),
+                            ),
+                        ),
+                    ],
+                )
+            ],
         )
     )
 
