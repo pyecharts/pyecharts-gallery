@@ -129,7 +129,6 @@ bar1 = (
             max_=250,
             position="right",
             offset=80,
-            grid_index=1,
             axisline_opts=opts.AxisLineOpts(
                 linestyle_opts=opts.LineStyleOpts(color="#5793f3")
             ),
