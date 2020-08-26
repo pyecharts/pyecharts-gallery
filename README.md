@@ -9,7 +9,7 @@
 ## 项目简介
 
 * **项目基于 pyecharts `1.7.1` 版本进行展示**
-* 百度官方 Echarts [官方实例](https://www.echartsjs.com/examples/zh/)
+* Apache ECharts (incubating) [官方实例](https://www.echartsjs.com/examples/zh/)
 
 ## 项目须知
 
