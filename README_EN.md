@@ -5,7 +5,7 @@
 ## Project Introduction
 
 * **Project based on pyecharts 1.7.1**
-* Baidu Echarts [Official Example](https://www.echartsjs.com/examples/zh/)
+* Apache ECharts (incubating) [Official Example](https://www.echartsjs.com/examples/zh/)
 
 ## Project Notification
 
