@@ -48,12 +48,12 @@ bar = (
     .add_xaxis(xaxis_data=x_data)
     .add_yaxis(
         series_name="蒸发量",
-        yaxis_data=evaporation_capacity,
+        y_axis=evaporation_capacity,
         yaxis_index=0,
         color=colors[1],
     )
     .add_yaxis(
-        series_name="降水量", yaxis_data=rainfall_capacity, yaxis_index=1, color=colors[0]
+        series_name="降水量", y_axis=rainfall_capacity, yaxis_index=1, color=colors[0]
     )
     .extend_axis(
         yaxis=opts.AxisOpts(

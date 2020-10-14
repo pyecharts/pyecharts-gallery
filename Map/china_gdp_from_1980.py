@@ -160,7 +160,7 @@ def get_year_chart(year: int):
         .add_yaxis(
             series_name="",
             yaxis_index=1,
-            yaxis_data=bar_y_data,
+            y_axis=bar_y_data,
             label_opts=opts.LabelOpts(
                 is_show=True, position="right", formatter="{b}: {c}"
             ),

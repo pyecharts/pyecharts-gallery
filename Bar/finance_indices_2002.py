@@ -2077,35 +2077,35 @@ def get_year_overlap_chart(year: int) -> Bar:
         .add_xaxis(xaxis_data=name_list)
         .add_yaxis(
             series_name="GDP",
-            yaxis_data=total_data["dataGDP"][year],
+            y_axis=total_data["dataGDP"][year],
             is_selected=False,
             label_opts=opts.LabelOpts(is_show=False),
         )
         .add_yaxis(
             series_name="金融",
-            yaxis_data=total_data["dataFinancial"][year],
+            y_axis=total_data["dataFinancial"][year],
             is_selected=False,
             label_opts=opts.LabelOpts(is_show=False),
         )
         .add_yaxis(
             series_name="房地产",
-            yaxis_data=total_data["dataEstate"][year],
+            y_axis=total_data["dataEstate"][year],
             is_selected=False,
             label_opts=opts.LabelOpts(is_show=False),
         )
         .add_yaxis(
             series_name="第一产业",
-            yaxis_data=total_data["dataPI"][year],
+            y_axis=total_data["dataPI"][year],
             label_opts=opts.LabelOpts(is_show=False),
         )
         .add_yaxis(
             series_name="第二产业",
-            yaxis_data=total_data["dataSI"][year],
+            y_axis=total_data["dataSI"][year],
             label_opts=opts.LabelOpts(is_show=False),
         )
         .add_yaxis(
             series_name="第三产业",
-            yaxis_data=total_data["dataTI"][year],
+            y_axis=total_data["dataTI"][year],
             label_opts=opts.LabelOpts(is_show=False),
         )
         .set_global_opts(

@@ -151,7 +151,7 @@ def draw_charts():
         .add_xaxis(xaxis_data=chart_data["categoryData"])
         .add_yaxis(
             series_name="Volume",
-            yaxis_data=chart_data["volumes"],
+            y_axis=chart_data["volumes"],
             xaxis_index=1,
             yaxis_index=1,
             label_opts=opts.LabelOpts(is_show=False),
