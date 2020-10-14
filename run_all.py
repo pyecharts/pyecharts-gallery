@@ -119,7 +119,7 @@ def get_md5_of_file(filename: str) -> Optional[str]:
     if not os.path.isfile(filename):
         return None
     md5_obj = hashlib.md5()
-    with open(filename, 'rb') as f:
+    with open(filename, "rb") as f:
         while True:
             b = f.read(8096)
             if not b:

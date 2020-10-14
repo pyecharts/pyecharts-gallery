@@ -2,7 +2,7 @@ import pyecharts.options as opts
 from pyecharts.charts import Line, Grid
 
 """
-From Echarts Gallery: https://www.echartsjs.com/examples/zh/editor.html?c=grid-multiple
+From Echarts Gallery: https://echarts.apache.org/examples/zh/editor.html?c=grid-multiple
 """
 
 timeData = [

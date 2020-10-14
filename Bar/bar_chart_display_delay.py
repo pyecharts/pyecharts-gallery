@@ -3,7 +3,7 @@ from pyecharts.charts import Bar
 
 """
 Gallery 使用 pyecharts 1.1.0
-参考地址: https://www.echartsjs.com/examples/editor.html?c=bar-animation-delay
+参考地址: https://echarts.apache.org/examples/editor.html?c=bar-animation-delay
 
 目前无法实现的功能:
 

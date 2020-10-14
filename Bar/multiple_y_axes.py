@@ -3,7 +3,7 @@ from pyecharts.charts import Bar, Line
 
 """
 Gallery 使用 pyecharts 1.0.0
-参考地址: https://www.echartsjs.com/examples/editor.html?c=multiple-y-axis
+参考地址: https://echarts.apache.org/examples/editor.html?c=multiple-y-axis
 
 目前无法实现的功能:
 
