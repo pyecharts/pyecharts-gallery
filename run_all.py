@@ -1,6 +1,7 @@
 import hashlib
 import json
 import os
+import subprocess
 import operator
 import random
 import time
@@ -167,7 +168,8 @@ def write_chart_markdown_and_html(
     with open(f"{chart_script_name}.md", "w") as md:
         with open(chart_script, "r") as f:
             chart_model = chart_model.replace("{code}", f.read())
-        os.system(f"python3 {chart_script}")
+        subprocess.check_call(["python3", chart_script], stdout=subprocess.PIPE)
+
         chart_model = chart_model.replace(
             "{html}", f"{folder}/{chart_script_name}.html"
         )
