@@ -7,7 +7,7 @@ from pyecharts.charts import Kline, Line, Bar, Grid
 
 def get_data():
     response = requests.get(
-        url="https://echarts.baidu.com/examples/data/asset/data/stock-DJI.json"
+        url="https://echarts.apache.org/examples/data/asset/data/stock-DJI.json"
     )
     json_response = response.json()
     # 解析数据

@@ -12,9 +12,9 @@ c = (
             ["Walnut Brownie", 72.4, 53.9, 39.1],
         ]
     )
-    .add_yaxis(series_name="2015", yaxis_data=[])
-    .add_yaxis(series_name="2016", yaxis_data=[])
-    .add_yaxis(series_name="2017", yaxis_data=[])
+    .add_yaxis(series_name="2015", y_axis=[])
+    .add_yaxis(series_name="2016", y_axis=[])
+    .add_yaxis(series_name="2017", y_axis=[])
     .set_global_opts(
         title_opts=opts.TitleOpts(title="Dataset simple bar example"),
         xaxis_opts=opts.AxisOpts(type_="category"),

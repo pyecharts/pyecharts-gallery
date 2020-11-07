@@ -6,7 +6,7 @@ from pyecharts.charts import Map
 
 """
 Gallery 使用 pyecharts 1.1.0
-参考地址: https://echarts.baidu.com/examples/editor.html?c=map-HK
+参考地址: https://echarts.apache.org/examples/editor.html?c=map-HK
 """
 
 WIKI_LINK = (
@@ -23,7 +23,7 @@ async def get_json_data(url: str) -> dict:
 
 # 下载香港地图
 data = asyncio.run(
-    get_json_data(url="https://echarts.baidu.com/examples/data/asset/geo/HK.json")
+    get_json_data(url="https://echarts.apache.org/examples/data/asset/geo/HK.json")
 )
 
 MAP_DATA = [

@@ -3,7 +3,7 @@ from pyecharts.charts import Bar, Line
 
 """
 Gallery 使用 pyecharts 1.1.0
-参考地址: https://www.echartsjs.com/examples/editor.html?c=mix-line-bar
+参考地址: https://echarts.apache.org/examples/editor.html?c=mix-line-bar
 
 目前无法实现的功能:
 
@@ -17,7 +17,7 @@ bar = (
     .add_xaxis(xaxis_data=x_data)
     .add_yaxis(
         series_name="蒸发量",
-        yaxis_data=[
+        y_axis=[
             2.0,
             4.9,
             7.0,
@@ -35,7 +35,7 @@ bar = (
     )
     .add_yaxis(
         series_name="降水量",
-        yaxis_data=[
+        y_axis=[
             2.6,
             5.9,
             9.0,

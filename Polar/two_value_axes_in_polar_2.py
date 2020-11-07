@@ -4,7 +4,7 @@ from pyecharts.charts import Polar
 
 """
 Gallery 使用 pyecharts 1.1.0
-参考地址: https://www.echartsjs.com/examples/editor.html?c=line-polar2
+参考地址: https://echarts.apache.org/examples/editor.html?c=line-polar2
 
 目前无法实现的功能:
 
