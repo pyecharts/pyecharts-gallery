@@ -11,7 +11,7 @@ from jinja2 import Template
 # 清理的命令
 ClearCmd: str = (
     'find ./ -mindepth 2 -type f ! -name "*.py" ! -name "*.json" ! '
-    '-path ".//.idea/*" ! -path ".//.mypy_cache/*" ! -path ".//.git/*" '
+    '-path "./.idea/*" ! -path "./.mypy_cache/*" ! -path "./.git/*" '
     "| xargs rm -f"
 )
 
@@ -146,6 +146,7 @@ def save_md5_to_json(md5_json: dict):
 def clear_all():
     print("正在清理...")
     try:
+        print(ClearCmd)
         os.system(ClearCmd)
         time.sleep(3)
         print("清理成功!")
