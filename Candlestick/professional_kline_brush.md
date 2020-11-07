@@ -23,10 +23,10 @@ def split_data(data):
     values = []
     volumes = []
 
-    for i in range(len(data)):
-        category_data.append(data[i][0])
-        values.append(data[i])
-        volumes.append([i, data[i][4], 1 if data[i][1] > data[i][2] else -1])
+    for i, tick in enumerate(data):
+        category_data.append(tick[0])
+        values.append(tick)
+        volumes.append([i, tick[4], 1 if tick[1] > tick[2] else -1])
     return {"categoryData": category_data, "values": values, "volumes": volumes}
 
 
@@ -155,7 +155,7 @@ def draw_charts():
         .add_xaxis(xaxis_data=chart_data["categoryData"])
         .add_yaxis(
             series_name="Volume",
-            yaxis_data=chart_data["volumes"],
+            y_axis=chart_data["volumes"],
             xaxis_index=1,
             yaxis_index=1,
             label_opts=opts.LabelOpts(is_show=False),
