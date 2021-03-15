@@ -10,7 +10,7 @@ from pyecharts.charts import Scatter3D
 
 """
 Gallery 使用 pyecharts 1.1.0
-参考地址: https://echarts.baidu.com/examples/editor.html?c=scatter3d&gl=1&theme=dark
+参考地址: https://echarts.apache.org/examples/editor.html?c=scatter3d&gl=1&theme=dark
 
 目前无法实现的功能:
 
@@ -27,7 +27,7 @@ async def get_json_data(url: str) -> dict:
 # 获取官方的数据
 data = asyncio.run(
     get_json_data(
-        url="https://echarts.baidu.com/examples/data/asset/data/nutrients.json"
+        url="https://echarts.apache.org/examples/data/asset/data/nutrients.json"
     )
 )
 

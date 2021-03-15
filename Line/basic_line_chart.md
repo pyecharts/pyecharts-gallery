@@ -7,7 +7,7 @@ from pyecharts.charts import Line
 
 """
 Gallery 使用 pyecharts 1.1.0
-参考地址: https://echarts.baidu.com/examples/editor.html?c=line-simple
+参考地址: https://echarts.apache.org/examples/editor.html?c=line-simple
 
 目前无法实现的功能:
 

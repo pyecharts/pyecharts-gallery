@@ -7,7 +7,7 @@ from pyecharts.charts import Gauge
 
 """
 Gallery 使用 pyecharts 1.1.0
-参考地址: https://echarts.baidu.com/examples/editor.html?c=gauge
+参考地址: https://echarts.apache.org/examples/editor.html?c=gauge
 
 目前无法实现的功能:
 
