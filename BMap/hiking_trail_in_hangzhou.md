@@ -19,7 +19,7 @@ async def get_json_data(url: str) -> dict:
 # 获取官方的数据
 data = asyncio.run(
     get_json_data(
-        url="https://echarts.baidu.com/examples/data/asset/data/hangzhou-tracks.json"
+        url="https://echarts.apache.org/examples/data/asset/data/hangzhou-tracks.json"
     )
 )
 
