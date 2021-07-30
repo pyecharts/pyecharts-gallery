@@ -12,7 +12,7 @@ from jinja2 import Template
 # 清理的命令
 ClearCmd: str = (
     'find ./ -mindepth 2 -type f ! -name "*.py" ! -name "*.json" ! '
-    '-path "./.idea/*" ! -path "./.mypy_cache/*" ! -path "./.git/*" '
+    '-path ".//.idea/*" ! -path ".//.mypy_cache/*" ! -path ".//.git/*" '
     "| xargs rm -f"
 )
 

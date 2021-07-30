@@ -55,4 +55,4 @@ c = (
 
 ```
 
-<iframe width="100%" height="800px" src="Bar/bar_grahic_component.html"></iframe>
+<iframe width="100%" height="800px" src="Bar/bar_graphic_component.html"></iframe>
