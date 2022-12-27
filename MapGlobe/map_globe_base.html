@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts-gl.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/world.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-gl.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/world.js"></script>
 
 </head>
 <body>
-    <div id="22fc7e367297444d852ff4eed4eb901e" style="width:900px; height:500px;"></div>
+    <div id="d45c37cb49124e0cb173281d53e9b7ef" style="width:900px; height:500px;"></div>
     <script>
-		var canvas_22fc7e367297444d852ff4eed4eb901e = document.createElement('canvas');
-        var mapChart_22fc7e367297444d852ff4eed4eb901e = echarts.init(
-		     canvas_22fc7e367297444d852ff4eed4eb901e, 'white', {width: 4096, height: 2048, renderer: 'canvas'});
-        var mapOption_22fc7e367297444d852ff4eed4eb901e = {
+		var canvas_d45c37cb49124e0cb173281d53e9b7ef = document.createElement('canvas');
+        var mapChart_d45c37cb49124e0cb173281d53e9b7ef = echarts.init(
+		     canvas_d45c37cb49124e0cb173281d53e9b7ef, 'white', {width: 4096, height: 2048, renderer: 'canvas'});
+        var mapOption_d45c37cb49124e0cb173281d53e9b7ef = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -25,30 +25,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -59,7 +44,7 @@
                 "position": "top",
                 "margin": 8
             },
-            "mapType": "world",
+            "map": "world",
             "data": [
                 {
                     "name": "China",
@@ -995,7 +980,11 @@
                 }
             ],
             "roam": true,
+            "aspectScale": 0.75,
+            "nameProperty": "name",
+            "selectedMode": false,
             "zoom": 1,
+            "mapValueCalculation": "sum",
             "showLegendSymbol": false,
             "emphasis": {}
         }
@@ -1005,9 +994,6 @@
             "data": [
                 "World Population"
             ],
-            "selected": {
-                "World Population": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -1022,10 +1008,15 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "visualMap": {
         "show": true,
@@ -1054,19 +1045,21 @@
     },
     "title": [
         {
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        mapChart_22fc7e367297444d852ff4eed4eb901e.setOption(mapOption_22fc7e367297444d852ff4eed4eb901e);
+        mapChart_d45c37cb49124e0cb173281d53e9b7ef.setOption(mapOption_d45c37cb49124e0cb173281d53e9b7ef);
 
-		var chart_22fc7e367297444d852ff4eed4eb901e = echarts.init(
-        document.getElementById('22fc7e367297444d852ff4eed4eb901e'), 'white', {renderer: 'canvas'});
-		var options_22fc7e367297444d852ff4eed4eb901e = {
+		var chart_d45c37cb49124e0cb173281d53e9b7ef = echarts.init(
+        document.getElementById('d45c37cb49124e0cb173281d53e9b7ef'), 'white', {renderer: 'canvas'});
+		var options_d45c37cb49124e0cb173281d53e9b7ef = {
            "globe": {
            "show": true,
-		   "baseTexture": mapChart_22fc7e367297444d852ff4eed4eb901e,
+		   "baseTexture": mapChart_d45c37cb49124e0cb173281d53e9b7ef,
            shading: 'lambert',
             light: {
                 ambient: {
@@ -1078,7 +1071,7 @@
              }
 
 		   }};
-		chart_22fc7e367297444d852ff4eed4eb901e.setOption(options_22fc7e367297444d852ff4eed4eb901e);
+		chart_d45c37cb49124e0cb173281d53e9b7ef.setOption(options_d45c37cb49124e0cb173281d53e9b7ef);
     </script>
 </body>
 </html>

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
 
 </head>
 <body>
-    <div id="6777612d2ad548d49f3336293c575eaf" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="d3c1f6385af242d295addbe3b698329c" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_6777612d2ad548d49f3336293c575eaf = echarts.init(
-            document.getElementById('6777612d2ad548d49f3336293c575eaf'), 'white', {renderer: 'canvas'});
-        var option_6777612d2ad548d49f3336293c575eaf = {
+        var chart_d3c1f6385af242d295addbe3b698329c = echarts.init(
+            document.getElementById('d3c1f6385af242d295addbe3b698329c'), 'white', {renderer: 'canvas'});
+        var option_d3c1f6385af242d295addbe3b698329c = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -22,30 +22,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -53,16 +38,27 @@
             "name": "\u5546\u5bb6A",
             "xAxisIndex": 0,
             "yAxisIndex": 0,
+            "legendHoverLink": true,
             "data": [
-                129,
-                103,
-                45,
-                96,
-                39,
-                70,
-                97
+                106,
+                30,
+                150,
+                87,
+                115,
+                54,
+                132
             ],
+            "showBackground": false,
+            "barMinHeight": 0,
             "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
             "label": {
                 "show": true,
                 "position": "top",
@@ -74,16 +70,27 @@
             "name": "\u5546\u5bb6B",
             "xAxisIndex": 0,
             "yAxisIndex": 0,
+            "legendHoverLink": true,
             "data": [
-                51,
-                107,
-                20,
-                94,
                 69,
-                135,
-                81
+                117,
+                134,
+                122,
+                118,
+                51,
+                150
             ],
+            "showBackground": false,
+            "barMinHeight": 0,
             "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
             "label": {
                 "show": true,
                 "position": "top",
@@ -101,7 +108,7 @@
                     "value": [
                         113.26653,
                         23.132191,
-                        99
+                        101
                     ]
                 },
                 {
@@ -109,7 +116,7 @@
                     "value": [
                         116.407526,
                         39.90403,
-                        143
+                        133
                     ]
                 },
                 {
@@ -117,7 +124,7 @@
                     "value": [
                         121.473701,
                         31.230416,
-                        44
+                        21
                     ]
                 },
                 {
@@ -125,7 +132,7 @@
                     "value": [
                         115.909228,
                         28.675696,
-                        48
+                        51
                     ]
                 },
                 {
@@ -133,7 +140,7 @@
                     "value": [
                         112.98381,
                         28.112444,
-                        88
+                        139
                     ]
                 },
                 {
@@ -141,7 +148,7 @@
                     "value": [
                         120.152791,
                         30.267446,
-                        80
+                        86
                     ]
                 },
                 {
@@ -149,7 +156,7 @@
                     "value": [
                         118.763232,
                         32.061707,
-                        101
+                        133
                     ]
                 }
             ],
@@ -174,10 +181,6 @@
                 "\u5546\u5bb6A",
                 "\u5546\u5bb6B"
             ],
-            "selected": {
-                "\u5546\u5bb6A": true,
-                "\u5546\u5bb6B": true
-            },
             "show": true,
             "left": "20%",
             "padding": 5,
@@ -189,9 +192,6 @@
             "data": [
                 "geo"
             ],
-            "selected": {
-                "geo": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -206,10 +206,15 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "xAxis": [
         {
@@ -223,7 +228,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -233,13 +238,13 @@
                 }
             },
             "data": [
-                "\u5c0f\u7c73",
-                "\u4e09\u661f",
-                "\u534e\u4e3a",
-                "\u82f9\u679c",
-                "\u9b45\u65cf",
-                "VIVO",
-                "OPPO"
+                "\u8349\u8393",
+                "\u8292\u679c",
+                "\u8461\u8404",
+                "\u96ea\u68a8",
+                "\u897f\u74dc",
+                "\u67e0\u6aac",
+                "\u8f66\u5398\u5b50"
             ]
         }
     ],
@@ -255,7 +260,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -268,33 +273,52 @@
     ],
     "title": [
         {
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         },
         {
             "text": "Grid-Geo-Bar",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
     ],
     "grid": [
         {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
             "top": "50%",
             "right": "75%",
-            "containLabel": false
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
         },
         {
+            "show": false,
+            "zlevel": 0,
+            "z": 2,
             "left": "60%",
-            "containLabel": false
+            "containLabel": false,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1
         }
     ],
     "geo": {
         "map": "china",
         "roam": true,
+        "aspectScale": 0.75,
+        "nameProperty": "name",
+        "selectedMode": false,
         "emphasis": {}
     }
 };
-        chart_6777612d2ad548d49f3336293c575eaf.setOption(option_6777612d2ad548d49f3336293c575eaf);
+        chart_d3c1f6385af242d295addbe3b698329c.setOption(option_d3c1f6385af242d295addbe3b698329c);
     </script>
 </body>
 </html>

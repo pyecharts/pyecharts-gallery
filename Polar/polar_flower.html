@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="bd416ba194cb4df0926c2bc6d83a3984" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="ed983d6fd3e448d19406771194f2f481" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_bd416ba194cb4df0926c2bc6d83a3984 = echarts.init(
-            document.getElementById('bd416ba194cb4df0926c2bc6d83a3984'), 'white', {renderer: 'canvas'});
-        var option_bd416ba194cb4df0926c2bc6d83a3984 = {
+        var chart_ed983d6fd3e448d19406771194f2f481 = echarts.init(
+            document.getElementById('ed983d6fd3e448d19406771194f2f481'), 'white', {renderer: 'canvas'});
+        var option_ed983d6fd3e448d19406771194f2f481 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,30 +21,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -1513,9 +1498,6 @@
             "data": [
                 "flower"
             ],
-            "selected": {
-                "flower": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -1530,31 +1512,39 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "radiusAxis": {
         "scale": false
     },
     "angleAxis": {
         "startAngle": 0,
-        "clockwise": false,
-        "min": 0,
+        "clockwise": true,
+        "boundaryGap": false,
+        "type": "value",
         "scale": false,
-        "splitNumber": 5
+        "splitNumber": 12
     },
     "polar": {},
     "title": [
         {
             "text": "Polar-Flower",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_bd416ba194cb4df0926c2bc6d83a3984.setOption(option_bd416ba194cb4df0926c2bc6d83a3984);
+        chart_ed983d6fd3e448d19406771194f2f481.setOption(option_ed983d6fd3e448d19406771194f2f481);
     </script>
 </body>
 </html>

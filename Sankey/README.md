@@ -1,4 +1,4 @@
-- [Sankey - Sankey_base](Sankey/sankey_base.md 'include :type=code')
-- [Sankey - Sankey_diagram](Sankey/sankey_diagram.md 'include :type=code')
-- [Sankey - Sankey_with_level_setting](Sankey/sankey_with_level_setting.md 'include :type=code')
-- [Sankey - Sankey_vertical](Sankey/sankey_vertical.md 'include :type=code')
+- [Sankey - Sankey_base](Sankey/sankey_base.md ':type=code')
+- [Sankey - Sankey_diagram](Sankey/sankey_diagram.md ':type=code')
+- [Sankey - Sankey_with_level_setting](Sankey/sankey_with_level_setting.md ':type=code')
+- [Sankey - Sankey_vertical](Sankey/sankey_vertical.md ':type=code')

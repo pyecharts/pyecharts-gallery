@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="ce370f51deac4bc6a9d93d0ac2b9b7f3" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="bfa41e929bb04978b53f376164820aba" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_ce370f51deac4bc6a9d93d0ac2b9b7f3 = echarts.init(
-            document.getElementById('ce370f51deac4bc6a9d93d0ac2b9b7f3'), 'white', {renderer: 'canvas'});
-        var option_ce370f51deac4bc6a9d93d0ac2b9b7f3 = {
+        var chart_bfa41e929bb04978b53f376164820aba = echarts.init(
+            document.getElementById('bfa41e929bb04978b53f376164820aba'), 'white', {renderer: 'canvas'});
+        var option_bfa41e929bb04978b53f376164820aba = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,30 +21,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -54,6 +39,7 @@
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
+            "clip": true,
             "step": false,
             "data": [
                 [
@@ -12457,6 +12443,7 @@
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
+            "clip": true,
             "step": false,
             "data": [
                 [
@@ -24859,10 +24846,6 @@
                 "\u6d41\u91cf",
                 "\u964d\u96e8\u91cf"
             ],
-            "selected": {
-                "\u6d41\u91cf": true,
-                "\u964d\u96e8\u91cf": true
-            },
             "show": true,
             "left": "left",
             "padding": 5,
@@ -24878,10 +24861,15 @@
         "axisPointer": {
             "type": "cross"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "xAxis": [
         {
@@ -24897,7 +24885,7 @@
             "boundaryGap": false,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -28004,7 +27992,7 @@
             "max": 500,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -28047,7 +28035,9 @@
     "title": [
         {
             "text": "\u96e8\u91cf\u6d41\u91cf\u5173\u7cfb\u56fe",
+            "target": "blank",
             "subtext": "\u6570\u636e\u6765\u81ea\u897f\u5b89\u5170\u7279\u6c34\u7535\u6d4b\u63a7\u6280\u672f\u6709\u9650\u516c\u53f8",
+            "subtarget": "blank",
             "left": "center",
             "top": "top",
             "padding": 5,
@@ -28062,7 +28052,8 @@
             "start": 0,
             "end": 100,
             "orient": "horizontal",
-            "zoomLock": false
+            "zoomLock": false,
+            "filterMode": "filter"
         },
         {
             "show": true,
@@ -28071,11 +28062,12 @@
             "start": 0,
             "end": 100,
             "orient": "horizontal",
-            "zoomLock": false
+            "zoomLock": false,
+            "filterMode": "filter"
         }
     ]
 };
-        chart_ce370f51deac4bc6a9d93d0ac2b9b7f3.setOption(option_ce370f51deac4bc6a9d93d0ac2b9b7f3);
+        chart_bfa41e929bb04978b53f376164820aba.setOption(option_bfa41e929bb04978b53f376164820aba);
     </script>
 </body>
 </html>

@@ -145,7 +145,7 @@ y_data = [
 
 
 (
-    ThemeRiver(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    ThemeRiver()
     .add(
         series_name=x_data,
         data=y_data,

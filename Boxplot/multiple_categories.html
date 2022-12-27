@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="d25816921dc348bb912ddbaa17ec12ac" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="fa9f591044c64930974812722e127005" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_d25816921dc348bb912ddbaa17ec12ac = echarts.init(
-            document.getElementById('d25816921dc348bb912ddbaa17ec12ac'), 'white', {renderer: 'canvas'});
-        var option_d25816921dc348bb912ddbaa17ec12ac = {
+        var chart_fa9f591044c64930974812722e127005 = echarts.init(
+            document.getElementById('fa9f591044c64930974812722e127005'), 'white', {renderer: 'canvas'});
+        var option_fa9f591044c64930974812722e127005 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,35 +21,25 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
             "type": "boxplot",
             "name": "category0",
+            "boxWidth": [
+                7,
+                50
+            ],
+            "selected_mode": false,
             "data": [
                 [
                     3.8888578346043534,
@@ -207,16 +197,26 @@
                 "axisPointer": {
                     "type": "line"
                 },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
                 "formatter": function(param) { return [                            'Experiment ' + param.name + ': ',                            'upper: ' + param.data[0],                            'Q1: ' + param.data[1],                            'median: ' + param.data[2],                            'Q3: ' + param.data[3],                            'lower: ' + param.data[4]                        ].join('<br/>') },
                 "textStyle": {
                     "fontSize": 14
                 },
-                "borderWidth": 0
+                "borderWidth": 0,
+                "padding": 5
             }
         },
         {
             "type": "boxplot",
             "name": "category1",
+            "boxWidth": [
+                7,
+                50
+            ],
+            "selected_mode": false,
             "data": [
                 [
                     1.3866777918670525,
@@ -374,16 +374,26 @@
                 "axisPointer": {
                     "type": "line"
                 },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
                 "formatter": function(param) { return [                            'Experiment ' + param.name + ': ',                            'upper: ' + param.data[0],                            'Q1: ' + param.data[1],                            'median: ' + param.data[2],                            'Q3: ' + param.data[3],                            'lower: ' + param.data[4]                        ].join('<br/>') },
                 "textStyle": {
                     "fontSize": 14
                 },
-                "borderWidth": 0
+                "borderWidth": 0,
+                "padding": 5
             }
         },
         {
             "type": "boxplot",
             "name": "category2",
+            "boxWidth": [
+                7,
+                50
+            ],
+            "selected_mode": false,
             "data": [
                 [
                     0.17336583192690824,
@@ -541,11 +551,16 @@
                 "axisPointer": {
                     "type": "line"
                 },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
                 "formatter": function(param) { return [                            'Experiment ' + param.name + ': ',                            'upper: ' + param.data[0],                            'Q1: ' + param.data[1],                            'median: ' + param.data[2],                            'Q3: ' + param.data[3],                            'lower: ' + param.data[4]                        ].join('<br/>') },
                 "textStyle": {
                     "fontSize": 14
                 },
-                "borderWidth": 0
+                "borderWidth": 0,
+                "padding": 5
             }
         }
     ],
@@ -556,11 +571,6 @@
                 "category1",
                 "category2"
             ],
-            "selected": {
-                "category0": true,
-                "category1": true,
-                "category2": true
-            },
             "show": true,
             "top": "3%",
             "padding": 5,
@@ -576,10 +586,15 @@
         "axisPointer": {
             "type": "shadow"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "xAxis": [
         {
@@ -652,7 +667,7 @@
             "max": 600,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -672,6 +687,8 @@
     "title": [
         {
             "text": "Multiple Categories",
+            "target": "blank",
+            "subtarget": "blank",
             "left": "center",
             "padding": 5,
             "itemGap": 10
@@ -685,7 +702,8 @@
             "start": 0,
             "end": 20,
             "orient": "horizontal",
-            "zoomLock": false
+            "zoomLock": false,
+            "filterMode": "filter"
         },
         {
             "show": true,
@@ -695,11 +713,12 @@
             "end": 80,
             "orient": "horizontal",
             "xAxisIndex": 0,
-            "zoomLock": false
+            "zoomLock": false,
+            "filterMode": "filter"
         }
     ]
 };
-        chart_d25816921dc348bb912ddbaa17ec12ac.setOption(option_d25816921dc348bb912ddbaa17ec12ac);
+        chart_fa9f591044c64930974812722e127005.setOption(option_fa9f591044c64930974812722e127005);
     </script>
 </body>
 </html>

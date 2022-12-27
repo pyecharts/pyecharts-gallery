@@ -1,1 +1,1 @@
-- [Theme - Theme_example](Theme/theme_example.md 'include :type=code')
+- [Theme - Theme_example](Theme/theme_example.md ':type=code')

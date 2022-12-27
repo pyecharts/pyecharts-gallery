@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="100df51fe87b41a2a021295496a36e2a" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="f61a0fb5fa0e403cbbfc1f0bff82bacd" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_100df51fe87b41a2a021295496a36e2a = echarts.init(
-            document.getElementById('100df51fe87b41a2a021295496a36e2a'), 'white', {renderer: 'canvas'});
-        var option_100df51fe87b41a2a021295496a36e2a = {
+        var chart_f61a0fb5fa0e403cbbfc1f0bff82bacd = echarts.init(
+            document.getElementById('f61a0fb5fa0e403cbbfc1f0bff82bacd'), 'white', {renderer: 'canvas'});
+        var option_f61a0fb5fa0e403cbbfc1f0bff82bacd = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,30 +21,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -54,6 +39,7 @@
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": true,
+            "clip": true,
             "step": false,
             "data": [
                 [
@@ -110,9 +96,6 @@
             "data": [
                 ""
             ],
-            "selected": {
-                "": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -127,10 +110,15 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "xAxis": [
         {
@@ -145,7 +133,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -196,12 +184,14 @@
     ],
     "title": [
         {
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_100df51fe87b41a2a021295496a36e2a.setOption(option_100df51fe87b41a2a021295496a36e2a);
+        chart_f61a0fb5fa0e403cbbfc1f0bff82bacd.setOption(option_f61a0fb5fa0e403cbbfc1f0bff82bacd);
     </script>
 </body>
 </html>

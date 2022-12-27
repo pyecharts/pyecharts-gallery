@@ -16,7 +16,6 @@ c = (
         nodes=j["nodes"],
         links=j["links"],
         pos_top="10%",
-        focus_node_adjacency=True,
         levels=[
             opts.SankeyLevelsOpts(
                 depth=0,

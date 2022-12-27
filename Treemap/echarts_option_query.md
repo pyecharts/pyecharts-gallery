@@ -57,7 +57,7 @@ convert(source=data, target=tree_map_data, base_path="")
 
 
 (
-    TreeMap(init_opts=opts.InitOpts(width="1280px", height="720px"))
+    TreeMap(init_opts=opts.InitOpts(width="1200px", height="720px"))
     .add(
         series_name="option",
         data=tree_map_data["children"],

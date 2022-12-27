@@ -8,7 +8,7 @@ from pyecharts.charts import Polar
 
 """
 Gallery 使用 pyecharts 1.1.0
-参考地址: https://www.echartsjs.com/examples/editor.html?c=line-polar
+参考地址: https://echarts.apache.org/examples/editor.html?c=line-polar
 
 目前无法实现的功能:
 
@@ -23,7 +23,7 @@ for i in range(0, 101):
     data.append([r, theta])
 
 (
-    Polar(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Polar()
     .add(series_name="line", data=data, label_opts=opts.LabelOpts(is_show=False))
     .add_schema(
         angleaxis_opts=opts.AngleAxisOpts(

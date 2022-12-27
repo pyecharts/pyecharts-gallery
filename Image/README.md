@@ -1,1 +1,1 @@
-- [Image - Image_base](Image/image_base.md 'include :type=code')
+- [Image - Image_base](Image/image_base.md ':type=code')

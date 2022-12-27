@@ -41,7 +41,7 @@ c = (
         nodes=nodes,
         links=links,
         pos_bottom="10%",
-        focus_node_adjacency="allEdges",
+        focus_node_mode="allEdges",
         orient="vertical",
         linestyle_opt=opts.LineStyleOpts(opacity=0.2, curve=0.5, color="source"),
         label_opts=opts.LabelOpts(position="top"),

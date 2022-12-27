@@ -20,6 +20,7 @@ c = (
         visualmap_opts=opts.VisualMapOpts(),
         title_opts=opts.TitleOpts(title="Geo-HeatMap"),
     )
+    .render("geo_heatmap.html")
 )
 
 ```

@@ -17,7 +17,7 @@ data = [
 ]
 
 (
-    Calendar(init_opts=opts.InitOpts(width="1600px", height="1000px"))
+    Calendar()
     .add(
         series_name="",
         yaxis_data=data,

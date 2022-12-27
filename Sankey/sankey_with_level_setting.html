@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="d083f9020d5f4e83ae5002c8a062c5ab" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="4536f73f9bb64a75ba5d39aa5546d414" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_d083f9020d5f4e83ae5002c8a062c5ab = echarts.init(
-            document.getElementById('d083f9020d5f4e83ae5002c8a062c5ab'), 'white', {renderer: 'canvas'});
-        var option_d083f9020d5f4e83ae5002c8a062c5ab = {
+        var chart_4536f73f9bb64a75ba5d39aa5546d414 = echarts.init(
+            document.getElementById('4536f73f9bb64a75ba5d39aa5546d414'), 'white', {renderer: 'canvas'});
+        var option_4536f73f9bb64a75ba5d39aa5546d414 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,30 +21,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -662,7 +647,9 @@
             "layoutIteration": 32,
             "orient": "horizontal",
             "draggable": true,
-            "focusNodeAdjacency": true,
+            "emphasis": {
+                "focus": "none"
+            },
             "levels": [
                 {
                     "depth": 0,
@@ -740,9 +727,6 @@
             "data": [
                 "sankey"
             ],
-            "selected": {
-                "sankey": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -757,20 +741,27 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "title": [
         {
             "text": "Sankey-Level Settings",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_d083f9020d5f4e83ae5002c8a062c5ab.setOption(option_d083f9020d5f4e83ae5002c8a062c5ab);
+        chart_4536f73f9bb64a75ba5d39aa5546d414.setOption(option_4536f73f9bb64a75ba5d39aa5546d414);
     </script>
 </body>
 </html>

@@ -10,7 +10,7 @@ Gallery 使用 pyecharts 1.1.0 和 echarts-china-cities-js
 """
 ssl._create_default_https_context = ssl._create_unverified_context
 # 与 pyecharts 注册，当画香港地图的时候，用 echarts-china-cities-js
-register_url("https://echarts-maps.github.io/echarts-china-cities-js")
+# register_url("https://echarts-maps.github.io/echarts-china-cities-js")
 
 WIKI_LINK = (
     "http://zh.wikipedia.org/wiki/"

@@ -26,7 +26,7 @@ data = asyncio.run(
 map_data = [[y["coord"] for y in x] for x in data]
 
 (
-    BMap(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    BMap(init_opts=opts.InitOpts(width="1200px", height="800px"))
     .add_schema(
         baidu_ak="FAKE_AK",
         center=[120.13066322374, 30.240018034923],

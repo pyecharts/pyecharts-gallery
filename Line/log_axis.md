@@ -7,7 +7,7 @@ from pyecharts.charts import Line
 
 """
 Gallery 使用 pyecharts 1.1.0
-参考地址: https://www.echartsjs.com/examples/editor.html?c=line-log
+参考地址: https://echarts.apache.org/examples/editor.html?c=line-log
 
 目前无法实现的功能:
 
@@ -21,7 +21,7 @@ y_data_05 = [1 / 2, 1 / 4, 1 / 8, 1 / 16, 1 / 32, 1 / 64, 1 / 128, 1 / 256, 1 / 
 
 
 (
-    Line(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Line()
     .add_xaxis(xaxis_data=x_data)
     .add_yaxis(
         series_name="1/2的指数",

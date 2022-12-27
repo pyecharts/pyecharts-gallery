@@ -7,7 +7,7 @@ from pyecharts.charts import Timeline, Bar, Pie
 
 """
 Gallery 使用 pyecharts 1.1.0
-参考地址: https://www.echartsjs.com/examples/editor.html?c=mix-timeline-finance
+参考地址: https://echarts.apache.org/examples/editor.html?c=mix-timeline-finance
 
 目前无法实现的功能:
 
@@ -2081,35 +2081,35 @@ def get_year_overlap_chart(year: int) -> Bar:
         .add_xaxis(xaxis_data=name_list)
         .add_yaxis(
             series_name="GDP",
-            yaxis_data=total_data["dataGDP"][year],
+            y_axis=total_data["dataGDP"][year],
             is_selected=False,
             label_opts=opts.LabelOpts(is_show=False),
         )
         .add_yaxis(
             series_name="金融",
-            yaxis_data=total_data["dataFinancial"][year],
+            y_axis=total_data["dataFinancial"][year],
             is_selected=False,
             label_opts=opts.LabelOpts(is_show=False),
         )
         .add_yaxis(
             series_name="房地产",
-            yaxis_data=total_data["dataEstate"][year],
+            y_axis=total_data["dataEstate"][year],
             is_selected=False,
             label_opts=opts.LabelOpts(is_show=False),
         )
         .add_yaxis(
             series_name="第一产业",
-            yaxis_data=total_data["dataPI"][year],
+            y_axis=total_data["dataPI"][year],
             label_opts=opts.LabelOpts(is_show=False),
         )
         .add_yaxis(
             series_name="第二产业",
-            yaxis_data=total_data["dataSI"][year],
+            y_axis=total_data["dataSI"][year],
             label_opts=opts.LabelOpts(is_show=False),
         )
         .add_yaxis(
             series_name="第三产业",
-            yaxis_data=total_data["dataTI"][year],
+            y_axis=total_data["dataTI"][year],
             label_opts=opts.LabelOpts(is_show=False),
         )
         .set_global_opts(
@@ -2139,7 +2139,7 @@ def get_year_overlap_chart(year: int) -> Bar:
 
 
 # 生成时间轴的图
-timeline = Timeline(init_opts=opts.InitOpts(width="1600px", height="800px"))
+timeline = Timeline()
 
 for y in range(2002, 2012):
     timeline.add(get_year_overlap_chart(year=y), time_point=str(y))

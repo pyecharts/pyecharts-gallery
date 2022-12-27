@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="7782718a072444bda7282f0df41a8a0d" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="ebc764f42180461eb91d08997f2817bc" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_7782718a072444bda7282f0df41a8a0d = echarts.init(
-            document.getElementById('7782718a072444bda7282f0df41a8a0d'), 'white', {renderer: 'canvas'});
-        var option_7782718a072444bda7282f0df41a8a0d = {
+        var chart_ebc764f42180461eb91d08997f2817bc = echarts.init(
+            document.getElementById('ebc764f42180461eb91d08997f2817bc'), 'white', {renderer: 'canvas'});
+        var option_ebc764f42180461eb91d08997f2817bc = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -33,34 +33,35 @@
         {
             "type": "pie",
             "clockwise": true,
+            "startAngle": 90,
             "data": [
                 {
                     "name": "\u53ef\u4e50",
-                    "value": 136
+                    "value": 134
                 },
                 {
                     "name": "\u96ea\u78a7",
-                    "value": 100
+                    "value": 144
                 },
                 {
                     "name": "\u6a59\u6c41",
-                    "value": 135
+                    "value": 112
                 },
                 {
                     "name": "\u7eff\u8336",
-                    "value": 142
+                    "value": 79
                 },
                 {
                     "name": "\u5976\u8336",
-                    "value": 120
-                },
-                {
-                    "name": "\u767e\u5a01",
                     "value": 74
                 },
                 {
+                    "name": "\u767e\u5a01",
+                    "value": 128
+                },
+                {
                     "name": "\u9752\u5c9b",
-                    "value": 127
+                    "value": 131
                 }
             ],
             "radius": [
@@ -76,6 +77,15 @@
                 "position": "top",
                 "margin": 8,
                 "formatter": "{b}: {c}"
+            },
+            "labelLine": {
+                "show": true,
+                "showAbove": false,
+                "length": 15,
+                "length2": 15,
+                "smooth": false,
+                "minTurnAngle": 90,
+                "maxSurfaceAngle": 90
             },
             "rippleEffect": {
                 "show": true,
@@ -96,7 +106,6 @@
                 "\u767e\u5a01",
                 "\u9752\u5c9b"
             ],
-            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -111,20 +120,27 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "title": [
         {
             "text": "Pie-\u8bbe\u7f6e\u989c\u8272",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_7782718a072444bda7282f0df41a8a0d.setOption(option_7782718a072444bda7282f0df41a8a0d);
+        chart_ebc764f42180461eb91d08997f2817bc.setOption(option_ebc764f42180461eb91d08997f2817bc);
     </script>
 </body>
 </html>

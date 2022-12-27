@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts-gl.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-gl.min.js"></script>
 
 </head>
 <body>
-    <div id="a9402a76f1d148118ee3ab575772c971" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="a6e9560ae36a4e2c8c1e31e008ac8579" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_a9402a76f1d148118ee3ab575772c971 = echarts.init(
-            document.getElementById('a9402a76f1d148118ee3ab575772c971'), 'white', {renderer: 'canvas'});
-        var option_a9402a76f1d148118ee3ab575772c971 = {
+        var chart_a6e9560ae36a4e2c8c1e31e008ac8579 = echarts.init(
+            document.getElementById('a6e9560ae36a4e2c8c1e31e008ac8579'), 'white', {renderer: 'canvas'});
+        var option_a6e9560ae36a4e2c8c1e31e008ac8579 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -22,30 +22,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -73270,7 +73255,6 @@
             "data": [
                 ""
             ],
-            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -73285,10 +73269,15 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "visualMap": {
         "show": true,
@@ -73348,17 +73337,23 @@
         "viewControl": {
             "autoRotate": false,
             "autoRotateSpeed": 10,
-            "rotateSensitivity": 1
+            "rotateSensitivity": 1,
+            "alpha": 20,
+            "beta": 40,
+            "minAlpha": -90,
+            "maxAlpha": 90
         }
     },
     "title": [
         {
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_a9402a76f1d148118ee3ab575772c971.setOption(option_a9402a76f1d148118ee3ab575772c971);
+        chart_a6e9560ae36a4e2c8c1e31e008ac8579.setOption(option_a6e9560ae36a4e2c8c1e31e008ac8579);
     </script>
 </body>
 </html>

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
 
 </head>
 <body>
-    <div id="44e874dcb3d84087a8d7b5261b604f4a" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="9effef9b7ba14a1fbed333a944626af3" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_44e874dcb3d84087a8d7b5261b604f4a = echarts.init(
-            document.getElementById('44e874dcb3d84087a8d7b5261b604f4a'), 'white', {renderer: 'canvas'});
-        var option_44e874dcb3d84087a8d7b5261b604f4a = {
+        var chart_9effef9b7ba14a1fbed333a944626af3 = echarts.init(
+            document.getElementById('9effef9b7ba14a1fbed333a944626af3'), 'white', {renderer: 'canvas'});
+        var option_9effef9b7ba14a1fbed333a944626af3 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,30 +23,15 @@
     "animationDelayUpdate": 0,
     "color": [
         "white",
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -204,10 +189,6 @@
                 "",
                 "geo"
             ],
-            "selected": {
-                "": true,
-                "geo": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -222,15 +203,22 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "title": [
         {
             "text": "Geo-Lines",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
@@ -238,10 +226,13 @@
     "geo": {
         "map": "china",
         "roam": true,
+        "aspectScale": 0.75,
+        "nameProperty": "name",
+        "selectedMode": false,
         "emphasis": {}
     }
 };
-        chart_44e874dcb3d84087a8d7b5261b604f4a.setOption(option_44e874dcb3d84087a8d7b5261b604f4a);
+        chart_9effef9b7ba14a1fbed333a944626af3.setOption(option_9effef9b7ba14a1fbed333a944626af3);
     </script>
 </body>
 </html>

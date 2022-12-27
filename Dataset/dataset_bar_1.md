@@ -23,7 +23,7 @@ c = (
     )
     .add_yaxis(
         series_name="",
-        yaxis_data=[],
+        y_axis=[],
         encode={"x": "amount", "y": "product"},
         label_opts=opts.LabelOpts(is_show=False),
     )

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="e7d3f446432f409cb150924fa0850afa" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="111d5a723a3843eeba7a0375f4f20a76" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_e7d3f446432f409cb150924fa0850afa = echarts.init(
-            document.getElementById('e7d3f446432f409cb150924fa0850afa'), 'white', {renderer: 'canvas'});
-        var option_e7d3f446432f409cb150924fa0850afa = {
+        var chart_111d5a723a3843eeba7a0375f4f20a76 = echarts.init(
+            document.getElementById('111d5a723a3843eeba7a0375f4f20a76'), 'white', {renderer: 'canvas'});
+        var option_111d5a723a3843eeba7a0375f4f20a76 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,30 +21,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -53,39 +38,39 @@
             "symbolSize": 10,
             "data": [
                 [
-                    "\u886c\u886b",
-                    78,
-                    "\u5c0f\u7c73"
+                    "\u54c8\u58eb\u5947",
+                    135,
+                    "\u5468\u4e00"
                 ],
                 [
-                    "\u6bdb\u8863",
-                    44,
-                    "\u4e09\u661f"
+                    "\u8428\u6469\u8036",
+                    112,
+                    "\u5468\u4e8c"
                 ],
                 [
-                    "\u9886\u5e26",
-                    93,
-                    "\u534e\u4e3a"
+                    "\u6cf0\u8fea",
+                    126,
+                    "\u5468\u4e09"
                 ],
                 [
-                    "\u88e4\u5b50",
-                    146,
-                    "\u82f9\u679c"
+                    "\u91d1\u6bdb",
+                    115,
+                    "\u5468\u56db"
                 ],
                 [
-                    "\u98ce\u8863",
-                    150,
-                    "\u9b45\u65cf"
+                    "\u7267\u7f8a\u72ac",
+                    40,
+                    "\u5468\u4e94"
                 ],
                 [
-                    "\u9ad8\u8ddf\u978b",
-                    25,
-                    "VIVO"
+                    "\u5409\u5a03\u5a03",
+                    134,
+                    "\u5468\u516d"
                 ],
                 [
-                    "\u889c\u5b50",
-                    73,
-                    "OPPO"
+                    "\u67ef\u57fa",
+                    22,
+                    "\u5468\u65e5"
                 ]
             ],
             "label": {
@@ -101,9 +86,6 @@
             "data": [
                 "\u5546\u5bb6A"
             ],
-            "selected": {
-                "\u5546\u5bb6A": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -118,11 +100,16 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "formatter": function (params) {return params.name + ' : ' + params.value[2];},
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "xAxis": [
         {
@@ -136,7 +123,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -146,13 +133,13 @@
                 }
             },
             "data": [
-                "\u886c\u886b",
-                "\u6bdb\u8863",
-                "\u9886\u5e26",
-                "\u88e4\u5b50",
-                "\u98ce\u8863",
-                "\u9ad8\u8ddf\u978b",
-                "\u889c\u5b50"
+                "\u54c8\u58eb\u5947",
+                "\u8428\u6469\u8036",
+                "\u6cf0\u8fea",
+                "\u91d1\u6bdb",
+                "\u7267\u7f8a\u72ac",
+                "\u5409\u5a03\u5a03",
+                "\u67ef\u57fa"
             ]
         }
     ],
@@ -168,7 +155,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -182,6 +169,8 @@
     "title": [
         {
             "text": "Scatter-\u591a\u7ef4\u5ea6\u6570\u636e",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
@@ -209,7 +198,7 @@
         "borderWidth": 0
     }
 };
-        chart_e7d3f446432f409cb150924fa0850afa.setOption(option_e7d3f446432f409cb150924fa0850afa);
+        chart_111d5a723a3843eeba7a0375f4f20a76.setOption(option_111d5a723a3843eeba7a0375f4f20a76);
     </script>
 </body>
 </html>

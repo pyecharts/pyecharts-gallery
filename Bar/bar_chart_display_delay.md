@@ -7,7 +7,7 @@ from pyecharts.charts import Bar
 
 """
 Gallery 使用 pyecharts 1.1.0
-参考地址: https://www.echartsjs.com/examples/editor.html?c=bar-animation-delay
+参考地址: https://echarts.apache.org/examples/editor.html?c=bar-animation-delay
 
 目前无法实现的功能:
 
@@ -222,15 +222,13 @@ blue_bar = [
 
 
 (
-    Bar(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Bar()
     .add_xaxis(xaxis_data=category)
     .add_yaxis(
-        series_name="bar", yaxis_data=red_bar, label_opts=opts.LabelOpts(is_show=False)
+        series_name="bar", y_axis=red_bar, label_opts=opts.LabelOpts(is_show=False)
     )
     .add_yaxis(
-        series_name="bar2",
-        yaxis_data=blue_bar,
-        label_opts=opts.LabelOpts(is_show=False),
+        series_name="bar2", y_axis=blue_bar, label_opts=opts.LabelOpts(is_show=False)
     )
     .set_global_opts(
         title_opts=opts.TitleOpts(title="柱状图动画延迟"),

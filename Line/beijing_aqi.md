@@ -4946,7 +4946,7 @@ all_data = [
 ]
 
 (
-    Line(init_opts=opts.InitOpts(width="1680px", height="800px"))
+    Line()
     .add_xaxis(xaxis_data=[item[0] for item in all_data])
     .add_yaxis(
         series_name="",

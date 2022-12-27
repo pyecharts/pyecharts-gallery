@@ -691,7 +691,7 @@ data = [
 ]
 
 (
-    Boxplot(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Boxplot()
     .add_xaxis(xaxis_data=axis_data)
     .add_yaxis(
         series_name="category0",

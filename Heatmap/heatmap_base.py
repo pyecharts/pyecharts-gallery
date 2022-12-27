@@ -8,7 +8,9 @@ value = [[i, j, random.randint(0, 50)] for i in range(24) for j in range(7)]
 c = (
     HeatMap()
     .add_xaxis(Faker.clock)
-    .add_yaxis("series0", Faker.week, value)
+    .add_yaxis(
+        "series0", Faker.week, value, label_opts=opts.LabelOpts(position="middle")
+    )
     .set_global_opts(
         title_opts=opts.TitleOpts(title="HeatMap-基本示例"),
         visualmap_opts=opts.VisualMapOpts(),

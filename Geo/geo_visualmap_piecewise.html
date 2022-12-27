@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
 
 </head>
 <body>
-    <div id="587d2460a4d047848de9c2d17621bade" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="681cc9f8ff974ee2a3c21e91e7db5b65" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_587d2460a4d047848de9c2d17621bade = echarts.init(
-            document.getElementById('587d2460a4d047848de9c2d17621bade'), 'white', {renderer: 'canvas'});
-        var option_587d2460a4d047848de9c2d17621bade = {
+        var chart_681cc9f8ff974ee2a3c21e91e7db5b65 = echarts.init(
+            document.getElementById('681cc9f8ff974ee2a3c21e91e7db5b65'), 'white', {renderer: 'canvas'});
+        var option_681cc9f8ff974ee2a3c21e91e7db5b65 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -22,30 +22,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -59,7 +44,7 @@
                     "value": [
                         113.26653,
                         23.132191,
-                        123
+                        40
                     ]
                 },
                 {
@@ -67,7 +52,7 @@
                     "value": [
                         116.407526,
                         39.90403,
-                        140
+                        127
                     ]
                 },
                 {
@@ -75,7 +60,7 @@
                     "value": [
                         121.473701,
                         31.230416,
-                        75
+                        74
                     ]
                 },
                 {
@@ -83,7 +68,7 @@
                     "value": [
                         115.909228,
                         28.675696,
-                        128
+                        88
                     ]
                 },
                 {
@@ -91,7 +76,7 @@
                     "value": [
                         112.98381,
                         28.112444,
-                        100
+                        144
                     ]
                 },
                 {
@@ -99,7 +84,7 @@
                     "value": [
                         120.152791,
                         30.267446,
-                        116
+                        128
                     ]
                 },
                 {
@@ -107,7 +92,7 @@
                     "value": [
                         118.763232,
                         32.061707,
-                        26
+                        47
                     ]
                 }
             ],
@@ -129,9 +114,6 @@
             "data": [
                 "geo"
             ],
-            "selected": {
-                "geo": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -146,15 +128,22 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "title": [
         {
             "text": "Geo-VisualMap\uff08\u5206\u6bb5\u578b\uff09",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
@@ -183,10 +172,13 @@
     "geo": {
         "map": "china",
         "roam": true,
+        "aspectScale": 0.75,
+        "nameProperty": "name",
+        "selectedMode": false,
         "emphasis": {}
     }
 };
-        chart_587d2460a4d047848de9c2d17621bade.setOption(option_587d2460a4d047848de9c2d17621bade);
+        chart_681cc9f8ff974ee2a3c21e91e7db5b65.setOption(option_681cc9f8ff974ee2a3c21e91e7db5b65);
     </script>
 </body>
 </html>

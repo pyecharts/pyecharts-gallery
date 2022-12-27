@@ -23,7 +23,7 @@ js_formatter = """function (params) {
     }"""
 
 (
-    Line(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Line()
     .add_xaxis(
         xaxis_data=[
             "2016-1",

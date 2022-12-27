@@ -94,7 +94,7 @@ bar1 = (
         [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
         color="#5793f3",
         xaxis_index=1,
-        yaxis_index=3,
+        yaxis_index=4,
     )
     .extend_axis(
         yaxis=opts.AxisOpts(
@@ -133,7 +133,6 @@ bar1 = (
             max_=250,
             position="right",
             offset=80,
-            grid_index=1,
             axisline_opts=opts.AxisLineOpts(
                 linestyle_opts=opts.LineStyleOpts(color="#5793f3")
             ),

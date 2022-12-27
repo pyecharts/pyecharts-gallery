@@ -7,7 +7,7 @@ from pyecharts.charts import Bar, Line
 
 """
 Gallery 使用 pyecharts 1.0.0
-参考地址: https://www.echartsjs.com/examples/editor.html?c=multiple-y-axis
+参考地址: https://echarts.apache.org/examples/editor.html?c=multiple-y-axis
 
 目前无法实现的功能:
 
@@ -48,16 +48,13 @@ rainfall_capacity = [
 average_temperature = [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
 
 bar = (
-    Bar(init_opts=opts.InitOpts(width="1680px", height="800px"))
+    Bar(init_opts=opts.InitOpts(width="1260px", height="720px"))
     .add_xaxis(xaxis_data=x_data)
     .add_yaxis(
-        series_name="蒸发量",
-        yaxis_data=evaporation_capacity,
-        yaxis_index=0,
-        color=colors[1],
+        series_name="蒸发量", y_axis=evaporation_capacity, yaxis_index=0, color=colors[1]
     )
     .add_yaxis(
-        series_name="降水量", yaxis_data=rainfall_capacity, yaxis_index=1, color=colors[0]
+        series_name="降水量", y_axis=rainfall_capacity, yaxis_index=1, color=colors[0]
     )
     .extend_axis(
         yaxis=opts.AxisOpts(

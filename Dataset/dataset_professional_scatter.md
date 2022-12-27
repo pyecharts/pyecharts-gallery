@@ -114,7 +114,7 @@ l2_2 = (
 )
 
 grid = (
-    Grid(init_opts=opts.InitOpts(width="1280px", height="960px"))
+    Grid(init_opts=opts.InitOpts(width="1200px", height="960px"))
     .add(
         chart=l1_1,
         grid_opts=opts.GridOpts(pos_right="57%", pos_bottom="57%"),

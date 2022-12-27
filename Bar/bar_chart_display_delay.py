@@ -224,9 +224,7 @@ blue_bar = [
         series_name="bar", y_axis=red_bar, label_opts=opts.LabelOpts(is_show=False)
     )
     .add_yaxis(
-        series_name="bar2",
-        y_axis=blue_bar,
-        label_opts=opts.LabelOpts(is_show=False),
+        series_name="bar2", y_axis=blue_bar, label_opts=opts.LabelOpts(is_show=False)
     )
     .set_global_opts(
         title_opts=opts.TitleOpts(title="柱状图动画延迟"),

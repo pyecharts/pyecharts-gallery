@@ -169,7 +169,7 @@ scatter = (
 )
 
 grid = (
-    Grid(init_opts=opts.InitOpts(width="1600px", height="1000px"))
+    Grid()
     .add(
         box_plot,
         grid_opts=opts.GridOpts(pos_left="10%", pos_right="10%", pos_bottom="15%"),

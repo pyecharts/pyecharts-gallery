@@ -16,15 +16,16 @@ bar = (
     .add_xaxis(xaxis_data=x_data)
     .add_yaxis(
         series_name="",
-        yaxis_data=y_total,
+        y_axis=y_total,
         stack="总量",
         itemstyle_opts=opts.ItemStyleOpts(color="rgba(0,0,0,0)"),
     )
-    .add_yaxis(series_name="收入", yaxis_data=y_in, stack="总量")
-    .add_yaxis(series_name="支出", yaxis_data=y_out, stack="总量")
+    .add_yaxis(series_name="收入", y_axis=y_in, stack="总量")
+    .add_yaxis(series_name="支出", y_axis=y_out, stack="总量")
     .set_global_opts(yaxis_opts=opts.AxisOpts(type_="value"))
     .render("bar_waterfall_plot.html")
 )
+
 ```
 
 <iframe width="100%" height="800px" src="Bar/bar_waterfall_plot.html"></iframe>

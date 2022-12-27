@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="ed209545bbd142518cd7b193bd6fb616" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="28a81123b1244aabbcc5dbea8e4351f8" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_ed209545bbd142518cd7b193bd6fb616 = echarts.init(
-            document.getElementById('ed209545bbd142518cd7b193bd6fb616'), 'white', {renderer: 'canvas'});
-        var option_ed209545bbd142518cd7b193bd6fb616 = {
+        var chart_28a81123b1244aabbcc5dbea8e4351f8 = echarts.init(
+            document.getElementById('28a81123b1244aabbcc5dbea8e4351f8'), 'white', {renderer: 'canvas'});
+        var option_28a81123b1244aabbcc5dbea8e4351f8 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -98,7 +98,9 @@
             "layoutIteration": 32,
             "orient": "vertical",
             "draggable": true,
-            "focusNodeAdjacency": "allEdges",
+            "emphasis": {
+                "focus": "allEdges"
+            },
             "label": {
                 "show": true,
                 "position": "top",
@@ -119,9 +121,6 @@
             "data": [
                 "sankey"
             ],
-            "selected": {
-                "sankey": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -136,20 +135,27 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "title": [
         {
             "text": "Sankey-Vertical",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_ed209545bbd142518cd7b193bd6fb616.setOption(option_ed209545bbd142518cd7b193bd6fb616);
+        chart_28a81123b1244aabbcc5dbea8e4351f8.setOption(option_28a81123b1244aabbcc5dbea8e4351f8);
     </script>
 </body>
 </html>

@@ -7,7 +7,7 @@ from pyecharts.charts import Bar, Line
 
 """
 Gallery 使用 pyecharts 1.1.0
-参考地址: https://www.echartsjs.com/examples/editor.html?c=mix-line-bar
+参考地址: https://echarts.apache.org/examples/editor.html?c=mix-line-bar
 
 目前无法实现的功能:
 
@@ -17,42 +17,16 @@ Gallery 使用 pyecharts 1.1.0
 x_data = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"]
 
 bar = (
-    Bar(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Bar()
     .add_xaxis(xaxis_data=x_data)
     .add_yaxis(
         series_name="蒸发量",
-        yaxis_data=[
-            2.0,
-            4.9,
-            7.0,
-            23.2,
-            25.6,
-            76.7,
-            135.6,
-            162.2,
-            32.6,
-            20.0,
-            6.4,
-            3.3,
-        ],
+        y_axis=[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
         label_opts=opts.LabelOpts(is_show=False),
     )
     .add_yaxis(
         series_name="降水量",
-        yaxis_data=[
-            2.6,
-            5.9,
-            9.0,
-            26.4,
-            28.7,
-            70.7,
-            175.6,
-            182.2,
-            48.7,
-            18.8,
-            6.0,
-            2.3,
-        ],
+        y_axis=[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
         label_opts=opts.LabelOpts(is_show=False),
     )
     .extend_axis(

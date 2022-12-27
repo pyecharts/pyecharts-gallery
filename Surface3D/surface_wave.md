@@ -48,7 +48,7 @@ def surface3d_data():
 
 
 (
-    Surface3D(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Surface3D()
     .add(
         series_name="",
         shading="color",

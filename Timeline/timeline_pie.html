@@ -3,49 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="e51a6fe54a5f4735975922f05ddcdd4c" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="a3f7ab66bea44dac9ea3adc1a1e529e2" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_e51a6fe54a5f4735975922f05ddcdd4c = echarts.init(
-            document.getElementById('e51a6fe54a5f4735975922f05ddcdd4c'), 'white', {renderer: 'canvas'});
-        var option_e51a6fe54a5f4735975922f05ddcdd4c = {
+        var chart_a3f7ab66bea44dac9ea3adc1a1e529e2 = echarts.init(
+            document.getElementById('a3f7ab66bea44dac9ea3adc1a1e529e2'), 'white', {renderer: 'canvas'});
+        var option_a3f7ab66bea44dac9ea3adc1a1e529e2 = {
     "baseOption": {
         "series": [
             {
                 "type": "pie",
                 "name": "\u5546\u5bb6A",
                 "clockwise": true,
+                "startAngle": 90,
                 "data": [
                     {
-                        "name": "\u5c0f\u7c73",
-                        "value": 38
+                        "name": "\u6cb3\u9a6c",
+                        "value": 102
                     },
                     {
-                        "name": "\u4e09\u661f",
-                        "value": 97
+                        "name": "\u87d2\u86c7",
+                        "value": 58
                     },
                     {
-                        "name": "\u534e\u4e3a",
-                        "value": 51
+                        "name": "\u8001\u864e",
+                        "value": 55
                     },
                     {
-                        "name": "\u82f9\u679c",
-                        "value": 101
+                        "name": "\u5927\u8c61",
+                        "value": 49
                     },
                     {
-                        "name": "\u9b45\u65cf",
-                        "value": 143
+                        "name": "\u5154\u5b50",
+                        "value": 121
                     },
                     {
-                        "name": "VIVO",
-                        "value": 117
+                        "name": "\u718a\u732b",
+                        "value": 87
                     },
                     {
-                        "name": "OPPO",
-                        "value": 146
+                        "name": "\u72ee\u5b50",
+                        "value": 89
                     }
                 ],
                 "radius": [
@@ -61,11 +62,21 @@
                     "show": true,
                     "position": "top",
                     "margin": 8
+                },
+                "labelLine": {
+                    "show": true,
+                    "showAbove": false,
+                    "length": 15,
+                    "length2": 15,
+                    "smooth": false,
+                    "minTurnAngle": 90,
+                    "maxSurfaceAngle": 90
                 }
             }
         ],
         "timeline": {
             "axisType": "category",
+            "currentIndex": 0,
             "orient": "horizontal",
             "autoPlay": false,
             "controlPosition": "left",
@@ -88,15 +99,14 @@
             "legend": [
                 {
                     "data": [
-                        "\u5c0f\u7c73",
-                        "\u4e09\u661f",
-                        "\u534e\u4e3a",
-                        "\u82f9\u679c",
-                        "\u9b45\u65cf",
-                        "VIVO",
-                        "OPPO"
+                        "\u6cb3\u9a6c",
+                        "\u87d2\u86c7",
+                        "\u8001\u864e",
+                        "\u5927\u8c61",
+                        "\u5154\u5b50",
+                        "\u718a\u732b",
+                        "\u72ee\u5b50"
                     ],
-                    "selected": {},
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
@@ -109,34 +119,35 @@
                     "type": "pie",
                     "name": "\u5546\u5bb6A",
                     "clockwise": true,
+                    "startAngle": 90,
                     "data": [
                         {
-                            "name": "\u5c0f\u7c73",
-                            "value": 57
+                            "name": "\u6cb3\u9a6c",
+                            "value": 63
                         },
                         {
-                            "name": "\u4e09\u661f",
-                            "value": 137
+                            "name": "\u87d2\u86c7",
+                            "value": 105
                         },
                         {
-                            "name": "\u534e\u4e3a",
-                            "value": 89
+                            "name": "\u8001\u864e",
+                            "value": 100
                         },
                         {
-                            "name": "\u82f9\u679c",
-                            "value": 67
+                            "name": "\u5927\u8c61",
+                            "value": 133
                         },
                         {
-                            "name": "\u9b45\u65cf",
-                            "value": 115
+                            "name": "\u5154\u5b50",
+                            "value": 98
                         },
                         {
-                            "name": "VIVO",
+                            "name": "\u718a\u732b",
                             "value": 134
                         },
                         {
-                            "name": "OPPO",
-                            "value": 53
+                            "name": "\u72ee\u5b50",
+                            "value": 129
                         }
                     ],
                     "radius": [
@@ -152,12 +163,23 @@
                         "show": true,
                         "position": "top",
                         "margin": 8
+                    },
+                    "labelLine": {
+                        "show": true,
+                        "showAbove": false,
+                        "length": 15,
+                        "length2": 15,
+                        "smooth": false,
+                        "minTurnAngle": 90,
+                        "maxSurfaceAngle": 90
                     }
                 }
             ],
             "title": [
                 {
                     "text": "\u67d0\u5546\u5e972015\u5e74\u8425\u4e1a\u989d",
+                    "target": "blank",
+                    "subtarget": "blank",
                     "padding": 5,
                     "itemGap": 10
                 }
@@ -169,51 +191,40 @@
                 "axisPointer": {
                     "type": "line"
                 },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
                 "textStyle": {
                     "fontSize": 14
                 },
-                "borderWidth": 0
+                "borderWidth": 0,
+                "padding": 5
             },
             "color": [
-                "#c23531",
-                "#2f4554",
-                "#61a0a8",
-                "#d48265",
-                "#749f83",
-                "#ca8622",
-                "#bda29a",
-                "#6e7074",
-                "#546570",
-                "#c4ccd3",
-                "#f05b72",
-                "#ef5b9c",
-                "#f47920",
-                "#905a3d",
-                "#fab27b",
-                "#2a5caa",
-                "#444693",
-                "#726930",
-                "#b2d235",
-                "#6d8346",
-                "#ac6767",
-                "#1d953f",
-                "#6950a1",
-                "#918597"
+                "#5470c6",
+                "#91cc75",
+                "#fac858",
+                "#ee6666",
+                "#73c0de",
+                "#3ba272",
+                "#fc8452",
+                "#9a60b4",
+                "#ea7ccc"
             ]
         },
         {
             "legend": [
                 {
                     "data": [
-                        "\u5c0f\u7c73",
-                        "\u4e09\u661f",
-                        "\u534e\u4e3a",
-                        "\u82f9\u679c",
-                        "\u9b45\u65cf",
-                        "VIVO",
-                        "OPPO"
+                        "\u6cb3\u9a6c",
+                        "\u87d2\u86c7",
+                        "\u8001\u864e",
+                        "\u5927\u8c61",
+                        "\u5154\u5b50",
+                        "\u718a\u732b",
+                        "\u72ee\u5b50"
                     ],
-                    "selected": {},
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
@@ -226,34 +237,35 @@
                     "type": "pie",
                     "name": "\u5546\u5bb6A",
                     "clockwise": true,
+                    "startAngle": 90,
                     "data": [
                         {
-                            "name": "\u5c0f\u7c73",
-                            "value": 81
+                            "name": "\u6cb3\u9a6c",
+                            "value": 64
                         },
                         {
-                            "name": "\u4e09\u661f",
-                            "value": 69
+                            "name": "\u87d2\u86c7",
+                            "value": 33
                         },
                         {
-                            "name": "\u534e\u4e3a",
-                            "value": 105
+                            "name": "\u8001\u864e",
+                            "value": 143
                         },
                         {
-                            "name": "\u82f9\u679c",
-                            "value": 144
+                            "name": "\u5927\u8c61",
+                            "value": 38
                         },
                         {
-                            "name": "\u9b45\u65cf",
-                            "value": 138
+                            "name": "\u5154\u5b50",
+                            "value": 110
                         },
                         {
-                            "name": "VIVO",
-                            "value": 117
+                            "name": "\u718a\u732b",
+                            "value": 101
                         },
                         {
-                            "name": "OPPO",
-                            "value": 93
+                            "name": "\u72ee\u5b50",
+                            "value": 47
                         }
                     ],
                     "radius": [
@@ -269,12 +281,23 @@
                         "show": true,
                         "position": "top",
                         "margin": 8
+                    },
+                    "labelLine": {
+                        "show": true,
+                        "showAbove": false,
+                        "length": 15,
+                        "length2": 15,
+                        "smooth": false,
+                        "minTurnAngle": 90,
+                        "maxSurfaceAngle": 90
                     }
                 }
             ],
             "title": [
                 {
                     "text": "\u67d0\u5546\u5e972016\u5e74\u8425\u4e1a\u989d",
+                    "target": "blank",
+                    "subtarget": "blank",
                     "padding": 5,
                     "itemGap": 10
                 }
@@ -286,51 +309,40 @@
                 "axisPointer": {
                     "type": "line"
                 },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
                 "textStyle": {
                     "fontSize": 14
                 },
-                "borderWidth": 0
+                "borderWidth": 0,
+                "padding": 5
             },
             "color": [
-                "#c23531",
-                "#2f4554",
-                "#61a0a8",
-                "#d48265",
-                "#749f83",
-                "#ca8622",
-                "#bda29a",
-                "#6e7074",
-                "#546570",
-                "#c4ccd3",
-                "#f05b72",
-                "#ef5b9c",
-                "#f47920",
-                "#905a3d",
-                "#fab27b",
-                "#2a5caa",
-                "#444693",
-                "#726930",
-                "#b2d235",
-                "#6d8346",
-                "#ac6767",
-                "#1d953f",
-                "#6950a1",
-                "#918597"
+                "#5470c6",
+                "#91cc75",
+                "#fac858",
+                "#ee6666",
+                "#73c0de",
+                "#3ba272",
+                "#fc8452",
+                "#9a60b4",
+                "#ea7ccc"
             ]
         },
         {
             "legend": [
                 {
                     "data": [
-                        "\u5c0f\u7c73",
-                        "\u4e09\u661f",
-                        "\u534e\u4e3a",
-                        "\u82f9\u679c",
-                        "\u9b45\u65cf",
-                        "VIVO",
-                        "OPPO"
+                        "\u6cb3\u9a6c",
+                        "\u87d2\u86c7",
+                        "\u8001\u864e",
+                        "\u5927\u8c61",
+                        "\u5154\u5b50",
+                        "\u718a\u732b",
+                        "\u72ee\u5b50"
                     ],
-                    "selected": {},
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
@@ -343,34 +355,35 @@
                     "type": "pie",
                     "name": "\u5546\u5bb6A",
                     "clockwise": true,
+                    "startAngle": 90,
                     "data": [
                         {
-                            "name": "\u5c0f\u7c73",
-                            "value": 92
+                            "name": "\u6cb3\u9a6c",
+                            "value": 127
                         },
                         {
-                            "name": "\u4e09\u661f",
-                            "value": 21
+                            "name": "\u87d2\u86c7",
+                            "value": 85
                         },
                         {
-                            "name": "\u534e\u4e3a",
-                            "value": 148
+                            "name": "\u8001\u864e",
+                            "value": 32
                         },
                         {
-                            "name": "\u82f9\u679c",
-                            "value": 131
+                            "name": "\u5927\u8c61",
+                            "value": 147
                         },
                         {
-                            "name": "\u9b45\u65cf",
-                            "value": 132
+                            "name": "\u5154\u5b50",
+                            "value": 150
                         },
                         {
-                            "name": "VIVO",
-                            "value": 91
+                            "name": "\u718a\u732b",
+                            "value": 86
                         },
                         {
-                            "name": "OPPO",
-                            "value": 124
+                            "name": "\u72ee\u5b50",
+                            "value": 49
                         }
                     ],
                     "radius": [
@@ -386,12 +399,23 @@
                         "show": true,
                         "position": "top",
                         "margin": 8
+                    },
+                    "labelLine": {
+                        "show": true,
+                        "showAbove": false,
+                        "length": 15,
+                        "length2": 15,
+                        "smooth": false,
+                        "minTurnAngle": 90,
+                        "maxSurfaceAngle": 90
                     }
                 }
             ],
             "title": [
                 {
                     "text": "\u67d0\u5546\u5e972017\u5e74\u8425\u4e1a\u989d",
+                    "target": "blank",
+                    "subtarget": "blank",
                     "padding": 5,
                     "itemGap": 10
                 }
@@ -403,51 +427,40 @@
                 "axisPointer": {
                     "type": "line"
                 },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
                 "textStyle": {
                     "fontSize": 14
                 },
-                "borderWidth": 0
+                "borderWidth": 0,
+                "padding": 5
             },
             "color": [
-                "#c23531",
-                "#2f4554",
-                "#61a0a8",
-                "#d48265",
-                "#749f83",
-                "#ca8622",
-                "#bda29a",
-                "#6e7074",
-                "#546570",
-                "#c4ccd3",
-                "#f05b72",
-                "#ef5b9c",
-                "#f47920",
-                "#905a3d",
-                "#fab27b",
-                "#2a5caa",
-                "#444693",
-                "#726930",
-                "#b2d235",
-                "#6d8346",
-                "#ac6767",
-                "#1d953f",
-                "#6950a1",
-                "#918597"
+                "#5470c6",
+                "#91cc75",
+                "#fac858",
+                "#ee6666",
+                "#73c0de",
+                "#3ba272",
+                "#fc8452",
+                "#9a60b4",
+                "#ea7ccc"
             ]
         },
         {
             "legend": [
                 {
                     "data": [
-                        "\u5c0f\u7c73",
-                        "\u4e09\u661f",
-                        "\u534e\u4e3a",
-                        "\u82f9\u679c",
-                        "\u9b45\u65cf",
-                        "VIVO",
-                        "OPPO"
+                        "\u6cb3\u9a6c",
+                        "\u87d2\u86c7",
+                        "\u8001\u864e",
+                        "\u5927\u8c61",
+                        "\u5154\u5b50",
+                        "\u718a\u732b",
+                        "\u72ee\u5b50"
                     ],
-                    "selected": {},
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
@@ -460,34 +473,35 @@
                     "type": "pie",
                     "name": "\u5546\u5bb6A",
                     "clockwise": true,
+                    "startAngle": 90,
                     "data": [
                         {
-                            "name": "\u5c0f\u7c73",
-                            "value": 56
+                            "name": "\u6cb3\u9a6c",
+                            "value": 60
                         },
                         {
-                            "name": "\u4e09\u661f",
-                            "value": 144
+                            "name": "\u87d2\u86c7",
+                            "value": 61
                         },
                         {
-                            "name": "\u534e\u4e3a",
-                            "value": 34
+                            "name": "\u8001\u864e",
+                            "value": 76
                         },
                         {
-                            "name": "\u82f9\u679c",
-                            "value": 57
+                            "name": "\u5927\u8c61",
+                            "value": 76
                         },
                         {
-                            "name": "\u9b45\u65cf",
-                            "value": 127
+                            "name": "\u5154\u5b50",
+                            "value": 134
                         },
                         {
-                            "name": "VIVO",
-                            "value": 72
+                            "name": "\u718a\u732b",
+                            "value": 22
                         },
                         {
-                            "name": "OPPO",
-                            "value": 94
+                            "name": "\u72ee\u5b50",
+                            "value": 90
                         }
                     ],
                     "radius": [
@@ -503,12 +517,23 @@
                         "show": true,
                         "position": "top",
                         "margin": 8
+                    },
+                    "labelLine": {
+                        "show": true,
+                        "showAbove": false,
+                        "length": 15,
+                        "length2": 15,
+                        "smooth": false,
+                        "minTurnAngle": 90,
+                        "maxSurfaceAngle": 90
                     }
                 }
             ],
             "title": [
                 {
                     "text": "\u67d0\u5546\u5e972018\u5e74\u8425\u4e1a\u989d",
+                    "target": "blank",
+                    "subtarget": "blank",
                     "padding": 5,
                     "itemGap": 10
                 }
@@ -520,51 +545,40 @@
                 "axisPointer": {
                     "type": "line"
                 },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
                 "textStyle": {
                     "fontSize": 14
                 },
-                "borderWidth": 0
+                "borderWidth": 0,
+                "padding": 5
             },
             "color": [
-                "#c23531",
-                "#2f4554",
-                "#61a0a8",
-                "#d48265",
-                "#749f83",
-                "#ca8622",
-                "#bda29a",
-                "#6e7074",
-                "#546570",
-                "#c4ccd3",
-                "#f05b72",
-                "#ef5b9c",
-                "#f47920",
-                "#905a3d",
-                "#fab27b",
-                "#2a5caa",
-                "#444693",
-                "#726930",
-                "#b2d235",
-                "#6d8346",
-                "#ac6767",
-                "#1d953f",
-                "#6950a1",
-                "#918597"
+                "#5470c6",
+                "#91cc75",
+                "#fac858",
+                "#ee6666",
+                "#73c0de",
+                "#3ba272",
+                "#fc8452",
+                "#9a60b4",
+                "#ea7ccc"
             ]
         },
         {
             "legend": [
                 {
                     "data": [
-                        "\u5c0f\u7c73",
-                        "\u4e09\u661f",
-                        "\u534e\u4e3a",
-                        "\u82f9\u679c",
-                        "\u9b45\u65cf",
-                        "VIVO",
-                        "OPPO"
+                        "\u6cb3\u9a6c",
+                        "\u87d2\u86c7",
+                        "\u8001\u864e",
+                        "\u5927\u8c61",
+                        "\u5154\u5b50",
+                        "\u718a\u732b",
+                        "\u72ee\u5b50"
                     ],
-                    "selected": {},
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
@@ -577,34 +591,35 @@
                     "type": "pie",
                     "name": "\u5546\u5bb6A",
                     "clockwise": true,
+                    "startAngle": 90,
                     "data": [
                         {
-                            "name": "\u5c0f\u7c73",
-                            "value": 38
+                            "name": "\u6cb3\u9a6c",
+                            "value": 102
                         },
                         {
-                            "name": "\u4e09\u661f",
-                            "value": 97
+                            "name": "\u87d2\u86c7",
+                            "value": 58
                         },
                         {
-                            "name": "\u534e\u4e3a",
-                            "value": 51
+                            "name": "\u8001\u864e",
+                            "value": 55
                         },
                         {
-                            "name": "\u82f9\u679c",
-                            "value": 101
+                            "name": "\u5927\u8c61",
+                            "value": 49
                         },
                         {
-                            "name": "\u9b45\u65cf",
-                            "value": 143
+                            "name": "\u5154\u5b50",
+                            "value": 121
                         },
                         {
-                            "name": "VIVO",
-                            "value": 117
+                            "name": "\u718a\u732b",
+                            "value": 87
                         },
                         {
-                            "name": "OPPO",
-                            "value": 146
+                            "name": "\u72ee\u5b50",
+                            "value": 89
                         }
                     ],
                     "radius": [
@@ -620,12 +635,23 @@
                         "show": true,
                         "position": "top",
                         "margin": 8
+                    },
+                    "labelLine": {
+                        "show": true,
+                        "showAbove": false,
+                        "length": 15,
+                        "length2": 15,
+                        "smooth": false,
+                        "minTurnAngle": 90,
+                        "maxSurfaceAngle": 90
                     }
                 }
             ],
             "title": [
                 {
                     "text": "\u67d0\u5546\u5e972019\u5e74\u8425\u4e1a\u989d",
+                    "target": "blank",
+                    "subtarget": "blank",
                     "padding": 5,
                     "itemGap": 10
                 }
@@ -637,41 +663,31 @@
                 "axisPointer": {
                     "type": "line"
                 },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
                 "textStyle": {
                     "fontSize": 14
                 },
-                "borderWidth": 0
+                "borderWidth": 0,
+                "padding": 5
             },
             "color": [
-                "#c23531",
-                "#2f4554",
-                "#61a0a8",
-                "#d48265",
-                "#749f83",
-                "#ca8622",
-                "#bda29a",
-                "#6e7074",
-                "#546570",
-                "#c4ccd3",
-                "#f05b72",
-                "#ef5b9c",
-                "#f47920",
-                "#905a3d",
-                "#fab27b",
-                "#2a5caa",
-                "#444693",
-                "#726930",
-                "#b2d235",
-                "#6d8346",
-                "#ac6767",
-                "#1d953f",
-                "#6950a1",
-                "#918597"
+                "#5470c6",
+                "#91cc75",
+                "#fac858",
+                "#ee6666",
+                "#73c0de",
+                "#3ba272",
+                "#fc8452",
+                "#9a60b4",
+                "#ea7ccc"
             ]
         }
     ]
 };
-        chart_e51a6fe54a5f4735975922f05ddcdd4c.setOption(option_e51a6fe54a5f4735975922f05ddcdd4c);
+        chart_a3f7ab66bea44dac9ea3adc1a1e529e2.setOption(option_a3f7ab66bea44dac9ea3adc1a1e529e2);
     </script>
 </body>
 </html>

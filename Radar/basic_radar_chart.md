@@ -17,7 +17,7 @@ v1 = [[4300, 10000, 28000, 35000, 50000, 19000]]
 v2 = [[5000, 14000, 28000, 31000, 42000, 21000]]
 
 (
-    Radar(init_opts=opts.InitOpts(width="1280px", height="720px", bg_color="#CCCCCC"))
+    Radar(init_opts=opts.InitOpts(bg_color="#CCCCCC"))
     .add_schema(
         schema=[
             opts.RadarIndicatorItem(name="销售（sales）", max_=6500),

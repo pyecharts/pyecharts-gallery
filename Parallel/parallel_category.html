@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="fa2caf475ba64495a26e6bbe9eb2ee33" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="30ce76dbf915482c856ecc5fef6cf5d9" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_fa2caf475ba64495a26e6bbe9eb2ee33 = echarts.init(
-            document.getElementById('fa2caf475ba64495a26e6bbe9eb2ee33'), 'white', {renderer: 'canvas'});
-        var option_fa2caf475ba64495a26e6bbe9eb2ee33 = {
+        var chart_30ce76dbf915482c856ecc5fef6cf5d9 = echarts.init(
+            document.getElementById('30ce76dbf915482c856ecc5fef6cf5d9'), 'white', {renderer: 'canvas'});
+        var option_30ce76dbf915482c856ecc5fef6cf5d9 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,30 +21,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -208,9 +193,6 @@
             "data": [
                 "parallel"
             ],
-            "selected": {
-                "parallel": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -225,10 +207,15 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "parallel": {
         "left": "5%",
@@ -240,36 +227,57 @@
         {
             "dim": 0,
             "name": "data",
+            "name_location": "end",
+            "name_gap": 15,
+            "inverse": false,
             "scale": false
         },
         {
             "dim": 1,
             "name": "AQI",
+            "name_location": "end",
+            "name_gap": 15,
+            "inverse": false,
             "scale": false
         },
         {
             "dim": 2,
             "name": "PM2.5",
+            "name_location": "end",
+            "name_gap": 15,
+            "inverse": false,
             "scale": false
         },
         {
             "dim": 3,
             "name": "PM10",
+            "name_location": "end",
+            "name_gap": 15,
+            "inverse": false,
             "scale": false
         },
         {
             "dim": 4,
             "name": "CO",
+            "name_location": "end",
+            "name_gap": 15,
+            "inverse": false,
             "scale": false
         },
         {
             "dim": 5,
             "name": "NO2",
+            "name_location": "end",
+            "name_gap": 15,
+            "inverse": false,
             "scale": false
         },
         {
             "dim": 6,
             "name": "CO2",
+            "name_location": "end",
+            "name_gap": 15,
+            "inverse": false,
             "scale": false
         },
         {
@@ -284,18 +292,23 @@
                 "\u4e25\u91cd\u6c61\u67d3"
             ],
             "type": "category",
+            "name_location": "end",
+            "name_gap": 15,
+            "inverse": false,
             "scale": false
         }
     ],
     "title": [
         {
             "text": "Parallel-Category",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_fa2caf475ba64495a26e6bbe9eb2ee33.setOption(option_fa2caf475ba64495a26e6bbe9eb2ee33);
+        chart_30ce76dbf915482c856ecc5fef6cf5d9.setOption(option_30ce76dbf915482c856ecc5fef6cf5d9);
     </script>
 </body>
 </html>

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="185d97d53cc44c2ca7dfd6670895515f" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="31b74009d2104d1c807ca506c5125b98" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_185d97d53cc44c2ca7dfd6670895515f = echarts.init(
-            document.getElementById('185d97d53cc44c2ca7dfd6670895515f'), 'white', {renderer: 'canvas'});
-        var option_185d97d53cc44c2ca7dfd6670895515f = {
+        var chart_31b74009d2104d1c807ca506c5125b98 = echarts.init(
+            document.getElementById('31b74009d2104d1c807ca506c5125b98'), 'white', {renderer: 'canvas'});
+        var option_31b74009d2104d1c807ca506c5125b98 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,63 +21,49 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
             "type": "pie",
             "clockwise": true,
+            "startAngle": 90,
             "data": [
                 {
-                    "name": "\u6cb3\u9a6c",
-                    "value": 66
+                    "name": "\u53ef\u4e50",
+                    "value": 32
                 },
                 {
-                    "name": "\u87d2\u86c7",
-                    "value": 119
+                    "name": "\u96ea\u78a7",
+                    "value": 99
                 },
                 {
-                    "name": "\u8001\u864e",
-                    "value": 98
+                    "name": "\u6a59\u6c41",
+                    "value": 132
                 },
                 {
-                    "name": "\u5927\u8c61",
-                    "value": 130
+                    "name": "\u7eff\u8336",
+                    "value": 124
                 },
                 {
-                    "name": "\u5154\u5b50",
-                    "value": 85
+                    "name": "\u5976\u8336",
+                    "value": 105
                 },
                 {
-                    "name": "\u718a\u732b",
-                    "value": 30
+                    "name": "\u767e\u5a01",
+                    "value": 63
                 },
                 {
-                    "name": "\u72ee\u5b50",
-                    "value": 138
+                    "name": "\u9752\u5c9b",
+                    "value": 37
                 }
             ],
             "radius": [
@@ -94,6 +80,15 @@
                 "margin": 8,
                 "formatter": "{b}: {c}"
             },
+            "labelLine": {
+                "show": true,
+                "showAbove": false,
+                "length": 15,
+                "length2": 15,
+                "smooth": false,
+                "minTurnAngle": 90,
+                "maxSurfaceAngle": 90
+            },
             "rippleEffect": {
                 "show": true,
                 "brushType": "stroke",
@@ -105,15 +100,14 @@
     "legend": [
         {
             "data": [
-                "\u6cb3\u9a6c",
-                "\u87d2\u86c7",
-                "\u8001\u864e",
-                "\u5927\u8c61",
-                "\u5154\u5b50",
-                "\u718a\u732b",
-                "\u72ee\u5b50"
+                "\u53ef\u4e50",
+                "\u96ea\u78a7",
+                "\u6a59\u6c41",
+                "\u7eff\u8336",
+                "\u5976\u8336",
+                "\u767e\u5a01",
+                "\u9752\u5c9b"
             ],
-            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -128,20 +122,27 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "title": [
         {
             "text": "Pie-\u57fa\u672c\u793a\u4f8b",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_185d97d53cc44c2ca7dfd6670895515f.setOption(option_185d97d53cc44c2ca7dfd6670895515f);
+        chart_31b74009d2104d1c807ca506c5125b98.setOption(option_31b74009d2104d1c807ca506c5125b98);
     </script>
 </body>
 </html>

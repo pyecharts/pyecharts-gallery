@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="5773a1c861124f63b02f237fa5650653" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="1bfcd5986bb240bea145ebc1f1086d51" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_5773a1c861124f63b02f237fa5650653 = echarts.init(
-            document.getElementById('5773a1c861124f63b02f237fa5650653'), 'white', {renderer: 'canvas'});
-        var option_5773a1c861124f63b02f237fa5650653 = {
+        var chart_1bfcd5986bb240bea145ebc1f1086d51 = echarts.init(
+            document.getElementById('1bfcd5986bb240bea145ebc1f1086d51'), 'white', {renderer: 'canvas'});
+        var option_1bfcd5986bb240bea145ebc1f1086d51 = {
     "backgroundColor": "#CCCCCC",
     "animation": true,
     "animationThreshold": 2000,
@@ -22,30 +22,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -133,10 +118,6 @@
                 "\u9884\u7b97\u5206\u914d\uff08Allocated Budget\uff09",
                 "\u5b9e\u9645\u5f00\u9500\uff08Actual Spending\uff09"
             ],
-            "selected": {
-                "\u9884\u7b97\u5206\u914d\uff08Allocated Budget\uff09": true,
-                "\u5b9e\u9645\u5f00\u9500\uff08Actual Spending\uff09": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -151,74 +132,83 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
-    "radar": {
-        "indicator": [
-            {
-                "name": "\u9500\u552e\uff08sales\uff09",
-                "max": 6500
+    "radar": [
+        {
+            "indicator": [
+                {
+                    "name": "\u9500\u552e\uff08sales\uff09",
+                    "max": 6500
+                },
+                {
+                    "name": "\u7ba1\u7406\uff08Administration\uff09",
+                    "max": 16000
+                },
+                {
+                    "name": "\u4fe1\u606f\u6280\u672f\uff08Information Technology\uff09",
+                    "max": 30000
+                },
+                {
+                    "name": "\u5ba2\u670d\uff08Customer Support\uff09",
+                    "max": 38000
+                },
+                {
+                    "name": "\u7814\u53d1\uff08Development\uff09",
+                    "max": 52000
+                },
+                {
+                    "name": "\u5e02\u573a\uff08Marketing\uff09",
+                    "max": 25000
+                }
+            ],
+            "name": {
+                "textStyle": {
+                    "color": "#fff"
+                }
             },
-            {
-                "name": "\u7ba1\u7406\uff08Administration\uff09",
-                "max": 16000
-            },
-            {
-                "name": "\u4fe1\u606f\u6280\u672f\uff08Information Technology\uff09",
-                "max": 30000
-            },
-            {
-                "name": "\u5ba2\u670d\uff08Customer Support\uff09",
-                "max": 38000
-            },
-            {
-                "name": "\u7814\u53d1\uff08Development\uff09",
-                "max": 52000
-            },
-            {
-                "name": "\u5e02\u573a\uff08Marketing\uff09",
-                "max": 25000
-            }
-        ],
-        "name": {
-            "textStyle": {
-                "color": "#fff"
-            }
-        },
-        "splitLine": {
-            "show": true,
-            "lineStyle": {
+            "splitLine": {
                 "show": true,
-                "width": 1,
-                "opacity": 1,
-                "curveness": 0,
-                "type": "solid"
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "splitArea": {
+                "show": true,
+                "areaStyle": {
+                    "opacity": 1
+                }
+            },
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0
             }
-        },
-        "splitArea": {
-            "show": true,
-            "areaStyle": {
-                "opacity": 1
-            }
-        },
-        "axisLine": {
-            "show": true,
-            "onZero": true,
-            "onZeroAxisIndex": 0
         }
-    },
+    ],
     "title": [
         {
             "text": "\u57fa\u7840\u96f7\u8fbe\u56fe",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_5773a1c861124f63b02f237fa5650653.setOption(option_5773a1c861124f63b02f237fa5650653);
+        chart_1bfcd5986bb240bea145ebc1f1086d51.setOption(option_1bfcd5986bb240bea145ebc1f1086d51);
     </script>
 </body>
 </html>

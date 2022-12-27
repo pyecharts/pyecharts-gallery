@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/bmap.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/bmap.min.js"></script>
         <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=FAKE_AK"></script>
         <script type="text/javascript" src="https://api.map.baidu.com/getscript?v=2.0&ak=FAKE_AK"></script>
 
 </head>
 <body>
-    <div id="dd017910cc7549a685577dfb3ef0e9d9" class="chart-container" style="width:1200px; height:800px;"></div>
+    <div id="a2d42deec7454c6887ea10adf6d09aa6" class="chart-container" style="width:1200px; height:800px;"></div>
     <script>
-        var chart_dd017910cc7549a685577dfb3ef0e9d9 = echarts.init(
-            document.getElementById('dd017910cc7549a685577dfb3ef0e9d9'), 'white', {renderer: 'canvas'});
-        var option_dd017910cc7549a685577dfb3ef0e9d9 = {
+        var chart_a2d42deec7454c6887ea10adf6d09aa6 = echarts.init(
+            document.getElementById('a2d42deec7454c6887ea10adf6d09aa6'), 'white', {renderer: 'canvas'});
+        var option_a2d42deec7454c6887ea10adf6d09aa6 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -24,30 +24,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -2360,9 +2345,6 @@
             "data": [
                 "pm2.5"
             ],
-            "selected": {
-                "pm2.5": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -2377,16 +2359,23 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "title": [
         {
             "text": "\u5168\u56fd\u4e3b\u8981\u57ce\u5e02\u7a7a\u6c14\u8d28\u91cf",
+            "target": "blank",
             "subtext": "data from PM25.in",
             "sublink": "http://www.pm25.in",
+            "subtarget": "blank",
             "left": "center",
             "padding": 5,
             "itemGap": 10,
@@ -2536,8 +2525,8 @@
         }
     }
 };
-        chart_dd017910cc7549a685577dfb3ef0e9d9.setOption(option_dd017910cc7549a685577dfb3ef0e9d9);
-            var bmap = chart_dd017910cc7549a685577dfb3ef0e9d9.getModel().getComponent('bmap').getBMap();
+        chart_a2d42deec7454c6887ea10adf6d09aa6.setOption(option_a2d42deec7454c6887ea10adf6d09aa6);
+            var bmap = chart_a2d42deec7454c6887ea10adf6d09aa6.getModel().getComponent('bmap').getBMap();
     </script>
 </body>
 </html>

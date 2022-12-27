@@ -518,7 +518,7 @@ def draw_chart():
         .add_xaxis(xaxis_data=data["times"])
         .add_yaxis(
             series_name="Volumn",
-            yaxis_data=data["vols"],
+            y_axis=data["vols"],
             xaxis_index=1,
             yaxis_index=1,
             label_opts=opts.LabelOpts(is_show=False),
@@ -569,7 +569,7 @@ def draw_chart():
         .add_xaxis(xaxis_data=data["times"])
         .add_yaxis(
             series_name="MACD",
-            yaxis_data=data["macds"],
+            y_axis=data["macds"],
             xaxis_index=2,
             yaxis_index=2,
             label_opts=opts.LabelOpts(is_show=False),
@@ -630,7 +630,7 @@ def draw_chart():
     overlap_bar_line = bar_2.overlap(line_2)
 
     # 最后的 Grid
-    grid_chart = Grid(init_opts=opts.InitOpts(width="1400px", height="800px"))
+    grid_chart = Grid()
 
     # 这个是为了把 data.datas 这个数据写入到 html 中,还没想到怎么跨 series 传值
     # demo 中的代码也是用全局变量传的

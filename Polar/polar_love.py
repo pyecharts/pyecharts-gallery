@@ -13,7 +13,12 @@ c = (
     Polar()
     .add_schema(
         angleaxis_opts=opts.AngleAxisOpts(
-            data=hour, type_="value", boundary_gap=False, start_angle=0
+            data=hour,
+            type_="value",
+            boundary_gap=False,
+            start_angle=0,
+            split_number=12,
+            is_clockwise=True,
         )
     )
     .add("love", data, label_opts=opts.LabelOpts(is_show=False))

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="19a0c4a466d54d16a95fe9808a214957" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="e73a37b2bd0e40338146cde6513d140a" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_19a0c4a466d54d16a95fe9808a214957 = echarts.init(
-            document.getElementById('19a0c4a466d54d16a95fe9808a214957'), 'white', {renderer: 'canvas'});
-        var option_19a0c4a466d54d16a95fe9808a214957 = {
+        var chart_e73a37b2bd0e40338146cde6513d140a = echarts.init(
+            document.getElementById('e73a37b2bd0e40338146cde6513d140a'), 'white', {renderer: 'canvas'});
+        var option_e73a37b2bd0e40338146cde6513d140a = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,35 +21,21 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
             "type": "bar",
             "name": "\u84b8\u53d1\u91cf",
+            "legendHoverLink": true,
             "data": [
                 2.0,
                 4.9,
@@ -64,7 +50,17 @@
                 6.4,
                 3.3
             ],
+            "showBackground": false,
+            "barMinHeight": 0,
             "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
             "label": {
                 "show": false,
                 "position": "top",
@@ -80,6 +76,7 @@
         {
             "type": "bar",
             "name": "\u964d\u6c34\u91cf",
+            "legendHoverLink": true,
             "data": [
                 2.6,
                 5.9,
@@ -94,7 +91,17 @@
                 6.0,
                 2.3
             ],
+            "showBackground": false,
+            "barMinHeight": 0,
             "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
             "label": {
                 "show": false,
                 "position": "top",
@@ -115,6 +122,7 @@
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
+            "clip": true,
             "step": false,
             "data": [
                 [
@@ -193,10 +201,6 @@
                 "\u964d\u6c34\u91cf",
                 "\u5e73\u5747\u6e29\u5ea6"
             ],
-            "selected": {
-                "\u84b8\u53d1\u91cf": true,
-                "\u964d\u6c34\u91cf": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -211,10 +215,15 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "xAxis": [
         {
@@ -228,7 +237,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -271,7 +280,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -299,7 +308,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -313,12 +322,14 @@
     "title": [
         {
             "text": "Overlap-bar+line",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_19a0c4a466d54d16a95fe9808a214957.setOption(option_19a0c4a466d54d16a95fe9808a214957);
+        chart_e73a37b2bd0e40338146cde6513d140a.setOption(option_e73a37b2bd0e40338146cde6513d140a);
     </script>
 </body>
 </html>

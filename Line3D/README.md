@@ -1,2 +1,2 @@
-- [Line3d - Line3d_autorotate](Line3D/line3d_autorotate.md 'include :type=code')
-- [Line3d - Line3d_rectangular_projection](Line3D/line3d_rectangular_projection.md 'include :type=code')
+- [Line3d - Line3d_autorotate](Line3D/line3d_autorotate.md ':type=code')
+- [Line3d - Line3d_rectangular_projection](Line3D/line3d_rectangular_projection.md ':type=code')

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="73bd9077be2e49e1b11dfeae88703b11" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="3191a907b3c840f4ac82b05ba91a2b11" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_73bd9077be2e49e1b11dfeae88703b11 = echarts.init(
-            document.getElementById('73bd9077be2e49e1b11dfeae88703b11'), 'white', {renderer: 'canvas'});
-        var option_73bd9077be2e49e1b11dfeae88703b11 = {
+        var chart_3191a907b3c840f4ac82b05ba91a2b11 = echarts.init(
+            document.getElementById('3191a907b3c840f4ac82b05ba91a2b11'), 'white', {renderer: 'canvas'});
+        var option_3191a907b3c840f4ac82b05ba91a2b11 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,63 +21,49 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
             "type": "pie",
             "clockwise": true,
+            "startAngle": 90,
             "data": [
                 {
                     "name": "\u53ef\u4e50",
-                    "value": 45
+                    "value": 73
                 },
                 {
                     "name": "\u96ea\u78a7",
-                    "value": 119
+                    "value": 80
                 },
                 {
                     "name": "\u6a59\u6c41",
-                    "value": 111
+                    "value": 39
                 },
                 {
                     "name": "\u7eff\u8336",
-                    "value": 67
+                    "value": 69
                 },
                 {
                     "name": "\u5976\u8336",
-                    "value": 137
+                    "value": 22
                 },
                 {
                     "name": "\u767e\u5a01",
-                    "value": 52
+                    "value": 116
                 },
                 {
                     "name": "\u9752\u5c9b",
-                    "value": 29
+                    "value": 46
                 }
             ],
             "radius": [
@@ -93,39 +79,49 @@
                 "show": false,
                 "position": "top",
                 "margin": 8
+            },
+            "labelLine": {
+                "show": true,
+                "showAbove": false,
+                "length": 15,
+                "length2": 15,
+                "smooth": false,
+                "minTurnAngle": 90,
+                "maxSurfaceAngle": 90
             }
         },
         {
             "type": "pie",
             "clockwise": true,
+            "startAngle": 90,
             "data": [
                 {
                     "name": "\u53ef\u4e50",
-                    "value": 140
+                    "value": 35
                 },
                 {
                     "name": "\u96ea\u78a7",
-                    "value": 127
+                    "value": 80
                 },
                 {
                     "name": "\u6a59\u6c41",
-                    "value": 125
+                    "value": 92
                 },
                 {
                     "name": "\u7eff\u8336",
-                    "value": 51
+                    "value": 114
                 },
                 {
                     "name": "\u5976\u8336",
-                    "value": 150
+                    "value": 90
                 },
                 {
                     "name": "\u767e\u5a01",
-                    "value": 132
+                    "value": 29
                 },
                 {
                     "name": "\u9752\u5c9b",
-                    "value": 139
+                    "value": 77
                 }
             ],
             "radius": [
@@ -141,6 +137,15 @@
                 "show": true,
                 "position": "top",
                 "margin": 8
+            },
+            "labelLine": {
+                "show": true,
+                "showAbove": false,
+                "length": 15,
+                "length2": 15,
+                "smooth": false,
+                "minTurnAngle": 90,
+                "maxSurfaceAngle": 90
             }
         }
     ],
@@ -155,7 +160,6 @@
                 "\u767e\u5a01",
                 "\u9752\u5c9b"
             ],
-            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -170,20 +174,27 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "title": [
         {
             "text": "Pie-\u73ab\u7470\u56fe\u793a\u4f8b",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_73bd9077be2e49e1b11dfeae88703b11.setOption(option_73bd9077be2e49e1b11dfeae88703b11);
+        chart_3191a907b3c840f4ac82b05ba91a2b11.setOption(option_3191a907b3c840f4ac82b05ba91a2b11);
     </script>
 </body>
 </html>

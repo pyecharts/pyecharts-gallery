@@ -1,1 +1,1 @@
-- [Themeriver - Theme_river](ThemeRiver/theme_river.md 'include :type=code')
+- [Themeriver - Theme_river](ThemeRiver/theme_river.md ':type=code')

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/macarons.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/themes/macarons.js"></script>
 
 </head>
 <body>
-    <div id="c52a4675a8ed43769b38345d761e560f" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="ba2b29cd7c134441988c985ca86b488b" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_c52a4675a8ed43769b38345d761e560f = echarts.init(
-            document.getElementById('c52a4675a8ed43769b38345d761e560f'), 'macarons', {renderer: 'canvas'});
-        var option_c52a4675a8ed43769b38345d761e560f = {
+        var chart_ba2b29cd7c134441988c985ca86b488b = echarts.init(
+            document.getElementById('ba2b29cd7c134441988c985ca86b488b'), 'macarons', {renderer: 'canvas'});
+        var option_ba2b29cd7c134441988c985ca86b488b = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -25,16 +25,27 @@
         {
             "type": "bar",
             "name": "\u5546\u5bb6A",
+            "legendHoverLink": true,
             "data": [
-                44,
-                64,
-                146,
-                93,
-                61,
-                143,
-                149
+                124,
+                111,
+                30,
+                140,
+                125,
+                123,
+                84
             ],
+            "showBackground": false,
+            "barMinHeight": 0,
             "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
             "label": {
                 "show": true,
                 "position": "top",
@@ -44,16 +55,27 @@
         {
             "type": "bar",
             "name": "\u5546\u5bb6B",
+            "legendHoverLink": true,
             "data": [
-                136,
-                120,
-                131,
+                44,
                 90,
                 92,
-                36,
-                66
+                118,
+                135,
+                114,
+                43
             ],
+            "showBackground": false,
+            "barMinHeight": 0,
             "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
             "label": {
                 "show": true,
                 "position": "top",
@@ -67,10 +89,6 @@
                 "\u5546\u5bb6A",
                 "\u5546\u5bb6B"
             ],
-            "selected": {
-                "\u5546\u5bb6A": true,
-                "\u5546\u5bb6B": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -85,10 +103,15 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "xAxis": [
         {
@@ -102,7 +125,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -112,13 +135,13 @@
                 }
             },
             "data": [
-                "\u8349\u8393",
-                "\u8292\u679c",
-                "\u8461\u8404",
-                "\u96ea\u68a8",
-                "\u897f\u74dc",
-                "\u67e0\u6aac",
-                "\u8f66\u5398\u5b50"
+                "\u886c\u886b",
+                "\u6bdb\u8863",
+                "\u9886\u5e26",
+                "\u88e4\u5b50",
+                "\u98ce\u8863",
+                "\u9ad8\u8ddf\u978b",
+                "\u889c\u5b50"
             ]
         }
     ],
@@ -134,7 +157,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -150,7 +173,7 @@
         "subtext": "\u6211\u4e5f\u662f\u901a\u8fc7 dict \u8fdb\u884c\u914d\u7f6e\u7684"
     }
 };
-        chart_c52a4675a8ed43769b38345d761e560f.setOption(option_c52a4675a8ed43769b38345d761e560f);
+        chart_ba2b29cd7c134441988c985ca86b488b.setOption(option_ba2b29cd7c134441988c985ca86b488b);
     </script>
 </body>
 </html>

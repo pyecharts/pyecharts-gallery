@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/bmap.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/bmap.min.js"></script>
         <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=FAKE_AK"></script>
         <script type="text/javascript" src="https://api.map.baidu.com/getscript?v=2.0&ak=FAKE_AK"></script>
 
 </head>
 <body>
-    <div id="f5b6cf154fd04f1683f3cf23989ce720" class="chart-container" style="width:1200px; height:800px;"></div>
+    <div id="1ed6d34e4d804747879281c5cb256c6c" class="chart-container" style="width:1200px; height:800px;"></div>
     <script>
-        var chart_f5b6cf154fd04f1683f3cf23989ce720 = echarts.init(
-            document.getElementById('f5b6cf154fd04f1683f3cf23989ce720'), 'white', {renderer: 'canvas'});
-        var option_f5b6cf154fd04f1683f3cf23989ce720 = {
+        var chart_1ed6d34e4d804747879281c5cb256c6c = echarts.init(
+            document.getElementById('1ed6d34e4d804747879281c5cb256c6c'), 'white', {renderer: 'canvas'});
+        var option_1ed6d34e4d804747879281c5cb256c6c = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -24,30 +24,15 @@
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
     "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
     ],
     "series": [
         {
@@ -22819,9 +22804,6 @@
             "data": [
                 ""
             ],
-            "selected": {
-                "": true
-            },
             "show": true,
             "padding": 5,
             "itemGap": 10,
@@ -22836,13 +22818,20 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "title": [
         {
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
             "itemGap": 10
         }
@@ -22972,8 +22961,8 @@
         }
     }
 };
-        chart_f5b6cf154fd04f1683f3cf23989ce720.setOption(option_f5b6cf154fd04f1683f3cf23989ce720);
-            var bmap = chart_f5b6cf154fd04f1683f3cf23989ce720.getModel().getComponent('bmap').getBMap();
+        chart_1ed6d34e4d804747879281c5cb256c6c.setOption(option_1ed6d34e4d804747879281c5cb256c6c);
+            var bmap = chart_1ed6d34e4d804747879281c5cb256c6c.getModel().getComponent('bmap').getBMap();
                     bmap.addControl(new BMap.NavigationControl({"anchor": 0, "offset": {"width": 10, "height": 10}, "type": 0, "showZoomInfo": false, "enableGeolocation": false}));
                     var overview = new BMap.OverviewMapControl({"anchor": 3, "offset": {"width": 10, "height": 50}, "isOpen": true});
                     bmap.addControl(overview);

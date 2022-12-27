@@ -49,7 +49,7 @@ edges = [
 
 
 (
-    Graph(init_opts=opts.InitOpts(width="1600px", height="800px"))
+    Graph()
     .add(
         series_name="",
         nodes=nodes,

@@ -18,7 +18,7 @@ x_data = ["直接访问", "邮件营销", "联盟广告", "视频广告", "搜�
 y_data = [335, 310, 234, 135, 1548]
 
 (
-    Pie(init_opts=opts.InitOpts(width="1600px", height="1000px"))
+    Pie()
     .add(
         series_name="访问来源",
         data_pair=[list(z) for z in zip(x_data, y_data)],
