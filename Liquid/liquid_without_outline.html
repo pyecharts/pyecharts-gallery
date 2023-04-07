@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-liquidfill.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-liquidfill.min.js"></script>
 
 </head>
-<body>
-    <div id="9628ba31619c43108e7386386069aa99" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="6ee8b4b82ef84e6ebabfafedd4facb5a" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_9628ba31619c43108e7386386069aa99 = echarts.init(
-            document.getElementById('9628ba31619c43108e7386386069aa99'), 'white', {renderer: 'canvas'});
-        var option_9628ba31619c43108e7386386069aa99 = {
+        var chart_6ee8b4b82ef84e6ebabfafedd4facb5a = echarts.init(
+            document.getElementById('6ee8b4b82ef84e6ebabfafedd4facb5a'), 'white', {renderer: 'canvas'});
+        var option_6ee8b4b82ef84e6ebabfafedd4facb5a = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,6 +21,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -67,11 +70,27 @@
     "legend": [
         {
             "data": [],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -85,23 +104,32 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "Liquid-\u65e0\u8fb9\u6846",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_9628ba31619c43108e7386386069aa99.setOption(option_9628ba31619c43108e7386386069aa99);
+        chart_6ee8b4b82ef84e6ebabfafedd4facb5a.setOption(option_6ee8b4b82ef84e6ebabfafedd4facb5a);
     </script>
 </body>
 </html>

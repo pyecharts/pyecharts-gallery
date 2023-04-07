@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="432588af0fcc433ba5a4ab6ee9fe58d9" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="270fc7bfc27c416d84ed99d681aeb153" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_432588af0fcc433ba5a4ab6ee9fe58d9 = echarts.init(
-            document.getElementById('432588af0fcc433ba5a4ab6ee9fe58d9'), 'white', {renderer: 'canvas'});
-        var option_432588af0fcc433ba5a4ab6ee9fe58d9 = {
+        var chart_270fc7bfc27c416d84ed99d681aeb153 = echarts.init(
+            document.getElementById('270fc7bfc27c416d84ed99d681aeb153'), 'white', {renderer: 'canvas'});
+        var option_270fc7bfc27c416d84ed99d681aeb153 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -35,6 +38,7 @@
         {
             "type": "candlestick",
             "name": "kline",
+            "colorBy": "series",
             "data": [
                 [
                     2320.26,
@@ -230,11 +234,27 @@
             "data": [
                 "kline"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -248,11 +268,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -341,17 +366,23 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "Kline-DataZoom-inside",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ],
     "dataZoom": [
         {
             "show": true,
             "type": "inside",
+            "showDetail": true,
+            "showDataShadow": true,
             "realtime": true,
             "start": 20,
             "end": 80,
@@ -361,7 +392,7 @@
         }
     ]
 };
-        chart_432588af0fcc433ba5a4ab6ee9fe58d9.setOption(option_432588af0fcc433ba5a4ab6ee9fe58d9);
+        chart_270fc7bfc27c416d84ed99d681aeb153.setOption(option_270fc7bfc27c416d84ed99d681aeb153);
     </script>
 </body>
 </html>

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="ebd08686a54348db8b79ca483214829d" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="d4f35c162b644e18a36efc416e42d7f2" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_ebd08686a54348db8b79ca483214829d = echarts.init(
-            document.getElementById('ebd08686a54348db8b79ca483214829d'), 'white', {renderer: 'canvas'});
-        var option_ebd08686a54348db8b79ca483214829d = {
+        var chart_d4f35c162b644e18a36efc416e42d7f2 = echarts.init(
+            document.getElementById('d4f35c162b644e18a36efc416e42d7f2'), 'white', {renderer: 'canvas'});
+        var option_d4f35c162b644e18a36efc416e42d7f2 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -93,6 +96,8 @@
                 "color": "white",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -116,11 +121,16 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             },
             "itemStyle": {
                 "color": "red",
@@ -136,11 +146,27 @@
             "data": [
                 "\u6ce8\u518c\u603b\u91cf"
             ],
+            "selected": {},
             "show": false,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -154,11 +180,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -189,7 +220,6 @@
             },
             "axisLabel": {
                 "show": true,
-                "position": "top",
                 "color": "#ffffff63",
                 "margin": 30
             },
@@ -260,7 +290,6 @@
             },
             "axisLabel": {
                 "show": true,
-                "position": "top",
                 "color": "#ffffff63",
                 "margin": 20
             },
@@ -284,6 +313,7 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "OCTOBER 2015",
             "target": "blank",
             "subtarget": "blank",
@@ -291,6 +321,9 @@
             "bottom": "5%",
             "padding": 5,
             "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false,
             "textStyle": {
                 "color": "#fff",
                 "fontSize": 16
@@ -309,11 +342,13 @@
             "containLabel": true,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
         }
     ]
 };
-        chart_ebd08686a54348db8b79ca483214829d.setOption(option_ebd08686a54348db8b79ca483214829d);
+        chart_d4f35c162b644e18a36efc416e42d7f2.setOption(option_d4f35c162b644e18a36efc416e42d7f2);
     </script>
 </body>
 </html>

@@ -3,7 +3,6 @@ import json
 import os
 import subprocess
 import operator
-import random
 import time
 from typing import Dict, List, Optional
 
@@ -50,6 +49,7 @@ ChartModelDict: Dict = {
     "Gauge": "仪表盘",
     "Geo": "地理坐标",
     "Graph": "关系图",
+    "GraphGL": "GL 关系图",
     "Graphic": "图形组件",
     "Grid": "组合组件",
     "Heatmap": "热力图",

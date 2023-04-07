@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="bfa41e929bb04978b53f376164820aba" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="fe09e074cf3f4624832cd10be4ef2717" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_bfa41e929bb04978b53f376164820aba = echarts.init(
-            document.getElementById('bfa41e929bb04978b53f376164820aba'), 'white', {renderer: 'canvas'});
-        var option_bfa41e929bb04978b53f376164820aba = {
+        var chart_fe09e074cf3f4624832cd10be4ef2717 = echarts.init(
+            document.getElementById('fe09e074cf3f4624832cd10be4ef2717'), 'white', {renderer: 'canvas'});
+        var option_fe09e074cf3f4624832cd10be4ef2717 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -36,6 +39,7 @@
             "type": "line",
             "name": "\u6d41\u91cf",
             "connectNulls": false,
+            "xAxisIndex": 0,
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
@@ -12362,9 +12366,10 @@
             "hoverAnimation": true,
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -12386,7 +12391,6 @@
                 "silent": false,
                 "label": {
                     "show": true,
-                    "position": "top",
                     "margin": 8
                 },
                 "data": [
@@ -12396,7 +12400,6 @@
                             "xAxis": "2009/9/12-7:00",
                             "label": {
                                 "show": false,
-                                "position": "top",
                                 "margin": 8
                             },
                             "itemStyle": {
@@ -12414,7 +12417,6 @@
                             "xAxis": "2009/9/10-7:00",
                             "label": {
                                 "show": false,
-                                "position": "top",
                                 "margin": 8
                             },
                             "itemStyle": {
@@ -12439,6 +12441,7 @@
             "type": "line",
             "name": "\u964d\u96e8\u91cf",
             "connectNulls": false,
+            "xAxisIndex": 0,
             "yAxisIndex": 1,
             "symbolSize": 4,
             "showSymbol": true,
@@ -24766,9 +24769,10 @@
             "hoverAnimation": true,
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -24790,7 +24794,6 @@
                 "silent": false,
                 "label": {
                     "show": true,
-                    "position": "top",
                     "margin": 8
                 },
                 "data": [
@@ -24800,7 +24803,6 @@
                             "xAxis": "2009/9/12-7:00",
                             "label": {
                                 "show": false,
-                                "position": "top",
                                 "margin": 8
                             },
                             "itemStyle": {
@@ -24818,7 +24820,6 @@
                             "xAxis": "2009/9/10-7:00",
                             "label": {
                                 "show": false,
-                                "position": "top",
                                 "margin": 8
                             },
                             "itemStyle": {
@@ -24846,12 +24847,28 @@
                 "\u6d41\u91cf",
                 "\u964d\u96e8\u91cf"
             ],
+            "selected": {},
             "show": true,
             "left": "left",
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -24865,11 +24882,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -28034,6 +28056,7 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "\u96e8\u91cf\u6d41\u91cf\u5173\u7cfb\u56fe",
             "target": "blank",
             "subtext": "\u6570\u636e\u6765\u81ea\u897f\u5b89\u5170\u7279\u6c34\u7535\u6d4b\u63a7\u6280\u672f\u6709\u9650\u516c\u53f8",
@@ -28041,13 +28064,18 @@
             "left": "center",
             "top": "top",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ],
     "dataZoom": [
         {
             "show": true,
             "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
             "realtime": true,
             "start": 0,
             "end": 100,
@@ -28058,6 +28086,8 @@
         {
             "show": true,
             "type": "inside",
+            "showDetail": true,
+            "showDataShadow": true,
             "realtime": true,
             "start": 0,
             "end": 100,
@@ -28067,7 +28097,7 @@
         }
     ]
 };
-        chart_bfa41e929bb04978b53f376164820aba.setOption(option_bfa41e929bb04978b53f376164820aba);
+        chart_fe09e074cf3f4624832cd10be4ef2717.setOption(option_fe09e074cf3f4624832cd10be4ef2717);
     </script>
 </body>
 </html>

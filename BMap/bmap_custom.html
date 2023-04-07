@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/bmap.min.js"></script>
-        <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=FAKE_AK"></script>
-        <script type="text/javascript" src="https://api.map.baidu.com/getscript?v=2.0&ak=FAKE_AK"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/bmap.min.js"></script>
+            <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=FAKE_AK"></script>
+            <script type="text/javascript" src="https://api.map.baidu.com/getscript?v=2.0&ak=FAKE_AK"></script>
 
 </head>
-<body>
-    <div id="93405a56ba6349adb05d52b9b7fbef09" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="a5241c07b8cf438ba7f8cc825c0512b6" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_93405a56ba6349adb05d52b9b7fbef09 = echarts.init(
-            document.getElementById('93405a56ba6349adb05d52b9b7fbef09'), 'white', {renderer: 'canvas'});
+        var chart_a5241c07b8cf438ba7f8cc825c0512b6 = echarts.init(
+            document.getElementById('a5241c07b8cf438ba7f8cc825c0512b6'), 'white', {renderer: 'canvas'});
             
     var lngExtent = [39.5, 40.6];
     var latExtent = [115.9, 116.8];
@@ -54,7 +54,7 @@
         ]));
     }
     
-        var option_93405a56ba6349adb05d52b9b7fbef09 = {
+        var option_a5241c07b8cf438ba7f8cc825c0512b6 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -63,6 +63,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -12596,11 +12599,27 @@
             "data": [
                 ""
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -12614,19 +12633,28 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "BMap-Custom \u56fe",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ],
     "visualMap": {
@@ -12646,9 +12674,11 @@
         "inverse": true,
         "splitNumber": 5,
         "dimension": 2,
+        "hoverLink": true,
         "orient": "vertical",
         "left": "10",
         "top": "10",
+        "padding": 5,
         "showLabel": true,
         "itemWidth": 20,
         "itemHeight": 14,
@@ -12885,8 +12915,8 @@
         }
     }
 };
-        chart_93405a56ba6349adb05d52b9b7fbef09.setOption(option_93405a56ba6349adb05d52b9b7fbef09);
-            var bmap = chart_93405a56ba6349adb05d52b9b7fbef09.getModel().getComponent('bmap').getBMap();
+        chart_a5241c07b8cf438ba7f8cc825c0512b6.setOption(option_a5241c07b8cf438ba7f8cc825c0512b6);
+            var bmap = chart_a5241c07b8cf438ba7f8cc825c0512b6.getModel().getComponent('bmap').getBMap();
     </script>
 </body>
 </html>

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="1e34f0fcfe074b369a3f690f6d9efd52" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="b983d57e4a984018943afc950233fd33" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_1e34f0fcfe074b369a3f690f6d9efd52 = echarts.init(
-            document.getElementById('1e34f0fcfe074b369a3f690f6d9efd52'), 'white', {renderer: 'canvas'});
-        var option_1e34f0fcfe074b369a3f690f6d9efd52 = {
+        var chart_b983d57e4a984018943afc950233fd33 = echarts.init(
+            document.getElementById('b983d57e4a984018943afc950233fd33'), 'white', {renderer: 'canvas'});
+        var option_b983d57e4a984018943afc950233fd33 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -58,7 +61,6 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
             "markPoint": {
@@ -74,7 +76,6 @@
                 "precision": 2,
                 "label": {
                     "show": true,
-                    "position": "top",
                     "margin": 8
                 }
             }
@@ -105,7 +106,6 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
             "markPoint": {
@@ -121,7 +121,6 @@
                 "precision": 2,
                 "label": {
                     "show": true,
-                    "position": "top",
                     "margin": 8
                 }
             }
@@ -133,11 +132,27 @@
                 "A",
                 "B"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -151,11 +166,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -209,15 +229,19 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "BoxPlot-\u57fa\u672c\u793a\u4f8b",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_1e34f0fcfe074b369a3f690f6d9efd52.setOption(option_1e34f0fcfe074b369a3f690f6d9efd52);
+        chart_b983d57e4a984018943afc950233fd33.setOption(option_b983d57e4a984018943afc950233fd33);
     </script>
 </body>
 </html>

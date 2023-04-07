@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="9a466999689246e2b3b4f39466b42bfc" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="45f3fd886e8c479f9edf7e8b8fd276fb" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_9a466999689246e2b3b4f39466b42bfc = echarts.init(
-            document.getElementById('9a466999689246e2b3b4f39466b42bfc'), 'white', {renderer: 'canvas'});
-        var option_9a466999689246e2b3b4f39466b42bfc = {
+        var chart_45f3fd886e8c479f9edf7e8b8fd276fb = echarts.init(
+            document.getElementById('45f3fd886e8c479f9edf7e8b8fd276fb'), 'white', {renderer: 'canvas'});
+        var option_45f3fd886e8c479f9edf7e8b8fd276fb = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -35,8 +38,29 @@
         {
             "type": "pie",
             "name": "Matcha Latte",
+            "colorBy": "data",
+            "legendHoverLink": true,
+            "selectedMode": false,
+            "selectedOffset": 10,
             "clockwise": true,
             "startAngle": 90,
+            "minAngle": 0,
+            "minShowLabelAngle": 0,
+            "avoidLabelOverlap": true,
+            "stillShowZeroSum": true,
+            "percentPrecision": 2,
+            "showEmptyCircle": true,
+            "emptyCircleStyle": {
+                "color": "lightgray",
+                "borderColor": "#000",
+                "borderWidth": 0,
+                "borderType": "solid",
+                "borderDashOffset": 0,
+                "borderCap": "butt",
+                "borderJoin": "bevel",
+                "borderMiterLimit": 10,
+                "opacity": 1
+            },
             "radius": 60,
             "center": [
                 "25%",
@@ -44,7 +68,6 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
             "labelLine": {
@@ -64,8 +87,29 @@
         {
             "type": "pie",
             "name": "Milk Tea",
+            "colorBy": "data",
+            "legendHoverLink": true,
+            "selectedMode": false,
+            "selectedOffset": 10,
             "clockwise": true,
             "startAngle": 90,
+            "minAngle": 0,
+            "minShowLabelAngle": 0,
+            "avoidLabelOverlap": true,
+            "stillShowZeroSum": true,
+            "percentPrecision": 2,
+            "showEmptyCircle": true,
+            "emptyCircleStyle": {
+                "color": "lightgray",
+                "borderColor": "#000",
+                "borderWidth": 0,
+                "borderType": "solid",
+                "borderDashOffset": 0,
+                "borderCap": "butt",
+                "borderJoin": "bevel",
+                "borderMiterLimit": 10,
+                "opacity": 1
+            },
             "radius": 60,
             "center": [
                 "75%",
@@ -73,7 +117,6 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
             "labelLine": {
@@ -93,8 +136,29 @@
         {
             "type": "pie",
             "name": "Cheese Cocoa",
+            "colorBy": "data",
+            "legendHoverLink": true,
+            "selectedMode": false,
+            "selectedOffset": 10,
             "clockwise": true,
             "startAngle": 90,
+            "minAngle": 0,
+            "minShowLabelAngle": 0,
+            "avoidLabelOverlap": true,
+            "stillShowZeroSum": true,
+            "percentPrecision": 2,
+            "showEmptyCircle": true,
+            "emptyCircleStyle": {
+                "color": "lightgray",
+                "borderColor": "#000",
+                "borderWidth": 0,
+                "borderType": "solid",
+                "borderDashOffset": 0,
+                "borderCap": "butt",
+                "borderJoin": "bevel",
+                "borderMiterLimit": 10,
+                "opacity": 1
+            },
             "radius": 60,
             "center": [
                 "25%",
@@ -102,7 +166,6 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
             "labelLine": {
@@ -122,8 +185,29 @@
         {
             "type": "pie",
             "name": "Walnut Brownie",
+            "colorBy": "data",
+            "legendHoverLink": true,
+            "selectedMode": false,
+            "selectedOffset": 10,
             "clockwise": true,
             "startAngle": 90,
+            "minAngle": 0,
+            "minShowLabelAngle": 0,
+            "avoidLabelOverlap": true,
+            "stillShowZeroSum": true,
+            "percentPrecision": 2,
+            "showEmptyCircle": true,
+            "emptyCircleStyle": {
+                "color": "lightgray",
+                "borderColor": "#000",
+                "borderWidth": 0,
+                "borderType": "solid",
+                "borderDashOffset": 0,
+                "borderCap": "butt",
+                "borderJoin": "bevel",
+                "borderMiterLimit": 10,
+                "opacity": 1
+            },
             "radius": 60,
             "center": [
                 "75%",
@@ -131,7 +215,6 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
             "labelLine": {
@@ -157,13 +240,29 @@
                 "Cheese Cocoa",
                 "Walnut Brownie"
             ],
+            "selected": {},
             "show": true,
             "left": "30%",
             "top": "2%",
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -177,72 +276,83 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
-    "dataset": {
-        "source": [
-            [
-                "product",
-                "2012",
-                "2013",
-                "2014",
-                "2015",
-                "2016",
-                "2017"
-            ],
-            [
-                "Matcha Latte",
-                41.1,
-                30.4,
-                65.1,
-                53.3,
-                83.8,
-                98.7
-            ],
-            [
-                "Milk Tea",
-                86.5,
-                92.1,
-                85.7,
-                83.1,
-                73.4,
-                55.1
-            ],
-            [
-                "Cheese Cocoa",
-                24.1,
-                67.2,
-                79.5,
-                86.4,
-                65.2,
-                82.5
-            ],
-            [
-                "Walnut Brownie",
-                55.2,
-                67.1,
-                69.2,
-                72.4,
-                53.9,
-                39.1
+    "dataset": [
+        {
+            "source": [
+                [
+                    "product",
+                    "2012",
+                    "2013",
+                    "2014",
+                    "2015",
+                    "2016",
+                    "2017"
+                ],
+                [
+                    "Matcha Latte",
+                    41.1,
+                    30.4,
+                    65.1,
+                    53.3,
+                    83.8,
+                    98.7
+                ],
+                [
+                    "Milk Tea",
+                    86.5,
+                    92.1,
+                    85.7,
+                    83.1,
+                    73.4,
+                    55.1
+                ],
+                [
+                    "Cheese Cocoa",
+                    24.1,
+                    67.2,
+                    79.5,
+                    86.4,
+                    65.2,
+                    82.5
+                ],
+                [
+                    "Walnut Brownie",
+                    55.2,
+                    67.1,
+                    69.2,
+                    72.4,
+                    53.9,
+                    39.1
+                ]
             ]
-        ]
-    },
+        }
+    ],
     "title": [
         {
+            "show": true,
             "text": "Dataset simple pie example",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_9a466999689246e2b3b4f39466b42bfc.setOption(option_9a466999689246e2b3b4f39466b42bfc);
+        chart_45f3fd886e8c479f9edf7e8b8fd276fb.setOption(option_45f3fd886e8c479f9edf7e8b8fd276fb);
     </script>
 </body>
 </html>

@@ -39,7 +39,7 @@ def surface3d_data():
         y = t0
         for t1 in float_range(-3, 3, 0.05):
             x = t1
-            z = math.sin(x ** 2 + y ** 2) * x / 3.14
+            z = math.sin(x**2 + y**2) * x / 3.14
             yield [x, y, z]
 
 

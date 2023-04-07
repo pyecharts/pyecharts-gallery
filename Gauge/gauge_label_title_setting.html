@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="db15fd2edb8d4313a49cf0ee7e0b4460" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="fb58cc38080b4cc686245dad3c411e2c" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_db15fd2edb8d4313a49cf0ee7e0b4460 = echarts.init(
-            document.getElementById('db15fd2edb8d4313a49cf0ee7e0b4460'), 'white', {renderer: 'canvas'});
-        var option_db15fd2edb8d4313a49cf0ee7e0b4460 = {
+        var chart_fb58cc38080b4cc686245dad3c411e2c = echarts.init(
+            document.getElementById('fb58cc38080b4cc686245dad3c411e2c'), 'white', {renderer: 'canvas'});
+        var option_fb58cc38080b4cc686245dad3c411e2c = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -36,7 +39,6 @@
             "type": "gauge",
             "title": {
                 "show": true,
-                "position": "top",
                 "color": "blue",
                 "margin": 8,
                 "fontSize": 40,
@@ -62,11 +64,17 @@
                 "shadowColor": "transparent",
                 "shadowBlur": 0,
                 "shadowOffsetX": 0,
-                "shadowOffsetY": 0
+                "shadowOffsetY": 0,
+                "overflow": "none",
+                "valueAnimation": true
             },
             "min": 0,
             "max": 100,
             "splitNumber": 10,
+            "center": [
+                "50%",
+                "50%"
+            ],
             "radius": "75%",
             "startAngle": 225,
             "endAngle": -45,
@@ -77,6 +85,24 @@
                     "value": 66.6
                 }
             ],
+            "progress": {
+                "show": false,
+                "overlap": true,
+                "width": 10,
+                "roundCap": false,
+                "clip": false
+            },
+            "anchor": {
+                "show": true,
+                "showAbove": false,
+                "size": 6,
+                "icon": "circle",
+                "offsetCenter": [
+                    0,
+                    0
+                ],
+                "keepAspect": false
+            },
             "pointer": {
                 "show": true,
                 "length": "80%",
@@ -89,11 +115,27 @@
             "data": [
                 ""
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -107,23 +149,32 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "Gauge-\u6539\u53d8\u8f6e\u76d8\u5185\u7684\u5b57\u4f53",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_db15fd2edb8d4313a49cf0ee7e0b4460.setOption(option_db15fd2edb8d4313a49cf0ee7e0b4460);
+        chart_fb58cc38080b4cc686245dad3c411e2c.setOption(option_fb58cc38080b4cc686245dad3c411e2c);
     </script>
 </body>
 </html>

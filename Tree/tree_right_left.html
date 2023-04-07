@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="303e5c09e4b04918b9715e9f20ce4fd2" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="dea7e1bc2ea846bebb35f2641feb4b7d" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_303e5c09e4b04918b9715e9f20ce4fd2 = echarts.init(
-            document.getElementById('303e5c09e4b04918b9715e9f20ce4fd2'), 'white', {renderer: 'canvas'});
-        var option_303e5c09e4b04918b9715e9f20ce4fd2 = {
+        var chart_dea7e1bc2ea846bebb35f2641feb4b7d = echarts.init(
+            document.getElementById('dea7e1bc2ea846bebb35f2641feb4b7d'), 'white', {renderer: 'canvas'});
+        var option_dea7e1bc2ea846bebb35f2641feb4b7d = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -433,13 +436,11 @@
             "orient": "RL",
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
             "leaves": {
                 "label": {
                     "show": true,
-                    "position": "top",
                     "margin": 8
                 }
             }
@@ -448,11 +449,27 @@
     "legend": [
         {
             "data": [],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -466,23 +483,32 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "Tree-\u53f3\u5de6\u65b9\u5411",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_303e5c09e4b04918b9715e9f20ce4fd2.setOption(option_303e5c09e4b04918b9715e9f20ce4fd2);
+        chart_dea7e1bc2ea846bebb35f2641feb4b7d.setOption(option_dea7e1bc2ea846bebb35f2641feb4b7d);
     </script>
 </body>
 </html>

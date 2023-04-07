@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="121b8b50d4cd4c6b89273726deff9ff0" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="7763c4edc61d475ab728597c85a35033" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_121b8b50d4cd4c6b89273726deff9ff0 = echarts.init(
-            document.getElementById('121b8b50d4cd4c6b89273726deff9ff0'), 'white', {renderer: 'canvas'});
-        var option_121b8b50d4cd4c6b89273726deff9ff0 = {
+        var chart_7763c4edc61d475ab728597c85a35033 = echarts.init(
+            document.getElementById('7763c4edc61d475ab728597c85a35033'), 'white', {renderer: 'canvas'});
+        var option_7763c4edc61d475ab728597c85a35033 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -35,7 +38,10 @@
         {
             "type": "bar",
             "legendHoverLink": true,
+            "realtimeSort": false,
             "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "20%",
             "barGap": "30%",
@@ -48,7 +54,6 @@
             "z": 2,
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             },
             "encode": {
@@ -62,11 +67,27 @@
             "data": [
                 ""
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -80,11 +101,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -134,67 +160,73 @@
             }
         }
     ],
-    "dataset": {
-        "source": [
-            [
-                "score",
-                "amount",
-                "product"
-            ],
-            [
-                89.3,
-                58212,
-                "Matcha Latte"
-            ],
-            [
-                57.1,
-                78254,
-                "Milk Tea"
-            ],
-            [
-                74.4,
-                41032,
-                "Cheese Cocoa"
-            ],
-            [
-                50.1,
-                12755,
-                "Cheese Brownie"
-            ],
-            [
-                89.7,
-                20145,
-                "Matcha Cocoa"
-            ],
-            [
-                68.1,
-                79146,
-                "Tea"
-            ],
-            [
-                19.6,
-                91852,
-                "Orange Juice"
-            ],
-            [
-                10.6,
-                101852,
-                "Lemon Juice"
-            ],
-            [
-                32.7,
-                20112,
-                "Walnut Brownie"
+    "dataset": [
+        {
+            "source": [
+                [
+                    "score",
+                    "amount",
+                    "product"
+                ],
+                [
+                    89.3,
+                    58212,
+                    "Matcha Latte"
+                ],
+                [
+                    57.1,
+                    78254,
+                    "Milk Tea"
+                ],
+                [
+                    74.4,
+                    41032,
+                    "Cheese Cocoa"
+                ],
+                [
+                    50.1,
+                    12755,
+                    "Cheese Brownie"
+                ],
+                [
+                    89.7,
+                    20145,
+                    "Matcha Cocoa"
+                ],
+                [
+                    68.1,
+                    79146,
+                    "Tea"
+                ],
+                [
+                    19.6,
+                    91852,
+                    "Orange Juice"
+                ],
+                [
+                    10.6,
+                    101852,
+                    "Lemon Juice"
+                ],
+                [
+                    32.7,
+                    20112,
+                    "Walnut Brownie"
+                ]
             ]
-        ]
-    },
+        }
+    ],
     "title": [
         {
+            "show": true,
             "text": "Dataset normal bar example",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ],
     "visualMap": {
@@ -216,15 +248,17 @@
         "inverse": false,
         "splitNumber": 5,
         "dimension": 0,
+        "hoverLink": true,
         "orient": "horizontal",
         "left": "center",
+        "padding": 5,
         "showLabel": true,
         "itemWidth": 20,
         "itemHeight": 140,
         "borderWidth": 0
     }
 };
-        chart_121b8b50d4cd4c6b89273726deff9ff0.setOption(option_121b8b50d4cd4c6b89273726deff9ff0);
+        chart_7763c4edc61d475ab728597c85a35033.setOption(option_7763c4edc61d475ab728597c85a35033);
     </script>
 </body>
 </html>

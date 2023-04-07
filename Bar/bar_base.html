@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="dbef0a2c89444ba0a84f26261703d1dc" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="00d585b8f737473da81707ff03c953ff" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_dbef0a2c89444ba0a84f26261703d1dc = echarts.init(
-            document.getElementById('dbef0a2c89444ba0a84f26261703d1dc'), 'white', {renderer: 'canvas'});
-        var option_dbef0a2c89444ba0a84f26261703d1dc = {
+        var chart_00d585b8f737473da81707ff03c953ff = echarts.init(
+            document.getElementById('00d585b8f737473da81707ff03c953ff'), 'white', {renderer: 'canvas'});
+        var option_00d585b8f737473da81707ff03c953ff = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -37,15 +40,18 @@
             "name": "\u5546\u5bb6A",
             "legendHoverLink": true,
             "data": [
-                144,
-                48,
-                97,
-                95,
-                40,
-                52,
-                146
+                117,
+                86,
+                111,
+                150,
+                59,
+                67,
+                73
             ],
+            "realtimeSort": false,
             "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "20%",
             "barGap": "30%",
@@ -58,7 +64,6 @@
             "z": 2,
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             }
         },
@@ -67,15 +72,18 @@
             "name": "\u5546\u5bb6B",
             "legendHoverLink": true,
             "data": [
+                68,
+                107,
+                59,
                 146,
-                85,
-                110,
-                120,
-                93,
-                150,
-                61
+                88,
+                112,
+                124
             ],
+            "realtimeSort": false,
             "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "20%",
             "barGap": "30%",
@@ -88,7 +96,6 @@
             "z": 2,
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             }
         }
@@ -99,11 +106,27 @@
                 "\u5546\u5bb6A",
                 "\u5546\u5bb6B"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -117,11 +140,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -145,13 +173,13 @@
                 }
             },
             "data": [
-                "\u5c0f\u7c73",
-                "\u4e09\u661f",
-                "\u534e\u4e3a",
-                "\u82f9\u679c",
-                "\u9b45\u65cf",
-                "VIVO",
-                "OPPO"
+                "\u5468\u4e00",
+                "\u5468\u4e8c",
+                "\u5468\u4e09",
+                "\u5468\u56db",
+                "\u5468\u4e94",
+                "\u5468\u516d",
+                "\u5468\u65e5"
             ]
         }
     ],
@@ -180,16 +208,20 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "Bar-\u57fa\u672c\u793a\u4f8b",
             "target": "blank",
             "subtext": "\u6211\u662f\u526f\u6807\u9898",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_dbef0a2c89444ba0a84f26261703d1dc.setOption(option_dbef0a2c89444ba0a84f26261703d1dc);
+        chart_00d585b8f737473da81707ff03c953ff.setOption(option_00d585b8f737473da81707ff03c953ff);
     </script>
 </body>
 </html>

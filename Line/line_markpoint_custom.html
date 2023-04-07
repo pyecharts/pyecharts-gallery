@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="a1bd2074907e442f9ed9697b3ba55555" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="97d54dd885974f8dab5d2cc88b34f6db" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_a1bd2074907e442f9ed9697b3ba55555 = echarts.init(
-            document.getElementById('a1bd2074907e442f9ed9697b3ba55555'), 'white', {renderer: 'canvas'});
-        var option_a1bd2074907e442f9ed9697b3ba55555 = {
+        var chart_97d54dd885974f8dab5d2cc88b34f6db = echarts.init(
+            document.getElementById('97d54dd885974f8dab5d2cc88b34f6db'), 'white', {renderer: 'canvas'});
+        var option_97d54dd885974f8dab5d2cc88b34f6db = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -36,6 +39,7 @@
             "type": "line",
             "name": "\u5546\u5bb6A",
             "connectNulls": false,
+            "xAxisIndex": 0,
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
@@ -43,40 +47,41 @@
             "step": false,
             "data": [
                 [
-                    "\u53ef\u4e50",
-                    78
+                    "\u6cb3\u9a6c",
+                    53
                 ],
                 [
-                    "\u96ea\u78a7",
-                    120
+                    "\u87d2\u86c7",
+                    139
                 ],
                 [
-                    "\u6a59\u6c41",
-                    80
+                    "\u8001\u864e",
+                    106
                 ],
                 [
-                    "\u7eff\u8336",
-                    80
+                    "\u5927\u8c61",
+                    64
                 ],
                 [
-                    "\u5976\u8336",
-                    110
+                    "\u5154\u5b50",
+                    83
                 ],
                 [
-                    "\u767e\u5a01",
-                    22
+                    "\u718a\u732b",
+                    138
                 ],
                 [
-                    "\u9752\u5c9b",
-                    118
+                    "\u72ee\u5b50",
+                    129
                 ]
             ],
             "hoverAnimation": true,
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -98,10 +103,10 @@
                     {
                         "name": "\u81ea\u5b9a\u4e49\u6807\u8bb0\u70b9",
                         "coord": [
-                            "\u6a59\u6c41",
-                            80
+                            "\u8001\u864e",
+                            106
                         ],
-                        "value": 80
+                        "value": 106
                     }
                 ]
             },
@@ -114,11 +119,27 @@
             "data": [
                 "\u5546\u5bb6A"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -132,11 +153,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -160,13 +186,13 @@
                 }
             },
             "data": [
-                "\u53ef\u4e50",
-                "\u96ea\u78a7",
-                "\u6a59\u6c41",
-                "\u7eff\u8336",
-                "\u5976\u8336",
-                "\u767e\u5a01",
-                "\u9752\u5c9b"
+                "\u6cb3\u9a6c",
+                "\u87d2\u86c7",
+                "\u8001\u864e",
+                "\u5927\u8c61",
+                "\u5154\u5b50",
+                "\u718a\u732b",
+                "\u72ee\u5b50"
             ]
         }
     ],
@@ -195,15 +221,19 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "Line-MarkPoint\uff08\u81ea\u5b9a\u4e49\uff09",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_a1bd2074907e442f9ed9697b3ba55555.setOption(option_a1bd2074907e442f9ed9697b3ba55555);
+        chart_97d54dd885974f8dab5d2cc88b34f6db.setOption(option_97d54dd885974f8dab5d2cc88b34f6db);
     </script>
 </body>
 </html>

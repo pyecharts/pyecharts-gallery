@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="f34518286f3043808aab9de8a17dd4e5" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="36b66ba21b3e407b9949a77b5d189e12" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_f34518286f3043808aab9de8a17dd4e5 = echarts.init(
-            document.getElementById('f34518286f3043808aab9de8a17dd4e5'), 'white', {renderer: 'canvas'});
-        var option_f34518286f3043808aab9de8a17dd4e5 = {
+        var chart_36b66ba21b3e407b9949a77b5d189e12 = echarts.init(
+            document.getElementById('36b66ba21b3e407b9949a77b5d189e12'), 'white', {renderer: 'canvas'});
+        var option_36b66ba21b3e407b9949a77b5d189e12 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#4587E7"
     ],
@@ -42,7 +45,6 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
             "itemStyle": {
@@ -65,9 +67,7 @@
             "data": [
                 "\u9884\u7b97"
             ],
-            "selected": {
-                "\u9884\u7b97": true
-            }
+            "selected": {}
         }
     ],
     "tooltip": {
@@ -81,17 +81,26 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "radiusAxis": {
+        "nameGap": 15,
+        "inverse": false,
         "min": -4,
         "max": 4,
         "scale": false,
+        "splitNumber": 5,
         "interval": 2,
+        "minInterval": 0,
         "splitArea": {
             "show": true,
             "areaStyle": {
@@ -100,6 +109,7 @@
         }
     },
     "angleAxis": {
+        "startAngle": 90,
         "clockwise": false,
         "min": 0,
         "max": 360,
@@ -128,7 +138,6 @@
         },
         "axisLabel": {
             "show": false,
-            "position": "top",
             "margin": 8
         }
     },
@@ -173,6 +182,7 @@
                 "50%"
             ],
             "radius": "80%",
+            "startAngle": 90,
             "name": {
                 "textStyle": {}
             },
@@ -200,7 +210,7 @@
         }
     ]
 };
-        chart_f34518286f3043808aab9de8a17dd4e5.setOption(option_f34518286f3043808aab9de8a17dd4e5);
+        chart_36b66ba21b3e407b9949a77b5d189e12.setOption(option_36b66ba21b3e407b9949a77b5d189e12);
     </script>
 </body>
 </html>

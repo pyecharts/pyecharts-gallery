@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="5669bb73e8f44490b9dbfedb965369f8" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="e51ace9010eb47a4af30b07c2b1da268" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_5669bb73e8f44490b9dbfedb965369f8 = echarts.init(
-            document.getElementById('5669bb73e8f44490b9dbfedb965369f8'), 'white', {renderer: 'canvas'});
-        var option_5669bb73e8f44490b9dbfedb965369f8 = {
+        var chart_e51ace9010eb47a4af30b07c2b1da268 = echarts.init(
+            document.getElementById('e51ace9010eb47a4af30b07c2b1da268'), 'white', {renderer: 'canvas'});
+        var option_e51ace9010eb47a4af30b07c2b1da268 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -37,15 +40,18 @@
             "name": "\u5546\u5bb6A",
             "legendHoverLink": true,
             "data": [
-                72,
-                26,
-                129,
+                89,
+                35,
+                106,
+                144,
+                71,
                 97,
-                74,
-                113,
-                35
+                150
             ],
+            "realtimeSort": false,
             "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "20%",
             "barGap": "30%",
@@ -73,15 +79,18 @@
             "name": "\u5546\u5bb6B",
             "legendHoverLink": true,
             "data": [
-                21,
+                90,
                 30,
-                51,
-                36,
-                91,
-                77,
-                51
+                147,
+                126,
+                137,
+                118,
+                141
             ],
+            "realtimeSort": false,
             "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "20%",
             "barGap": "30%",
@@ -111,11 +120,27 @@
                 "\u5546\u5bb6A",
                 "\u5546\u5bb6B"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -129,11 +154,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -180,27 +210,31 @@
                 }
             },
             "data": [
-                "\u6cb3\u9a6c",
-                "\u87d2\u86c7",
-                "\u8001\u864e",
-                "\u5927\u8c61",
-                "\u5154\u5b50",
-                "\u718a\u732b",
-                "\u72ee\u5b50"
+                "\u53ef\u4e50",
+                "\u96ea\u78a7",
+                "\u6a59\u6c41",
+                "\u7eff\u8336",
+                "\u5976\u8336",
+                "\u767e\u5a01",
+                "\u9752\u5c9b"
             ]
         }
     ],
     "title": [
         {
+            "show": true,
             "text": "Bar-\u7ffb\u8f6c XY \u8f74",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_5669bb73e8f44490b9dbfedb965369f8.setOption(option_5669bb73e8f44490b9dbfedb965369f8);
+        chart_e51ace9010eb47a4af30b07c2b1da268.setOption(option_e51ace9010eb47a4af30b07c2b1da268);
     </script>
 </body>
 </html>

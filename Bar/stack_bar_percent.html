@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="5c868b03952547caa52ccea8add35c5d" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="fa8381bcd4654951b3eb106a632ecb12" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_5c868b03952547caa52ccea8add35c5d = echarts.init(
-            document.getElementById('5c868b03952547caa52ccea8add35c5d'), 'light', {renderer: 'canvas'});
-        var option_5c868b03952547caa52ccea8add35c5d = {
+        var chart_fa8381bcd4654951b3eb106a632ecb12 = echarts.init(
+            document.getElementById('fa8381bcd4654951b3eb106a632ecb12'), 'light', {renderer: 'canvas'});
+        var option_fa8381bcd4654951b3eb106a632ecb12 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "series": [
         {
             "type": "bar",
@@ -47,8 +50,11 @@
                     "percent": 0.4342105263157895
                 }
             ],
+            "realtimeSort": false,
             "showBackground": false,
             "stack": "stack1",
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "50%",
             "barGap": "30%",
@@ -98,8 +104,11 @@
                     "percent": 0.5657894736842105
                 }
             ],
+            "realtimeSort": false,
             "showBackground": false,
             "stack": "stack1",
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "50%",
             "barGap": "30%",
@@ -130,10 +139,7 @@
                 "product1",
                 "product2"
             ],
-            "selected": {
-                "product1": true,
-                "product2": true
-            }
+            "selected": {}
         }
     ],
     "tooltip": {
@@ -147,11 +153,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -207,7 +218,7 @@
         }
     ]
 };
-        chart_5c868b03952547caa52ccea8add35c5d.setOption(option_5c868b03952547caa52ccea8add35c5d);
+        chart_fa8381bcd4654951b3eb106a632ecb12.setOption(option_fa8381bcd4654951b3eb106a632ecb12);
     </script>
 </body>
 </html>

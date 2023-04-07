@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="3c9eb2a1fd1d43b98ea89a558c127d07" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="16b9903ca3aa47378594ca52b4954843" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_3c9eb2a1fd1d43b98ea89a558c127d07 = echarts.init(
-            document.getElementById('3c9eb2a1fd1d43b98ea89a558c127d07'), 'white', {renderer: 'canvas'});
-        var option_3c9eb2a1fd1d43b98ea89a558c127d07 = {
+        var chart_16b9903ca3aa47378594ca52b4954843 = echarts.init(
+            document.getElementById('16b9903ca3aa47378594ca52b4954843'), 'white', {renderer: 'canvas'});
+        var option_16b9903ca3aa47378594ca52b4954843 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -67,7 +70,6 @@
             "barCategoryGap": "20%",
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             }
         },
@@ -106,7 +108,6 @@
             "barCategoryGap": "20%",
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             }
         }
@@ -117,11 +118,27 @@
                 "2015",
                 "2016"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -135,11 +152,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -213,15 +235,19 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "PictorialBar-Vehicles in X City",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_3c9eb2a1fd1d43b98ea89a558c127d07.setOption(option_3c9eb2a1fd1d43b98ea89a558c127d07);
+        chart_16b9903ca3aa47378594ca52b4954843.setOption(option_16b9903ca3aa47378594ca52b4954843);
     </script>
 </body>
 </html>

@@ -2082,19 +2082,16 @@ def get_year_overlap_chart(year: int) -> Bar:
         .add_yaxis(
             series_name="GDP",
             y_axis=total_data["dataGDP"][year],
-            is_selected=False,
             label_opts=opts.LabelOpts(is_show=False),
         )
         .add_yaxis(
             series_name="金融",
             y_axis=total_data["dataFinancial"][year],
-            is_selected=False,
             label_opts=opts.LabelOpts(is_show=False),
         )
         .add_yaxis(
             series_name="房地产",
             y_axis=total_data["dataEstate"][year],
-            is_selected=False,
             label_opts=opts.LabelOpts(is_show=False),
         )
         .add_yaxis(
@@ -2118,6 +2115,13 @@ def get_year_overlap_chart(year: int) -> Bar:
             ),
             tooltip_opts=opts.TooltipOpts(
                 is_show=True, trigger="axis", axis_pointer_type="shadow"
+            ),
+            legend_opts=opts.LegendOpts(
+                selected_map={
+                    "GDP": False,
+                    "金融": False,
+                    "房地产": False,
+                }
             ),
         )
     )

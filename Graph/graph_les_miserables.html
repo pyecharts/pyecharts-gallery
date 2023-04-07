@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="85f91678bb6c4d9996b7d0f8d1e9f2af" class="chart-container" style="width:1000px; height:600px;"></div>
+<body >
+    <div id="deb6549b72c645ff90f53be6ec60e389" class="chart-container" style="width:1000px; height:600px; "></div>
     <script>
-        var chart_85f91678bb6c4d9996b7d0f8d1e9f2af = echarts.init(
-            document.getElementById('85f91678bb6c4d9996b7d0f8d1e9f2af'), 'white', {renderer: 'canvas'});
-        var option_85f91678bb6c4d9996b7d0f8d1e9f2af = {
+        var chart_deb6549b72c645ff90f53be6ec60e389 = echarts.init(
+            document.getElementById('deb6549b72c645ff90f53be6ec60e389'), 'white', {renderer: 'canvas'});
+        var option_deb6549b72c645ff90f53be6ec60e389 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -41,8 +44,10 @@
             },
             "force": {
                 "repulsion": 50,
-                "edgeLength": 50,
-                "gravity": 0.2
+                "gravity": 0.2,
+                "edgeLength": 30,
+                "friction": 0.6,
+                "layoutAnimation": true
             },
             "label": {
                 "show": true,
@@ -1171,7 +1176,6 @@
             ],
             "edgeLabel": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             },
             "edgeSymbol": [
@@ -2433,6 +2437,7 @@
                 "\u7c7b\u76ee7",
                 "\u7c7b\u76ee8"
             ],
+            "selected": {},
             "show": true,
             "left": "2%",
             "top": "20%",
@@ -2440,7 +2445,22 @@
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -2454,23 +2474,32 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "Graph-Les Miserables",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_85f91678bb6c4d9996b7d0f8d1e9f2af.setOption(option_85f91678bb6c4d9996b7d0f8d1e9f2af);
+        chart_deb6549b72c645ff90f53be6ec60e389.setOption(option_deb6549b72c645ff90f53be6ec60e389);
     </script>
 </body>
 </html>

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="001174bd5bb74360b46f5aa5ca151bb7" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="de95ad5ab8e140128761c3e22d768e7b" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_001174bd5bb74360b46f5aa5ca151bb7 = echarts.init(
-            document.getElementById('001174bd5bb74360b46f5aa5ca151bb7'), 'white', {renderer: 'canvas'});
-        var option_001174bd5bb74360b46f5aa5ca151bb7 = {
+        var chart_de95ad5ab8e140128761c3e22d768e7b = echarts.init(
+            document.getElementById('de95ad5ab8e140128761c3e22d768e7b'), 'white', {renderer: 'canvas'});
+        var option_de95ad5ab8e140128761c3e22d768e7b = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -36,6 +39,7 @@
             "type": "line",
             "name": "\u5546\u5bb6A",
             "connectNulls": false,
+            "xAxisIndex": 0,
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
@@ -43,40 +47,41 @@
             "step": false,
             "data": [
                 [
-                    "\u886c\u886b",
-                    100
+                    "\u54c8\u58eb\u5947",
+                    25
                 ],
                 [
-                    "\u6bdb\u8863",
-                    107
+                    "\u8428\u6469\u8036",
+                    129
                 ],
                 [
-                    "\u9886\u5e26",
-                    37
+                    "\u6cf0\u8fea",
+                    28
                 ],
                 [
-                    "\u88e4\u5b50",
-                    92
+                    "\u91d1\u6bdb",
+                    91
                 ],
                 [
-                    "\u98ce\u8863",
-                    148
+                    "\u7267\u7f8a\u72ac",
+                    115
                 ],
                 [
-                    "\u9ad8\u8ddf\u978b",
-                    81
+                    "\u5409\u5a03\u5a03",
+                    96
                 ],
                 [
-                    "\u889c\u5b50",
-                    105
+                    "\u67ef\u57fa",
+                    131
                 ]
             ],
             "hoverAnimation": true,
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -94,6 +99,7 @@
             "type": "line",
             "name": "\u5546\u5bb6B",
             "connectNulls": false,
+            "xAxisIndex": 0,
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
@@ -101,40 +107,41 @@
             "step": false,
             "data": [
                 [
-                    "\u886c\u886b",
-                    50
+                    "\u54c8\u58eb\u5947",
+                    102
                 ],
                 [
-                    "\u6bdb\u8863",
-                    100
+                    "\u8428\u6469\u8036",
+                    114
                 ],
                 [
-                    "\u9886\u5e26",
-                    54
+                    "\u6cf0\u8fea",
+                    135
                 ],
                 [
-                    "\u88e4\u5b50",
-                    89
+                    "\u91d1\u6bdb",
+                    149
                 ],
                 [
-                    "\u98ce\u8863",
-                    90
+                    "\u7267\u7f8a\u72ac",
+                    28
                 ],
                 [
-                    "\u9ad8\u8ddf\u978b",
-                    100
+                    "\u5409\u5a03\u5a03",
+                    145
                 ],
                 [
-                    "\u889c\u5b50",
-                    106
+                    "\u67ef\u57fa",
+                    103
                 ]
             ],
             "hoverAnimation": true,
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -155,11 +162,27 @@
                 "\u5546\u5bb6A",
                 "\u5546\u5bb6B"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -173,11 +196,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -201,13 +229,13 @@
                 }
             },
             "data": [
-                "\u886c\u886b",
-                "\u6bdb\u8863",
-                "\u9886\u5e26",
-                "\u88e4\u5b50",
-                "\u98ce\u8863",
-                "\u9ad8\u8ddf\u978b",
-                "\u889c\u5b50"
+                "\u54c8\u58eb\u5947",
+                "\u8428\u6469\u8036",
+                "\u6cf0\u8fea",
+                "\u91d1\u6bdb",
+                "\u7267\u7f8a\u72ac",
+                "\u5409\u5a03\u5a03",
+                "\u67ef\u57fa"
             ]
         }
     ],
@@ -236,15 +264,19 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "Line-\u9762\u79ef\u56fe",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_001174bd5bb74360b46f5aa5ca151bb7.setOption(option_001174bd5bb74360b46f5aa5ca151bb7);
+        chart_de95ad5ab8e140128761c3e22d768e7b.setOption(option_de95ad5ab8e140128761c3e22d768e7b);
     </script>
 </body>
 </html>

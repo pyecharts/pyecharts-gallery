@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="f5976e5b2ab744dc8b1485dd46fa557f" class="chart-container" style="width:1024px; height:768px;"></div>
+<body >
+    <div id="3bebbafa7a66419780298bdda3378282" class="chart-container" style="width:1024px; height:768px; "></div>
     <script>
-        var chart_f5976e5b2ab744dc8b1485dd46fa557f = echarts.init(
-            document.getElementById('f5976e5b2ab744dc8b1485dd46fa557f'), 'white', {renderer: 'canvas'});
-        var option_f5976e5b2ab744dc8b1485dd46fa557f = {
+        var chart_3bebbafa7a66419780298bdda3378282 = echarts.init(
+            document.getElementById('3bebbafa7a66419780298bdda3378282'), 'white', {renderer: 'canvas'});
+        var option_3bebbafa7a66419780298bdda3378282 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -12364,9 +12367,10 @@
             "hoverAnimation": false,
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1.5,
@@ -24712,9 +24716,10 @@
             "hoverAnimation": false,
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1.5,
@@ -24734,23 +24739,55 @@
             "data": [
                 "\u6d41\u91cf"
             ],
+            "selected": {},
             "show": true,
             "left": "left",
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         },
         {
             "data": [
                 "\u964d\u96e8\u91cf"
             ],
+            "selected": {},
             "show": true,
             "left": "7%",
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -24764,11 +24801,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -31040,19 +31082,27 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "\u96e8\u91cf\u6d41\u91cf\u5173\u7cfb\u56fe",
             "target": "blank",
             "subtext": "\u6570\u636e\u6765\u81ea\u897f\u5b89\u5170\u7279\u6c34\u7535\u6d4b\u63a7\u6280\u672f\u6709\u9650\u516c\u53f8",
             "subtarget": "blank",
             "left": "center",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         },
         {
+            "show": true,
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ],
     "toolbox": {
@@ -31073,6 +31123,8 @@
         {
             "show": true,
             "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
             "realtime": true,
             "startValue": 30,
             "endValue": 70,
@@ -31094,7 +31146,9 @@
             {
                 "xAxisIndex": "all"
             }
-        ]
+        ],
+        "triggerTooltip": true,
+        "triggerOn": "mousemove|click"
     },
     "grid": [
         {
@@ -31107,7 +31161,9 @@
             "containLabel": false,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
         },
         {
             "show": false,
@@ -31120,11 +31176,13 @@
             "containLabel": false,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1
+            "borderWidth": 1,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0
         }
     ]
 };
-        chart_f5976e5b2ab744dc8b1485dd46fa557f.setOption(option_f5976e5b2ab744dc8b1485dd46fa557f);
+        chart_3bebbafa7a66419780298bdda3378282.setOption(option_3bebbafa7a66419780298bdda3378282);
     </script>
 </body>
 </html>

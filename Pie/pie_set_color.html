@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="ebc764f42180461eb91d08997f2817bc" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="24e86970ad7a4e4982ff956a363ac1ea" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_ebc764f42180461eb91d08997f2817bc = echarts.init(
-            document.getElementById('ebc764f42180461eb91d08997f2817bc'), 'white', {renderer: 'canvas'});
-        var option_ebc764f42180461eb91d08997f2817bc = {
+        var chart_24e86970ad7a4e4982ff956a363ac1ea = echarts.init(
+            document.getElementById('24e86970ad7a4e4982ff956a363ac1ea'), 'white', {renderer: 'canvas'});
+        var option_24e86970ad7a4e4982ff956a363ac1ea = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "blue",
         "green",
@@ -32,36 +35,57 @@
     "series": [
         {
             "type": "pie",
+            "colorBy": "data",
+            "legendHoverLink": true,
+            "selectedMode": false,
+            "selectedOffset": 10,
             "clockwise": true,
             "startAngle": 90,
+            "minAngle": 0,
+            "minShowLabelAngle": 0,
+            "avoidLabelOverlap": true,
+            "stillShowZeroSum": true,
+            "percentPrecision": 2,
+            "showEmptyCircle": true,
+            "emptyCircleStyle": {
+                "color": "lightgray",
+                "borderColor": "#000",
+                "borderWidth": 0,
+                "borderType": "solid",
+                "borderDashOffset": 0,
+                "borderCap": "butt",
+                "borderJoin": "bevel",
+                "borderMiterLimit": 10,
+                "opacity": 1
+            },
             "data": [
                 {
                     "name": "\u53ef\u4e50",
-                    "value": 134
+                    "value": 91
                 },
                 {
                     "name": "\u96ea\u78a7",
-                    "value": 144
+                    "value": 122
                 },
                 {
                     "name": "\u6a59\u6c41",
-                    "value": 112
+                    "value": 29
                 },
                 {
                     "name": "\u7eff\u8336",
-                    "value": 79
+                    "value": 112
                 },
                 {
                     "name": "\u5976\u8336",
-                    "value": 74
+                    "value": 93
                 },
                 {
                     "name": "\u767e\u5a01",
-                    "value": 128
+                    "value": 27
                 },
                 {
                     "name": "\u9752\u5c9b",
-                    "value": 131
+                    "value": 53
                 }
             ],
             "radius": [
@@ -74,7 +98,6 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8,
                 "formatter": "{b}: {c}"
             },
@@ -106,11 +129,27 @@
                 "\u767e\u5a01",
                 "\u9752\u5c9b"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -124,23 +163,32 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "Pie-\u8bbe\u7f6e\u989c\u8272",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_ebc764f42180461eb91d08997f2817bc.setOption(option_ebc764f42180461eb91d08997f2817bc);
+        chart_24e86970ad7a4e4982ff956a363ac1ea.setOption(option_24e86970ad7a4e4982ff956a363ac1ea);
     </script>
 </body>
 </html>

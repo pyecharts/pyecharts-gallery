@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="5aea768a3a784c13b72edfdc8527d956" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="7af0bc6e45de4d61a79fd5db059979a9" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_5aea768a3a784c13b72edfdc8527d956 = echarts.init(
-            document.getElementById('5aea768a3a784c13b72edfdc8527d956'), 'white', {renderer: 'canvas'});
-        var option_5aea768a3a784c13b72edfdc8527d956 = {
+        var chart_7af0bc6e45de4d61a79fd5db059979a9 = echarts.init(
+            document.getElementById('7af0bc6e45de4d61a79fd5db059979a9'), 'white', {renderer: 'canvas'});
+        var option_7af0bc6e45de4d61a79fd5db059979a9 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -37,15 +40,18 @@
             "name": "\u5546\u5bb6A",
             "legendHoverLink": true,
             "data": [
-                73,
-                61,
-                66,
-                71,
-                102,
-                146,
-                68
+                114,
+                55,
+                21,
+                58,
+                98,
+                47,
+                30
             ],
+            "realtimeSort": false,
             "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "20%",
             "barGap": "30%",
@@ -58,7 +64,6 @@
             "z": 2,
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             }
         },
@@ -67,15 +72,18 @@
             "name": "\u5546\u5bb6B",
             "legendHoverLink": true,
             "data": [
-                63,
-                70,
-                110,
-                144,
-                138,
-                100,
-                63
+                90,
+                60,
+                60,
+                66,
+                26,
+                147,
+                124
             ],
+            "realtimeSort": false,
             "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "20%",
             "barGap": "30%",
@@ -88,7 +96,6 @@
             "z": 2,
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             }
         }
@@ -99,11 +106,27 @@
                 "\u5546\u5bb6A",
                 "\u5546\u5bb6B"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -117,11 +140,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -180,11 +208,15 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "Bar-Graphic Image \u7ec4\u4ef6\u793a\u4f8b",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ],
     "graphic": [
@@ -221,7 +253,7 @@
         }
     ]
 };
-        chart_5aea768a3a784c13b72edfdc8527d956.setOption(option_5aea768a3a784c13b72edfdc8527d956);
+        chart_7af0bc6e45de4d61a79fd5db059979a9.setOption(option_7af0bc6e45de4d61a79fd5db059979a9);
     </script>
 </body>
 </html>

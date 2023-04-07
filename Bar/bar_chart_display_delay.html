@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="5b17936e8fd54173b9a7f63b7bf33fc1" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="ad9f2b7e5b96417a9735ab19c9918dc6" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_5b17936e8fd54173b9a7f63b7bf33fc1 = echarts.init(
-            document.getElementById('5b17936e8fd54173b9a7f63b7bf33fc1'), 'white', {renderer: 'canvas'});
-        var option_5b17936e8fd54173b9a7f63b7bf33fc1 = {
+        var chart_ad9f2b7e5b96417a9735ab19c9918dc6 = echarts.init(
+            document.getElementById('ad9f2b7e5b96417a9735ab19c9918dc6'), 'white', {renderer: 'canvas'});
+        var option_ad9f2b7e5b96417a9735ab19c9918dc6 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -138,7 +141,10 @@
                 114.40092042993717,
                 122.37001313784816
             ],
+            "realtimeSort": false,
             "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "20%",
             "barGap": "30%",
@@ -151,7 +157,6 @@
             "z": 2,
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             }
         },
@@ -261,7 +266,10 @@
                 116.7731992576505,
                 110.98476877890735
             ],
+            "realtimeSort": false,
             "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "20%",
             "barGap": "30%",
@@ -274,7 +282,6 @@
             "z": 2,
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             }
         }
@@ -285,11 +292,27 @@
                 "bar",
                 "bar2"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -303,11 +326,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -464,15 +492,19 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "\u67f1\u72b6\u56fe\u52a8\u753b\u5ef6\u8fdf",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_5b17936e8fd54173b9a7f63b7bf33fc1.setOption(option_5b17936e8fd54173b9a7f63b7bf33fc1);
+        chart_ad9f2b7e5b96417a9735ab19c9918dc6.setOption(option_ad9f2b7e5b96417a9735ab19c9918dc6);
     </script>
 </body>
 </html>

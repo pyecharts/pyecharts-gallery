@@ -1,1 +1,1 @@
-- [GraphGL - Basic GraphGL](GraphGL/basic_graphgl.md ':type=code')
+- [Graphgl - Basic_graphgl](GraphGL/basic_graphgl.md ':type=code')

@@ -119,6 +119,9 @@
         - [Graph - Npm_dependencies](Graph/npm_dependencies.md ':type=code')
         - [Graph - Graph_les_miserables](Graph/graph_les_miserables.md ':type=code')
         
+    - [**GL 关系图 GraphGL**](GraphGL/README.md)
+        - [Graphgl - Basic_graphgl](GraphGL/basic_graphgl.md ':type=code')
+        
     - [**图形组件 Graphic**](Graphic/README.md)
         - [Graphic - Graphic_image_with_js](Graphic/graphic_image_with_js.md ':type=code')
         - [Graphic - Graphic_rect_bar1](Graphic/graphic_rect_bar1.md ':type=code')
@@ -316,5 +319,4 @@
         - [Wordcloud - Wordcloud_diamond](WordCloud/wordcloud_diamond.md ':type=code')
         - [Wordcloud - Wordcloud_custom_font_style](WordCloud/wordcloud_custom_font_style.md ':type=code')
         
-    - [**关系图-GL GraphGL**](GraphGL/README.md)
-        - [GraphGL - Basic GraphGL](GraphGL/basic_graphgl.md ':type=code')
+    

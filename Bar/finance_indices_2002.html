@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="1a326b476aa24cdb9eb9ed18f8fe6d40" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="93428893353d416cad74de8400fc30ab" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_1a326b476aa24cdb9eb9ed18f8fe6d40 = echarts.init(
-            document.getElementById('1a326b476aa24cdb9eb9ed18f8fe6d40'), 'white', {renderer: 'canvas'});
-        var option_1a326b476aa24cdb9eb9ed18f8fe6d40 = {
+        var chart_93428893353d416cad74de8400fc30ab = echarts.init(
+            document.getElementById('93428893353d416cad74de8400fc30ab'), 'white', {renderer: 'canvas'});
+        var option_93428893353d416cad74de8400fc30ab = {
     "baseOption": {
         "series": [
             {
@@ -144,7 +144,10 @@
                         "value": 6610.05
                     }
                 ],
+                "realtimeSort": false,
                 "showBackground": false,
+                "stackStrategy": "samesign",
+                "cursor": "pointer",
                 "barMinHeight": 0,
                 "barCategoryGap": "20%",
                 "barGap": "30%",
@@ -157,7 +160,6 @@
                 "z": 2,
                 "label": {
                     "show": false,
-                    "position": "top",
                     "margin": 8
                 }
             },
@@ -291,7 +293,10 @@
                         "value": 2245.12
                     }
                 ],
+                "realtimeSort": false,
                 "showBackground": false,
+                "stackStrategy": "samesign",
+                "cursor": "pointer",
                 "barMinHeight": 0,
                 "barCategoryGap": "20%",
                 "barGap": "30%",
@@ -304,7 +309,6 @@
                 "z": 2,
                 "label": {
                     "show": false,
-                    "position": "top",
                     "margin": 8
                 }
             },
@@ -438,7 +442,10 @@
                         "value": 2245.12
                     }
                 ],
+                "realtimeSort": false,
                 "showBackground": false,
+                "stackStrategy": "samesign",
+                "cursor": "pointer",
                 "barMinHeight": 0,
                 "barCategoryGap": "20%",
                 "barGap": "30%",
@@ -451,7 +458,6 @@
                 "z": 2,
                 "label": {
                     "show": false,
-                    "position": "top",
                     "margin": 8
                 }
             },
@@ -585,7 +591,10 @@
                         "value": 1139.03
                     }
                 ],
+                "realtimeSort": false,
                 "showBackground": false,
+                "stackStrategy": "samesign",
+                "cursor": "pointer",
                 "barMinHeight": 0,
                 "barCategoryGap": "20%",
                 "barGap": "30%",
@@ -598,7 +607,6 @@
                 "z": 2,
                 "label": {
                     "show": false,
-                    "position": "top",
                     "margin": 8
                 }
             },
@@ -732,7 +740,10 @@
                         "value": 3225.9
                     }
                 ],
+                "realtimeSort": false,
                 "showBackground": false,
+                "stackStrategy": "samesign",
+                "cursor": "pointer",
                 "barMinHeight": 0,
                 "barCategoryGap": "20%",
                 "barGap": "30%",
@@ -745,7 +756,6 @@
                 "z": 2,
                 "label": {
                     "show": false,
-                    "position": "top",
                     "margin": 8
                 }
             },
@@ -879,7 +889,10 @@
                         "value": 2245.12
                     }
                 ],
+                "realtimeSort": false,
                 "showBackground": false,
+                "stackStrategy": "samesign",
+                "cursor": "pointer",
                 "barMinHeight": 0,
                 "barCategoryGap": "20%",
                 "barGap": "30%",
@@ -892,15 +905,35 @@
                 "z": 2,
                 "label": {
                     "show": false,
-                    "position": "top",
                     "margin": 8
                 }
             },
             {
                 "type": "pie",
                 "name": "GDP\u5360\u6bd4",
+                "colorBy": "data",
+                "legendHoverLink": true,
+                "selectedMode": false,
+                "selectedOffset": 10,
                 "clockwise": true,
                 "startAngle": 90,
+                "minAngle": 0,
+                "minShowLabelAngle": 0,
+                "avoidLabelOverlap": true,
+                "stillShowZeroSum": true,
+                "percentPrecision": 2,
+                "showEmptyCircle": true,
+                "emptyCircleStyle": {
+                    "color": "lightgray",
+                    "borderColor": "#000",
+                    "borderWidth": 0,
+                    "borderType": "solid",
+                    "borderDashOffset": 0,
+                    "borderCap": "butt",
+                    "borderJoin": "bevel",
+                    "borderMiterLimit": 10,
+                    "opacity": 1
+                },
                 "data": [
                     {
                         "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -922,7 +955,6 @@
                 ],
                 "label": {
                     "show": true,
-                    "position": "top",
                     "margin": 8
                 },
                 "labelLine": {
@@ -945,11 +977,16 @@
                     "alwaysShowContent": false,
                     "showDelay": 0,
                     "hideDelay": 100,
+                    "enterable": false,
+                    "confine": false,
+                    "appendToBody": false,
+                    "transitionDuration": 0.4,
                     "textStyle": {
                         "fontSize": 14
                     },
                     "borderWidth": 0,
-                    "padding": 5
+                    "padding": 5,
+                    "order": "seriesAsc"
                 },
                 "rippleEffect": {
                     "show": true,
@@ -971,6 +1008,7 @@
             "inverse": false,
             "playInterval": 1000,
             "bottom": "-5px",
+            "progress": {},
             "data": [
                 "2002",
                 "2003",
@@ -1079,11 +1117,31 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a",
                         "\u7b2c\u4e09\u4ea7\u4e1a"
                     ],
+                    "selected": {
+                        "GDP": false,
+                        "\u91d1\u878d": false,
+                        "\u623f\u5730\u4ea7": false
+                    },
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
                     "itemWidth": 25,
-                    "itemHeight": 14
+                    "itemHeight": 14,
+                    "backgroundColor": "transparent",
+                    "borderColor": "#ccc",
+                    "borderWidth": 1,
+                    "borderRadius": 0,
+                    "pageButtonItemGap": 5,
+                    "pageButtonPosition": "end",
+                    "pageFormatter": "{current}/{total}",
+                    "pageIconColor": "#2f4554",
+                    "pageIconInactiveColor": "#aaa",
+                    "pageIconSize": 15,
+                    "animationDurationUpdate": 800,
+                    "selector": false,
+                    "selectorPosition": "auto",
+                    "selectorItemGap": 7,
+                    "selectorButtonGap": 10
                 }
             ],
             "series": [
@@ -1217,7 +1275,10 @@
                             "value": 1612.6
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -1230,7 +1291,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -1364,7 +1424,10 @@
                             "value": 704.5
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -1377,7 +1440,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -1511,7 +1573,10 @@
                             "value": 704.5
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -1524,7 +1589,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -1658,7 +1722,10 @@
                             "value": 305
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -1671,7 +1738,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -1805,7 +1871,10 @@
                             "value": 603.15
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -1818,7 +1887,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -1952,7 +2020,10 @@
                             "value": 704.5
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -1965,15 +2036,35 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
                 {
                     "type": "pie",
                     "name": "GDP\u5360\u6bd4",
+                    "colorBy": "data",
+                    "legendHoverLink": true,
+                    "selectedMode": false,
+                    "selectedOffset": 10,
                     "clockwise": true,
                     "startAngle": 90,
+                    "minAngle": 0,
+                    "minShowLabelAngle": 0,
+                    "avoidLabelOverlap": true,
+                    "stillShowZeroSum": true,
+                    "percentPrecision": 2,
+                    "showEmptyCircle": true,
+                    "emptyCircleStyle": {
+                        "color": "lightgray",
+                        "borderColor": "#000",
+                        "borderWidth": 0,
+                        "borderType": "solid",
+                        "borderDashOffset": 0,
+                        "borderCap": "butt",
+                        "borderJoin": "bevel",
+                        "borderMiterLimit": 10,
+                        "opacity": 1
+                    },
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -1995,7 +2086,6 @@
                     ],
                     "label": {
                         "show": true,
-                        "position": "top",
                         "margin": 8
                     },
                     "labelLine": {
@@ -2018,11 +2108,16 @@
                         "alwaysShowContent": false,
                         "showDelay": 0,
                         "hideDelay": 100,
+                        "enterable": false,
+                        "confine": false,
+                        "appendToBody": false,
+                        "transitionDuration": 0.4,
                         "textStyle": {
                             "fontSize": 14
                         },
                         "borderWidth": 0,
-                        "padding": 5
+                        "padding": 5,
+                        "order": "seriesAsc"
                     },
                     "rippleEffect": {
                         "show": true,
@@ -2113,12 +2208,16 @@
             ],
             "title": [
                 {
+                    "show": true,
                     "text": "2002\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
                     "target": "blank",
                     "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
                     "subtarget": "blank",
                     "padding": 5,
-                    "itemGap": 10
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
                 }
             ],
             "tooltip": {
@@ -2132,11 +2231,16 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             },
             "color": [
                 "#5470c6",
@@ -2164,11 +2268,31 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a",
                         "\u7b2c\u4e09\u4ea7\u4e1a"
                     ],
+                    "selected": {
+                        "GDP": false,
+                        "\u91d1\u878d": false,
+                        "\u623f\u5730\u4ea7": false
+                    },
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
                     "itemWidth": 25,
-                    "itemHeight": 14
+                    "itemHeight": 14,
+                    "backgroundColor": "transparent",
+                    "borderColor": "#ccc",
+                    "borderWidth": 1,
+                    "borderRadius": 0,
+                    "pageButtonItemGap": 5,
+                    "pageButtonPosition": "end",
+                    "pageFormatter": "{current}/{total}",
+                    "pageIconColor": "#2f4554",
+                    "pageIconInactiveColor": "#aaa",
+                    "pageIconSize": 15,
+                    "animationDurationUpdate": 800,
+                    "selector": false,
+                    "selectorPosition": "auto",
+                    "selectorItemGap": 7,
+                    "selectorButtonGap": 10
                 }
             ],
             "series": [
@@ -2302,7 +2426,10 @@
                             "value": 1886.35
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -2315,7 +2442,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -2449,7 +2575,10 @@
                             "value": 753.91
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -2462,7 +2591,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -2596,7 +2724,10 @@
                             "value": 753.91
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -2609,7 +2740,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -2743,7 +2873,10 @@
                             "value": 412.9
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -2756,7 +2889,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -2890,7 +3022,10 @@
                             "value": 719.54
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -2903,7 +3038,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -3037,7 +3171,10 @@
                             "value": 753.91
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -3050,15 +3187,35 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
                 {
                     "type": "pie",
                     "name": "GDP\u5360\u6bd4",
+                    "colorBy": "data",
+                    "legendHoverLink": true,
+                    "selectedMode": false,
+                    "selectedOffset": 10,
                     "clockwise": true,
                     "startAngle": 90,
+                    "minAngle": 0,
+                    "minShowLabelAngle": 0,
+                    "avoidLabelOverlap": true,
+                    "stillShowZeroSum": true,
+                    "percentPrecision": 2,
+                    "showEmptyCircle": true,
+                    "emptyCircleStyle": {
+                        "color": "lightgray",
+                        "borderColor": "#000",
+                        "borderWidth": 0,
+                        "borderType": "solid",
+                        "borderDashOffset": 0,
+                        "borderCap": "butt",
+                        "borderJoin": "bevel",
+                        "borderMiterLimit": 10,
+                        "opacity": 1
+                    },
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -3080,7 +3237,6 @@
                     ],
                     "label": {
                         "show": true,
-                        "position": "top",
                         "margin": 8
                     },
                     "labelLine": {
@@ -3103,11 +3259,16 @@
                         "alwaysShowContent": false,
                         "showDelay": 0,
                         "hideDelay": 100,
+                        "enterable": false,
+                        "confine": false,
+                        "appendToBody": false,
+                        "transitionDuration": 0.4,
                         "textStyle": {
                             "fontSize": 14
                         },
                         "borderWidth": 0,
-                        "padding": 5
+                        "padding": 5,
+                        "order": "seriesAsc"
                     },
                     "rippleEffect": {
                         "show": true,
@@ -3198,12 +3359,16 @@
             ],
             "title": [
                 {
+                    "show": true,
                     "text": "2003\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
                     "target": "blank",
                     "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
                     "subtarget": "blank",
                     "padding": 5,
-                    "itemGap": 10
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
                 }
             ],
             "tooltip": {
@@ -3217,11 +3382,16 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             },
             "color": [
                 "#5470c6",
@@ -3249,11 +3419,31 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a",
                         "\u7b2c\u4e09\u4ea7\u4e1a"
                     ],
+                    "selected": {
+                        "GDP": false,
+                        "\u91d1\u878d": false,
+                        "\u623f\u5730\u4ea7": false
+                    },
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
                     "itemWidth": 25,
-                    "itemHeight": 14
+                    "itemHeight": 14,
+                    "backgroundColor": "transparent",
+                    "borderColor": "#ccc",
+                    "borderWidth": 1,
+                    "borderRadius": 0,
+                    "pageButtonItemGap": 5,
+                    "pageButtonPosition": "end",
+                    "pageFormatter": "{current}/{total}",
+                    "pageIconColor": "#2f4554",
+                    "pageIconInactiveColor": "#aaa",
+                    "pageIconSize": 15,
+                    "animationDurationUpdate": 800,
+                    "selector": false,
+                    "selectorPosition": "auto",
+                    "selectorItemGap": 7,
+                    "selectorButtonGap": 10
                 }
             ],
             "series": [
@@ -3387,7 +3577,10 @@
                             "value": 2209.09
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -3400,7 +3593,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -3534,7 +3726,10 @@
                             "value": 833.36
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -3547,7 +3742,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -3681,7 +3875,10 @@
                             "value": 833.36
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -3694,7 +3891,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -3828,7 +4024,10 @@
                             "value": 461.26
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -3841,7 +4040,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -3975,7 +4173,10 @@
                             "value": 914.47
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -3988,7 +4189,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -4122,7 +4322,10 @@
                             "value": 833.36
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -4135,15 +4338,35 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
                 {
                     "type": "pie",
                     "name": "GDP\u5360\u6bd4",
+                    "colorBy": "data",
+                    "legendHoverLink": true,
+                    "selectedMode": false,
+                    "selectedOffset": 10,
                     "clockwise": true,
                     "startAngle": 90,
+                    "minAngle": 0,
+                    "minShowLabelAngle": 0,
+                    "avoidLabelOverlap": true,
+                    "stillShowZeroSum": true,
+                    "percentPrecision": 2,
+                    "showEmptyCircle": true,
+                    "emptyCircleStyle": {
+                        "color": "lightgray",
+                        "borderColor": "#000",
+                        "borderWidth": 0,
+                        "borderType": "solid",
+                        "borderDashOffset": 0,
+                        "borderCap": "butt",
+                        "borderJoin": "bevel",
+                        "borderMiterLimit": 10,
+                        "opacity": 1
+                    },
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -4165,7 +4388,6 @@
                     ],
                     "label": {
                         "show": true,
-                        "position": "top",
                         "margin": 8
                     },
                     "labelLine": {
@@ -4188,11 +4410,16 @@
                         "alwaysShowContent": false,
                         "showDelay": 0,
                         "hideDelay": 100,
+                        "enterable": false,
+                        "confine": false,
+                        "appendToBody": false,
+                        "transitionDuration": 0.4,
                         "textStyle": {
                             "fontSize": 14
                         },
                         "borderWidth": 0,
-                        "padding": 5
+                        "padding": 5,
+                        "order": "seriesAsc"
                     },
                     "rippleEffect": {
                         "show": true,
@@ -4283,12 +4510,16 @@
             ],
             "title": [
                 {
+                    "show": true,
                     "text": "2004\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
                     "target": "blank",
                     "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
                     "subtarget": "blank",
                     "padding": 5,
-                    "itemGap": 10
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
                 }
             ],
             "tooltip": {
@@ -4302,11 +4533,16 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             },
             "color": [
                 "#5470c6",
@@ -4334,11 +4570,31 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a",
                         "\u7b2c\u4e09\u4ea7\u4e1a"
                     ],
+                    "selected": {
+                        "GDP": false,
+                        "\u91d1\u878d": false,
+                        "\u623f\u5730\u4ea7": false
+                    },
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
                     "itemWidth": 25,
-                    "itemHeight": 14
+                    "itemHeight": 14,
+                    "backgroundColor": "transparent",
+                    "borderColor": "#ccc",
+                    "borderWidth": 1,
+                    "borderRadius": 0,
+                    "pageButtonItemGap": 5,
+                    "pageButtonPosition": "end",
+                    "pageFormatter": "{current}/{total}",
+                    "pageIconColor": "#2f4554",
+                    "pageIconInactiveColor": "#aaa",
+                    "pageIconSize": 15,
+                    "animationDurationUpdate": 800,
+                    "selector": false,
+                    "selectorPosition": "auto",
+                    "selectorItemGap": 7,
+                    "selectorButtonGap": 10
                 }
             ],
             "series": [
@@ -4472,7 +4728,10 @@
                             "value": 2604.19
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -4485,7 +4744,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -4619,7 +4877,10 @@
                             "value": 929.41
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -4632,7 +4893,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -4766,7 +5026,10 @@
                             "value": 929.41
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -4779,7 +5042,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -4913,7 +5175,10 @@
                             "value": 509.99
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -4926,7 +5191,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -5060,7 +5324,10 @@
                             "value": 1164.79
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -5073,7 +5340,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -5207,7 +5473,10 @@
                             "value": 929.41
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -5220,15 +5489,35 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
                 {
                     "type": "pie",
                     "name": "GDP\u5360\u6bd4",
+                    "colorBy": "data",
+                    "legendHoverLink": true,
+                    "selectedMode": false,
+                    "selectedOffset": 10,
                     "clockwise": true,
                     "startAngle": 90,
+                    "minAngle": 0,
+                    "minShowLabelAngle": 0,
+                    "avoidLabelOverlap": true,
+                    "stillShowZeroSum": true,
+                    "percentPrecision": 2,
+                    "showEmptyCircle": true,
+                    "emptyCircleStyle": {
+                        "color": "lightgray",
+                        "borderColor": "#000",
+                        "borderWidth": 0,
+                        "borderType": "solid",
+                        "borderDashOffset": 0,
+                        "borderCap": "butt",
+                        "borderJoin": "bevel",
+                        "borderMiterLimit": 10,
+                        "opacity": 1
+                    },
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -5250,7 +5539,6 @@
                     ],
                     "label": {
                         "show": true,
-                        "position": "top",
                         "margin": 8
                     },
                     "labelLine": {
@@ -5273,11 +5561,16 @@
                         "alwaysShowContent": false,
                         "showDelay": 0,
                         "hideDelay": 100,
+                        "enterable": false,
+                        "confine": false,
+                        "appendToBody": false,
+                        "transitionDuration": 0.4,
                         "textStyle": {
                             "fontSize": 14
                         },
                         "borderWidth": 0,
-                        "padding": 5
+                        "padding": 5,
+                        "order": "seriesAsc"
                     },
                     "rippleEffect": {
                         "show": true,
@@ -5368,12 +5661,16 @@
             ],
             "title": [
                 {
+                    "show": true,
                     "text": "2005\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
                     "target": "blank",
                     "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
                     "subtarget": "blank",
                     "padding": 5,
-                    "itemGap": 10
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
                 }
             ],
             "tooltip": {
@@ -5387,11 +5684,16 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             },
             "color": [
                 "#5470c6",
@@ -5419,11 +5721,31 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a",
                         "\u7b2c\u4e09\u4ea7\u4e1a"
                     ],
+                    "selected": {
+                        "GDP": false,
+                        "\u91d1\u878d": false,
+                        "\u623f\u5730\u4ea7": false
+                    },
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
                     "itemWidth": 25,
-                    "itemHeight": 14
+                    "itemHeight": 14,
+                    "backgroundColor": "transparent",
+                    "borderColor": "#ccc",
+                    "borderWidth": 1,
+                    "borderRadius": 0,
+                    "pageButtonItemGap": 5,
+                    "pageButtonPosition": "end",
+                    "pageFormatter": "{current}/{total}",
+                    "pageIconColor": "#2f4554",
+                    "pageIconInactiveColor": "#aaa",
+                    "pageIconSize": 15,
+                    "animationDurationUpdate": 800,
+                    "selector": false,
+                    "selectorPosition": "auto",
+                    "selectorItemGap": 7,
+                    "selectorButtonGap": 10
                 }
             ],
             "series": [
@@ -5557,7 +5879,10 @@
                             "value": 3045.26
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -5570,7 +5895,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -5704,7 +6028,10 @@
                             "value": 1058.16
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -5717,7 +6044,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -5851,7 +6177,10 @@
                             "value": 1058.16
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -5864,7 +6193,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -5998,7 +6326,10 @@
                             "value": 527.8
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -6011,7 +6342,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -6145,7 +6475,10 @@
                             "value": 1459.3
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -6158,7 +6491,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -6292,7 +6624,10 @@
                             "value": 1058.16
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -6305,15 +6640,35 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
                 {
                     "type": "pie",
                     "name": "GDP\u5360\u6bd4",
+                    "colorBy": "data",
+                    "legendHoverLink": true,
+                    "selectedMode": false,
+                    "selectedOffset": 10,
                     "clockwise": true,
                     "startAngle": 90,
+                    "minAngle": 0,
+                    "minShowLabelAngle": 0,
+                    "avoidLabelOverlap": true,
+                    "stillShowZeroSum": true,
+                    "percentPrecision": 2,
+                    "showEmptyCircle": true,
+                    "emptyCircleStyle": {
+                        "color": "lightgray",
+                        "borderColor": "#000",
+                        "borderWidth": 0,
+                        "borderType": "solid",
+                        "borderDashOffset": 0,
+                        "borderCap": "butt",
+                        "borderJoin": "bevel",
+                        "borderMiterLimit": 10,
+                        "opacity": 1
+                    },
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -6335,7 +6690,6 @@
                     ],
                     "label": {
                         "show": true,
-                        "position": "top",
                         "margin": 8
                     },
                     "labelLine": {
@@ -6358,11 +6712,16 @@
                         "alwaysShowContent": false,
                         "showDelay": 0,
                         "hideDelay": 100,
+                        "enterable": false,
+                        "confine": false,
+                        "appendToBody": false,
+                        "transitionDuration": 0.4,
                         "textStyle": {
                             "fontSize": 14
                         },
                         "borderWidth": 0,
-                        "padding": 5
+                        "padding": 5,
+                        "order": "seriesAsc"
                     },
                     "rippleEffect": {
                         "show": true,
@@ -6453,12 +6812,16 @@
             ],
             "title": [
                 {
+                    "show": true,
                     "text": "2006\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
                     "target": "blank",
                     "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
                     "subtarget": "blank",
                     "padding": 5,
-                    "itemGap": 10
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
                 }
             ],
             "tooltip": {
@@ -6472,11 +6835,16 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             },
             "color": [
                 "#5470c6",
@@ -6504,11 +6872,31 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a",
                         "\u7b2c\u4e09\u4ea7\u4e1a"
                     ],
+                    "selected": {
+                        "GDP": false,
+                        "\u91d1\u878d": false,
+                        "\u623f\u5730\u4ea7": false
+                    },
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
                     "itemWidth": 25,
-                    "itemHeight": 14
+                    "itemHeight": 14,
+                    "backgroundColor": "transparent",
+                    "borderColor": "#ccc",
+                    "borderWidth": 1,
+                    "borderRadius": 0,
+                    "pageButtonItemGap": 5,
+                    "pageButtonPosition": "end",
+                    "pageFormatter": "{current}/{total}",
+                    "pageIconColor": "#2f4554",
+                    "pageIconInactiveColor": "#aaa",
+                    "pageIconSize": 15,
+                    "animationDurationUpdate": 800,
+                    "selector": false,
+                    "selectorPosition": "auto",
+                    "selectorItemGap": 7,
+                    "selectorButtonGap": 10
                 }
             ],
             "series": [
@@ -6642,7 +7030,10 @@
                             "value": 3523.16
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -6655,7 +7046,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -6789,7 +7179,10 @@
                             "value": 1246.89
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -6802,7 +7195,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -6936,7 +7328,10 @@
                             "value": 1246.89
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -6949,7 +7344,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -7083,7 +7477,10 @@
                             "value": 628.72
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -7096,7 +7493,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -7230,7 +7626,10 @@
                             "value": 1647.55
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -7243,7 +7642,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -7377,7 +7775,10 @@
                             "value": 1246.89
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -7390,15 +7791,35 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
                 {
                     "type": "pie",
                     "name": "GDP\u5360\u6bd4",
+                    "colorBy": "data",
+                    "legendHoverLink": true,
+                    "selectedMode": false,
+                    "selectedOffset": 10,
                     "clockwise": true,
                     "startAngle": 90,
+                    "minAngle": 0,
+                    "minShowLabelAngle": 0,
+                    "avoidLabelOverlap": true,
+                    "stillShowZeroSum": true,
+                    "percentPrecision": 2,
+                    "showEmptyCircle": true,
+                    "emptyCircleStyle": {
+                        "color": "lightgray",
+                        "borderColor": "#000",
+                        "borderWidth": 0,
+                        "borderType": "solid",
+                        "borderDashOffset": 0,
+                        "borderCap": "butt",
+                        "borderJoin": "bevel",
+                        "borderMiterLimit": 10,
+                        "opacity": 1
+                    },
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -7420,7 +7841,6 @@
                     ],
                     "label": {
                         "show": true,
-                        "position": "top",
                         "margin": 8
                     },
                     "labelLine": {
@@ -7443,11 +7863,16 @@
                         "alwaysShowContent": false,
                         "showDelay": 0,
                         "hideDelay": 100,
+                        "enterable": false,
+                        "confine": false,
+                        "appendToBody": false,
+                        "transitionDuration": 0.4,
                         "textStyle": {
                             "fontSize": 14
                         },
                         "borderWidth": 0,
-                        "padding": 5
+                        "padding": 5,
+                        "order": "seriesAsc"
                     },
                     "rippleEffect": {
                         "show": true,
@@ -7538,12 +7963,16 @@
             ],
             "title": [
                 {
+                    "show": true,
                     "text": "2007\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
                     "target": "blank",
                     "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
                     "subtarget": "blank",
                     "padding": 5,
-                    "itemGap": 10
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
                 }
             ],
             "tooltip": {
@@ -7557,11 +7986,16 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             },
             "color": [
                 "#5470c6",
@@ -7589,11 +8023,31 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a",
                         "\u7b2c\u4e09\u4ea7\u4e1a"
                     ],
+                    "selected": {
+                        "GDP": false,
+                        "\u91d1\u878d": false,
+                        "\u623f\u5730\u4ea7": false
+                    },
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
                     "itemWidth": 25,
-                    "itemHeight": 14
+                    "itemHeight": 14,
+                    "backgroundColor": "transparent",
+                    "borderColor": "#ccc",
+                    "borderWidth": 1,
+                    "borderRadius": 0,
+                    "pageButtonItemGap": 5,
+                    "pageButtonPosition": "end",
+                    "pageFormatter": "{current}/{total}",
+                    "pageIconColor": "#2f4554",
+                    "pageIconInactiveColor": "#aaa",
+                    "pageIconSize": 15,
+                    "animationDurationUpdate": 800,
+                    "selector": false,
+                    "selectorPosition": "auto",
+                    "selectorItemGap": 7,
+                    "selectorButtonGap": 10
                 }
             ],
             "series": [
@@ -7727,7 +8181,10 @@
                             "value": 4183.21
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -7740,7 +8197,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -7874,7 +8330,10 @@
                             "value": 1421.38
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -7887,7 +8346,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -8021,7 +8479,10 @@
                             "value": 1421.38
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -8034,7 +8495,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -8168,7 +8628,10 @@
                             "value": 691.07
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -8181,7 +8644,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -8315,7 +8777,10 @@
                             "value": 2070.76
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -8328,7 +8793,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -8462,7 +8926,10 @@
                             "value": 1421.38
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -8475,15 +8942,35 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
                 {
                     "type": "pie",
                     "name": "GDP\u5360\u6bd4",
+                    "colorBy": "data",
+                    "legendHoverLink": true,
+                    "selectedMode": false,
+                    "selectedOffset": 10,
                     "clockwise": true,
                     "startAngle": 90,
+                    "minAngle": 0,
+                    "minShowLabelAngle": 0,
+                    "avoidLabelOverlap": true,
+                    "stillShowZeroSum": true,
+                    "percentPrecision": 2,
+                    "showEmptyCircle": true,
+                    "emptyCircleStyle": {
+                        "color": "lightgray",
+                        "borderColor": "#000",
+                        "borderWidth": 0,
+                        "borderType": "solid",
+                        "borderDashOffset": 0,
+                        "borderCap": "butt",
+                        "borderJoin": "bevel",
+                        "borderMiterLimit": 10,
+                        "opacity": 1
+                    },
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -8505,7 +8992,6 @@
                     ],
                     "label": {
                         "show": true,
-                        "position": "top",
                         "margin": 8
                     },
                     "labelLine": {
@@ -8528,11 +9014,16 @@
                         "alwaysShowContent": false,
                         "showDelay": 0,
                         "hideDelay": 100,
+                        "enterable": false,
+                        "confine": false,
+                        "appendToBody": false,
+                        "transitionDuration": 0.4,
                         "textStyle": {
                             "fontSize": 14
                         },
                         "borderWidth": 0,
-                        "padding": 5
+                        "padding": 5,
+                        "order": "seriesAsc"
                     },
                     "rippleEffect": {
                         "show": true,
@@ -8623,12 +9114,16 @@
             ],
             "title": [
                 {
+                    "show": true,
                     "text": "2008\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
                     "target": "blank",
                     "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
                     "subtarget": "blank",
                     "padding": 5,
-                    "itemGap": 10
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
                 }
             ],
             "tooltip": {
@@ -8642,11 +9137,16 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             },
             "color": [
                 "#5470c6",
@@ -8674,11 +9174,31 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a",
                         "\u7b2c\u4e09\u4ea7\u4e1a"
                     ],
+                    "selected": {
+                        "GDP": false,
+                        "\u91d1\u878d": false,
+                        "\u623f\u5730\u4ea7": false
+                    },
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
                     "itemWidth": 25,
-                    "itemHeight": 14
+                    "itemHeight": 14,
+                    "backgroundColor": "transparent",
+                    "borderColor": "#ccc",
+                    "borderWidth": 1,
+                    "borderRadius": 0,
+                    "pageButtonItemGap": 5,
+                    "pageButtonPosition": "end",
+                    "pageFormatter": "{current}/{total}",
+                    "pageIconColor": "#2f4554",
+                    "pageIconInactiveColor": "#aaa",
+                    "pageIconSize": 15,
+                    "animationDurationUpdate": 800,
+                    "selector": false,
+                    "selectorPosition": "auto",
+                    "selectorItemGap": 7,
+                    "selectorButtonGap": 10
                 }
             ],
             "series": [
@@ -8812,7 +9332,10 @@
                             "value": 4277.05
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -8825,7 +9348,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -8959,7 +9481,10 @@
                             "value": 1587.72
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -8972,7 +9497,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -9106,7 +9630,10 @@
                             "value": 1587.72
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -9119,7 +9646,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -9253,7 +9779,10 @@
                             "value": 759.74
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -9266,7 +9795,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -9400,7 +9928,10 @@
                             "value": 1929.59
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -9413,7 +9944,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -9547,7 +10077,10 @@
                             "value": 1587.72
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -9560,15 +10093,35 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
                 {
                     "type": "pie",
                     "name": "GDP\u5360\u6bd4",
+                    "colorBy": "data",
+                    "legendHoverLink": true,
+                    "selectedMode": false,
+                    "selectedOffset": 10,
                     "clockwise": true,
                     "startAngle": 90,
+                    "minAngle": 0,
+                    "minShowLabelAngle": 0,
+                    "avoidLabelOverlap": true,
+                    "stillShowZeroSum": true,
+                    "percentPrecision": 2,
+                    "showEmptyCircle": true,
+                    "emptyCircleStyle": {
+                        "color": "lightgray",
+                        "borderColor": "#000",
+                        "borderWidth": 0,
+                        "borderType": "solid",
+                        "borderDashOffset": 0,
+                        "borderCap": "butt",
+                        "borderJoin": "bevel",
+                        "borderMiterLimit": 10,
+                        "opacity": 1
+                    },
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -9590,7 +10143,6 @@
                     ],
                     "label": {
                         "show": true,
-                        "position": "top",
                         "margin": 8
                     },
                     "labelLine": {
@@ -9613,11 +10165,16 @@
                         "alwaysShowContent": false,
                         "showDelay": 0,
                         "hideDelay": 100,
+                        "enterable": false,
+                        "confine": false,
+                        "appendToBody": false,
+                        "transitionDuration": 0.4,
                         "textStyle": {
                             "fontSize": 14
                         },
                         "borderWidth": 0,
-                        "padding": 5
+                        "padding": 5,
+                        "order": "seriesAsc"
                     },
                     "rippleEffect": {
                         "show": true,
@@ -9708,12 +10265,16 @@
             ],
             "title": [
                 {
+                    "show": true,
                     "text": "2009\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
                     "target": "blank",
                     "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
                     "subtarget": "blank",
                     "padding": 5,
-                    "itemGap": 10
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
                 }
             ],
             "tooltip": {
@@ -9727,11 +10288,16 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             },
             "color": [
                 "#5470c6",
@@ -9759,11 +10325,31 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a",
                         "\u7b2c\u4e09\u4ea7\u4e1a"
                     ],
+                    "selected": {
+                        "GDP": false,
+                        "\u91d1\u878d": false,
+                        "\u623f\u5730\u4ea7": false
+                    },
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
                     "itemWidth": 25,
-                    "itemHeight": 14
+                    "itemHeight": 14,
+                    "backgroundColor": "transparent",
+                    "borderColor": "#ccc",
+                    "borderWidth": 1,
+                    "borderRadius": 0,
+                    "pageButtonItemGap": 5,
+                    "pageButtonPosition": "end",
+                    "pageFormatter": "{current}/{total}",
+                    "pageIconColor": "#2f4554",
+                    "pageIconInactiveColor": "#aaa",
+                    "pageIconSize": 15,
+                    "animationDurationUpdate": 800,
+                    "selector": false,
+                    "selectorPosition": "auto",
+                    "selectorItemGap": 7,
+                    "selectorButtonGap": 10
                 }
             ],
             "series": [
@@ -9897,7 +10483,10 @@
                             "value": 5437.47
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -9910,7 +10499,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -10044,7 +10632,10 @@
                             "value": 1766.69
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -10057,7 +10648,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -10191,7 +10781,10 @@
                             "value": 1766.69
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -10204,7 +10797,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -10338,7 +10930,10 @@
                             "value": 1078.63
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -10351,7 +10946,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -10485,7 +11079,10 @@
                             "value": 2592.15
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -10498,7 +11095,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -10632,7 +11228,10 @@
                             "value": 1766.69
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -10645,15 +11244,35 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
                 {
                     "type": "pie",
                     "name": "GDP\u5360\u6bd4",
+                    "colorBy": "data",
+                    "legendHoverLink": true,
+                    "selectedMode": false,
+                    "selectedOffset": 10,
                     "clockwise": true,
                     "startAngle": 90,
+                    "minAngle": 0,
+                    "minShowLabelAngle": 0,
+                    "avoidLabelOverlap": true,
+                    "stillShowZeroSum": true,
+                    "percentPrecision": 2,
+                    "showEmptyCircle": true,
+                    "emptyCircleStyle": {
+                        "color": "lightgray",
+                        "borderColor": "#000",
+                        "borderWidth": 0,
+                        "borderType": "solid",
+                        "borderDashOffset": 0,
+                        "borderCap": "butt",
+                        "borderJoin": "bevel",
+                        "borderMiterLimit": 10,
+                        "opacity": 1
+                    },
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -10675,7 +11294,6 @@
                     ],
                     "label": {
                         "show": true,
-                        "position": "top",
                         "margin": 8
                     },
                     "labelLine": {
@@ -10698,11 +11316,16 @@
                         "alwaysShowContent": false,
                         "showDelay": 0,
                         "hideDelay": 100,
+                        "enterable": false,
+                        "confine": false,
+                        "appendToBody": false,
+                        "transitionDuration": 0.4,
                         "textStyle": {
                             "fontSize": 14
                         },
                         "borderWidth": 0,
-                        "padding": 5
+                        "padding": 5,
+                        "order": "seriesAsc"
                     },
                     "rippleEffect": {
                         "show": true,
@@ -10793,12 +11416,16 @@
             ],
             "title": [
                 {
+                    "show": true,
                     "text": "2010\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
                     "target": "blank",
                     "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
                     "subtarget": "blank",
                     "padding": 5,
-                    "itemGap": 10
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
                 }
             ],
             "tooltip": {
@@ -10812,11 +11439,16 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             },
             "color": [
                 "#5470c6",
@@ -10844,11 +11476,31 @@
                         "\u7b2c\u4e8c\u4ea7\u4e1a",
                         "\u7b2c\u4e09\u4ea7\u4e1a"
                     ],
+                    "selected": {
+                        "GDP": false,
+                        "\u91d1\u878d": false,
+                        "\u623f\u5730\u4ea7": false
+                    },
                     "show": true,
                     "padding": 5,
                     "itemGap": 10,
                     "itemWidth": 25,
-                    "itemHeight": 14
+                    "itemHeight": 14,
+                    "backgroundColor": "transparent",
+                    "borderColor": "#ccc",
+                    "borderWidth": 1,
+                    "borderRadius": 0,
+                    "pageButtonItemGap": 5,
+                    "pageButtonPosition": "end",
+                    "pageFormatter": "{current}/{total}",
+                    "pageIconColor": "#2f4554",
+                    "pageIconInactiveColor": "#aaa",
+                    "pageIconSize": 15,
+                    "animationDurationUpdate": 800,
+                    "selector": false,
+                    "selectorPosition": "auto",
+                    "selectorItemGap": 7,
+                    "selectorButtonGap": 10
                 }
             ],
             "series": [
@@ -10982,7 +11634,10 @@
                             "value": 6610.05
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -10995,7 +11650,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -11129,7 +11783,10 @@
                             "value": 2245.12
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -11142,7 +11799,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -11276,7 +11932,10 @@
                             "value": 2245.12
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -11289,7 +11948,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -11423,7 +12081,10 @@
                             "value": 1139.03
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -11436,7 +12097,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -11570,7 +12230,10 @@
                             "value": 3225.9
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -11583,7 +12246,6 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
@@ -11717,7 +12379,10 @@
                             "value": 2245.12
                         }
                     ],
+                    "realtimeSort": false,
                     "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
                     "barMinHeight": 0,
                     "barCategoryGap": "20%",
                     "barGap": "30%",
@@ -11730,15 +12395,35 @@
                     "z": 2,
                     "label": {
                         "show": false,
-                        "position": "top",
                         "margin": 8
                     }
                 },
                 {
                     "type": "pie",
                     "name": "GDP\u5360\u6bd4",
+                    "colorBy": "data",
+                    "legendHoverLink": true,
+                    "selectedMode": false,
+                    "selectedOffset": 10,
                     "clockwise": true,
                     "startAngle": 90,
+                    "minAngle": 0,
+                    "minShowLabelAngle": 0,
+                    "avoidLabelOverlap": true,
+                    "stillShowZeroSum": true,
+                    "percentPrecision": 2,
+                    "showEmptyCircle": true,
+                    "emptyCircleStyle": {
+                        "color": "lightgray",
+                        "borderColor": "#000",
+                        "borderWidth": 0,
+                        "borderType": "solid",
+                        "borderDashOffset": 0,
+                        "borderCap": "butt",
+                        "borderJoin": "bevel",
+                        "borderMiterLimit": 10,
+                        "opacity": 1
+                    },
                     "data": [
                         {
                             "name": "\u7b2c\u4e00\u4ea7\u4e1a",
@@ -11760,7 +12445,6 @@
                     ],
                     "label": {
                         "show": true,
-                        "position": "top",
                         "margin": 8
                     },
                     "labelLine": {
@@ -11783,11 +12467,16 @@
                         "alwaysShowContent": false,
                         "showDelay": 0,
                         "hideDelay": 100,
+                        "enterable": false,
+                        "confine": false,
+                        "appendToBody": false,
+                        "transitionDuration": 0.4,
                         "textStyle": {
                             "fontSize": 14
                         },
                         "borderWidth": 0,
-                        "padding": 5
+                        "padding": 5,
+                        "order": "seriesAsc"
                     },
                     "rippleEffect": {
                         "show": true,
@@ -11878,12 +12567,16 @@
             ],
             "title": [
                 {
+                    "show": true,
                     "text": "2011\u5168\u56fd\u5b8f\u89c2\u7ecf\u6d4e\u6307\u6807",
                     "target": "blank",
                     "subtext": "\u6570\u636e\u6765\u81ea\u56fd\u5bb6\u7edf\u8ba1\u5c40",
                     "subtarget": "blank",
                     "padding": 5,
-                    "itemGap": 10
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
                 }
             ],
             "tooltip": {
@@ -11897,11 +12590,16 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             },
             "color": [
                 "#5470c6",
@@ -11917,7 +12615,7 @@
         }
     ]
 };
-        chart_1a326b476aa24cdb9eb9ed18f8fe6d40.setOption(option_1a326b476aa24cdb9eb9ed18f8fe6d40);
+        chart_93428893353d416cad74de8400fc30ab.setOption(option_93428893353d416cad74de8400fc30ab);
     </script>
 </body>
 </html>

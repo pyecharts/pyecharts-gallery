@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="57913e0871e84d8e9ca1ea7088810768" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="dd9c05e6a1724d658d27a993628ad5b5" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_57913e0871e84d8e9ca1ea7088810768 = echarts.init(
-            document.getElementById('57913e0871e84d8e9ca1ea7088810768'), 'white', {renderer: 'canvas'});
-        var option_57913e0871e84d8e9ca1ea7088810768 = {
+        var chart_dd9c05e6a1724d658d27a993628ad5b5 = echarts.init(
+            document.getElementById('dd9c05e6a1724d658d27a993628ad5b5'), 'white', {renderer: 'canvas'});
+        var option_dd9c05e6a1724d658d27a993628ad5b5 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -44,37 +47,36 @@
             "symbolSize": 10,
             "data": [
                 [
-                    "\u54c8\u58eb\u5947",
-                    120
+                    "\u5468\u4e00",
+                    138
                 ],
                 [
-                    "\u8428\u6469\u8036",
-                    95
+                    "\u5468\u4e8c",
+                    105
                 ],
                 [
-                    "\u6cf0\u8fea",
-                    84
+                    "\u5468\u4e09",
+                    62
                 ],
                 [
-                    "\u91d1\u6bdb",
-                    46
+                    "\u5468\u56db",
+                    137
                 ],
                 [
-                    "\u7267\u7f8a\u72ac",
-                    120
+                    "\u5468\u4e94",
+                    32
                 ],
                 [
-                    "\u5409\u5a03\u5a03",
-                    136
+                    "\u5468\u516d",
+                    123
                 ],
                 [
-                    "\u67ef\u57fa",
-                    44
+                    "\u5468\u65e5",
+                    76
                 ]
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             }
         }
@@ -84,11 +86,27 @@
             "data": [
                 ""
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -102,11 +120,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -130,13 +153,13 @@
                 }
             },
             "data": [
-                "\u54c8\u58eb\u5947",
-                "\u8428\u6469\u8036",
-                "\u6cf0\u8fea",
-                "\u91d1\u6bdb",
-                "\u7267\u7f8a\u72ac",
-                "\u5409\u5a03\u5a03",
-                "\u67ef\u57fa"
+                "\u5468\u4e00",
+                "\u5468\u4e8c",
+                "\u5468\u4e09",
+                "\u5468\u56db",
+                "\u5468\u4e94",
+                "\u5468\u516d",
+                "\u5468\u65e5"
             ]
         }
     ],
@@ -165,15 +188,19 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "EffectScatter-\u663e\u793a\u5206\u5272\u7ebf",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_57913e0871e84d8e9ca1ea7088810768.setOption(option_57913e0871e84d8e9ca1ea7088810768);
+        chart_dd9c05e6a1724d658d27a993628ad5b5.setOption(option_dd9c05e6a1724d658d27a993628ad5b5);
     </script>
 </body>
 </html>

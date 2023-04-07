@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="56e47e250cd84312b43e99ccce9980d1" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="19bd5bcf24064a0ca0a3737cb326ac2b" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_56e47e250cd84312b43e99ccce9980d1 = echarts.init(
-            document.getElementById('56e47e250cd84312b43e99ccce9980d1'), 'white', {renderer: 'canvas'});
-        var option_56e47e250cd84312b43e99ccce9980d1 = {
+        var chart_19bd5bcf24064a0ca0a3737cb326ac2b = echarts.init(
+            document.getElementById('19bd5bcf24064a0ca0a3737cb326ac2b'), 'white', {renderer: 'canvas'});
+        var option_19bd5bcf24064a0ca0a3737cb326ac2b = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -35,6 +38,7 @@
         {
             "type": "candlestick",
             "name": "kline",
+            "colorBy": "series",
             "data": [
                 [
                     2320.26,
@@ -230,11 +234,27 @@
             "data": [
                 "kline"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -248,11 +268,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -335,15 +360,19 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "Kline-\u57fa\u672c\u793a\u4f8b",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_56e47e250cd84312b43e99ccce9980d1.setOption(option_56e47e250cd84312b43e99ccce9980d1);
+        chart_19bd5bcf24064a0ca0a3737cb326ac2b.setOption(option_19bd5bcf24064a0ca0a3737cb326ac2b);
     </script>
 </body>
 </html>

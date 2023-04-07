@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/bmap.min.js"></script>
-        <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=FAKE_AK"></script>
-        <script type="text/javascript" src="https://api.map.baidu.com/getscript?v=2.0&ak=FAKE_AK"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/bmap.min.js"></script>
+            <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=FAKE_AK"></script>
+            <script type="text/javascript" src="https://api.map.baidu.com/getscript?v=2.0&ak=FAKE_AK"></script>
 
 </head>
-<body>
-    <div id="67ccc3f687c746908458ebd78d990082" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="b7b0308749874870b56f16e60516bd92" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_67ccc3f687c746908458ebd78d990082 = echarts.init(
-            document.getElementById('67ccc3f687c746908458ebd78d990082'), 'white', {renderer: 'canvas'});
-        var option_67ccc3f687c746908458ebd78d990082 = {
+        var chart_b7b0308749874870b56f16e60516bd92 = echarts.init(
+            document.getElementById('b7b0308749874870b56f16e60516bd92'), 'white', {renderer: 'canvas'});
+        var option_b7b0308749874870b56f16e60516bd92 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,6 +23,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -41,59 +44,59 @@
             "coordinateSystem": "bmap",
             "data": [
                 {
-                    "name": "\u5e7f\u4e1c",
+                    "name": "\u5e7f\u4e1c\u7701",
                     "value": [
                         113.26653,
                         23.132191,
+                        52
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac\u5e02",
+                    "value": [
+                        116.4,
+                        39.9,
+                        102
+                    ]
+                },
+                {
+                    "name": "\u4e0a\u6d77\u5e02",
+                    "value": [
+                        121.47,
+                        31.23,
+                        148
+                    ]
+                },
+                {
+                    "name": "\u6c5f\u897f\u7701",
+                    "value": [
+                        115.909228,
+                        28.675696,
+                        55
+                    ]
+                },
+                {
+                    "name": "\u6e56\u5357\u7701",
+                    "value": [
+                        112.98381,
+                        28.112444,
                         34
                     ]
                 },
                 {
-                    "name": "\u5317\u4eac",
-                    "value": [
-                        116.407526,
-                        39.90403,
-                        88
-                    ]
-                },
-                {
-                    "name": "\u4e0a\u6d77",
-                    "value": [
-                        121.473701,
-                        31.230416,
-                        80
-                    ]
-                },
-                {
-                    "name": "\u6c5f\u897f",
-                    "value": [
-                        115.909228,
-                        28.675696,
-                        51
-                    ]
-                },
-                {
-                    "name": "\u6e56\u5357",
-                    "value": [
-                        112.98381,
-                        28.112444,
-                        27
-                    ]
-                },
-                {
-                    "name": "\u6d59\u6c5f",
+                    "name": "\u6d59\u6c5f\u7701",
                     "value": [
                         120.152791,
                         30.267446,
-                        76
+                        89
                     ]
                 },
                 {
-                    "name": "\u6c5f\u82cf",
+                    "name": "\u6c5f\u82cf\u7701",
                     "value": [
                         118.763232,
                         32.061707,
-                        28
+                        32
                     ]
                 }
             ],
@@ -106,11 +109,27 @@
             "data": [
                 "bmap"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -124,20 +143,29 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "BMap-\u70ed\u529b\u56fe",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ],
     "visualMap": {
@@ -155,7 +183,9 @@
         "calculable": true,
         "inverse": false,
         "splitNumber": 5,
+        "hoverLink": true,
         "orient": "vertical",
+        "padding": 5,
         "showLabel": true,
         "itemWidth": 20,
         "itemHeight": 140,
@@ -169,8 +199,8 @@
         "roam": true
     }
 };
-        chart_67ccc3f687c746908458ebd78d990082.setOption(option_67ccc3f687c746908458ebd78d990082);
-            var bmap = chart_67ccc3f687c746908458ebd78d990082.getModel().getComponent('bmap').getBMap();
+        chart_b7b0308749874870b56f16e60516bd92.setOption(option_b7b0308749874870b56f16e60516bd92);
+            var bmap = chart_b7b0308749874870b56f16e60516bd92.getModel().getComponent('bmap').getBMap();
     </script>
 </body>
 </html>

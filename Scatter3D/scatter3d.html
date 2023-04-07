@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-gl.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-gl.min.js"></script>
 
 </head>
-<body>
-    <div id="dc21aeda81ac4261b15921ecc26e6a53" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="0c5bfc9695154592bdc48eccca649dbc" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_dc21aeda81ac4261b15921ecc26e6a53 = echarts.init(
-            document.getElementById('dc21aeda81ac4261b15921ecc26e6a53'), 'white', {renderer: 'canvas'});
-        var option_dc21aeda81ac4261b15921ecc26e6a53 = {
+        var chart_0c5bfc9695154592bdc48eccca649dbc = echarts.init(
+            document.getElementById('0c5bfc9695154592bdc48eccca649dbc'), 'white', {renderer: 'canvas'});
+        var option_0c5bfc9695154592bdc48eccca649dbc = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,6 +21,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -61135,9 +61138,9 @@
             ],
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
-            }
+            },
+            "grid3DIndex": 0
         }
     ],
     "legend": [
@@ -61145,11 +61148,27 @@
             "data": [
                 ""
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -61163,12 +61182,116 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
+    "xAxis3D": {
+        "name": "protein",
+        "show": true,
+        "scale": false,
+        "grid3DIndex": 0,
+        "nameGap": 20,
+        "logBase": 10,
+        "type": "value",
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        }
+    },
+    "yAxis3D": {
+        "name": "fiber",
+        "show": true,
+        "scale": false,
+        "grid3DIndex": 0,
+        "nameGap": 20,
+        "logBase": 10,
+        "type": "value",
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        }
+    },
+    "zAxis3D": {
+        "name": "sodium",
+        "show": true,
+        "scale": false,
+        "grid3DIndex": 0,
+        "nameGap": 20,
+        "logBase": 10,
+        "type": "value",
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        }
+    },
+    "grid3D": {
+        "boxWidth": 100,
+        "boxHeight": 100,
+        "boxDepth": 100,
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "environment": "auto",
+        "viewControl": {
+            "autoRotate": false,
+            "autoRotateSpeed": 10,
+            "rotateSensitivity": 1,
+            "alpha": 20,
+            "beta": 40,
+            "minAlpha": -90,
+            "maxAlpha": 90
+        },
+        "zlevel": -10,
+        "left": "auto",
+        "top": "auto",
+        "right": "auto",
+        "bottom": "auto"
+    },
+    "title": [
+        {
+            "show": true,
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
     "visualMap": [
         {
             "show": true,
@@ -61190,8 +61313,10 @@
             "inverse": false,
             "splitNumber": 5,
             "dimension": 3,
+            "hoverLink": true,
             "orient": "vertical",
             "top": "10",
+            "padding": 5,
             "showLabel": true,
             "itemWidth": 20,
             "itemHeight": 140,
@@ -61212,62 +61337,18 @@
             "inverse": false,
             "splitNumber": 5,
             "dimension": 4,
+            "hoverLink": true,
             "orient": "vertical",
             "bottom": "10",
+            "padding": 5,
             "showLabel": true,
             "itemWidth": 20,
             "itemHeight": 140,
             "borderWidth": 0
         }
-    ],
-    "xAxis3D": {
-        "name": "protein",
-        "nameGap": 20,
-        "type": "value",
-        "axisLabel": {
-            "margin": 8
-        }
-    },
-    "yAxis3D": {
-        "name": "fiber",
-        "nameGap": 20,
-        "type": "value",
-        "axisLabel": {
-            "margin": 8
-        }
-    },
-    "zAxis3D": {
-        "name": "sodium",
-        "nameGap": 20,
-        "type": "value",
-        "axisLabel": {
-            "margin": 8
-        }
-    },
-    "grid3D": {
-        "boxWidth": 100,
-        "boxHeight": 100,
-        "boxDepth": 100,
-        "viewControl": {
-            "autoRotate": false,
-            "autoRotateSpeed": 10,
-            "rotateSensitivity": 1,
-            "alpha": 20,
-            "beta": 40,
-            "minAlpha": -90,
-            "maxAlpha": 90
-        }
-    },
-    "title": [
-        {
-            "target": "blank",
-            "subtarget": "blank",
-            "padding": 5,
-            "itemGap": 10
-        }
     ]
 };
-        chart_dc21aeda81ac4261b15921ecc26e6a53.setOption(option_dc21aeda81ac4261b15921ecc26e6a53);
+        chart_0c5bfc9695154592bdc48eccca649dbc.setOption(option_0c5bfc9695154592bdc48eccca649dbc);
     </script>
 </body>
 </html>

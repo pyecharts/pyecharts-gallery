@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-gl.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-gl.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
 
 </head>
-<body>
-    <div id="d7c7ad661b33469b9e2cf81a3896f90b" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="a264ff8eebdd44f0a319a61df8d32eeb" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_d7c7ad661b33469b9e2cf81a3896f90b = echarts.init(
-            document.getElementById('d7c7ad661b33469b9e2cf81a3896f90b'), 'white', {renderer: 'canvas'});
-        var option_d7c7ad661b33469b9e2cf81a3896f90b = {
+        var chart_a264ff8eebdd44f0a319a61df8d32eeb = echarts.init(
+            document.getElementById('a264ff8eebdd44f0a319a61df8d32eeb'), 'white', {renderer: 'canvas'});
+        var option_a264ff8eebdd44f0a319a61df8d32eeb = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -22,6 +22,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -45,7 +48,6 @@
             "symbolSize": 10,
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8,
                 "formatter": function(data){return data.name + ' ' + data.value[2];}
             },
@@ -289,11 +291,27 @@
             "data": [
                 "Scatter3D"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -307,11 +325,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "geo3D": {
         "map": "china",
@@ -336,7 +359,6 @@
         "emphasis": {
             "label": {
                 "show": false,
-                "position": "top",
                 "color": "#fff",
                 "margin": 8,
                 "fontSize": 10,
@@ -374,15 +396,19 @@
     },
     "title": [
         {
+            "show": true,
             "text": "Map3D-Scatter3D",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_d7c7ad661b33469b9e2cf81a3896f90b.setOption(option_d7c7ad661b33469b9e2cf81a3896f90b);
+        chart_a264ff8eebdd44f0a319a61df8d32eeb.setOption(option_a264ff8eebdd44f0a319a61df8d32eeb);
     </script>
 </body>
 </html>

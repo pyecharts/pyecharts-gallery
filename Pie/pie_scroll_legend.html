@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="a85091d6a46c47ebb94d2c7cf73e512f" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="b82f05d679db48ea995521761e9c137e" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_a85091d6a46c47ebb94d2c7cf73e512f = echarts.init(
-            document.getElementById('a85091d6a46c47ebb94d2c7cf73e512f'), 'white', {renderer: 'canvas'});
-        var option_a85091d6a46c47ebb94d2c7cf73e512f = {
+        var chart_b82f05d679db48ea995521761e9c137e = echarts.init(
+            document.getElementById('b82f05d679db48ea995521761e9c137e'), 'white', {renderer: 'canvas'});
+        var option_b82f05d679db48ea995521761e9c137e = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -34,92 +37,113 @@
     "series": [
         {
             "type": "pie",
+            "colorBy": "data",
+            "legendHoverLink": true,
+            "selectedMode": false,
+            "selectedOffset": 10,
             "clockwise": true,
             "startAngle": 90,
+            "minAngle": 0,
+            "minShowLabelAngle": 0,
+            "avoidLabelOverlap": true,
+            "stillShowZeroSum": true,
+            "percentPrecision": 2,
+            "showEmptyCircle": true,
+            "emptyCircleStyle": {
+                "color": "lightgray",
+                "borderColor": "#000",
+                "borderWidth": 0,
+                "borderType": "solid",
+                "borderDashOffset": 0,
+                "borderCap": "butt",
+                "borderJoin": "bevel",
+                "borderMiterLimit": 10,
+                "opacity": 1
+            },
             "data": [
                 {
-                    "name": "\u54c8\u58eb\u5947",
-                    "value": 69
+                    "name": "\u5c0f\u7c73",
+                    "value": 129
                 },
                 {
-                    "name": "\u8428\u6469\u8036",
-                    "value": 27
+                    "name": "\u4e09\u661f",
+                    "value": 21
                 },
                 {
-                    "name": "\u6cf0\u8fea",
-                    "value": 109
+                    "name": "\u534e\u4e3a",
+                    "value": 32
                 },
                 {
-                    "name": "\u91d1\u6bdb",
-                    "value": 100
+                    "name": "\u82f9\u679c",
+                    "value": 72
                 },
                 {
-                    "name": "\u7267\u7f8a\u72ac",
-                    "value": 70
+                    "name": "\u9b45\u65cf",
+                    "value": 95
                 },
                 {
-                    "name": "\u5409\u5a03\u5a03",
-                    "value": 107
+                    "name": "VIVO",
+                    "value": 57
                 },
                 {
-                    "name": "\u67ef\u57fa",
-                    "value": 55
+                    "name": "OPPO",
+                    "value": 60
                 },
                 {
                     "name": "\u8349\u8393",
-                    "value": 58
+                    "value": 92
                 },
                 {
                     "name": "\u8292\u679c",
-                    "value": 94
+                    "value": 41
                 },
                 {
                     "name": "\u8461\u8404",
-                    "value": 97
+                    "value": 106
                 },
                 {
                     "name": "\u96ea\u68a8",
-                    "value": 115
+                    "value": 48
                 },
                 {
                     "name": "\u897f\u74dc",
-                    "value": 137
+                    "value": 121
                 },
                 {
                     "name": "\u67e0\u6aac",
-                    "value": 111
+                    "value": 72
                 },
                 {
                     "name": "\u8f66\u5398\u5b50",
-                    "value": 144
+                    "value": 97
                 },
                 {
-                    "name": "\u5468\u4e00",
-                    "value": 69
+                    "name": "\u54c8\u58eb\u5947",
+                    "value": 145
                 },
                 {
-                    "name": "\u5468\u4e8c",
-                    "value": 26
+                    "name": "\u8428\u6469\u8036",
+                    "value": 105
                 },
                 {
-                    "name": "\u5468\u4e09",
-                    "value": 103
+                    "name": "\u6cf0\u8fea",
+                    "value": 122
                 },
                 {
-                    "name": "\u5468\u56db",
-                    "value": 23
+                    "name": "\u91d1\u6bdb",
+                    "value": 112
                 },
                 {
-                    "name": "\u5468\u4e94",
-                    "value": 53
+                    "name": "\u7267\u7f8a\u72ac",
+                    "value": 145
                 },
                 {
-                    "name": "\u5468\u516d",
-                    "value": 130
+                    "name": "\u5409\u5a03\u5a03",
+                    "value": 135
                 },
                 {
-                    "name": "\u5468\u65e5",
-                    "value": 128
+                    "name": "\u67ef\u57fa",
+                    "value": 115
                 }
             ],
             "radius": [
@@ -132,7 +156,6 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8,
                 "formatter": "{b}: {c}"
             },
@@ -156,13 +179,13 @@
     "legend": [
         {
             "data": [
-                "\u54c8\u58eb\u5947",
-                "\u8428\u6469\u8036",
-                "\u6cf0\u8fea",
-                "\u91d1\u6bdb",
-                "\u7267\u7f8a\u72ac",
-                "\u5409\u5a03\u5a03",
-                "\u67ef\u57fa",
+                "\u5c0f\u7c73",
+                "\u4e09\u661f",
+                "\u534e\u4e3a",
+                "\u82f9\u679c",
+                "\u9b45\u65cf",
+                "VIVO",
+                "OPPO",
                 "\u8349\u8393",
                 "\u8292\u679c",
                 "\u8461\u8404",
@@ -170,14 +193,15 @@
                 "\u897f\u74dc",
                 "\u67e0\u6aac",
                 "\u8f66\u5398\u5b50",
-                "\u5468\u4e00",
-                "\u5468\u4e8c",
-                "\u5468\u4e09",
-                "\u5468\u56db",
-                "\u5468\u4e94",
-                "\u5468\u516d",
-                "\u5468\u65e5"
+                "\u54c8\u58eb\u5947",
+                "\u8428\u6469\u8036",
+                "\u6cf0\u8fea",
+                "\u91d1\u6bdb",
+                "\u7267\u7f8a\u72ac",
+                "\u5409\u5a03\u5a03",
+                "\u67ef\u57fa"
             ],
+            "selected": {},
             "type": "scroll",
             "show": true,
             "left": "80%",
@@ -185,7 +209,22 @@
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -199,23 +238,32 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "Pie-Legend \u6eda\u52a8",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_a85091d6a46c47ebb94d2c7cf73e512f.setOption(option_a85091d6a46c47ebb94d2c7cf73e512f);
+        chart_b82f05d679db48ea995521761e9c137e.setOption(option_b82f05d679db48ea995521761e9c137e);
     </script>
 </body>
 </html>

@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-gl.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/world.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-gl.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/world.js"></script>
 
 </head>
 <body>
-    <div id="d45c37cb49124e0cb173281d53e9b7ef" style="width:900px; height:500px;"></div>
+    <div id="76f75c18d4414008971d8b1f4b385092" style="width:900px; height:500px;"></div>
     <script>
-		var canvas_d45c37cb49124e0cb173281d53e9b7ef = document.createElement('canvas');
-        var mapChart_d45c37cb49124e0cb173281d53e9b7ef = echarts.init(
-		     canvas_d45c37cb49124e0cb173281d53e9b7ef, 'white', {width: 4096, height: 2048, renderer: 'canvas'});
-        var mapOption_d45c37cb49124e0cb173281d53e9b7ef = {
+		var canvas_76f75c18d4414008971d8b1f4b385092 = document.createElement('canvas');
+        var mapChart_76f75c18d4414008971d8b1f4b385092 = echarts.init(
+		     canvas_76f75c18d4414008971d8b1f4b385092, 'white', {width: 4096, height: 2048, renderer: 'canvas'});
+        var mapOption_76f75c18d4414008971d8b1f4b385092 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -24,6 +24,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -41,7 +44,6 @@
             "name": "World Population",
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             },
             "map": "world",
@@ -984,6 +986,14 @@
             "nameProperty": "name",
             "selectedMode": false,
             "zoom": 1,
+            "zlevel": 0,
+            "z": 2,
+            "left": "auto",
+            "top": "auto",
+            "right": "auto",
+            "bottom": "auto",
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
             "mapValueCalculation": "sum",
             "showLegendSymbol": false,
             "emphasis": {}
@@ -994,11 +1004,27 @@
             "data": [
                 "World Population"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -1012,12 +1038,29 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
+    "title": [
+        {
+            "show": true,
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
     "visualMap": {
         "show": true,
         "type": "continuous",
@@ -1037,29 +1080,23 @@
         "calculable": true,
         "inverse": false,
         "splitNumber": 5,
+        "hoverLink": true,
         "orient": "vertical",
+        "padding": 5,
         "showLabel": true,
         "itemWidth": 20,
         "itemHeight": 140,
         "borderWidth": 0
-    },
-    "title": [
-        {
-            "target": "blank",
-            "subtarget": "blank",
-            "padding": 5,
-            "itemGap": 10
-        }
-    ]
+    }
 };
-        mapChart_d45c37cb49124e0cb173281d53e9b7ef.setOption(mapOption_d45c37cb49124e0cb173281d53e9b7ef);
+        mapChart_76f75c18d4414008971d8b1f4b385092.setOption(mapOption_76f75c18d4414008971d8b1f4b385092);
 
-		var chart_d45c37cb49124e0cb173281d53e9b7ef = echarts.init(
-        document.getElementById('d45c37cb49124e0cb173281d53e9b7ef'), 'white', {renderer: 'canvas'});
-		var options_d45c37cb49124e0cb173281d53e9b7ef = {
+		var chart_76f75c18d4414008971d8b1f4b385092 = echarts.init(
+        document.getElementById('76f75c18d4414008971d8b1f4b385092'), 'white', {renderer: 'canvas'});
+		var options_76f75c18d4414008971d8b1f4b385092 = {
            "globe": {
            "show": true,
-		   "baseTexture": mapChart_d45c37cb49124e0cb173281d53e9b7ef,
+		   "baseTexture": mapChart_76f75c18d4414008971d8b1f4b385092,
            shading: 'lambert',
             light: {
                 ambient: {
@@ -1071,7 +1108,7 @@
              }
 
 		   }};
-		chart_d45c37cb49124e0cb173281d53e9b7ef.setOption(options_d45c37cb49124e0cb173281d53e9b7ef);
+		chart_76f75c18d4414008971d8b1f4b385092.setOption(options_76f75c18d4414008971d8b1f4b385092);
     </script>
 </body>
 </html>

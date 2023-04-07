@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
 
 </head>
-<body>
-    <div id="c6db6b2dd2504737b89137b78f94b6e5" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="c323e5463ba44992ac79a0647f399599" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_c6db6b2dd2504737b89137b78f94b6e5 = echarts.init(
-            document.getElementById('c6db6b2dd2504737b89137b78f94b6e5'), 'white', {renderer: 'canvas'});
-        var option_c6db6b2dd2504737b89137b78f94b6e5 = {
+        var chart_c323e5463ba44992ac79a0647f399599 = echarts.init(
+            document.getElementById('c323e5463ba44992ac79a0647f399599'), 'white', {renderer: 'canvas'});
+        var option_c323e5463ba44992ac79a0647f399599 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,6 +21,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -40,65 +43,64 @@
             "symbolSize": 12,
             "data": [
                 {
-                    "name": "\u5e7f\u4e1c",
+                    "name": "\u5e7f\u4e1c\u7701",
                     "value": [
                         113.26653,
                         23.132191,
-                        133
+                        134
                     ]
                 },
                 {
-                    "name": "\u5317\u4eac",
+                    "name": "\u5317\u4eac\u5e02",
                     "value": [
-                        116.407526,
-                        39.90403,
-                        118
+                        116.4,
+                        39.9,
+                        93
                     ]
                 },
                 {
-                    "name": "\u4e0a\u6d77",
+                    "name": "\u4e0a\u6d77\u5e02",
                     "value": [
-                        121.473701,
-                        31.230416,
-                        99
+                        121.47,
+                        31.23,
+                        28
                     ]
                 },
                 {
-                    "name": "\u6c5f\u897f",
+                    "name": "\u6c5f\u897f\u7701",
                     "value": [
                         115.909228,
                         28.675696,
-                        78
+                        40
                     ]
                 },
                 {
-                    "name": "\u6e56\u5357",
+                    "name": "\u6e56\u5357\u7701",
                     "value": [
                         112.98381,
                         28.112444,
-                        96
+                        115
                     ]
                 },
                 {
-                    "name": "\u6d59\u6c5f",
+                    "name": "\u6d59\u6c5f\u7701",
                     "value": [
                         120.152791,
                         30.267446,
-                        144
+                        150
                     ]
                 },
                 {
-                    "name": "\u6c5f\u82cf",
+                    "name": "\u6c5f\u82cf\u7701",
                     "value": [
                         118.763232,
                         32.061707,
-                        121
+                        131
                     ]
                 }
             ],
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             },
             "rippleEffect": {
@@ -114,11 +116,27 @@
             "data": [
                 "geo"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -132,20 +150,29 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "Geo-\u57fa\u672c\u793a\u4f8b",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ],
     "visualMap": {
@@ -163,7 +190,9 @@
         "calculable": true,
         "inverse": false,
         "splitNumber": 5,
+        "hoverLink": true,
         "orient": "vertical",
+        "padding": 5,
         "showLabel": true,
         "itemWidth": 20,
         "itemHeight": 140,
@@ -178,7 +207,7 @@
         "emphasis": {}
     }
 };
-        chart_c6db6b2dd2504737b89137b78f94b6e5.setOption(option_c6db6b2dd2504737b89137b78f94b6e5);
+        chart_c323e5463ba44992ac79a0647f399599.setOption(option_c323e5463ba44992ac79a0647f399599);
     </script>
 </body>
 </html>

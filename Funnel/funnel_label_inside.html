@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="d42c0d5051b44132b66a968ca884d166" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="4c283e66fc8e4077912a1a4ad78db571" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_d42c0d5051b44132b66a968ca884d166 = echarts.init(
-            document.getElementById('d42c0d5051b44132b66a968ca884d166'), 'white', {renderer: 'canvas'});
-        var option_d42c0d5051b44132b66a968ca884d166 = {
+        var chart_4c283e66fc8e4077912a1a4ad78db571 = echarts.init(
+            document.getElementById('4c283e66fc8e4077912a1a4ad78db571'), 'white', {renderer: 'canvas'});
+        var option_4c283e66fc8e4077912a1a4ad78db571 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -37,32 +40,32 @@
             "name": "\u5546\u54c1",
             "data": [
                 {
-                    "name": "\u886c\u886b",
-                    "value": 33
+                    "name": "\u6cb3\u9a6c",
+                    "value": 120
                 },
                 {
-                    "name": "\u6bdb\u8863",
-                    "value": 31
+                    "name": "\u87d2\u86c7",
+                    "value": 105
                 },
                 {
-                    "name": "\u9886\u5e26",
-                    "value": 124
-                },
-                {
-                    "name": "\u88e4\u5b50",
-                    "value": 139
-                },
-                {
-                    "name": "\u98ce\u8863",
-                    "value": 112
-                },
-                {
-                    "name": "\u9ad8\u8ddf\u978b",
+                    "name": "\u8001\u864e",
                     "value": 115
                 },
                 {
-                    "name": "\u889c\u5b50",
-                    "value": 65
+                    "name": "\u5927\u8c61",
+                    "value": 110
+                },
+                {
+                    "name": "\u5154\u5b50",
+                    "value": 86
+                },
+                {
+                    "name": "\u718a\u732b",
+                    "value": 79
+                },
+                {
+                    "name": "\u72ee\u5b50",
+                    "value": 124
                 }
             ],
             "sort": "descending",
@@ -77,19 +80,35 @@
     "legend": [
         {
             "data": [
-                "\u889c\u5b50",
-                "\u88e4\u5b50",
-                "\u886c\u886b",
-                "\u98ce\u8863",
-                "\u9ad8\u8ddf\u978b",
-                "\u9886\u5e26",
-                "\u6bdb\u8863"
+                "\u5927\u8c61",
+                "\u87d2\u86c7",
+                "\u718a\u732b",
+                "\u5154\u5b50",
+                "\u72ee\u5b50",
+                "\u8001\u864e",
+                "\u6cb3\u9a6c"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -103,23 +122,32 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "Funnel-Label\uff08inside)",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_d42c0d5051b44132b66a968ca884d166.setOption(option_d42c0d5051b44132b66a968ca884d166);
+        chart_4c283e66fc8e4077912a1a4ad78db571.setOption(option_4c283e66fc8e4077912a1a4ad78db571);
     </script>
 </body>
 </html>

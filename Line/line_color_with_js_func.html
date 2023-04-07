@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="ab39647048ad40049513e64ced79a324" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="41cb112eebcb4b6d9449e907f59eda50" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_ab39647048ad40049513e64ced79a324 = echarts.init(
-            document.getElementById('ab39647048ad40049513e64ced79a324'), 'white', {renderer: 'canvas'});
-        var option_ab39647048ad40049513e64ced79a324 = {
+        var chart_41cb112eebcb4b6d9449e907f59eda50 = echarts.init(
+            document.getElementById('41cb112eebcb4b6d9449e907f59eda50'), 'white', {renderer: 'canvas'});
+        var option_41cb112eebcb4b6d9449e907f59eda50 = {
     "backgroundColor": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{offset: 0, color: '#c86589'}, {offset: 1, color: '#06a7ff'}], false),
     "animation": true,
     "animationThreshold": 2000,
@@ -21,6 +21,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -37,6 +40,7 @@
             "type": "line",
             "name": "\u6ce8\u518c\u603b\u91cf",
             "connectNulls": false,
+            "xAxisIndex": 0,
             "symbol": "circle",
             "symbolSize": 6,
             "showSymbol": true,
@@ -92,6 +96,8 @@
                 "color": "white",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -115,11 +121,16 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             },
             "itemStyle": {
                 "color": "red",
@@ -135,11 +146,27 @@
             "data": [
                 "\u6ce8\u518c\u603b\u91cf"
             ],
+            "selected": {},
             "show": false,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -153,11 +180,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -188,7 +220,6 @@
             },
             "axisLabel": {
                 "show": true,
-                "position": "top",
                 "color": "#ffffff63",
                 "margin": 30
             },
@@ -259,7 +290,6 @@
             },
             "axisLabel": {
                 "show": true,
-                "position": "top",
                 "color": "#ffffff63",
                 "margin": 20
             },
@@ -283,6 +313,7 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "OCTOBER 2015",
             "target": "blank",
             "subtarget": "blank",
@@ -290,6 +321,9 @@
             "bottom": "5%",
             "padding": 5,
             "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false,
             "textStyle": {
                 "color": "#fff",
                 "fontSize": 16
@@ -297,7 +331,7 @@
         }
     ]
 };
-        chart_ab39647048ad40049513e64ced79a324.setOption(option_ab39647048ad40049513e64ced79a324);
+        chart_41cb112eebcb4b6d9449e907f59eda50.setOption(option_41cb112eebcb4b6d9449e907f59eda50);
     </script>
 </body>
 </html>

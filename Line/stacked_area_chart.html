@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="d512241beaa148ed897235909e564ab3" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="d0d89b3f049e4810a7b8773f0201b14d" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_d512241beaa148ed897235909e564ab3 = echarts.init(
-            document.getElementById('d512241beaa148ed897235909e564ab3'), 'white', {renderer: 'canvas'});
-        var option_d512241beaa148ed897235909e564ab3 = {
+        var chart_d0d89b3f049e4810a7b8773f0201b14d = echarts.init(
+            document.getElementById('d0d89b3f049e4810a7b8773f0201b14d'), 'white', {renderer: 'canvas'});
+        var option_d0d89b3f049e4810a7b8773f0201b14d = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -36,6 +39,7 @@
             "type": "line",
             "name": "\u90ae\u4ef6\u8425\u9500",
             "connectNulls": false,
+            "xAxisIndex": 0,
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
@@ -75,9 +79,10 @@
             "hoverAnimation": true,
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -95,6 +100,7 @@
             "type": "line",
             "name": "\u8054\u76df\u5e7f\u544a",
             "connectNulls": false,
+            "xAxisIndex": 0,
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
@@ -134,9 +140,10 @@
             "hoverAnimation": true,
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -154,6 +161,7 @@
             "type": "line",
             "name": "\u89c6\u9891\u5e7f\u544a",
             "connectNulls": false,
+            "xAxisIndex": 0,
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
@@ -193,9 +201,10 @@
             "hoverAnimation": true,
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -213,6 +222,7 @@
             "type": "line",
             "name": "\u76f4\u63a5\u8bbf\u95ee",
             "connectNulls": false,
+            "xAxisIndex": 0,
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
@@ -252,9 +262,10 @@
             "hoverAnimation": true,
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -272,6 +283,7 @@
             "type": "line",
             "name": "\u641c\u7d22\u5f15\u64ce",
             "connectNulls": false,
+            "xAxisIndex": 0,
             "symbolSize": 4,
             "showSymbol": true,
             "smooth": false,
@@ -314,6 +326,8 @@
                 "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -337,11 +351,27 @@
                 "\u76f4\u63a5\u8bbf\u95ee",
                 "\u641c\u7d22\u5f15\u64ce"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -355,11 +385,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -426,15 +461,19 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "\u5806\u53e0\u533a\u57df\u56fe",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_d512241beaa148ed897235909e564ab3.setOption(option_d512241beaa148ed897235909e564ab3);
+        chart_d0d89b3f049e4810a7b8773f0201b14d.setOption(option_d0d89b3f049e4810a7b8773f0201b14d);
     </script>
 </body>
 </html>

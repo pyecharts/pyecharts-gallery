@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="f0328b2fd5004c37b3e27d9cbeacf625" class="chart-container" style="width:1260px; height:720px;"></div>
+<body >
+    <div id="0c5eeb0032bb48389decaaf88167f508" class="chart-container" style="width:1260px; height:720px; "></div>
     <script>
-        var chart_f0328b2fd5004c37b3e27d9cbeacf625 = echarts.init(
-            document.getElementById('f0328b2fd5004c37b3e27d9cbeacf625'), 'white', {renderer: 'canvas'});
-        var option_f0328b2fd5004c37b3e27d9cbeacf625 = {
+        var chart_0c5eeb0032bb48389decaaf88167f508 = echarts.init(
+            document.getElementById('0c5eeb0032bb48389decaaf88167f508'), 'white', {renderer: 'canvas'});
+        var option_0c5eeb0032bb48389decaaf88167f508 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,9 +20,13 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
-        "#5793f3",
         "#d14a61",
+        "#5793f3",
+        "#675bba",
         "#5470c6",
         "#91cc75",
         "#fac858",
@@ -53,7 +57,10 @@
                 6.4,
                 3.3
             ],
+            "realtimeSort": false,
             "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "20%",
             "barGap": "30%",
@@ -66,7 +73,6 @@
             "z": 2,
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             }
         },
@@ -89,7 +95,10 @@
                 6.0,
                 2.3
             ],
+            "realtimeSort": false,
             "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "20%",
             "barGap": "30%",
@@ -102,7 +111,6 @@
             "z": 2,
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             }
         },
@@ -110,6 +118,7 @@
             "type": "line",
             "name": "\u5e73\u5747\u6e29\u5ea6",
             "connectNulls": false,
+            "xAxisIndex": 0,
             "yAxisIndex": 2,
             "symbolSize": 4,
             "showSymbol": true,
@@ -169,9 +178,10 @@
             "hoverAnimation": true,
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -193,11 +203,27 @@
                 "\u964d\u6c34\u91cf",
                 "\u5e73\u5747\u6e29\u5ea6"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -211,11 +237,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -278,7 +309,6 @@
             },
             "axisLabel": {
                 "show": true,
-                "position": "top",
                 "margin": 8,
                 "formatter": "{value} ml"
             },
@@ -323,7 +353,6 @@
             },
             "axisLabel": {
                 "show": true,
-                "position": "top",
                 "margin": 8,
                 "formatter": "{value} ml"
             },
@@ -368,7 +397,6 @@
             },
             "axisLabel": {
                 "show": true,
-                "position": "top",
                 "margin": 8,
                 "formatter": "{value} \u00b0C"
             },
@@ -393,14 +421,18 @@
     ],
     "title": [
         {
+            "show": true,
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_f0328b2fd5004c37b3e27d9cbeacf625.setOption(option_f0328b2fd5004c37b3e27d9cbeacf625);
+        chart_0c5eeb0032bb48389decaaf88167f508.setOption(option_0c5eeb0032bb48389decaaf88167f508);
     </script>
 </body>
 </html>

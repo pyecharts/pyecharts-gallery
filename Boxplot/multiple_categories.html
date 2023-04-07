@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="fa9f591044c64930974812722e127005" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="ae170bf12bec45f89fbb65a4bcd8963b" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_fa9f591044c64930974812722e127005 = echarts.init(
-            document.getElementById('fa9f591044c64930974812722e127005'), 'white', {renderer: 'canvas'});
-        var option_fa9f591044c64930974812722e127005 = {
+        var chart_ae170bf12bec45f89fbb65a4bcd8963b = echarts.init(
+            document.getElementById('ae170bf12bec45f89fbb65a4bcd8963b'), 'white', {renderer: 'canvas'});
+        var option_ae170bf12bec45f89fbb65a4bcd8963b = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -170,7 +173,6 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
             "markPoint": {
@@ -186,7 +188,6 @@
                 "precision": 2,
                 "label": {
                     "show": true,
-                    "position": "top",
                     "margin": 8
                 }
             },
@@ -201,12 +202,17 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "formatter": function(param) { return [                            'Experiment ' + param.name + ': ',                            'upper: ' + param.data[0],                            'Q1: ' + param.data[1],                            'median: ' + param.data[2],                            'Q3: ' + param.data[3],                            'lower: ' + param.data[4]                        ].join('<br/>') },
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             }
         },
         {
@@ -347,7 +353,6 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
             "markPoint": {
@@ -363,7 +368,6 @@
                 "precision": 2,
                 "label": {
                     "show": true,
-                    "position": "top",
                     "margin": 8
                 }
             },
@@ -378,12 +382,17 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "formatter": function(param) { return [                            'Experiment ' + param.name + ': ',                            'upper: ' + param.data[0],                            'Q1: ' + param.data[1],                            'median: ' + param.data[2],                            'Q3: ' + param.data[3],                            'lower: ' + param.data[4]                        ].join('<br/>') },
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             }
         },
         {
@@ -524,7 +533,6 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
             "markPoint": {
@@ -540,7 +548,6 @@
                 "precision": 2,
                 "label": {
                     "show": true,
-                    "position": "top",
                     "margin": 8
                 }
             },
@@ -555,12 +562,17 @@
                 "alwaysShowContent": false,
                 "showDelay": 0,
                 "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
                 "formatter": function(param) { return [                            'Experiment ' + param.name + ': ',                            'upper: ' + param.data[0],                            'Q1: ' + param.data[1],                            'median: ' + param.data[2],                            'Q3: ' + param.data[3],                            'lower: ' + param.data[4]                        ].join('<br/>') },
                 "textStyle": {
                     "fontSize": 14
                 },
                 "borderWidth": 0,
-                "padding": 5
+                "padding": 5,
+                "order": "seriesAsc"
             }
         }
     ],
@@ -571,12 +583,28 @@
                 "category1",
                 "category2"
             ],
+            "selected": {},
             "show": true,
             "top": "3%",
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -590,11 +618,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -605,7 +638,6 @@
             "gridIndex": 0,
             "axisLabel": {
                 "show": true,
-                "position": "top",
                 "margin": 8,
                 "formatter": "expr {value}"
             },
@@ -686,18 +718,24 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "Multiple Categories",
             "target": "blank",
             "subtarget": "blank",
             "left": "center",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ],
     "dataZoom": [
         {
             "show": true,
             "type": "inside",
+            "showDetail": true,
+            "showDataShadow": true,
             "realtime": true,
             "start": 0,
             "end": 20,
@@ -708,6 +746,8 @@
         {
             "show": true,
             "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
             "realtime": true,
             "start": 20,
             "end": 80,
@@ -718,7 +758,7 @@
         }
     ]
 };
-        chart_fa9f591044c64930974812722e127005.setOption(option_fa9f591044c64930974812722e127005);
+        chart_ae170bf12bec45f89fbb65a4bcd8963b.setOption(option_ae170bf12bec45f89fbb65a4bcd8963b);
     </script>
 </body>
 </html>

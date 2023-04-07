@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="bffc7068bc014f57ba12c21ba17f0586" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="6784751a06104cf3885ccccc7882ed2d" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_bffc7068bc014f57ba12c21ba17f0586 = echarts.init(
-            document.getElementById('bffc7068bc014f57ba12c21ba17f0586'), 'white', {renderer: 'canvas'});
-        var option_bffc7068bc014f57ba12c21ba17f0586 = {
+        var chart_6784751a06104cf3885ccccc7882ed2d = echarts.init(
+            document.getElementById('6784751a06104cf3885ccccc7882ed2d'), 'white', {renderer: 'canvas'});
+        var option_6784751a06104cf3885ccccc7882ed2d = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -34,36 +37,57 @@
     "series": [
         {
             "type": "pie",
+            "colorBy": "data",
+            "legendHoverLink": true,
+            "selectedMode": false,
+            "selectedOffset": 10,
             "clockwise": true,
             "startAngle": 90,
+            "minAngle": 0,
+            "minShowLabelAngle": 0,
+            "avoidLabelOverlap": true,
+            "stillShowZeroSum": true,
+            "percentPrecision": 2,
+            "showEmptyCircle": true,
+            "emptyCircleStyle": {
+                "color": "lightgray",
+                "borderColor": "#000",
+                "borderWidth": 0,
+                "borderType": "solid",
+                "borderDashOffset": 0,
+                "borderCap": "butt",
+                "borderJoin": "bevel",
+                "borderMiterLimit": 10,
+                "opacity": 1
+            },
             "data": [
                 {
-                    "name": "\u8349\u8393",
-                    "value": 21
+                    "name": "\u5468\u4e00",
+                    "value": 49
                 },
                 {
-                    "name": "\u8292\u679c",
-                    "value": 54
+                    "name": "\u5468\u4e8c",
+                    "value": 93
                 },
                 {
-                    "name": "\u8461\u8404",
-                    "value": 23
+                    "name": "\u5468\u4e09",
+                    "value": 137
                 },
                 {
-                    "name": "\u96ea\u68a8",
-                    "value": 38
+                    "name": "\u5468\u56db",
+                    "value": 86
                 },
                 {
-                    "name": "\u897f\u74dc",
-                    "value": 148
+                    "name": "\u5468\u4e94",
+                    "value": 39
                 },
                 {
-                    "name": "\u67e0\u6aac",
-                    "value": 79
+                    "name": "\u5468\u516d",
+                    "value": 125
                 },
                 {
-                    "name": "\u8f66\u5398\u5b50",
-                    "value": 94
+                    "name": "\u5468\u65e5",
+                    "value": 132
                 }
             ],
             "radius": [
@@ -76,7 +100,6 @@
             ],
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8,
                 "formatter": "{b}: {c}"
             },
@@ -100,14 +123,15 @@
     "legend": [
         {
             "data": [
-                "\u8349\u8393",
-                "\u8292\u679c",
-                "\u8461\u8404",
-                "\u96ea\u68a8",
-                "\u897f\u74dc",
-                "\u67e0\u6aac",
-                "\u8f66\u5398\u5b50"
+                "\u5468\u4e00",
+                "\u5468\u4e8c",
+                "\u5468\u4e09",
+                "\u5468\u56db",
+                "\u5468\u4e94",
+                "\u5468\u516d",
+                "\u5468\u65e5"
             ],
+            "selected": {},
             "show": true,
             "left": "2%",
             "top": "15%",
@@ -115,7 +139,22 @@
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -129,23 +168,32 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "Pie-Radius",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_bffc7068bc014f57ba12c21ba17f0586.setOption(option_bffc7068bc014f57ba12c21ba17f0586);
+        chart_6784751a06104cf3885ccccc7882ed2d.setOption(option_6784751a06104cf3885ccccc7882ed2d);
     </script>
 </body>
 </html>

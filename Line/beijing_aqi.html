@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="0827065bfa1447f2b6cc12bfbeb8c742" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="b6cdbcee057f43739b5ba8a39a02df9e" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_0827065bfa1447f2b6cc12bfbeb8c742 = echarts.init(
-            document.getElementById('0827065bfa1447f2b6cc12bfbeb8c742'), 'white', {renderer: 'canvas'});
-        var option_0827065bfa1447f2b6cc12bfbeb8c742 = {
+        var chart_b6cdbcee057f43739b5ba8a39a02df9e = echarts.init(
+            document.getElementById('b6cdbcee057f43739b5ba8a39a02df9e'), 'white', {renderer: 'canvas'});
+        var option_b6cdbcee057f43739b5ba8a39a02df9e = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -35,6 +38,7 @@
         {
             "type": "line",
             "connectNulls": false,
+            "xAxisIndex": 0,
             "yAxisIndex": 0,
             "symbolSize": 4,
             "showSymbol": false,
@@ -19758,9 +19762,10 @@
             "hoverAnimation": true,
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
             "lineStyle": {
                 "show": true,
                 "width": 1,
@@ -19812,11 +19817,27 @@
             "data": [
                 ""
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -19830,11 +19851,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -24823,11 +24849,15 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "Beijing AQI",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ],
     "visualMap": {
@@ -24845,9 +24875,11 @@
         "calculable": true,
         "inverse": false,
         "splitNumber": 5,
+        "hoverLink": true,
         "orient": "vertical",
         "top": "10",
         "right": "10",
+        "padding": 5,
         "showLabel": true,
         "itemWidth": 20,
         "itemHeight": 14,
@@ -24891,6 +24923,8 @@
         {
             "show": true,
             "type": "slider",
+            "showDetail": true,
+            "showDataShadow": true,
             "realtime": true,
             "start": 20,
             "end": 80,
@@ -24902,6 +24936,8 @@
         {
             "show": true,
             "type": "inside",
+            "showDetail": true,
+            "showDataShadow": true,
             "realtime": true,
             "start": 20,
             "end": 80,
@@ -24912,7 +24948,7 @@
         }
     ]
 };
-        chart_0827065bfa1447f2b6cc12bfbeb8c742.setOption(option_0827065bfa1447f2b6cc12bfbeb8c742);
+        chart_b6cdbcee057f43739b5ba8a39a02df9e.setOption(option_b6cdbcee057f43739b5ba8a39a02df9e);
     </script>
 </body>
 </html>

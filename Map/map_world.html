@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/world.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/world.js"></script>
 
 </head>
-<body>
-    <div id="06a4771c056c4172a60806bcd9a763dd" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="4c2d1cb83ecf4fe0b15ac1b339489df5" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_06a4771c056c4172a60806bcd9a763dd = echarts.init(
-            document.getElementById('06a4771c056c4172a60806bcd9a763dd'), 'white', {renderer: 'canvas'});
-        var option_06a4771c056c4172a60806bcd9a763dd = {
+        var chart_4c2d1cb83ecf4fe0b15ac1b339489df5 = echarts.init(
+            document.getElementById('4c2d1cb83ecf4fe0b15ac1b339489df5'), 'white', {renderer: 'canvas'});
+        var option_4c2d1cb83ecf4fe0b15ac1b339489df5 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,6 +21,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -38,38 +41,37 @@
             "name": "\u5546\u5bb6A",
             "label": {
                 "show": false,
-                "position": "top",
                 "margin": 8
             },
             "map": "world",
             "data": [
                 {
                     "name": "China",
-                    "value": 134
+                    "value": 83
                 },
                 {
                     "name": "Canada",
-                    "value": 106
+                    "value": 119
                 },
                 {
                     "name": "Brazil",
-                    "value": 64
+                    "value": 88
                 },
                 {
                     "name": "Russia",
-                    "value": 69
+                    "value": 78
                 },
                 {
                     "name": "United States",
-                    "value": 101
+                    "value": 86
                 },
                 {
                     "name": "Africa",
-                    "value": 27
+                    "value": 74
                 },
                 {
                     "name": "Germany",
-                    "value": 117
+                    "value": 65
                 }
             ],
             "roam": true,
@@ -77,6 +79,14 @@
             "nameProperty": "name",
             "selectedMode": false,
             "zoom": 1,
+            "zlevel": 0,
+            "z": 2,
+            "left": "auto",
+            "top": "auto",
+            "right": "auto",
+            "bottom": "auto",
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
             "mapValueCalculation": "sum",
             "showLegendSymbol": true,
             "emphasis": {},
@@ -93,11 +103,27 @@
             "data": [
                 "\u5546\u5bb6A"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -111,19 +137,28 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "Map-\u4e16\u754c\u5730\u56fe",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ],
     "visualMap": {
@@ -141,14 +176,16 @@
         "calculable": true,
         "inverse": false,
         "splitNumber": 5,
+        "hoverLink": true,
         "orient": "vertical",
+        "padding": 5,
         "showLabel": true,
         "itemWidth": 20,
         "itemHeight": 140,
         "borderWidth": 0
     }
 };
-        chart_06a4771c056c4172a60806bcd9a763dd.setOption(option_06a4771c056c4172a60806bcd9a763dd);
+        chart_4c2d1cb83ecf4fe0b15ac1b339489df5.setOption(option_4c2d1cb83ecf4fe0b15ac1b339489df5);
     </script>
 </body>
 </html>

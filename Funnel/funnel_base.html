@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="71104cbe0dee48e38e8872d0fc577a14" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="20ac661a7a0149d999f60e9056f97902" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_71104cbe0dee48e38e8872d0fc577a14 = echarts.init(
-            document.getElementById('71104cbe0dee48e38e8872d0fc577a14'), 'white', {renderer: 'canvas'});
-        var option_71104cbe0dee48e38e8872d0fc577a14 = {
+        var chart_20ac661a7a0149d999f60e9056f97902 = echarts.init(
+            document.getElementById('20ac661a7a0149d999f60e9056f97902'), 'white', {renderer: 'canvas'});
+        var option_20ac661a7a0149d999f60e9056f97902 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,6 +20,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -37,39 +40,38 @@
             "name": "\u5546\u54c1",
             "data": [
                 {
-                    "name": "\u5c0f\u7c73",
-                    "value": 117
+                    "name": "\u8349\u8393",
+                    "value": 37
                 },
                 {
-                    "name": "\u4e09\u661f",
+                    "name": "\u8292\u679c",
+                    "value": 72
+                },
+                {
+                    "name": "\u8461\u8404",
+                    "value": 54
+                },
+                {
+                    "name": "\u96ea\u68a8",
+                    "value": 148
+                },
+                {
+                    "name": "\u897f\u74dc",
+                    "value": 102
+                },
+                {
+                    "name": "\u67e0\u6aac",
                     "value": 58
                 },
                 {
-                    "name": "\u534e\u4e3a",
-                    "value": 125
-                },
-                {
-                    "name": "\u82f9\u679c",
-                    "value": 49
-                },
-                {
-                    "name": "\u9b45\u65cf",
-                    "value": 38
-                },
-                {
-                    "name": "VIVO",
-                    "value": 134
-                },
-                {
-                    "name": "OPPO",
-                    "value": 36
+                    "name": "\u8f66\u5398\u5b50",
+                    "value": 21
                 }
             ],
             "sort": "descending",
             "gap": 0,
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             }
         }
@@ -77,19 +79,35 @@
     "legend": [
         {
             "data": [
-                "\u82f9\u679c",
-                "\u5c0f\u7c73",
-                "\u534e\u4e3a",
-                "\u4e09\u661f",
-                "VIVO",
-                "\u9b45\u65cf",
-                "OPPO"
+                "\u96ea\u68a8",
+                "\u8461\u8404",
+                "\u8f66\u5398\u5b50",
+                "\u897f\u74dc",
+                "\u67e0\u6aac",
+                "\u8349\u8393",
+                "\u8292\u679c"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -103,23 +121,32 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "Funnel-\u57fa\u672c\u793a\u4f8b",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_71104cbe0dee48e38e8872d0fc577a14.setOption(option_71104cbe0dee48e38e8872d0fc577a14);
+        chart_20ac661a7a0149d999f60e9056f97902.setOption(option_20ac661a7a0149d999f60e9056f97902);
     </script>
 </body>
 </html>

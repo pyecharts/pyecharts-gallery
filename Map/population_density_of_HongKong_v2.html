@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/xianggang.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/xianggang.js"></script>
 
 </head>
-<body>
-    <div id="2dcfd61f922744acbdec80932a82e02c" class="chart-container" style="width:900px; height:500px;"></div>
+<body >
+    <div id="67bd6c3d1f9e42188e1dc1264c0c234a" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_2dcfd61f922744acbdec80932a82e02c = echarts.init(
-            document.getElementById('2dcfd61f922744acbdec80932a82e02c'), 'white', {renderer: 'canvas'});
-        var option_2dcfd61f922744acbdec80932a82e02c = {
+        var chart_67bd6c3d1f9e42188e1dc1264c0c234a = echarts.init(
+            document.getElementById('67bd6c3d1f9e42188e1dc1264c0c234a'), 'white', {renderer: 'canvas'});
+        var option_67bd6c3d1f9e42188e1dc1264c0c234a = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,6 +21,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "color": [
         "#5470c6",
         "#91cc75",
@@ -38,7 +41,6 @@
             "name": "\u9999\u6e2f18\u533a\u4eba\u53e3\u5bc6\u5ea6",
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             },
             "map": "\u9999\u6e2f",
@@ -141,6 +143,14 @@
                 "\u6cb9\u5c16\u65fa\u533a": "\u6cb9\u5c16\u65fa",
                 "\u5143\u6717\u533a": "\u5143\u6717"
             },
+            "zlevel": 0,
+            "z": 2,
+            "left": "auto",
+            "top": "auto",
+            "right": "auto",
+            "bottom": "auto",
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
             "mapValueCalculation": "sum",
             "showLegendSymbol": false,
             "emphasis": {}
@@ -151,11 +161,27 @@
             "data": [
                 "\u9999\u6e2f18\u533a\u4eba\u53e3\u5bc6\u5ea6"
             ],
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -169,22 +195,31 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "formatter": "{b}<br/>{c} (p / km2)",
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "title": [
         {
+            "show": true,
             "text": "\u9999\u6e2f18\u533a\u4eba\u53e3\u5bc6\u5ea6 \uff082011\uff09",
             "target": "blank",
             "subtext": "\u4eba\u53e3\u5bc6\u5ea6\u6570\u636e\u6765\u81eaWikipedia",
             "sublink": "http://zh.wikipedia.org/wiki/%E9%A6%99%E6%B8%AF%E8%A1%8C%E6%94%BF%E5%8D%80%E5%8A%83#cite_note-12",
             "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ],
     "visualMap": {
@@ -206,14 +241,16 @@
         "calculable": true,
         "inverse": false,
         "splitNumber": 5,
+        "hoverLink": true,
         "orient": "vertical",
+        "padding": 5,
         "showLabel": true,
         "itemWidth": 20,
         "itemHeight": 140,
         "borderWidth": 0
     }
 };
-        chart_2dcfd61f922744acbdec80932a82e02c.setOption(option_2dcfd61f922744acbdec80932a82e02c);
+        chart_67bd6c3d1f9e42188e1dc1264c0c234a.setOption(option_67bd6c3d1f9e42188e1dc1264c0c234a);
     </script>
 </body>
 </html>
