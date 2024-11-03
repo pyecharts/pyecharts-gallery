@@ -37,6 +37,7 @@ SKIP_FILE: List = [
 
 # 当前 Demo 的模块
 ChartModelDict: Dict = {
+    "AMap": "高德地图",
     "Bar": "柱状图",
     "Bar3D": "3D 柱状图",
     "BMap": "百度地图",
