@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-extension-amap.min.js"></script>
+            <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=fakekey&plugin=AMap.Scale,AMap.ToolBar"></script>
+
+</head>
+<body >
+    <div id="dd03edd2a4a045d8a3b509f50788afd8" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_dd03edd2a4a045d8a3b509f50788afd8 = echarts.init(
+            document.getElementById('dd03edd2a4a045d8a3b509f50788afd8'), 'white', {renderer: 'canvas'});
+        var option_dd03edd2a4a045d8a3b509f50788afd8 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "scatter",
+            "name": "amap",
+            "coordinateSystem": "amap",
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "\u5e7f\u4e1c\u7701",
+                    "value": [
+                        113.26653,
+                        23.132191,
+                        112
+                    ]
+                },
+                {
+                    "name": "\u5317\u4eac\u5e02",
+                    "value": [
+                        116.4,
+                        39.9,
+                        125
+                    ]
+                },
+                {
+                    "name": "\u4e0a\u6d77\u5e02",
+                    "value": [
+                        121.47,
+                        31.23,
+                        21
+                    ]
+                },
+                {
+                    "name": "\u6c5f\u897f\u7701",
+                    "value": [
+                        115.909228,
+                        28.675696,
+                        147
+                    ]
+                },
+                {
+                    "name": "\u6e56\u5357\u7701",
+                    "value": [
+                        112.98381,
+                        28.112444,
+                        146
+                    ]
+                },
+                {
+                    "name": "\u6d59\u6c5f\u7701",
+                    "value": [
+                        120.152791,
+                        30.267446,
+                        28
+                    ]
+                },
+                {
+                    "name": "\u6c5f\u82cf\u7701",
+                    "value": [
+                        118.763232,
+                        32.061707,
+                        72
+                    ]
+                }
+            ],
+            "label": {
+                "show": true,
+                "margin": 8,
+                "formatter": "{b}",
+                "valueAnimation": false
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "amap"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "AMap-\u57fa\u672c\u793a\u4f8b",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "amap": {
+        "center": [
+            120.13066322374,
+            30.240018034923
+        ],
+        "viewMode": "3D",
+        "resizeEnable": true,
+        "renderOnMoving": true,
+        "echartsLayerInteractive": true,
+        "largeMode": false
+    }
+};
+        chart_dd03edd2a4a045d8a3b509f50788afd8.setOption(option_dd03edd2a4a045d8a3b509f50788afd8);
+                // Get AMap extension component
+                var amapComponent = chart_dd03edd2a4a045d8a3b509f50788afd8.getModel().getComponent('amap');
+                // Get the instance of AMap
+                var amap = amapComponent.getAMap();
+                // Add some controls provided by AMap.
+                amap.addControl(new AMap.Scale());
+                amap.addControl(new AMap.ToolBar());
+                        amapComponent.setEChartsLayerInteractive(true);
+    </script>
+</body>
+</html>
