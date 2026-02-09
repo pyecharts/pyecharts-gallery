@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="c9cadc97ef124de58ab6e174b2107952" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="5b73b8c0da44475b862d84a0bdc47c3b" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_c9cadc97ef124de58ab6e174b2107952 = echarts.init(
-            document.getElementById('c9cadc97ef124de58ab6e174b2107952'), 'white', {renderer: 'canvas'});
-        var option_c9cadc97ef124de58ab6e174b2107952 = {
+        var chart_5b73b8c0da44475b862d84a0bdc47c3b = echarts.init(
+            document.getElementById('5b73b8c0da44475b862d84a0bdc47c3b'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_5b73b8c0da44475b862d84a0bdc47c3b = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,17 +24,6 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "effectScatter",
@@ -49,48 +39,50 @@
             "data": [
                 [
                     0,
-                    99
-                ],
-                [
-                    1,
-                    79
-                ],
-                [
-                    2,
-                    50
-                ],
-                [
-                    3,
-                    61
-                ],
-                [
-                    4,
-                    86
-                ],
-                [
-                    5,
                     42
                 ],
                 [
+                    1,
+                    48
+                ],
+                [
+                    2,
+                    47
+                ],
+                [
+                    3,
+                    79
+                ],
+                [
+                    4,
+                    73
+                ],
+                [
+                    5,
+                    53
+                ],
+                [
                     6,
-                    81
+                    22
                 ],
                 [
                     7,
-                    69
+                    37
                 ],
                 [
                     8,
-                    100
+                    22
                 ],
                 [
                     9,
-                    68
+                    39
                 ]
             ],
             "label": {
                 "show": false,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             }
         }
     ],
@@ -107,7 +99,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -119,7 +110,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -137,8 +129,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -161,7 +155,9 @@
         "center": [
             "50%",
             "50%"
-        ]
+        ],
+        "zlevel": 0,
+        "z": 2
     },
     "title": [
         {
@@ -177,7 +173,7 @@
         }
     ]
 };
-        chart_c9cadc97ef124de58ab6e174b2107952.setOption(option_c9cadc97ef124de58ab6e174b2107952);
+        chart_5b73b8c0da44475b862d84a0bdc47c3b.setOption(option_5b73b8c0da44475b862d84a0bdc47c3b);
     </script>
 </body>
 </html>

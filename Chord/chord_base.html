@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="f54c6167638d49bc97aa181c97dde3bb" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_f54c6167638d49bc97aa181c97dde3bb = echarts.init(
+            document.getElementById('f54c6167638d49bc97aa181c97dde3bb'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_f54c6167638d49bc97aa181c97dde3bb = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "series": [
+        {
+            "type": "chord",
+            "name": "chord",
+            "data": [
+                {
+                    "name": "A"
+                },
+                {
+                    "name": "B"
+                },
+                {
+                    "name": "C"
+                },
+                {
+                    "name": "D"
+                }
+            ],
+            "links": [
+                {
+                    "source": "A",
+                    "target": "B",
+                    "value": 40
+                },
+                {
+                    "source": "A",
+                    "target": "C",
+                    "value": 20
+                },
+                {
+                    "source": "B",
+                    "target": "D",
+                    "value": 20
+                }
+            ],
+            "clockwise": false,
+            "startAngle": 90,
+            "label": {
+                "show": true,
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
+            },
+            "lineStyle": {
+                "show": false,
+                "color": "target"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "displayTransition": true,
+        "textStyle": {
+            "fontSize": 14,
+            "richInheritPlainLabel": true
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    }
+};
+        chart_f54c6167638d49bc97aa181c97dde3bb.setOption(option_f54c6167638d49bc97aa181c97dde3bb);
+    </script>
+</body>
+</html>

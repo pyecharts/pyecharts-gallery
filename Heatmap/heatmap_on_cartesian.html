@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="c159b8fc78444b2ab50683fc7a4d5c3e" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="5ba2b53fe175411b8e0b757cccc0ac2e" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_c159b8fc78444b2ab50683fc7a4d5c3e = echarts.init(
-            document.getElementById('c159b8fc78444b2ab50683fc7a4d5c3e'), 'white', {renderer: 'canvas'});
-        var option_c159b8fc78444b2ab50683fc7a4d5c3e = {
+        var chart_5ba2b53fe175411b8e0b757cccc0ac2e = echarts.init(
+            document.getElementById('5ba2b53fe175411b8e0b757cccc0ac2e'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_5ba2b53fe175411b8e0b757cccc0ac2e = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,21 +24,11 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "heatmap",
             "name": "Punch Card",
+            "coordinateSystem": "cartesian2d",
             "data": [
                 [
                     0,
@@ -885,8 +876,13 @@
                 "position": "bottom",
                 "color": "#fff",
                 "margin": 8,
-                "align": "50%"
+                "align": "50%",
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
+            "selectedMode": false,
+            "zlevel": 0,
+            "z": 2,
             "rippleEffect": {
                 "show": true,
                 "brushType": "stroke",
@@ -908,7 +904,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -920,7 +915,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -938,8 +934,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -952,19 +950,18 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
-            "gridIndex": 0,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
             "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "show": false
                 }
             },
             "splitArea": {
@@ -973,6 +970,14 @@
                     "opacity": 1
                 }
             },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
             "data": [
                 "12a",
                 "1a",
@@ -1008,19 +1013,18 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
-            "gridIndex": 0,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
             "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "show": false
                 }
             },
             "splitArea": {
@@ -1029,6 +1033,14 @@
                     "opacity": 1
                 }
             },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
             "data": [
                 "Saturday",
                 "Friday",
@@ -1077,7 +1089,7 @@
         "borderWidth": 0
     }
 };
-        chart_c159b8fc78444b2ab50683fc7a4d5c3e.setOption(option_c159b8fc78444b2ab50683fc7a4d5c3e);
+        chart_5ba2b53fe175411b8e0b757cccc0ac2e.setOption(option_5ba2b53fe175411b8e0b757cccc0ac2e);
     </script>
 </body>
 </html>

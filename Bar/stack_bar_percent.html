@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="fa8381bcd4654951b3eb106a632ecb12" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="5705bfe4aaf6439b9d3fb2fa61b0b8fc" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_fa8381bcd4654951b3eb106a632ecb12 = echarts.init(
-            document.getElementById('fa8381bcd4654951b3eb106a632ecb12'), 'light', {renderer: 'canvas'});
-        var option_fa8381bcd4654951b3eb106a632ecb12 = {
+        var chart_5705bfe4aaf6439b9d3fb2fa61b0b8fc = echarts.init(
+            document.getElementById('5705bfe4aaf6439b9d3fb2fa61b0b8fc'), 'light', {renderer: 'canvas', locale: 'ZH'});
+        var option_5705bfe4aaf6439b9d3fb2fa61b0b8fc = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -69,7 +70,9 @@
                 "show": true,
                 "position": "right",
                 "margin": 8,
-                "formatter": function(x){return Number(x.data.percent * 100).toFixed() + '%';}
+                "formatter": function(x){return Number(x.data.percent * 100).toFixed() + '%';},
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "rippleEffect": {
                 "show": true,
@@ -123,7 +126,9 @@
                 "show": true,
                 "position": "right",
                 "margin": 8,
-                "formatter": function(x){return Number(x.data.percent * 100).toFixed() + '%';}
+                "formatter": function(x){return Number(x.data.percent * 100).toFixed() + '%';},
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "rippleEffect": {
                 "show": true,
@@ -157,8 +162,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -170,21 +177,28 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
-            "gridIndex": 0,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
             "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "show": false
                 }
             },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
             "data": [
                 1,
                 2,
@@ -200,25 +214,32 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
-            "gridIndex": 0,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
             "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "show": false
                 }
-            }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
         }
     ]
 };
-        chart_fa8381bcd4654951b3eb106a632ecb12.setOption(option_fa8381bcd4654951b3eb106a632ecb12);
+        chart_5705bfe4aaf6439b9d3fb2fa61b0b8fc.setOption(option_5705bfe4aaf6439b9d3fb2fa61b0b8fc);
     </script>
 </body>
 </html>

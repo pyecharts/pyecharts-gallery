@@ -9,3 +9,4 @@
 - [Pie - Mutiple_pie](Pie/mutiple_pie.md ':type=code')
 - [Pie - Pie_rosetype](Pie/pie_rosetype.md ':type=code')
 - [Pie - Pie_radius](Pie/pie_radius.md ':type=code')
+- [Pie - Half_pie](Pie/half_pie.md ':type=code')

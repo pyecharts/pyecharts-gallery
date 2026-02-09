@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="310328d1c4fe499e914c40c1b9962712" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="934aa892731f457da800adb26cc2f601" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_310328d1c4fe499e914c40c1b9962712 = echarts.init(
-            document.getElementById('310328d1c4fe499e914c40c1b9962712'), 'white', {renderer: 'canvas'});
-        var option_310328d1c4fe499e914c40c1b9962712 = {
+        var chart_934aa892731f457da800adb26cc2f601 = echarts.init(
+            document.getElementById('934aa892731f457da800adb26cc2f601'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_934aa892731f457da800adb26cc2f601 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,17 +24,6 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "line",
@@ -45,49 +35,48 @@
             "smooth": false,
             "clip": true,
             "step": false,
+            "stackStrategy": "samesign",
             "data": [
                 [
-                    "\u5c0f\u7c73",
-                    114
+                    "\u886c\u886b",
+                    64
                 ],
                 [
-                    "\u4e09\u661f",
-                    100
+                    "\u6bdb\u8863",
+                    42
                 ],
                 [
-                    "\u534e\u4e3a",
-                    119
+                    "\u9886\u5e26",
+                    30
                 ],
                 [
-                    "\u82f9\u679c",
-                    143
+                    "\u88e4\u5b50",
+                    21
                 ],
                 [
-                    "\u9b45\u65cf",
-                    114
+                    "\u98ce\u8863",
+                    102
                 ],
                 [
-                    "VIVO",
-                    90
+                    "\u9ad8\u8ddf\u978b",
+                    72
                 ],
                 [
-                    "OPPO",
-                    54
+                    "\u889c\u5b50",
+                    49
                 ]
             ],
             "hoverAnimation": true,
             "label": {
                 "show": true,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "logBase": 10,
             "seriesLayoutBy": "column",
             "lineStyle": {
-                "show": true,
-                "width": 1,
-                "opacity": 1,
-                "curveness": 0,
-                "type": "solid"
+                "show": false
             },
             "areaStyle": {
                 "opacity": 0
@@ -105,49 +94,48 @@
             "smooth": false,
             "clip": true,
             "step": false,
+            "stackStrategy": "samesign",
             "data": [
                 [
-                    "\u5c0f\u7c73",
-                    77
+                    "\u886c\u886b",
+                    115
                 ],
                 [
-                    "\u4e09\u661f",
-                    91
+                    "\u6bdb\u8863",
+                    115
                 ],
                 [
-                    "\u534e\u4e3a",
-                    92
+                    "\u9886\u5e26",
+                    90
                 ],
                 [
-                    "\u82f9\u679c",
-                    92
+                    "\u88e4\u5b50",
+                    87
                 ],
                 [
-                    "\u9b45\u65cf",
-                    88
-                ],
-                [
-                    "VIVO",
-                    29
-                ],
-                [
-                    "OPPO",
+                    "\u98ce\u8863",
                     71
+                ],
+                [
+                    "\u9ad8\u8ddf\u978b",
+                    56
+                ],
+                [
+                    "\u889c\u5b50",
+                    139
                 ]
             ],
             "hoverAnimation": true,
             "label": {
                 "show": true,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "logBase": 10,
             "seriesLayoutBy": "column",
             "lineStyle": {
-                "show": true,
-                "width": 1,
-                "opacity": 1,
-                "curveness": 0,
-                "type": "solid"
+                "show": false
             },
             "areaStyle": {
                 "opacity": 0
@@ -170,7 +158,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -182,7 +169,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -200,8 +188,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -213,29 +203,36 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
-            "gridIndex": 0,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
             "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "show": false
                 }
             },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
             "data": [
-                "\u5c0f\u7c73",
-                "\u4e09\u661f",
-                "\u534e\u4e3a",
-                "\u82f9\u679c",
-                "\u9b45\u65cf",
-                "VIVO",
-                "OPPO"
+                "\u886c\u886b",
+                "\u6bdb\u8863",
+                "\u9886\u5e26",
+                "\u88e4\u5b50",
+                "\u98ce\u8863",
+                "\u9ad8\u8ddf\u978b",
+                "\u889c\u5b50"
             ]
         }
     ],
@@ -245,21 +242,28 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
-            "gridIndex": 0,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
             "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "show": false
                 }
-            }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
         }
     ],
     "title": [
@@ -276,7 +280,7 @@
         }
     ]
 };
-        chart_310328d1c4fe499e914c40c1b9962712.setOption(option_310328d1c4fe499e914c40c1b9962712);
+        chart_934aa892731f457da800adb26cc2f601.setOption(option_934aa892731f457da800adb26cc2f601);
     </script>
 </body>
 </html>

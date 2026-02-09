@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts-x/bar-range/index.auto.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="3179696954354992834a406d492a3da8" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_3179696954354992834a406d492a3da8 = echarts.init(
+            document.getElementById('3179696954354992834a406d492a3da8'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_3179696954354992834a406d492a3da8 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "series": [
+        {
+            "type": "custom",
+            "name": "bar",
+            "renderItem": "barRange",
+            "colorBy": "series",
+            "legendHoverLink": true,
+            "coordinateSystem": "cartesian2d",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "polarIndex": 0,
+            "geoIndex": 0,
+            "calendarIndex": 0,
+            "datasetIndex": 0,
+            "seriesLayoutBy": "column",
+            "selectedMode": false,
+            "encode": {
+                "x": 0,
+                "y": [
+                    1,
+                    2
+                ],
+                "tooltip": [
+                    1,
+                    2
+                ]
+            },
+            "data": [
+                [
+                    0,
+                    26.7,
+                    32.5
+                ],
+                [
+                    1,
+                    25.3,
+                    32.4
+                ],
+                [
+                    2,
+                    24.6,
+                    32.7
+                ],
+                [
+                    3,
+                    26.8,
+                    35.8
+                ],
+                [
+                    4,
+                    26.2,
+                    33.1
+                ],
+                [
+                    5,
+                    24.9,
+                    31.4
+                ],
+                [
+                    6,
+                    25.3,
+                    32.9
+                ]
+            ],
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "itemPayload": {
+                "barWidth": 10,
+                "borderRadius": 5
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "bar"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10,
+            "triggerEvent": false
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "displayTransition": true,
+        "textStyle": {
+            "fontSize": 14,
+            "richInheritPlainLabel": true
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "data": [
+                "Sun",
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat"
+            ],
+            "type": "category",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": false
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": false
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_3179696954354992834a406d492a3da8.setOption(option_3179696954354992834a406d492a3da8);
+    </script>
+</body>
+</html>

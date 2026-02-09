@@ -20,6 +20,7 @@
         - [Bar - Bar_stack0](Bar/bar_stack0.md ':type=code')
         - [Bar - Finance_indices_2002](Bar/finance_indices_2002.md ':type=code')
         - [Bar - Bar_base_dict_config](Bar/bar_base_dict_config.md ':type=code')
+        - [Bar - Bar_break](Bar/bar_break.md ':type=code')
         - [Bar - Bar_with_brush](Bar/bar_with_brush.md ':type=code')
         - [Bar - Bar_datazoom_slider](Bar/bar_datazoom_slider.md ':type=code')
         - [Bar - Bar_toolbox](Bar/bar_toolbox.md ':type=code')
@@ -76,7 +77,18 @@
         - [Candlestick - Professional_kline_brush](Candlestick/professional_kline_brush.md ':type=code')
         - [Candlestick - Kline_datazoom_slider](Candlestick/kline_datazoom_slider.md ':type=code')
         - [Candlestick - Kline_split_area](Candlestick/kline_split_area.md ':type=code')
+    
+    - [**和弦图 Chord**](Chord/README.md)
+        - [Chord - Chord_base](Chord/chord_base.md ':type=codetong')
         
+    - [**自定义图 Custom**](Custom/README.md)
+        - [Custom - Custom_bar_range](Custom/custom_bar_range.md ':type=code')
+        - [Custom - Custom_contour](Custom/custom_contour.md ':type=code')
+        - [Custom - Custom_doughnut](Custom/custom_doughnut.md ':type=code')
+        - [Custom - Custom_line_range](Custom/custom_line_range.md ':type=code')
+        - [Custom - Custom_stage](Custom/custom_stage.md ':type=code')
+        - [Custom - Custom_violin](Custom/custom_violin.md ':type=code')
+
     - [**数据集 Dataset**](Dataset/README.md)
         - [Dataset - Dataset_pie](Dataset/dataset_pie.md ':type=code')
         - [Dataset - Dataset_bar_0](Dataset/dataset_bar_0.md ':type=code')
@@ -200,6 +212,16 @@
         - [Map - Map_without_label](Map/map_without_label.md ':type=code')
         - [Map - Map_visualmap](Map/map_visualmap.md ':type=code')
         
+    - [**矩阵图 Matrix**](Matrix/README.md)
+        - [Matrix - Matrix_bar_geo](Matrix/matrix_bar_geo.md ':type=code')
+        - [Matrix - Matrix_custom](Matrix/matrix_custom.md ':type=code')
+        - [Matrix - Matrix_graph](Matrix/matrix_graph.md ':type=code')
+        - [Matrix - Matrix_heatmap](Matrix/matrix_heatmap.md ':type=code')
+        - [Matrix - Matrix_heatmap_mbti](Matrix/matrix_heatmap_mbti.md ':type=code')
+        - [Matrix - Matrix_line](Matrix/matrix_line.md ':type=code')
+        - [Matrix - Matrix_pie](Matrix/matrix_pie.md ':type=code')
+        - [Matrix - Matrix_scatter](Matrix/matrix_scatter.md ':type=code')
+
     - [**3D 地图 Map3D**](Map3D/README.md)
         - [Map3d - Map3d_with_lines3d](Map3D/map3d_with_lines3d.md ':type=code')
         - [Map3d - Map3d_with_scatter3d](Map3D/map3d_with_scatter3d.md ':type=code')
@@ -239,7 +261,8 @@
         - [Pie - Mutiple_pie](Pie/mutiple_pie.md ':type=code')
         - [Pie - Pie_rosetype](Pie/pie_rosetype.md ':type=code')
         - [Pie - Pie_radius](Pie/pie_radius.md ':type=code')
-        
+        - [Pie - Half_pie](Pie/half_pie.md ':type=code')
+
     - [**极坐标系 Polar**](Polar/README.md)
         - [Polar - Polar_scatter_0](Polar/polar_scatter_0.md ':type=code')
         - [Polar - Polar_love](Polar/polar_love.md ':type=code')

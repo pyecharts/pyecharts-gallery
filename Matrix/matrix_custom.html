@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="0f8f84e8bacc40639007d104eefc85d5" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_0f8f84e8bacc40639007d104eefc85d5 = echarts.init(
+            document.getElementById('0f8f84e8bacc40639007d104eefc85d5'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_0f8f84e8bacc40639007d104eefc85d5 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "series": [
+        {
+            "type": "custom",
+            "name": "0",
+            "renderItem":         function (params, api) {          const x = api.value(0);          const y = api.value(1);          const rect = api.layout([x, y]).rect;          const isElement = !isNaN(api.value(2));          const margin = 2;          return {            type: 'rect',            shape: {              x: rect.x + margin,              y: rect.y + margin,              width: rect.width - margin * 2,              height: rect.height - margin * 2            },            style: api.style({              fill: api.value(4),              stroke: '#aaa',              lineWidth: isElement ? 1 : 0,              opacity: isElement ? 1 : 0.5            })          };        }        ,
+            "colorBy": "series",
+            "legendHoverLink": true,
+            "coordinateSystem": "matrix",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "polarIndex": 0,
+            "geoIndex": 0,
+            "calendarIndex": 0,
+            "datasetIndex": 0,
+            "seriesLayoutBy": "column",
+            "selectedMode": false,
+            "data": [
+                [
+                    "1",
+                    "1",
+                    "1",
+                    "H",
+                    "#f88"
+                ],
+                [
+                    "19",
+                    "1",
+                    "2",
+                    "He",
+                    "#f88"
+                ],
+                [
+                    "1",
+                    "2",
+                    "3",
+                    "Li",
+                    "#f88"
+                ],
+                [
+                    "2",
+                    "2",
+                    "4",
+                    "Be",
+                    "#f88"
+                ],
+                [
+                    "14",
+                    "2",
+                    "5",
+                    "B",
+                    "#ff8"
+                ],
+                [
+                    "15",
+                    "2",
+                    "6",
+                    "C",
+                    "#ff8"
+                ],
+                [
+                    "16",
+                    "2",
+                    "7",
+                    "N",
+                    "#ff8"
+                ],
+                [
+                    "17",
+                    "2",
+                    "8",
+                    "O",
+                    "#ff8"
+                ],
+                [
+                    "18",
+                    "2",
+                    "9",
+                    "F",
+                    "#ff8"
+                ],
+                [
+                    "19",
+                    "2",
+                    "10",
+                    "Ne",
+                    "#ff8"
+                ],
+                [
+                    "1",
+                    "3",
+                    "11",
+                    "Na",
+                    "#f88"
+                ],
+                [
+                    "2",
+                    "3",
+                    "12",
+                    "Mg",
+                    "#f88"
+                ],
+                [
+                    "14",
+                    "3",
+                    "13",
+                    "Al",
+                    "#ff8"
+                ],
+                [
+                    "15",
+                    "3",
+                    "14",
+                    "Si",
+                    "#ff8"
+                ],
+                [
+                    "16",
+                    "3",
+                    "15",
+                    "P",
+                    "#ff8"
+                ],
+                [
+                    "17",
+                    "3",
+                    "16",
+                    "S",
+                    "#ff8"
+                ],
+                [
+                    "18",
+                    "3",
+                    "17",
+                    "Cl",
+                    "#ff8"
+                ],
+                [
+                    "19",
+                    "3",
+                    "18",
+                    "Ar",
+                    "#ff8"
+                ],
+                [
+                    "1",
+                    "4",
+                    "19",
+                    "K",
+                    "#f88"
+                ],
+                [
+                    "2",
+                    "4",
+                    "20",
+                    "Ca",
+                    "#f88"
+                ],
+                [
+                    "4",
+                    "4",
+                    "21",
+                    "Sc",
+                    "#8bf"
+                ],
+                [
+                    "5",
+                    "4",
+                    "22",
+                    "Ti",
+                    "#8bf"
+                ],
+                [
+                    "6",
+                    "4",
+                    "23",
+                    "V",
+                    "#8bf"
+                ],
+                [
+                    "7",
+                    "4",
+                    "24",
+                    "Cr",
+                    "#8bf"
+                ],
+                [
+                    "8",
+                    "4",
+                    "25",
+                    "Mn",
+                    "#8bf"
+                ],
+                [
+                    "9",
+                    "4",
+                    "26",
+                    "Fe",
+                    "#8bf"
+                ],
+                [
+                    "10",
+                    "4",
+                    "27",
+                    "Co",
+                    "#8bf"
+                ],
+                [
+                    "11",
+                    "4",
+                    "28",
+                    "Ni",
+                    "#8bf"
+                ],
+                [
+                    "12",
+                    "4",
+                    "29",
+                    "Cu",
+                    "#8bf"
+                ],
+                [
+                    "13",
+                    "4",
+                    "30",
+                    "Zn",
+                    "#8bf"
+                ],
+                [
+                    "14",
+                    "4",
+                    "31",
+                    "Ga",
+                    "#ff8"
+                ],
+                [
+                    "15",
+                    "4",
+                    "32",
+                    "Ge",
+                    "#ff8"
+                ],
+                [
+                    "16",
+                    "4",
+                    "33",
+                    "As",
+                    "#ff8"
+                ],
+                [
+                    "17",
+                    "4",
+                    "34",
+                    "Se",
+                    "#ff8"
+                ],
+                [
+                    "18",
+                    "4",
+                    "35",
+                    "Br",
+                    "#ff8"
+                ],
+                [
+                    "19",
+                    "4",
+                    "36",
+                    "Kr",
+                    "#ff8"
+                ],
+                [
+                    "1",
+                    "5",
+                    "37",
+                    "Rb",
+                    "#f88"
+                ],
+                [
+                    "2",
+                    "5",
+                    "38",
+                    "Sr",
+                    "#f88"
+                ],
+                [
+                    "4",
+                    "5",
+                    "39",
+                    "Y",
+                    "#8bf"
+                ],
+                [
+                    "5",
+                    "5",
+                    "40",
+                    "Zr",
+                    "#8bf"
+                ],
+                [
+                    "6",
+                    "5",
+                    "41",
+                    "Nb",
+                    "#8bf"
+                ],
+                [
+                    "7",
+                    "5",
+                    "42",
+                    "Mo",
+                    "#8bf"
+                ],
+                [
+                    "8",
+                    "5",
+                    "43",
+                    "Tc",
+                    "#8bf"
+                ],
+                [
+                    "9",
+                    "5",
+                    "44",
+                    "Ru",
+                    "#8bf"
+                ],
+                [
+                    "10",
+                    "5",
+                    "45",
+                    "Rh",
+                    "#8bf"
+                ],
+                [
+                    "11",
+                    "5",
+                    "46",
+                    "Pd",
+                    "#8bf"
+                ],
+                [
+                    "12",
+                    "5",
+                    "47",
+                    "Ag",
+                    "#8bf"
+                ],
+                [
+                    "13",
+                    "5",
+                    "48",
+                    "Cd",
+                    "#8bf"
+                ],
+                [
+                    "14",
+                    "5",
+                    "49",
+                    "In",
+                    "#ff8"
+                ],
+                [
+                    "15",
+                    "5",
+                    "50",
+                    "Sn",
+                    "#ff8"
+                ],
+                [
+                    "16",
+                    "5",
+                    "51",
+                    "Sb",
+                    "#ff8"
+                ],
+                [
+                    "17",
+                    "5",
+                    "52",
+                    "Te",
+                    "#ff8"
+                ],
+                [
+                    "18",
+                    "5",
+                    "53",
+                    "I",
+                    "#ff8"
+                ],
+                [
+                    "19",
+                    "5",
+                    "54",
+                    "Xe",
+                    "#ff8"
+                ],
+                [
+                    "1",
+                    "6",
+                    "55",
+                    "Cs",
+                    "#f88"
+                ],
+                [
+                    "2",
+                    "6",
+                    "56",
+                    "Ba",
+                    "#f88"
+                ],
+                [
+                    "4",
+                    "9",
+                    "57",
+                    "La",
+                    "#8f8"
+                ],
+                [
+                    "5",
+                    "9",
+                    "58",
+                    "Ce",
+                    "#8f8"
+                ],
+                [
+                    "6",
+                    "9",
+                    "59",
+                    "Pr",
+                    "#8f8"
+                ],
+                [
+                    "7",
+                    "9",
+                    "60",
+                    "Nd",
+                    "#8f8"
+                ],
+                [
+                    "8",
+                    "9",
+                    "61",
+                    "Pm",
+                    "#8f8"
+                ],
+                [
+                    "9",
+                    "9",
+                    "62",
+                    "Sm",
+                    "#8f8"
+                ],
+                [
+                    "10",
+                    "9",
+                    "63",
+                    "Eu",
+                    "#8f8"
+                ],
+                [
+                    "11",
+                    "9",
+                    "64",
+                    "Gd",
+                    "#8f8"
+                ],
+                [
+                    "12",
+                    "9",
+                    "65",
+                    "Tb",
+                    "#8f8"
+                ],
+                [
+                    "13",
+                    "9",
+                    "66",
+                    "Dy",
+                    "#8f8"
+                ],
+                [
+                    "14",
+                    "9",
+                    "67",
+                    "Ho",
+                    "#8f8"
+                ],
+                [
+                    "15",
+                    "9",
+                    "68",
+                    "Er",
+                    "#8f8"
+                ],
+                [
+                    "16",
+                    "9",
+                    "69",
+                    "Tm",
+                    "#8f8"
+                ],
+                [
+                    "17",
+                    "9",
+                    "70",
+                    "Yb",
+                    "#8f8"
+                ],
+                [
+                    "4",
+                    "6",
+                    "71",
+                    "Lu",
+                    "#8bf"
+                ],
+                [
+                    "5",
+                    "6",
+                    "72",
+                    "Hf",
+                    "#8bf"
+                ],
+                [
+                    "6",
+                    "6",
+                    "73",
+                    "Ta",
+                    "#8bf"
+                ],
+                [
+                    "7",
+                    "6",
+                    "74",
+                    "W",
+                    "#8bf"
+                ],
+                [
+                    "8",
+                    "6",
+                    "75",
+                    "Re",
+                    "#8bf"
+                ],
+                [
+                    "9",
+                    "6",
+                    "76",
+                    "Os",
+                    "#8bf"
+                ],
+                [
+                    "10",
+                    "6",
+                    "77",
+                    "Ir",
+                    "#8bf"
+                ],
+                [
+                    "11",
+                    "6",
+                    "78",
+                    "Pt",
+                    "#8bf"
+                ],
+                [
+                    "12",
+                    "6",
+                    "79",
+                    "Au",
+                    "#8bf"
+                ],
+                [
+                    "13",
+                    "6",
+                    "80",
+                    "Hg",
+                    "#8bf"
+                ],
+                [
+                    "14",
+                    "6",
+                    "81",
+                    "Tl",
+                    "#ff8"
+                ],
+                [
+                    "15",
+                    "6",
+                    "82",
+                    "Pb",
+                    "#ff8"
+                ],
+                [
+                    "16",
+                    "6",
+                    "83",
+                    "Bi",
+                    "#ff8"
+                ],
+                [
+                    "17",
+                    "6",
+                    "84",
+                    "Po",
+                    "#ff8"
+                ],
+                [
+                    "18",
+                    "6",
+                    "85",
+                    "At",
+                    "#ff8"
+                ],
+                [
+                    "19",
+                    "6",
+                    "86",
+                    "Rn",
+                    "#ff8"
+                ],
+                [
+                    "1",
+                    "7",
+                    "87",
+                    "Fr",
+                    "#f88"
+                ],
+                [
+                    "2",
+                    "7",
+                    "88",
+                    "Ra",
+                    "#f88"
+                ],
+                [
+                    "4",
+                    "10",
+                    "89",
+                    "Ac",
+                    "#8f8"
+                ],
+                [
+                    "5",
+                    "10",
+                    "90",
+                    "Th",
+                    "#8f8"
+                ],
+                [
+                    "6",
+                    "10",
+                    "91",
+                    "Pa",
+                    "#8f8"
+                ],
+                [
+                    "7",
+                    "10",
+                    "92",
+                    "U",
+                    "#8f8"
+                ],
+                [
+                    "8",
+                    "10",
+                    "93",
+                    "Np",
+                    "#8f8"
+                ],
+                [
+                    "9",
+                    "10",
+                    "94",
+                    "Pu",
+                    "#8f8"
+                ],
+                [
+                    "10",
+                    "10",
+                    "95",
+                    "Am",
+                    "#8f8"
+                ],
+                [
+                    "11",
+                    "10",
+                    "96",
+                    "Cm",
+                    "#8f8"
+                ],
+                [
+                    "12",
+                    "10",
+                    "97",
+                    "Bk",
+                    "#8f8"
+                ],
+                [
+                    "13",
+                    "10",
+                    "98",
+                    "Cf",
+                    "#8f8"
+                ],
+                [
+                    "14",
+                    "10",
+                    "99",
+                    "Es",
+                    "#8f8"
+                ],
+                [
+                    "15",
+                    "10",
+                    "100",
+                    "Fm",
+                    "#8f8"
+                ],
+                [
+                    "16",
+                    "10",
+                    "101",
+                    "Md",
+                    "#8f8"
+                ],
+                [
+                    "17",
+                    "10",
+                    "102",
+                    "No",
+                    "#8f8"
+                ],
+                [
+                    "4",
+                    "7",
+                    "103",
+                    "Lr",
+                    "#8bf"
+                ],
+                [
+                    "5",
+                    "7",
+                    "104",
+                    "Rf",
+                    "#8bf"
+                ],
+                [
+                    "6",
+                    "7",
+                    "105",
+                    "Db",
+                    "#8bf"
+                ],
+                [
+                    "7",
+                    "7",
+                    "106",
+                    "Sg",
+                    "#8bf"
+                ],
+                [
+                    "8",
+                    "7",
+                    "107",
+                    "Bh",
+                    "#8bf"
+                ],
+                [
+                    "9",
+                    "7",
+                    "108",
+                    "Hs",
+                    "#8bf"
+                ],
+                [
+                    "10",
+                    "7",
+                    "109",
+                    "Mt",
+                    "#8bf"
+                ],
+                [
+                    "11",
+                    "7",
+                    "110",
+                    "Ds",
+                    "#8bf"
+                ],
+                [
+                    "12",
+                    "7",
+                    "111",
+                    "Rg",
+                    "#8bf"
+                ],
+                [
+                    "13",
+                    "7",
+                    "112",
+                    "Cn",
+                    "#8bf"
+                ],
+                [
+                    "14",
+                    "7",
+                    "113",
+                    "Nh",
+                    "#ff8"
+                ],
+                [
+                    "15",
+                    "7",
+                    "114",
+                    "Fl",
+                    "#ff8"
+                ],
+                [
+                    "16",
+                    "7",
+                    "115",
+                    "Mc",
+                    "#ff8"
+                ],
+                [
+                    "17",
+                    "7",
+                    "116",
+                    "Lv",
+                    "#ff8"
+                ],
+                [
+                    "18",
+                    "7",
+                    "117",
+                    "Ts",
+                    "#ff8"
+                ],
+                [
+                    "19",
+                    "7",
+                    "118",
+                    "Og",
+                    "#ff8"
+                ],
+                [
+                    "3",
+                    "6",
+                    null,
+                    "La~Yb",
+                    "#8f8"
+                ],
+                [
+                    "3",
+                    "7",
+                    null,
+                    "Ac~No",
+                    "#8f8"
+                ]
+            ],
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8,
+                "formatter":             (params) => {                if (params.value[2] == null) { return '{small|' + params.value[3] + '}';}                return params.value[2] + '\n' + params.value[3];            }            ,
+                "rich": {
+                    "small": {
+                        "fontSize": 12,
+                        "color": "#777"
+                    }
+                },
+                "richInheritPlainLabel": true,
+                "valueAnimation": false,
+                "textStyle": {
+                    "color": "#555",
+                    "fontSize": 14,
+                    "align": "center",
+                    "richInheritPlainLabel": true
+                }
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "0"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10,
+            "triggerEvent": false
+        }
+    ],
+    "tooltip": {
+        "show": false,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "displayTransition": true,
+        "textStyle": {
+            "fontSize": 14,
+            "richInheritPlainLabel": true
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "matrix": {
+        "zlevel": 0,
+        "z": 2,
+        "left": "center",
+        "width": 900,
+        "x": {
+            "show": true,
+            "data": Array.from({ length: 19 }, (_, i) => i + 1 + ''),
+            "label": {
+                "show": false,
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
+            },
+            "itemStyle": {
+                "borderWidth": 0
+            },
+            "silent": false,
+            "dividerLineStyle": {
+                "color": "#aaa",
+                "width": 0,
+                "type": "solid",
+                "dashOffset": 0,
+                "cap": "butt",
+                "join": "bevel",
+                "miterLimit": 10,
+                "opacity": 1
+            }
+        },
+        "y": {
+            "show": true,
+            "data": Array.from({ length: 10 }, (_, i) => i + 1 + ''),
+            "label": {
+                "show": false,
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
+            },
+            "itemStyle": {
+                "borderWidth": 0
+            },
+            "silent": false,
+            "dividerLineStyle": {
+                "color": "#aaa",
+                "width": 0,
+                "type": "solid",
+                "dashOffset": 0,
+                "cap": "butt",
+                "join": "bevel",
+                "miterLimit": 10,
+                "opacity": 1
+            }
+        },
+        "body": {
+            "itemStyle": {
+                "borderWidth": 0
+            },
+            "silent": false
+        },
+        "backgroundStyle": {
+            "borderColor": "#ccc",
+            "borderWidth": 0,
+            "borderType": "solid",
+            "borderRadius": 0,
+            "borderCap": "butt",
+            "borderJoin": "bevel",
+            "borderMiterLimit": 10,
+            "shadowOffsetX": 0,
+            "shadowOffsetY": 0,
+            "opacity": 1
+        }
+    }
+};
+        chart_0f8f84e8bacc40639007d104eefc85d5.setOption(option_0f8f84e8bacc40639007d104eefc85d5);
+    </script>
+</body>
+</html>

@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="7d287d0dd3f8454f9f7a275ebf6df76a" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="9c65dff446314cc5895cbdd70326ea7c" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_7d287d0dd3f8454f9f7a275ebf6df76a = echarts.init(
-            document.getElementById('7d287d0dd3f8454f9f7a275ebf6df76a'), 'white', {renderer: 'canvas'});
-        var option_7d287d0dd3f8454f9f7a275ebf6df76a = {
+        var chart_9c65dff446314cc5895cbdd70326ea7c = echarts.init(
+            document.getElementById('9c65dff446314cc5895cbdd70326ea7c'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_9c65dff446314cc5895cbdd70326ea7c = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,53 +24,41 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#ca8622",
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "bar",
             "name": "\u5546\u5bb6A",
             "legendHoverLink": true,
             "data": [
+                8,
+                6,
+                2,
+                13,
                 18,
                 27,
-                6,
+                29,
+                16,
+                16,
+                2,
+                28,
+                10,
+                20,
+                5,
+                26,
+                29,
+                15,
+                19,
+                9,
+                27,
+                30,
+                2,
+                20,
+                30,
                 20,
                 8,
                 14,
                 4,
-                25,
-                3,
-                13,
-                18,
-                16,
-                15,
-                3,
-                22,
                 23,
-                14,
-                12,
-                26,
-                7,
-                6,
-                4,
-                6,
-                27,
-                13,
-                9,
-                9,
-                9,
-                12,
                 7
             ],
             "realtimeSort": false,
@@ -88,7 +77,9 @@
             "z": 2,
             "label": {
                 "show": true,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             }
         }
     ],
@@ -105,7 +96,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -117,7 +107,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -135,8 +126,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -148,21 +141,28 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
-            "gridIndex": 0,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
             "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "show": false
                 }
             },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
             "data": [
                 "0\u5929",
                 "1\u5929",
@@ -203,22 +203,32 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
-            "gridIndex": 0,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
             "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "show": false
                 }
-            }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
         }
+    ],
+    "color": [
+        "#61a0a8"
     ],
     "title": [
         {
@@ -256,11 +266,16 @@
             "end": 80,
             "orient": "horizontal",
             "zoomLock": false,
-            "filterMode": "filter"
+            "filterMode": "filter",
+            "disabled": false,
+            "zoomOnMouseWheel": true,
+            "moveOnMouseMove": true,
+            "moveOnMouseWheel": true,
+            "preventDefaultMouseMove": true
         }
     ]
 };
-        chart_7d287d0dd3f8454f9f7a275ebf6df76a.setOption(option_7d287d0dd3f8454f9f7a275ebf6df76a);
+        chart_9c65dff446314cc5895cbdd70326ea7c.setOption(option_9c65dff446314cc5895cbdd70326ea7c);
     </script>
 </body>
 </html>

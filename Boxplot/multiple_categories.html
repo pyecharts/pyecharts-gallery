@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="ae170bf12bec45f89fbb65a4bcd8963b" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="369d0d1aadaf494e8f512887c179e047" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_ae170bf12bec45f89fbb65a4bcd8963b = echarts.init(
-            document.getElementById('ae170bf12bec45f89fbb65a4bcd8963b'), 'white', {renderer: 'canvas'});
-        var option_ae170bf12bec45f89fbb65a4bcd8963b = {
+        var chart_369d0d1aadaf494e8f512887c179e047 = echarts.init(
+            document.getElementById('369d0d1aadaf494e8f512887c179e047'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_369d0d1aadaf494e8f512887c179e047 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,26 +24,17 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "boxplot",
             "name": "category0",
+            "legendHoverLink": true,
+            "hoverAnimation": true,
             "boxWidth": [
                 7,
                 50
             ],
-            "selected_mode": false,
+            "selectedMode": false,
             "data": [
                 [
                     3.8888578346043534,
@@ -173,24 +165,23 @@
             ],
             "label": {
                 "show": true,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
-            "markPoint": {
-                "label": {
-                    "show": true,
-                    "position": "inside",
-                    "color": "#fff",
-                    "margin": 8
-                }
-            },
+            "markPoint": {},
             "markLine": {
                 "silent": false,
                 "precision": 2,
                 "label": {
                     "show": true,
-                    "margin": 8
+                    "margin": 8,
+                    "richInheritPlainLabel": true,
+                    "valueAnimation": false
                 }
             },
+            "zlevel": 0,
+            "z": 2,
             "tooltip": {
                 "show": true,
                 "trigger": "item",
@@ -206,9 +197,11 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "formatter": function(param) { return [                            'Experiment ' + param.name + ': ',                            'upper: ' + param.data[0],                            'Q1: ' + param.data[1],                            'median: ' + param.data[2],                            'Q3: ' + param.data[3],                            'lower: ' + param.data[4]                        ].join('<br/>') },
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
@@ -218,11 +211,13 @@
         {
             "type": "boxplot",
             "name": "category1",
+            "legendHoverLink": true,
+            "hoverAnimation": true,
             "boxWidth": [
                 7,
                 50
             ],
-            "selected_mode": false,
+            "selectedMode": false,
             "data": [
                 [
                     1.3866777918670525,
@@ -353,24 +348,23 @@
             ],
             "label": {
                 "show": true,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
-            "markPoint": {
-                "label": {
-                    "show": true,
-                    "position": "inside",
-                    "color": "#fff",
-                    "margin": 8
-                }
-            },
+            "markPoint": {},
             "markLine": {
                 "silent": false,
                 "precision": 2,
                 "label": {
                     "show": true,
-                    "margin": 8
+                    "margin": 8,
+                    "richInheritPlainLabel": true,
+                    "valueAnimation": false
                 }
             },
+            "zlevel": 0,
+            "z": 2,
             "tooltip": {
                 "show": true,
                 "trigger": "item",
@@ -386,9 +380,11 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "formatter": function(param) { return [                            'Experiment ' + param.name + ': ',                            'upper: ' + param.data[0],                            'Q1: ' + param.data[1],                            'median: ' + param.data[2],                            'Q3: ' + param.data[3],                            'lower: ' + param.data[4]                        ].join('<br/>') },
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
@@ -398,11 +394,13 @@
         {
             "type": "boxplot",
             "name": "category2",
+            "legendHoverLink": true,
+            "hoverAnimation": true,
             "boxWidth": [
                 7,
                 50
             ],
-            "selected_mode": false,
+            "selectedMode": false,
             "data": [
                 [
                     0.17336583192690824,
@@ -533,24 +531,23 @@
             ],
             "label": {
                 "show": true,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
-            "markPoint": {
-                "label": {
-                    "show": true,
-                    "position": "inside",
-                    "color": "#fff",
-                    "margin": 8
-                }
-            },
+            "markPoint": {},
             "markLine": {
                 "silent": false,
                 "precision": 2,
                 "label": {
                     "show": true,
-                    "margin": 8
+                    "margin": 8,
+                    "richInheritPlainLabel": true,
+                    "valueAnimation": false
                 }
             },
+            "zlevel": 0,
+            "z": 2,
             "tooltip": {
                 "show": true,
                 "trigger": "item",
@@ -566,9 +563,11 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "formatter": function(param) { return [                            'Experiment ' + param.name + ': ',                            'upper: ' + param.data[0],                            'Q1: ' + param.data[1],                            'median: ' + param.data[2],                            'Q3: ' + param.data[3],                            'lower: ' + param.data[4]                        ].join('<br/>') },
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
@@ -592,7 +591,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -604,7 +602,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -622,8 +621,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -635,25 +636,26 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 30,
-            "gridIndex": 0,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
             "axisLabel": {
                 "show": true,
                 "margin": 8,
-                "formatter": "expr {value}"
+                "formatter": "expr {value}",
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
             "boundaryGap": true,
             "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "show": false
                 }
             },
             "splitArea": {
@@ -662,6 +664,14 @@
                     "opacity": 1
                 }
             },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
             "data": [
                 "0",
                 "1",
@@ -691,21 +701,20 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
-            "gridIndex": 0,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
             "min": -400,
             "max": 600,
             "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "show": false
                 }
             },
             "splitArea": {
@@ -713,7 +722,15 @@
                 "areaStyle": {
                     "opacity": 0
                 }
-            }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
         }
     ],
     "title": [
@@ -741,7 +758,12 @@
             "end": 20,
             "orient": "horizontal",
             "zoomLock": false,
-            "filterMode": "filter"
+            "filterMode": "filter",
+            "disabled": false,
+            "zoomOnMouseWheel": true,
+            "moveOnMouseMove": true,
+            "moveOnMouseWheel": true,
+            "preventDefaultMouseMove": true
         },
         {
             "show": true,
@@ -758,7 +780,7 @@
         }
     ]
 };
-        chart_ae170bf12bec45f89fbb65a4bcd8963b.setOption(option_ae170bf12bec45f89fbb65a4bcd8963b);
+        chart_369d0d1aadaf494e8f512887c179e047.setOption(option_369d0d1aadaf494e8f512887c179e047);
     </script>
 </body>
 </html>

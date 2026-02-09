@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="a4c6e95eea884a43b6d34b2a62a3e1cf" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="4c9b236cfd284403807b7d33e2e18246" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_a4c6e95eea884a43b6d34b2a62a3e1cf = echarts.init(
-            document.getElementById('a4c6e95eea884a43b6d34b2a62a3e1cf'), 'white', {renderer: 'canvas'});
-        var option_a4c6e95eea884a43b6d34b2a62a3e1cf = {
+        var chart_4c9b236cfd284403807b7d33e2e18246 = echarts.init(
+            document.getElementById('4c9b236cfd284403807b7d33e2e18246'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_4c9b236cfd284403807b7d33e2e18246 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,17 +24,6 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "gauge",
@@ -139,7 +129,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -151,7 +140,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -169,8 +159,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -190,7 +182,7 @@
         }
     ]
 };
-        chart_a4c6e95eea884a43b6d34b2a62a3e1cf.setOption(option_a4c6e95eea884a43b6d34b2a62a3e1cf);
+        chart_4c9b236cfd284403807b7d33e2e18246.setOption(option_4c9b236cfd284403807b7d33e2e18246);
     </script>
 </body>
 </html>

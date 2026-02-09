@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="be58d048198949c1bee9d40c23a74a58" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="d6681a87c5104814b49f307d707428db" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_be58d048198949c1bee9d40c23a74a58 = echarts.init(
-            document.getElementById('be58d048198949c1bee9d40c23a74a58'), 'white', {renderer: 'canvas'});
-        var option_be58d048198949c1bee9d40c23a74a58 = {
+        var chart_d6681a87c5104814b49f307d707428db = echarts.init(
+            document.getElementById('d6681a87c5104814b49f307d707428db'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_d6681a87c5104814b49f307d707428db = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,17 +24,6 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "pie",
@@ -82,7 +72,9 @@
                 "show": true,
                 "position": "center",
                 "margin": 8,
-                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    ,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "labelLine": {
                 "show": true,
@@ -141,7 +133,9 @@
                 "show": true,
                 "position": "center",
                 "margin": 8,
-                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    ,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "labelLine": {
                 "show": true,
@@ -200,7 +194,9 @@
                 "show": true,
                 "position": "center",
                 "margin": 8,
-                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    ,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "labelLine": {
                 "show": true,
@@ -259,7 +255,9 @@
                 "show": true,
                 "position": "center",
                 "margin": 8,
-                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+                "formatter":     function(params) {        if(params.name == '\u5176\u4ed6')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    ,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "labelLine": {
                 "show": true,
@@ -293,7 +291,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -305,7 +302,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -323,8 +321,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -344,7 +344,7 @@
         }
     ]
 };
-        chart_be58d048198949c1bee9d40c23a74a58.setOption(option_be58d048198949c1bee9d40c23a74a58);
+        chart_d6681a87c5104814b49f307d707428db.setOption(option_d6681a87c5104814b49f307d707428db);
     </script>
 </body>
 </html>
