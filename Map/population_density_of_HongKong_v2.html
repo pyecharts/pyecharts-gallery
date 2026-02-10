@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/xianggang.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/maps/xianggang.js"></script>
 
+    
 </head>
 <body >
-    <div id="67bd6c3d1f9e42188e1dc1264c0c234a" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="a886e57e91d8415dbb635b762a9891d2" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_67bd6c3d1f9e42188e1dc1264c0c234a = echarts.init(
-            document.getElementById('67bd6c3d1f9e42188e1dc1264c0c234a'), 'white', {renderer: 'canvas'});
-        var option_67bd6c3d1f9e42188e1dc1264c0c234a = {
+        var chart_a886e57e91d8415dbb635b762a9891d2 = echarts.init(
+            document.getElementById('a886e57e91d8415dbb635b762a9891d2'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_a886e57e91d8415dbb635b762a9891d2 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -24,24 +25,15 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "map",
             "name": "\u9999\u6e2f18\u533a\u4eba\u53e3\u5bc6\u5ea6",
             "label": {
                 "show": true,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "map": "\u9999\u6e2f",
             "data": [
@@ -145,14 +137,12 @@
             },
             "zlevel": 0,
             "z": 2,
-            "left": "auto",
-            "top": "auto",
-            "right": "auto",
-            "bottom": "auto",
             "seriesLayoutBy": "column",
             "datasetIndex": 0,
             "mapValueCalculation": "sum",
             "showLegendSymbol": false,
+            "preserveAspect": false,
+            "clip": false,
             "emphasis": {}
         }
     ],
@@ -169,7 +159,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -181,7 +170,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -199,9 +189,11 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "formatter": "{b}<br/>{c} (p / km2)",
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -250,7 +242,7 @@
         "borderWidth": 0
     }
 };
-        chart_67bd6c3d1f9e42188e1dc1264c0c234a.setOption(option_67bd6c3d1f9e42188e1dc1264c0c234a);
+        chart_a886e57e91d8415dbb635b762a9891d2.setOption(option_a886e57e91d8415dbb635b762a9891d2);
     </script>
 </body>
 </html>

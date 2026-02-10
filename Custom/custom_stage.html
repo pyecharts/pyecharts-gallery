@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts-x/stage/index.auto.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="a439276129eb4c0aa4b0fe08f681c23f" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_a439276129eb4c0aa4b0fe08f681c23f = echarts.init(
+            document.getElementById('a439276129eb4c0aa4b0fe08f681c23f'), 'white', {renderer: 'canvas', locale: 'ZH'});
+            
+function formatTime(time) {
+    const minutes = time.getMinutes();
+    const minStr = minutes < 10 ? '0' + minutes : minutes;
+    return time.getHours() + ':' + minStr;
+}
+
+        var option_a439276129eb4c0aa4b0fe08f681c23f = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "series": [
+        {
+            "type": "custom",
+            "name": "custom",
+            "renderItem": "stage",
+            "colorBy": "data",
+            "legendHoverLink": true,
+            "coordinateSystem": "cartesian2d",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "polarIndex": 0,
+            "geoIndex": 0,
+            "calendarIndex": 0,
+            "datasetIndex": 0,
+            "seriesLayoutBy": "column",
+            "selectedMode": false,
+            "encode": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": 2,
+                "tooltip": [
+                    0,
+                    1
+                ]
+            },
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "itemPayload": {
+                "envelope": {}
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "custom"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10,
+            "triggerEvent": false
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "displayTransition": true,
+        "valueFormatter": (params) => {return formatTime(params[0]) + '-' + formatTime(params[1])},
+        "textStyle": {
+            "fontSize": 14,
+            "richInheritPlainLabel": true
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "type": "time",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
+            "axisLabel": {
+                "show": true,
+                "color": "#c6c6c6",
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "min": (value) => {return Math.floor(value.min / (60 * 60 * 1000)) * 60 * 60 * 1000;},
+            "max": (value) => {return Math.ceil(value.max / (60 * 60 * 1000)) * 60 * 60 * 1000;},
+            "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": false,
+                    "opacity": 0.8,
+                    "type": "dashed"
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "category",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0,
+                "lineStyle": {
+                    "show": false,
+                    "color": "#ccc"
+                }
+            },
+            "axisTick": {
+                "show": false,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "axisLabel": {
+                "show": false,
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": false
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
+        }
+    ],
+    "dataset": [
+        {
+            "source": [
+                [
+                    new Date('2024-09-07 06:12'),
+                    new Date('2024-09-07 06:12'),
+                    "Awake"
+                ],
+                [
+                    new Date('2024-09-07 06:15'),
+                    new Date('2024-09-07 06:18'),
+                    "Awake"
+                ],
+                [
+                    new Date('2024-09-07 08:59'),
+                    new Date('2024-09-07 09:00'),
+                    "Awake"
+                ],
+                [
+                    new Date('2024-09-07 05:45'),
+                    new Date('2024-09-07 06:12'),
+                    "REM"
+                ],
+                [
+                    new Date('2024-09-07 07:37'),
+                    new Date('2024-09-07 07:56'),
+                    "REM"
+                ],
+                [
+                    new Date('2024-09-07 08:56'),
+                    new Date('2024-09-07 08:59'),
+                    "REM"
+                ],
+                [
+                    new Date('2024-09-07 09:08'),
+                    new Date('2024-09-07 09:29'),
+                    "REM"
+                ],
+                [
+                    new Date('2024-09-07 05:45'),
+                    new Date('2024-09-07 06:12'),
+                    "REM"
+                ],
+                [
+                    new Date('2024-09-07 03:12'),
+                    new Date('2024-09-07 03:27'),
+                    "Core"
+                ],
+                [
+                    new Date('2024-09-07 04:02'),
+                    new Date('2024-09-07 04:36'),
+                    "Core"
+                ],
+                [
+                    new Date('2024-09-07 04:40'),
+                    new Date('2024-09-07 04:48'),
+                    "Core"
+                ],
+                [
+                    new Date('2024-09-07 04:57'),
+                    new Date('2024-09-07 05:45'),
+                    "Core"
+                ],
+                [
+                    new Date('2024-09-07 06:12'),
+                    new Date('2024-09-07 06:15'),
+                    "Core"
+                ],
+                [
+                    new Date('2024-09-07 06:18'),
+                    new Date('2024-09-07 07:37'),
+                    "Core"
+                ],
+                [
+                    new Date('2024-09-07 07:56'),
+                    new Date('2024-09-07 08:56'),
+                    "Core"
+                ],
+                [
+                    new Date('2024-09-07 09:00'),
+                    new Date('2024-09-07 09:08'),
+                    "Core"
+                ],
+                [
+                    new Date('2024-09-07 09:29'),
+                    new Date('2024-09-07 10:41'),
+                    "Core"
+                ],
+                [
+                    new Date('2024-09-07 03:27'),
+                    new Date('2024-09-07 04:02'),
+                    "Deep"
+                ],
+                [
+                    new Date('2024-09-07 04:36'),
+                    new Date('2024-09-07 04:40'),
+                    "Deep"
+                ],
+                [
+                    new Date('2024-09-07 04:48'),
+                    new Date('2024-09-07 04:57'),
+                    "Deep"
+                ]
+            ]
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "visualMap": {
+        "show": false,
+        "type": "piecewise",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": {
+                "3": "#35349D",
+                "2": "#3478F6",
+                "1": "#59AAE1",
+                "0": "#EF8872"
+            }
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "dimension": 2,
+        "seriesIndex": 0,
+        "hoverLink": true,
+        "orient": "vertical",
+        "padding": 5,
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "outOfRange": {
+            "color": "#61E6E1"
+        },
+        "borderWidth": 0,
+        "categories": [
+            0,
+            1,
+            2,
+            3
+        ]
+    }
+};
+        chart_a439276129eb4c0aa4b0fe08f681c23f.setOption(option_a439276129eb4c0aa4b0fe08f681c23f);
+    </script>
+</body>
+</html>

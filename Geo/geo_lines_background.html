@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/maps/china.js"></script>
 
+    
 </head>
 <body >
-    <div id="199c3ad6e8264724847666b69a5f9df2" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="93b092642bf14fffb74e30078dc886b7" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_199c3ad6e8264724847666b69a5f9df2 = echarts.init(
-            document.getElementById('199c3ad6e8264724847666b69a5f9df2'), 'white', {renderer: 'canvas'});
-        var option_199c3ad6e8264724847666b69a5f9df2 = {
+        var chart_93b092642bf14fffb74e30078dc886b7 = echarts.init(
+            document.getElementById('93b092642bf14fffb74e30078dc886b7'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_93b092642bf14fffb74e30078dc886b7 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -24,18 +25,6 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "white",
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "effectScatter",
@@ -84,7 +73,9 @@
             ],
             "label": {
                 "show": false,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             }
         },
         {
@@ -166,15 +157,14 @@
                 }
             ],
             "lineStyle": {
-                "show": true,
-                "width": 1,
-                "opacity": 1,
-                "curveness": 0.2,
-                "type": "solid"
+                "show": false,
+                "curveness": 0.2
             },
             "label": {
                 "show": false,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "rippleEffect": {
                 "show": true,
@@ -198,7 +188,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -210,7 +199,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -228,9 +218,11 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -259,10 +251,15 @@
             "color": "#323c48",
             "borderColor": "#111"
         },
-        "emphasis": {}
-    }
+        "emphasis": {},
+        "preserveAspect": false,
+        "clip": false
+    },
+    "color": [
+        "white"
+    ]
 };
-        chart_199c3ad6e8264724847666b69a5f9df2.setOption(option_199c3ad6e8264724847666b69a5f9df2);
+        chart_93b092642bf14fffb74e30078dc886b7.setOption(option_93b092642bf14fffb74e30078dc886b7);
     </script>
 </body>
 </html>

@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="89e8b2e208244fa4912bc20979b52fd0" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="508ac407b64c4e79b707eb3c7d4201b5" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_89e8b2e208244fa4912bc20979b52fd0 = echarts.init(
-            document.getElementById('89e8b2e208244fa4912bc20979b52fd0'), 'white', {renderer: 'canvas'});
-        var option_89e8b2e208244fa4912bc20979b52fd0 = {
+        var chart_508ac407b64c4e79b707eb3c7d4201b5 = echarts.init(
+            document.getElementById('508ac407b64c4e79b707eb3c7d4201b5'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_508ac407b64c4e79b707eb3c7d4201b5 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,53 +24,41 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#6d8346",
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "bar",
             "name": "\u5546\u5bb6A",
             "legendHoverLink": true,
             "data": [
-                27,
-                9,
-                19,
-                17,
-                29,
-                23,
-                19,
                 6,
-                1,
-                18,
-                28,
-                16,
-                29,
-                1,
-                18,
-                9,
+                5,
+                23,
+                26,
                 25,
-                6,
-                13,
                 3,
-                1,
-                23,
-                13,
-                7,
-                14,
-                22,
+                6,
                 27,
-                1,
+                15,
+                22,
+                5,
+                27,
+                22,
+                6,
+                16,
+                21,
+                17,
+                5,
+                17,
+                28,
+                21,
+                16,
+                5,
+                4,
                 12,
+                26,
+                22,
+                13,
+                20,
                 12
             ],
             "realtimeSort": false,
@@ -88,7 +77,9 @@
             "z": 2,
             "label": {
                 "show": true,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             }
         }
     ],
@@ -105,7 +96,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -117,7 +107,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -135,8 +126,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -148,21 +141,28 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
-            "gridIndex": 0,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
             "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "show": false
                 }
             },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
             "data": [
                 "0\u5929",
                 "1\u5929",
@@ -203,22 +203,32 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
-            "gridIndex": 0,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
             "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
             "splitLine": {
                 "show": true,
                 "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "show": false
                 }
-            }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
         }
+    ],
+    "color": [
+        "#2f4554"
     ],
     "title": [
         {
@@ -243,10 +253,15 @@
         "end": 80,
         "orient": "horizontal",
         "zoomLock": false,
-        "filterMode": "filter"
+        "filterMode": "filter",
+        "disabled": false,
+        "zoomOnMouseWheel": true,
+        "moveOnMouseMove": true,
+        "moveOnMouseWheel": true,
+        "preventDefaultMouseMove": true
     }
 };
-        chart_89e8b2e208244fa4912bc20979b52fd0.setOption(option_89e8b2e208244fa4912bc20979b52fd0);
+        chart_508ac407b64c4e79b707eb3c7d4201b5.setOption(option_508ac407b64c4e79b707eb3c7d4201b5);
     </script>
 </body>
 </html>

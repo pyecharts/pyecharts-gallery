@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/china.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/maps/china.js"></script>
 
+    
 </head>
 <body >
-    <div id="b0f0aad41677489385b5562223992226" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="1dc74d21e4734dc489e61c3ecf9735a1" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_b0f0aad41677489385b5562223992226 = echarts.init(
-            document.getElementById('b0f0aad41677489385b5562223992226'), 'white', {renderer: 'canvas'});
-        var option_b0f0aad41677489385b5562223992226 = {
+        var chart_1dc74d21e4734dc489e61c3ecf9735a1 = echarts.init(
+            document.getElementById('1dc74d21e4734dc489e61c3ecf9735a1'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_1dc74d21e4734dc489e61c3ecf9735a1 = {
     "baseOption": {
         "series": [
             {
@@ -20,37 +21,39 @@
                 "name": "\u5546\u5bb6A",
                 "label": {
                     "show": true,
-                    "margin": 8
+                    "margin": 8,
+                    "richInheritPlainLabel": true,
+                    "valueAnimation": false
                 },
                 "map": "china",
                 "data": [
                     {
                         "name": "\u5e7f\u4e1c\u7701",
-                        "value": 60
+                        "value": 97
                     },
                     {
                         "name": "\u5317\u4eac\u5e02",
-                        "value": 141
+                        "value": 46
                     },
                     {
                         "name": "\u4e0a\u6d77\u5e02",
-                        "value": 133
+                        "value": 98
                     },
                     {
                         "name": "\u6c5f\u897f\u7701",
-                        "value": 54
+                        "value": 137
                     },
                     {
                         "name": "\u6e56\u5357\u7701",
-                        "value": 67
+                        "value": 144
                     },
                     {
                         "name": "\u6d59\u6c5f\u7701",
-                        "value": 113
+                        "value": 150
                     },
                     {
                         "name": "\u6c5f\u82cf\u7701",
-                        "value": 134
+                        "value": 56
                     }
                 ],
                 "roam": true,
@@ -60,14 +63,12 @@
                 "zoom": 1,
                 "zlevel": 0,
                 "z": 2,
-                "left": "auto",
-                "top": "auto",
-                "right": "auto",
-                "bottom": "auto",
                 "seriesLayoutBy": "column",
                 "datasetIndex": 0,
                 "mapValueCalculation": "sum",
                 "showLegendSymbol": true,
+                "preserveAspect": false,
+                "clip": false,
                 "emphasis": {}
             }
         ],
@@ -113,7 +114,35 @@
             "itemWidth": 20,
             "itemHeight": 140,
             "borderWidth": 0
-        }
+        },
+        "legend": [
+            {
+                "data": [
+                    "\u5546\u5bb6A"
+                ],
+                "selected": {},
+                "show": true,
+                "padding": 5,
+                "itemGap": 10,
+                "itemWidth": 25,
+                "itemHeight": 14,
+                "backgroundColor": "transparent",
+                "borderColor": "#ccc",
+                "borderRadius": 0,
+                "pageButtonItemGap": 5,
+                "pageButtonPosition": "end",
+                "pageFormatter": "{current}/{total}",
+                "pageIconColor": "#2f4554",
+                "pageIconInactiveColor": "#aaa",
+                "pageIconSize": 15,
+                "animationDurationUpdate": 800,
+                "selector": false,
+                "selectorPosition": "auto",
+                "selectorItemGap": 7,
+                "selectorButtonGap": 10,
+                "triggerEvent": false
+            }
+        ]
     },
     "options": [
         {
@@ -130,7 +159,6 @@
                     "itemHeight": 14,
                     "backgroundColor": "transparent",
                     "borderColor": "#ccc",
-                    "borderWidth": 1,
                     "borderRadius": 0,
                     "pageButtonItemGap": 5,
                     "pageButtonPosition": "end",
@@ -142,7 +170,8 @@
                     "selector": false,
                     "selectorPosition": "auto",
                     "selectorItemGap": 7,
-                    "selectorButtonGap": 10
+                    "selectorButtonGap": 10,
+                    "triggerEvent": false
                 }
             ],
             "series": [
@@ -151,37 +180,39 @@
                     "name": "\u5546\u5bb6A",
                     "label": {
                         "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     },
                     "map": "china",
                     "data": [
                         {
                             "name": "\u5e7f\u4e1c\u7701",
-                            "value": 137
+                            "value": 125
                         },
                         {
                             "name": "\u5317\u4eac\u5e02",
-                            "value": 94
+                            "value": 114
                         },
                         {
                             "name": "\u4e0a\u6d77\u5e02",
-                            "value": 112
+                            "value": 62
                         },
                         {
                             "name": "\u6c5f\u897f\u7701",
-                            "value": 117
+                            "value": 71
                         },
                         {
                             "name": "\u6e56\u5357\u7701",
-                            "value": 96
+                            "value": 53
                         },
                         {
                             "name": "\u6d59\u6c5f\u7701",
-                            "value": 20
+                            "value": 37
                         },
                         {
                             "name": "\u6c5f\u82cf\u7701",
-                            "value": 38
+                            "value": 71
                         }
                     ],
                     "roam": true,
@@ -191,14 +222,12 @@
                     "zoom": 1,
                     "zlevel": 0,
                     "z": 2,
-                    "left": "auto",
-                    "top": "auto",
-                    "right": "auto",
-                    "bottom": "auto",
                     "seriesLayoutBy": "column",
                     "datasetIndex": 0,
                     "mapValueCalculation": "sum",
                     "showLegendSymbol": true,
+                    "preserveAspect": false,
+                    "clip": false,
                     "emphasis": {}
                 }
             ],
@@ -230,8 +259,10 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
@@ -259,18 +290,7 @@
                 "itemWidth": 20,
                 "itemHeight": 140,
                 "borderWidth": 0
-            },
-            "color": [
-                "#5470c6",
-                "#91cc75",
-                "#fac858",
-                "#ee6666",
-                "#73c0de",
-                "#3ba272",
-                "#fc8452",
-                "#9a60b4",
-                "#ea7ccc"
-            ]
+            }
         },
         {
             "legend": [
@@ -286,7 +306,6 @@
                     "itemHeight": 14,
                     "backgroundColor": "transparent",
                     "borderColor": "#ccc",
-                    "borderWidth": 1,
                     "borderRadius": 0,
                     "pageButtonItemGap": 5,
                     "pageButtonPosition": "end",
@@ -298,7 +317,8 @@
                     "selector": false,
                     "selectorPosition": "auto",
                     "selectorItemGap": 7,
-                    "selectorButtonGap": 10
+                    "selectorButtonGap": 10,
+                    "triggerEvent": false
                 }
             ],
             "series": [
@@ -307,37 +327,39 @@
                     "name": "\u5546\u5bb6A",
                     "label": {
                         "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     },
                     "map": "china",
                     "data": [
                         {
                             "name": "\u5e7f\u4e1c\u7701",
-                            "value": 41
+                            "value": 133
                         },
                         {
                             "name": "\u5317\u4eac\u5e02",
-                            "value": 47
+                            "value": 26
                         },
                         {
                             "name": "\u4e0a\u6d77\u5e02",
-                            "value": 134
+                            "value": 129
                         },
                         {
                             "name": "\u6c5f\u897f\u7701",
-                            "value": 108
+                            "value": 119
                         },
                         {
                             "name": "\u6e56\u5357\u7701",
-                            "value": 102
+                            "value": 60
                         },
                         {
                             "name": "\u6d59\u6c5f\u7701",
-                            "value": 75
+                            "value": 140
                         },
                         {
                             "name": "\u6c5f\u82cf\u7701",
-                            "value": 96
+                            "value": 114
                         }
                     ],
                     "roam": true,
@@ -347,14 +369,12 @@
                     "zoom": 1,
                     "zlevel": 0,
                     "z": 2,
-                    "left": "auto",
-                    "top": "auto",
-                    "right": "auto",
-                    "bottom": "auto",
                     "seriesLayoutBy": "column",
                     "datasetIndex": 0,
                     "mapValueCalculation": "sum",
                     "showLegendSymbol": true,
+                    "preserveAspect": false,
+                    "clip": false,
                     "emphasis": {}
                 }
             ],
@@ -386,8 +406,10 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
@@ -415,18 +437,7 @@
                 "itemWidth": 20,
                 "itemHeight": 140,
                 "borderWidth": 0
-            },
-            "color": [
-                "#5470c6",
-                "#91cc75",
-                "#fac858",
-                "#ee6666",
-                "#73c0de",
-                "#3ba272",
-                "#fc8452",
-                "#9a60b4",
-                "#ea7ccc"
-            ]
+            }
         },
         {
             "legend": [
@@ -442,7 +453,6 @@
                     "itemHeight": 14,
                     "backgroundColor": "transparent",
                     "borderColor": "#ccc",
-                    "borderWidth": 1,
                     "borderRadius": 0,
                     "pageButtonItemGap": 5,
                     "pageButtonPosition": "end",
@@ -454,7 +464,8 @@
                     "selector": false,
                     "selectorPosition": "auto",
                     "selectorItemGap": 7,
-                    "selectorButtonGap": 10
+                    "selectorButtonGap": 10,
+                    "triggerEvent": false
                 }
             ],
             "series": [
@@ -463,37 +474,39 @@
                     "name": "\u5546\u5bb6A",
                     "label": {
                         "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     },
                     "map": "china",
                     "data": [
                         {
                             "name": "\u5e7f\u4e1c\u7701",
-                            "value": 110
+                            "value": 71
                         },
                         {
                             "name": "\u5317\u4eac\u5e02",
-                            "value": 145
+                            "value": 121
                         },
                         {
                             "name": "\u4e0a\u6d77\u5e02",
-                            "value": 68
+                            "value": 23
                         },
                         {
                             "name": "\u6c5f\u897f\u7701",
-                            "value": 57
+                            "value": 114
                         },
                         {
                             "name": "\u6e56\u5357\u7701",
-                            "value": 72
+                            "value": 133
                         },
                         {
                             "name": "\u6d59\u6c5f\u7701",
-                            "value": 119
+                            "value": 147
                         },
                         {
                             "name": "\u6c5f\u82cf\u7701",
-                            "value": 132
+                            "value": 59
                         }
                     ],
                     "roam": true,
@@ -503,14 +516,12 @@
                     "zoom": 1,
                     "zlevel": 0,
                     "z": 2,
-                    "left": "auto",
-                    "top": "auto",
-                    "right": "auto",
-                    "bottom": "auto",
                     "seriesLayoutBy": "column",
                     "datasetIndex": 0,
                     "mapValueCalculation": "sum",
                     "showLegendSymbol": true,
+                    "preserveAspect": false,
+                    "clip": false,
                     "emphasis": {}
                 }
             ],
@@ -542,8 +553,10 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
@@ -571,18 +584,7 @@
                 "itemWidth": 20,
                 "itemHeight": 140,
                 "borderWidth": 0
-            },
-            "color": [
-                "#5470c6",
-                "#91cc75",
-                "#fac858",
-                "#ee6666",
-                "#73c0de",
-                "#3ba272",
-                "#fc8452",
-                "#9a60b4",
-                "#ea7ccc"
-            ]
+            }
         },
         {
             "legend": [
@@ -598,7 +600,6 @@
                     "itemHeight": 14,
                     "backgroundColor": "transparent",
                     "borderColor": "#ccc",
-                    "borderWidth": 1,
                     "borderRadius": 0,
                     "pageButtonItemGap": 5,
                     "pageButtonPosition": "end",
@@ -610,7 +611,8 @@
                     "selector": false,
                     "selectorPosition": "auto",
                     "selectorItemGap": 7,
-                    "selectorButtonGap": 10
+                    "selectorButtonGap": 10,
+                    "triggerEvent": false
                 }
             ],
             "series": [
@@ -619,37 +621,39 @@
                     "name": "\u5546\u5bb6A",
                     "label": {
                         "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     },
                     "map": "china",
                     "data": [
                         {
                             "name": "\u5e7f\u4e1c\u7701",
-                            "value": 139
+                            "value": 69
                         },
                         {
                             "name": "\u5317\u4eac\u5e02",
-                            "value": 26
+                            "value": 132
                         },
                         {
                             "name": "\u4e0a\u6d77\u5e02",
-                            "value": 85
+                            "value": 148
                         },
                         {
                             "name": "\u6c5f\u897f\u7701",
-                            "value": 91
+                            "value": 125
                         },
                         {
                             "name": "\u6e56\u5357\u7701",
-                            "value": 76
+                            "value": 22
                         },
                         {
                             "name": "\u6d59\u6c5f\u7701",
-                            "value": 106
+                            "value": 55
                         },
                         {
                             "name": "\u6c5f\u82cf\u7701",
-                            "value": 95
+                            "value": 24
                         }
                     ],
                     "roam": true,
@@ -659,14 +663,12 @@
                     "zoom": 1,
                     "zlevel": 0,
                     "z": 2,
-                    "left": "auto",
-                    "top": "auto",
-                    "right": "auto",
-                    "bottom": "auto",
                     "seriesLayoutBy": "column",
                     "datasetIndex": 0,
                     "mapValueCalculation": "sum",
                     "showLegendSymbol": true,
+                    "preserveAspect": false,
+                    "clip": false,
                     "emphasis": {}
                 }
             ],
@@ -698,8 +700,10 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
@@ -727,18 +731,7 @@
                 "itemWidth": 20,
                 "itemHeight": 140,
                 "borderWidth": 0
-            },
-            "color": [
-                "#5470c6",
-                "#91cc75",
-                "#fac858",
-                "#ee6666",
-                "#73c0de",
-                "#3ba272",
-                "#fc8452",
-                "#9a60b4",
-                "#ea7ccc"
-            ]
+            }
         },
         {
             "legend": [
@@ -754,7 +747,6 @@
                     "itemHeight": 14,
                     "backgroundColor": "transparent",
                     "borderColor": "#ccc",
-                    "borderWidth": 1,
                     "borderRadius": 0,
                     "pageButtonItemGap": 5,
                     "pageButtonPosition": "end",
@@ -766,7 +758,8 @@
                     "selector": false,
                     "selectorPosition": "auto",
                     "selectorItemGap": 7,
-                    "selectorButtonGap": 10
+                    "selectorButtonGap": 10,
+                    "triggerEvent": false
                 }
             ],
             "series": [
@@ -775,37 +768,39 @@
                     "name": "\u5546\u5bb6A",
                     "label": {
                         "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     },
                     "map": "china",
                     "data": [
                         {
                             "name": "\u5e7f\u4e1c\u7701",
-                            "value": 60
+                            "value": 97
                         },
                         {
                             "name": "\u5317\u4eac\u5e02",
-                            "value": 141
+                            "value": 46
                         },
                         {
                             "name": "\u4e0a\u6d77\u5e02",
-                            "value": 133
+                            "value": 98
                         },
                         {
                             "name": "\u6c5f\u897f\u7701",
-                            "value": 54
+                            "value": 137
                         },
                         {
                             "name": "\u6e56\u5357\u7701",
-                            "value": 67
+                            "value": 144
                         },
                         {
                             "name": "\u6d59\u6c5f\u7701",
-                            "value": 113
+                            "value": 150
                         },
                         {
                             "name": "\u6c5f\u82cf\u7701",
-                            "value": 134
+                            "value": 56
                         }
                     ],
                     "roam": true,
@@ -815,14 +810,12 @@
                     "zoom": 1,
                     "zlevel": 0,
                     "z": 2,
-                    "left": "auto",
-                    "top": "auto",
-                    "right": "auto",
-                    "bottom": "auto",
                     "seriesLayoutBy": "column",
                     "datasetIndex": 0,
                     "mapValueCalculation": "sum",
                     "showLegendSymbol": true,
+                    "preserveAspect": false,
+                    "clip": false,
                     "emphasis": {}
                 }
             ],
@@ -854,8 +847,10 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
@@ -883,22 +878,11 @@
                 "itemWidth": 20,
                 "itemHeight": 140,
                 "borderWidth": 0
-            },
-            "color": [
-                "#5470c6",
-                "#91cc75",
-                "#fac858",
-                "#ee6666",
-                "#73c0de",
-                "#3ba272",
-                "#fc8452",
-                "#9a60b4",
-                "#ea7ccc"
-            ]
+            }
         }
     ]
 };
-        chart_b0f0aad41677489385b5562223992226.setOption(option_b0f0aad41677489385b5562223992226);
+        chart_1dc74d21e4734dc489e61c3ecf9735a1.setOption(option_1dc74d21e4734dc489e61c3ecf9735a1);
     </script>
 </body>
 </html>

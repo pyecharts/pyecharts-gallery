@@ -6,7 +6,7 @@ from pyecharts.commons.utils import JsCode
 from pyecharts.charts import Timeline, Grid, Bar, Map, Pie, Line
 
 """
-Gallery 使用 pyecharts 1.3.0
+Gallery 使用 pyecharts 2.1.0
 From pyecharts 交流分享群 -- 郭昱
 """
 data = [

@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/guangdong.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/maps/guangdong.js"></script>
 
+    
 </head>
 <body >
-    <div id="f133a26012c34531891afa49c6ecf05f" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="91e3b4945a744ae6b0ee65774f209f77" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_f133a26012c34531891afa49c6ecf05f = echarts.init(
-            document.getElementById('f133a26012c34531891afa49c6ecf05f'), 'white', {renderer: 'canvas'});
-        var option_f133a26012c34531891afa49c6ecf05f = {
+        var chart_91e3b4945a744ae6b0ee65774f209f77 = echarts.init(
+            document.getElementById('91e3b4945a744ae6b0ee65774f209f77'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_91e3b4945a744ae6b0ee65774f209f77 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -24,54 +25,45 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "map",
             "name": "\u5546\u5bb6A",
             "label": {
                 "show": true,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "map": "\u5e7f\u4e1c",
             "data": [
                 {
                     "name": "\u6c55\u5934\u5e02",
-                    "value": 49
+                    "value": 147
                 },
                 {
                     "name": "\u6c55\u5c3e\u5e02",
-                    "value": 98
+                    "value": 79
                 },
                 {
                     "name": "\u63ed\u9633\u5e02",
-                    "value": 57
+                    "value": 134
                 },
                 {
                     "name": "\u9633\u6c5f\u5e02",
-                    "value": 69
+                    "value": 67
                 },
                 {
                     "name": "\u8087\u5e86\u5e02",
-                    "value": 61
+                    "value": 146
                 },
                 {
                     "name": "\u5e7f\u5dde\u5e02",
-                    "value": 65
+                    "value": 44
                 },
                 {
                     "name": "\u60e0\u5dde\u5e02",
-                    "value": 97
+                    "value": 48
                 }
             ],
             "roam": true,
@@ -81,14 +73,12 @@
             "zoom": 1,
             "zlevel": 0,
             "z": 2,
-            "left": "auto",
-            "top": "auto",
-            "right": "auto",
-            "bottom": "auto",
             "seriesLayoutBy": "column",
             "datasetIndex": 0,
             "mapValueCalculation": "sum",
             "showLegendSymbol": true,
+            "preserveAspect": false,
+            "clip": false,
             "emphasis": {}
         }
     ],
@@ -105,7 +95,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -117,7 +106,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -135,8 +125,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -179,7 +171,7 @@
         "borderWidth": 0
     }
 };
-        chart_f133a26012c34531891afa49c6ecf05f.setOption(option_f133a26012c34531891afa49c6ecf05f);
+        chart_91e3b4945a744ae6b0ee65774f209f77.setOption(option_91e3b4945a744ae6b0ee65774f209f77);
     </script>
 </body>
 </html>

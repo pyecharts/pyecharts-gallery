@@ -2,6 +2,7 @@
 - [Bar - Bar_rotate_xaxis_label](Bar/bar_rotate_xaxis_label.md ':type=code')
 - [Bar - Bar_stack0](Bar/bar_stack0.md ':type=code')
 - [Bar - Finance_indices_2002](Bar/finance_indices_2002.md ':type=code')
+- [Bar - Bar_break](Bar/bar_break.md ':type=code')
 - [Bar - Bar_base_dict_config](Bar/bar_base_dict_config.md ':type=code')
 - [Bar - Bar_with_brush](Bar/bar_with_brush.md ':type=code')
 - [Bar - Bar_datazoom_slider](Bar/bar_datazoom_slider.md ':type=code')

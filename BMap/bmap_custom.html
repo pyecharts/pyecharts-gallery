@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/bmap.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/bmap.min.js"></script>
             <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=FAKE_AK"></script>
             <script type="text/javascript" src="https://api.map.baidu.com/getscript?v=2.0&ak=FAKE_AK"></script>
 
+    
 </head>
 <body >
-    <div id="a5241c07b8cf438ba7f8cc825c0512b6" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="9f78010099c6453ea3ab16494ee3c15d" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_a5241c07b8cf438ba7f8cc825c0512b6 = echarts.init(
-            document.getElementById('a5241c07b8cf438ba7f8cc825c0512b6'), 'white', {renderer: 'canvas'});
+        var chart_9f78010099c6453ea3ab16494ee3c15d = echarts.init(
+            document.getElementById('9f78010099c6453ea3ab16494ee3c15d'), 'white', {renderer: 'canvas', locale: 'ZH'});
             
     var lngExtent = [39.5, 40.6];
     var latExtent = [115.9, 116.8];
@@ -54,7 +55,7 @@
         ]));
     }
     
-        var option_a5241c07b8cf438ba7f8cc825c0512b6 = {
+        var option_9f78010099c6453ea3ab16494ee3c15d = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -66,17 +67,6 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "custom",
@@ -12607,7 +12597,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -12619,7 +12608,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -12637,8 +12627,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -12767,6 +12759,7 @@
                         "x": 0,
                         "y": 0,
                         "font": "bold 26px Microsoft YaHei",
+                        "fontSize": 0,
                         "textAlign": "left",
                         "fill": "#fff",
                         "line_width": 0
@@ -12915,8 +12908,8 @@
         }
     }
 };
-        chart_a5241c07b8cf438ba7f8cc825c0512b6.setOption(option_a5241c07b8cf438ba7f8cc825c0512b6);
-            var bmap = chart_a5241c07b8cf438ba7f8cc825c0512b6.getModel().getComponent('bmap').getBMap();
+        chart_9f78010099c6453ea3ab16494ee3c15d.setOption(option_9f78010099c6453ea3ab16494ee3c15d);
+                var bmap = chart_9f78010099c6453ea3ab16494ee3c15d.getModel().getComponent('bmap').getBMap();
     </script>
 </body>
 </html>

@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="36b66ba21b3e407b9949a77b5d189e12" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="0d42e7d1d4a249108f4daf85f8a8ddf1" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_36b66ba21b3e407b9949a77b5d189e12 = echarts.init(
-            document.getElementById('36b66ba21b3e407b9949a77b5d189e12'), 'white', {renderer: 'canvas'});
-        var option_36b66ba21b3e407b9949a77b5d189e12 = {
+        var chart_0d42e7d1d4a249108f4daf85f8a8ddf1 = echarts.init(
+            document.getElementById('0d42e7d1d4a249108f4daf85f8a8ddf1'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_0d42e7d1d4a249108f4daf85f8a8ddf1 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,9 +24,6 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#4587E7"
-    ],
     "series": [
         {
             "type": "radar",
@@ -45,17 +43,19 @@
             ],
             "label": {
                 "show": true,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
+            "selectedMode": false,
+            "zlevel": 0,
+            "z": 2,
             "itemStyle": {
                 "normal": {}
             },
             "lineStyle": {
-                "show": true,
-                "width": 1,
-                "opacity": 1,
-                "curveness": 0,
-                "type": "solid"
+                "show": false,
+                "width": 1
             },
             "areaStyle": {
                 "opacity": 0.1
@@ -85,13 +85,18 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
         "order": "seriesAsc"
     },
+    "color": [
+        "#4587E7"
+    ],
     "radiusAxis": {
         "nameGap": 15,
         "inverse": false,
@@ -119,11 +124,7 @@
         "splitLine": {
             "show": false,
             "lineStyle": {
-                "show": true,
-                "width": 1,
-                "opacity": 1,
-                "curveness": 0,
-                "type": "solid"
+                "show": false
             }
         },
         "axisLine": {
@@ -138,7 +139,9 @@
         },
         "axisLabel": {
             "show": false,
-            "margin": 8
+            "margin": 8,
+            "richInheritPlainLabel": true,
+            "valueAnimation": false
         }
     },
     "polar": {},
@@ -184,16 +187,14 @@
             "radius": "80%",
             "startAngle": 90,
             "name": {
-                "textStyle": {}
+                "textStyle": {
+                    "richInheritPlainLabel": true
+                }
             },
             "splitLine": {
                 "show": false,
                 "lineStyle": {
-                    "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "show": false
                 }
             },
             "splitArea": {
@@ -210,7 +211,7 @@
         }
     ]
 };
-        chart_36b66ba21b3e407b9949a77b5d189e12.setOption(option_36b66ba21b3e407b9949a77b5d189e12);
+        chart_0d42e7d1d4a249108f4daf85f8a8ddf1.setOption(option_0d42e7d1d4a249108f4daf85f8a8ddf1);
     </script>
 </body>
 </html>

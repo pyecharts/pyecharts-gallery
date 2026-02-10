@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="7aa3559b6c734a6bbe60477376603dd6" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="f11f516c5ff54b02a30f505be6726197" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_7aa3559b6c734a6bbe60477376603dd6 = echarts.init(
-            document.getElementById('7aa3559b6c734a6bbe60477376603dd6'), 'white', {renderer: 'canvas'});
-        var option_7aa3559b6c734a6bbe60477376603dd6 = {
+        var chart_f11f516c5ff54b02a30f505be6726197 = echarts.init(
+            document.getElementById('f11f516c5ff54b02a30f505be6726197'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_f11f516c5ff54b02a30f505be6726197 = {
     "baseOption": {
         "series": [
             {
@@ -19,13 +20,13 @@
                 "name": "\u5546\u5bb6A",
                 "legendHoverLink": true,
                 "data": [
-                    71,
-                    117,
-                    64,
-                    56,
+                    33,
+                    76,
                     75,
-                    83,
-                    143
+                    93,
+                    111,
+                    48,
+                    49
                 ],
                 "realtimeSort": false,
                 "showBackground": false,
@@ -43,7 +44,9 @@
                 "z": 2,
                 "label": {
                     "show": true,
-                    "margin": 8
+                    "margin": 8,
+                    "richInheritPlainLabel": true,
+                    "valueAnimation": false
                 }
             },
             {
@@ -51,13 +54,13 @@
                 "name": "\u5546\u5bb6B",
                 "legendHoverLink": true,
                 "data": [
-                    130,
-                    81,
-                    105,
-                    56,
-                    37,
-                    127,
-                    79
+                    43,
+                    58,
+                    75,
+                    52,
+                    24,
+                    110,
+                    120
                 ],
                 "realtimeSort": false,
                 "showBackground": false,
@@ -75,7 +78,9 @@
                 "z": 2,
                 "label": {
                     "show": true,
-                    "margin": 8
+                    "margin": 8,
+                    "richInheritPlainLabel": true,
+                    "valueAnimation": false
                 }
             }
         ],
@@ -105,29 +110,36 @@
                 "scale": false,
                 "nameLocation": "end",
                 "nameGap": 15,
-                "gridIndex": 0,
+                "nameTruncate": {},
+                "nameMoveOverlap": true,
                 "inverse": false,
                 "offset": 0,
                 "splitNumber": 5,
                 "minInterval": 0,
+                "silent": false,
+                "triggerEvent": false,
                 "splitLine": {
                     "show": true,
                     "lineStyle": {
-                        "show": true,
-                        "width": 1,
-                        "opacity": 1,
-                        "curveness": 0,
-                        "type": "solid"
+                        "show": false
                     }
                 },
+                "animation": true,
+                "animationThreshold": 2000,
+                "animationDuration": 1000,
+                "animationEasing": "cubicOut",
+                "animationDelay": 0,
+                "animationDurationUpdate": 300,
+                "animationEasingUpdate": "cubicOut",
+                "animationDelayUpdate": 0,
                 "data": [
-                    "\u5468\u4e00",
-                    "\u5468\u4e8c",
-                    "\u5468\u4e09",
-                    "\u5468\u56db",
-                    "\u5468\u4e94",
-                    "\u5468\u516d",
-                    "\u5468\u65e5"
+                    "\u5c0f\u7c73",
+                    "\u4e09\u661f",
+                    "\u534e\u4e3a",
+                    "\u82f9\u679c",
+                    "\u9b45\u65cf",
+                    "VIVO",
+                    "OPPO"
                 ]
             }
         ],
@@ -137,21 +149,57 @@
                 "scale": false,
                 "nameLocation": "end",
                 "nameGap": 15,
-                "gridIndex": 0,
+                "nameTruncate": {},
+                "nameMoveOverlap": true,
                 "inverse": false,
                 "offset": 0,
                 "splitNumber": 5,
                 "minInterval": 0,
+                "silent": false,
+                "triggerEvent": false,
                 "splitLine": {
                     "show": true,
                     "lineStyle": {
-                        "show": true,
-                        "width": 1,
-                        "opacity": 1,
-                        "curveness": 0,
-                        "type": "solid"
+                        "show": false
                     }
-                }
+                },
+                "animation": true,
+                "animationThreshold": 2000,
+                "animationDuration": 1000,
+                "animationEasing": "cubicOut",
+                "animationDelay": 0,
+                "animationDurationUpdate": 300,
+                "animationEasingUpdate": "cubicOut",
+                "animationDelayUpdate": 0
+            }
+        ],
+        "legend": [
+            {
+                "data": [
+                    "\u5546\u5bb6A",
+                    "\u5546\u5bb6B"
+                ],
+                "selected": {},
+                "show": true,
+                "padding": 5,
+                "itemGap": 10,
+                "itemWidth": 25,
+                "itemHeight": 14,
+                "backgroundColor": "transparent",
+                "borderColor": "#ccc",
+                "borderRadius": 0,
+                "pageButtonItemGap": 5,
+                "pageButtonPosition": "end",
+                "pageFormatter": "{current}/{total}",
+                "pageIconColor": "#2f4554",
+                "pageIconInactiveColor": "#aaa",
+                "pageIconSize": 15,
+                "animationDurationUpdate": 800,
+                "selector": false,
+                "selectorPosition": "auto",
+                "selectorItemGap": 7,
+                "selectorButtonGap": 10,
+                "triggerEvent": false
             }
         ]
     },
@@ -171,7 +219,6 @@
                     "itemHeight": 14,
                     "backgroundColor": "transparent",
                     "borderColor": "#ccc",
-                    "borderWidth": 1,
                     "borderRadius": 0,
                     "pageButtonItemGap": 5,
                     "pageButtonPosition": "end",
@@ -183,7 +230,8 @@
                     "selector": false,
                     "selectorPosition": "auto",
                     "selectorItemGap": 7,
-                    "selectorButtonGap": 10
+                    "selectorButtonGap": 10,
+                    "triggerEvent": false
                 }
             ],
             "series": [
@@ -192,13 +240,13 @@
                     "name": "\u5546\u5bb6A",
                     "legendHoverLink": true,
                     "data": [
-                        120,
-                        91,
-                        125,
-                        141,
-                        112,
-                        67,
-                        79
+                        44,
+                        138,
+                        47,
+                        50,
+                        48,
+                        90,
+                        112
                     ],
                     "realtimeSort": false,
                     "showBackground": false,
@@ -216,7 +264,9 @@
                     "z": 2,
                     "label": {
                         "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     }
                 },
                 {
@@ -224,13 +274,13 @@
                     "name": "\u5546\u5bb6B",
                     "legendHoverLink": true,
                     "data": [
+                        40,
+                        71,
                         100,
-                        123,
-                        27,
-                        127,
-                        115,
-                        30,
-                        93
+                        24,
+                        128,
+                        68,
+                        67
                     ],
                     "realtimeSort": false,
                     "showBackground": false,
@@ -248,7 +298,9 @@
                     "z": 2,
                     "label": {
                         "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     }
                 }
             ],
@@ -258,29 +310,36 @@
                     "scale": false,
                     "nameLocation": "end",
                     "nameGap": 15,
-                    "gridIndex": 0,
+                    "nameTruncate": {},
+                    "nameMoveOverlap": true,
                     "inverse": false,
                     "offset": 0,
                     "splitNumber": 5,
                     "minInterval": 0,
+                    "silent": false,
+                    "triggerEvent": false,
                     "splitLine": {
                         "show": true,
                         "lineStyle": {
-                            "show": true,
-                            "width": 1,
-                            "opacity": 1,
-                            "curveness": 0,
-                            "type": "solid"
+                            "show": false
                         }
                     },
+                    "animation": true,
+                    "animationThreshold": 2000,
+                    "animationDuration": 1000,
+                    "animationEasing": "cubicOut",
+                    "animationDelay": 0,
+                    "animationDurationUpdate": 300,
+                    "animationEasingUpdate": "cubicOut",
+                    "animationDelayUpdate": 0,
                     "data": [
-                        "\u5468\u4e00",
-                        "\u5468\u4e8c",
-                        "\u5468\u4e09",
-                        "\u5468\u56db",
-                        "\u5468\u4e94",
-                        "\u5468\u516d",
-                        "\u5468\u65e5"
+                        "\u5c0f\u7c73",
+                        "\u4e09\u661f",
+                        "\u534e\u4e3a",
+                        "\u82f9\u679c",
+                        "\u9b45\u65cf",
+                        "VIVO",
+                        "OPPO"
                     ]
                 }
             ],
@@ -290,21 +349,28 @@
                     "scale": false,
                     "nameLocation": "end",
                     "nameGap": 15,
-                    "gridIndex": 0,
+                    "nameTruncate": {},
+                    "nameMoveOverlap": true,
                     "inverse": false,
                     "offset": 0,
                     "splitNumber": 5,
                     "minInterval": 0,
+                    "silent": false,
+                    "triggerEvent": false,
                     "splitLine": {
                         "show": true,
                         "lineStyle": {
-                            "show": true,
-                            "width": 1,
-                            "opacity": 1,
-                            "curveness": 0,
-                            "type": "solid"
+                            "show": false
                         }
-                    }
+                    },
+                    "animation": true,
+                    "animationThreshold": 2000,
+                    "animationDuration": 1000,
+                    "animationEasing": "cubicOut",
+                    "animationDelay": 0,
+                    "animationDurationUpdate": 300,
+                    "animationEasingUpdate": "cubicOut",
+                    "animationDelayUpdate": 0
                 }
             ],
             "title": [
@@ -334,24 +400,15 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
                 "order": "seriesAsc"
-            },
-            "color": [
-                "#5470c6",
-                "#91cc75",
-                "#fac858",
-                "#ee6666",
-                "#73c0de",
-                "#3ba272",
-                "#fc8452",
-                "#9a60b4",
-                "#ea7ccc"
-            ]
+            }
         },
         {
             "legend": [
@@ -368,7 +425,6 @@
                     "itemHeight": 14,
                     "backgroundColor": "transparent",
                     "borderColor": "#ccc",
-                    "borderWidth": 1,
                     "borderRadius": 0,
                     "pageButtonItemGap": 5,
                     "pageButtonPosition": "end",
@@ -380,7 +436,8 @@
                     "selector": false,
                     "selectorPosition": "auto",
                     "selectorItemGap": 7,
-                    "selectorButtonGap": 10
+                    "selectorButtonGap": 10,
+                    "triggerEvent": false
                 }
             ],
             "series": [
@@ -389,13 +446,13 @@
                     "name": "\u5546\u5bb6A",
                     "legendHoverLink": true,
                     "data": [
-                        41,
-                        93,
-                        99,
-                        46,
-                        29,
-                        119,
-                        26
+                        91,
+                        106,
+                        125,
+                        59,
+                        132,
+                        121,
+                        79
                     ],
                     "realtimeSort": false,
                     "showBackground": false,
@@ -413,7 +470,9 @@
                     "z": 2,
                     "label": {
                         "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     }
                 },
                 {
@@ -421,13 +480,13 @@
                     "name": "\u5546\u5bb6B",
                     "legendHoverLink": true,
                     "data": [
-                        42,
-                        130,
-                        77,
-                        25,
-                        44,
-                        40,
-                        142
+                        33,
+                        64,
+                        83,
+                        110,
+                        75,
+                        94,
+                        45
                     ],
                     "realtimeSort": false,
                     "showBackground": false,
@@ -445,7 +504,9 @@
                     "z": 2,
                     "label": {
                         "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     }
                 }
             ],
@@ -455,29 +516,36 @@
                     "scale": false,
                     "nameLocation": "end",
                     "nameGap": 15,
-                    "gridIndex": 0,
+                    "nameTruncate": {},
+                    "nameMoveOverlap": true,
                     "inverse": false,
                     "offset": 0,
                     "splitNumber": 5,
                     "minInterval": 0,
+                    "silent": false,
+                    "triggerEvent": false,
                     "splitLine": {
                         "show": true,
                         "lineStyle": {
-                            "show": true,
-                            "width": 1,
-                            "opacity": 1,
-                            "curveness": 0,
-                            "type": "solid"
+                            "show": false
                         }
                     },
+                    "animation": true,
+                    "animationThreshold": 2000,
+                    "animationDuration": 1000,
+                    "animationEasing": "cubicOut",
+                    "animationDelay": 0,
+                    "animationDurationUpdate": 300,
+                    "animationEasingUpdate": "cubicOut",
+                    "animationDelayUpdate": 0,
                     "data": [
-                        "\u5468\u4e00",
-                        "\u5468\u4e8c",
-                        "\u5468\u4e09",
-                        "\u5468\u56db",
-                        "\u5468\u4e94",
-                        "\u5468\u516d",
-                        "\u5468\u65e5"
+                        "\u5c0f\u7c73",
+                        "\u4e09\u661f",
+                        "\u534e\u4e3a",
+                        "\u82f9\u679c",
+                        "\u9b45\u65cf",
+                        "VIVO",
+                        "OPPO"
                     ]
                 }
             ],
@@ -487,21 +555,28 @@
                     "scale": false,
                     "nameLocation": "end",
                     "nameGap": 15,
-                    "gridIndex": 0,
+                    "nameTruncate": {},
+                    "nameMoveOverlap": true,
                     "inverse": false,
                     "offset": 0,
                     "splitNumber": 5,
                     "minInterval": 0,
+                    "silent": false,
+                    "triggerEvent": false,
                     "splitLine": {
                         "show": true,
                         "lineStyle": {
-                            "show": true,
-                            "width": 1,
-                            "opacity": 1,
-                            "curveness": 0,
-                            "type": "solid"
+                            "show": false
                         }
-                    }
+                    },
+                    "animation": true,
+                    "animationThreshold": 2000,
+                    "animationDuration": 1000,
+                    "animationEasing": "cubicOut",
+                    "animationDelay": 0,
+                    "animationDurationUpdate": 300,
+                    "animationEasingUpdate": "cubicOut",
+                    "animationDelayUpdate": 0
                 }
             ],
             "title": [
@@ -531,24 +606,15 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
                 "order": "seriesAsc"
-            },
-            "color": [
-                "#5470c6",
-                "#91cc75",
-                "#fac858",
-                "#ee6666",
-                "#73c0de",
-                "#3ba272",
-                "#fc8452",
-                "#9a60b4",
-                "#ea7ccc"
-            ]
+            }
         },
         {
             "legend": [
@@ -565,7 +631,6 @@
                     "itemHeight": 14,
                     "backgroundColor": "transparent",
                     "borderColor": "#ccc",
-                    "borderWidth": 1,
                     "borderRadius": 0,
                     "pageButtonItemGap": 5,
                     "pageButtonPosition": "end",
@@ -577,7 +642,8 @@
                     "selector": false,
                     "selectorPosition": "auto",
                     "selectorItemGap": 7,
-                    "selectorButtonGap": 10
+                    "selectorButtonGap": 10,
+                    "triggerEvent": false
                 }
             ],
             "series": [
@@ -586,12 +652,46 @@
                     "name": "\u5546\u5bb6A",
                     "legendHoverLink": true,
                     "data": [
-                        116,
-                        99,
-                        28,
-                        130,
-                        59,
-                        85,
+                        47,
+                        78,
+                        90,
+                        133,
+                        95,
+                        143,
+                        103
+                    ],
+                    "realtimeSort": false,
+                    "showBackground": false,
+                    "stackStrategy": "samesign",
+                    "cursor": "pointer",
+                    "barMinHeight": 0,
+                    "barCategoryGap": "20%",
+                    "barGap": "30%",
+                    "large": false,
+                    "largeThreshold": 400,
+                    "seriesLayoutBy": "column",
+                    "datasetIndex": 0,
+                    "clip": true,
+                    "zlevel": 0,
+                    "z": 2,
+                    "label": {
+                        "show": true,
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
+                    }
+                },
+                {
+                    "type": "bar",
+                    "name": "\u5546\u5bb6B",
+                    "legendHoverLink": true,
+                    "data": [
+                        42,
+                        149,
+                        27,
+                        102,
+                        27,
+                        136,
                         112
                     ],
                     "realtimeSort": false,
@@ -610,39 +710,9 @@
                     "z": 2,
                     "label": {
                         "show": true,
-                        "margin": 8
-                    }
-                },
-                {
-                    "type": "bar",
-                    "name": "\u5546\u5bb6B",
-                    "legendHoverLink": true,
-                    "data": [
-                        82,
-                        77,
-                        31,
-                        136,
-                        21,
-                        53,
-                        35
-                    ],
-                    "realtimeSort": false,
-                    "showBackground": false,
-                    "stackStrategy": "samesign",
-                    "cursor": "pointer",
-                    "barMinHeight": 0,
-                    "barCategoryGap": "20%",
-                    "barGap": "30%",
-                    "large": false,
-                    "largeThreshold": 400,
-                    "seriesLayoutBy": "column",
-                    "datasetIndex": 0,
-                    "clip": true,
-                    "zlevel": 0,
-                    "z": 2,
-                    "label": {
-                        "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     }
                 }
             ],
@@ -652,29 +722,36 @@
                     "scale": false,
                     "nameLocation": "end",
                     "nameGap": 15,
-                    "gridIndex": 0,
+                    "nameTruncate": {},
+                    "nameMoveOverlap": true,
                     "inverse": false,
                     "offset": 0,
                     "splitNumber": 5,
                     "minInterval": 0,
+                    "silent": false,
+                    "triggerEvent": false,
                     "splitLine": {
                         "show": true,
                         "lineStyle": {
-                            "show": true,
-                            "width": 1,
-                            "opacity": 1,
-                            "curveness": 0,
-                            "type": "solid"
+                            "show": false
                         }
                     },
+                    "animation": true,
+                    "animationThreshold": 2000,
+                    "animationDuration": 1000,
+                    "animationEasing": "cubicOut",
+                    "animationDelay": 0,
+                    "animationDurationUpdate": 300,
+                    "animationEasingUpdate": "cubicOut",
+                    "animationDelayUpdate": 0,
                     "data": [
-                        "\u5468\u4e00",
-                        "\u5468\u4e8c",
-                        "\u5468\u4e09",
-                        "\u5468\u56db",
-                        "\u5468\u4e94",
-                        "\u5468\u516d",
-                        "\u5468\u65e5"
+                        "\u5c0f\u7c73",
+                        "\u4e09\u661f",
+                        "\u534e\u4e3a",
+                        "\u82f9\u679c",
+                        "\u9b45\u65cf",
+                        "VIVO",
+                        "OPPO"
                     ]
                 }
             ],
@@ -684,21 +761,28 @@
                     "scale": false,
                     "nameLocation": "end",
                     "nameGap": 15,
-                    "gridIndex": 0,
+                    "nameTruncate": {},
+                    "nameMoveOverlap": true,
                     "inverse": false,
                     "offset": 0,
                     "splitNumber": 5,
                     "minInterval": 0,
+                    "silent": false,
+                    "triggerEvent": false,
                     "splitLine": {
                         "show": true,
                         "lineStyle": {
-                            "show": true,
-                            "width": 1,
-                            "opacity": 1,
-                            "curveness": 0,
-                            "type": "solid"
+                            "show": false
                         }
-                    }
+                    },
+                    "animation": true,
+                    "animationThreshold": 2000,
+                    "animationDuration": 1000,
+                    "animationEasing": "cubicOut",
+                    "animationDelay": 0,
+                    "animationDurationUpdate": 300,
+                    "animationEasingUpdate": "cubicOut",
+                    "animationDelayUpdate": 0
                 }
             ],
             "title": [
@@ -728,24 +812,15 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
                 "order": "seriesAsc"
-            },
-            "color": [
-                "#5470c6",
-                "#91cc75",
-                "#fac858",
-                "#ee6666",
-                "#73c0de",
-                "#3ba272",
-                "#fc8452",
-                "#9a60b4",
-                "#ea7ccc"
-            ]
+            }
         },
         {
             "legend": [
@@ -762,7 +837,6 @@
                     "itemHeight": 14,
                     "backgroundColor": "transparent",
                     "borderColor": "#ccc",
-                    "borderWidth": 1,
                     "borderRadius": 0,
                     "pageButtonItemGap": 5,
                     "pageButtonPosition": "end",
@@ -774,7 +848,8 @@
                     "selector": false,
                     "selectorPosition": "auto",
                     "selectorItemGap": 7,
-                    "selectorButtonGap": 10
+                    "selectorButtonGap": 10,
+                    "triggerEvent": false
                 }
             ],
             "series": [
@@ -783,13 +858,13 @@
                     "name": "\u5546\u5bb6A",
                     "legendHoverLink": true,
                     "data": [
-                        132,
-                        122,
-                        94,
-                        41,
-                        128,
-                        150,
-                        147
+                        89,
+                        31,
+                        90,
+                        46,
+                        143,
+                        47,
+                        90
                     ],
                     "realtimeSort": false,
                     "showBackground": false,
@@ -807,7 +882,9 @@
                     "z": 2,
                     "label": {
                         "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     }
                 },
                 {
@@ -815,13 +892,13 @@
                     "name": "\u5546\u5bb6B",
                     "legendHoverLink": true,
                     "data": [
-                        23,
-                        149,
-                        113,
-                        122,
-                        117,
-                        30,
-                        94
+                        83,
+                        80,
+                        145,
+                        127,
+                        38,
+                        126,
+                        124
                     ],
                     "realtimeSort": false,
                     "showBackground": false,
@@ -839,7 +916,9 @@
                     "z": 2,
                     "label": {
                         "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     }
                 }
             ],
@@ -849,29 +928,36 @@
                     "scale": false,
                     "nameLocation": "end",
                     "nameGap": 15,
-                    "gridIndex": 0,
+                    "nameTruncate": {},
+                    "nameMoveOverlap": true,
                     "inverse": false,
                     "offset": 0,
                     "splitNumber": 5,
                     "minInterval": 0,
+                    "silent": false,
+                    "triggerEvent": false,
                     "splitLine": {
                         "show": true,
                         "lineStyle": {
-                            "show": true,
-                            "width": 1,
-                            "opacity": 1,
-                            "curveness": 0,
-                            "type": "solid"
+                            "show": false
                         }
                     },
+                    "animation": true,
+                    "animationThreshold": 2000,
+                    "animationDuration": 1000,
+                    "animationEasing": "cubicOut",
+                    "animationDelay": 0,
+                    "animationDurationUpdate": 300,
+                    "animationEasingUpdate": "cubicOut",
+                    "animationDelayUpdate": 0,
                     "data": [
-                        "\u5468\u4e00",
-                        "\u5468\u4e8c",
-                        "\u5468\u4e09",
-                        "\u5468\u56db",
-                        "\u5468\u4e94",
-                        "\u5468\u516d",
-                        "\u5468\u65e5"
+                        "\u5c0f\u7c73",
+                        "\u4e09\u661f",
+                        "\u534e\u4e3a",
+                        "\u82f9\u679c",
+                        "\u9b45\u65cf",
+                        "VIVO",
+                        "OPPO"
                     ]
                 }
             ],
@@ -881,21 +967,28 @@
                     "scale": false,
                     "nameLocation": "end",
                     "nameGap": 15,
-                    "gridIndex": 0,
+                    "nameTruncate": {},
+                    "nameMoveOverlap": true,
                     "inverse": false,
                     "offset": 0,
                     "splitNumber": 5,
                     "minInterval": 0,
+                    "silent": false,
+                    "triggerEvent": false,
                     "splitLine": {
                         "show": true,
                         "lineStyle": {
-                            "show": true,
-                            "width": 1,
-                            "opacity": 1,
-                            "curveness": 0,
-                            "type": "solid"
+                            "show": false
                         }
-                    }
+                    },
+                    "animation": true,
+                    "animationThreshold": 2000,
+                    "animationDuration": 1000,
+                    "animationEasing": "cubicOut",
+                    "animationDelay": 0,
+                    "animationDurationUpdate": 300,
+                    "animationEasingUpdate": "cubicOut",
+                    "animationDelayUpdate": 0
                 }
             ],
             "title": [
@@ -925,24 +1018,15 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
                 "order": "seriesAsc"
-            },
-            "color": [
-                "#5470c6",
-                "#91cc75",
-                "#fac858",
-                "#ee6666",
-                "#73c0de",
-                "#3ba272",
-                "#fc8452",
-                "#9a60b4",
-                "#ea7ccc"
-            ]
+            }
         },
         {
             "legend": [
@@ -959,7 +1043,6 @@
                     "itemHeight": 14,
                     "backgroundColor": "transparent",
                     "borderColor": "#ccc",
-                    "borderWidth": 1,
                     "borderRadius": 0,
                     "pageButtonItemGap": 5,
                     "pageButtonPosition": "end",
@@ -971,7 +1054,8 @@
                     "selector": false,
                     "selectorPosition": "auto",
                     "selectorItemGap": 7,
-                    "selectorButtonGap": 10
+                    "selectorButtonGap": 10,
+                    "triggerEvent": false
                 }
             ],
             "series": [
@@ -980,13 +1064,13 @@
                     "name": "\u5546\u5bb6A",
                     "legendHoverLink": true,
                     "data": [
-                        71,
-                        117,
-                        64,
-                        56,
+                        33,
+                        76,
                         75,
-                        83,
-                        143
+                        93,
+                        111,
+                        48,
+                        49
                     ],
                     "realtimeSort": false,
                     "showBackground": false,
@@ -1004,7 +1088,9 @@
                     "z": 2,
                     "label": {
                         "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     }
                 },
                 {
@@ -1012,13 +1098,13 @@
                     "name": "\u5546\u5bb6B",
                     "legendHoverLink": true,
                     "data": [
-                        130,
-                        81,
-                        105,
-                        56,
-                        37,
-                        127,
-                        79
+                        43,
+                        58,
+                        75,
+                        52,
+                        24,
+                        110,
+                        120
                     ],
                     "realtimeSort": false,
                     "showBackground": false,
@@ -1036,7 +1122,9 @@
                     "z": 2,
                     "label": {
                         "show": true,
-                        "margin": 8
+                        "margin": 8,
+                        "richInheritPlainLabel": true,
+                        "valueAnimation": false
                     }
                 }
             ],
@@ -1046,29 +1134,36 @@
                     "scale": false,
                     "nameLocation": "end",
                     "nameGap": 15,
-                    "gridIndex": 0,
+                    "nameTruncate": {},
+                    "nameMoveOverlap": true,
                     "inverse": false,
                     "offset": 0,
                     "splitNumber": 5,
                     "minInterval": 0,
+                    "silent": false,
+                    "triggerEvent": false,
                     "splitLine": {
                         "show": true,
                         "lineStyle": {
-                            "show": true,
-                            "width": 1,
-                            "opacity": 1,
-                            "curveness": 0,
-                            "type": "solid"
+                            "show": false
                         }
                     },
+                    "animation": true,
+                    "animationThreshold": 2000,
+                    "animationDuration": 1000,
+                    "animationEasing": "cubicOut",
+                    "animationDelay": 0,
+                    "animationDurationUpdate": 300,
+                    "animationEasingUpdate": "cubicOut",
+                    "animationDelayUpdate": 0,
                     "data": [
-                        "\u5468\u4e00",
-                        "\u5468\u4e8c",
-                        "\u5468\u4e09",
-                        "\u5468\u56db",
-                        "\u5468\u4e94",
-                        "\u5468\u516d",
-                        "\u5468\u65e5"
+                        "\u5c0f\u7c73",
+                        "\u4e09\u661f",
+                        "\u534e\u4e3a",
+                        "\u82f9\u679c",
+                        "\u9b45\u65cf",
+                        "VIVO",
+                        "OPPO"
                     ]
                 }
             ],
@@ -1078,21 +1173,28 @@
                     "scale": false,
                     "nameLocation": "end",
                     "nameGap": 15,
-                    "gridIndex": 0,
+                    "nameTruncate": {},
+                    "nameMoveOverlap": true,
                     "inverse": false,
                     "offset": 0,
                     "splitNumber": 5,
                     "minInterval": 0,
+                    "silent": false,
+                    "triggerEvent": false,
                     "splitLine": {
                         "show": true,
                         "lineStyle": {
-                            "show": true,
-                            "width": 1,
-                            "opacity": 1,
-                            "curveness": 0,
-                            "type": "solid"
+                            "show": false
                         }
-                    }
+                    },
+                    "animation": true,
+                    "animationThreshold": 2000,
+                    "animationDuration": 1000,
+                    "animationEasing": "cubicOut",
+                    "animationDelay": 0,
+                    "animationDurationUpdate": 300,
+                    "animationEasingUpdate": "cubicOut",
+                    "animationDelayUpdate": 0
                 }
             ],
             "title": [
@@ -1122,28 +1224,19 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
                 "order": "seriesAsc"
-            },
-            "color": [
-                "#5470c6",
-                "#91cc75",
-                "#fac858",
-                "#ee6666",
-                "#73c0de",
-                "#3ba272",
-                "#fc8452",
-                "#9a60b4",
-                "#ea7ccc"
-            ]
+            }
         }
     ]
 };
-        chart_7aa3559b6c734a6bbe60477376603dd6.setOption(option_7aa3559b6c734a6bbe60477376603dd6);
+        chart_f11f516c5ff54b02a30f505be6726197.setOption(option_f11f516c5ff54b02a30f505be6726197);
     </script>
 </body>
 </html>

@@ -5,7 +5,7 @@ from pyecharts.charts import Map
 from pyecharts.datasets import register_url
 
 """
-Gallery 使用 pyecharts 1.1.0 和 echarts-china-cities-js
+Gallery 使用 pyecharts 2.1.0 和 echarts-china-cities-js
 参考地址: https://echarts.apache.org/examples/editor.html?c=map-HK
 """
 ssl._create_default_https_context = ssl._create_unverified_context

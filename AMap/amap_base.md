@@ -1,7 +1,7 @@
 
 ## pyecharts 代码 / 效果
 
-* 需要 pyecharts 2.0.7+ 以上版本才有该图例（Requires pyecharts 2.0.7+ or higher to have this chart）
+* 需要 pyecharts 2.1.0 以上版本才有该图例（Requires pyecharts 2.1.0 or higher to have this chart）
 
 ```python
 from pyecharts import options as opts

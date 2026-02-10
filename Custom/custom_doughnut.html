@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts-x/segmented-doughnut/index.auto.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="72a71403e8804f08b73f1ce029112549" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_72a71403e8804f08b73f1ce029112549 = echarts.init(
+            document.getElementById('72a71403e8804f08b73f1ce029112549'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_72a71403e8804f08b73f1ce029112549 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "series": [
+        {
+            "type": "custom",
+            "name": "A",
+            "renderItem": "segmentedDoughnut",
+            "colorBy": "series",
+            "legendHoverLink": true,
+            "coordinateSystem": "none",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "polarIndex": 0,
+            "geoIndex": 0,
+            "calendarIndex": 0,
+            "datasetIndex": 0,
+            "seriesLayoutBy": "column",
+            "itemStyle": {},
+            "selectedMode": false,
+            "data": [
+                5
+            ],
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "emphasis": {
+                "disabled": false,
+                "scale": true,
+                "focus": "none",
+                "blurScope": "coordinateSystem",
+                "labelLine": {
+                    "show": false
+                },
+                "itemStyle": {
+                    "shadowBlur": 10,
+                    "shadowColor": "rgba(0, 0, 0, 0.2)"
+                }
+            },
+            "itemPayload": {
+                "center": [
+                    "25%",
+                    "50%"
+                ],
+                "radius": [
+                    "50%",
+                    "65%"
+                ],
+                "segmentCount": 8,
+                "label": {
+                    "show": true,
+                    "formatter": "{c}/{b}",
+                    "fontSize": 35,
+                    "color": "#555"
+                }
+            }
+        },
+        {
+            "type": "custom",
+            "name": "B",
+            "renderItem": "segmentedDoughnut",
+            "colorBy": "series",
+            "legendHoverLink": true,
+            "coordinateSystem": "none",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "polarIndex": 0,
+            "geoIndex": 0,
+            "calendarIndex": 0,
+            "datasetIndex": 0,
+            "seriesLayoutBy": "column",
+            "itemStyle": {},
+            "selectedMode": false,
+            "data": [
+                6
+            ],
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "emphasis": {
+                "disabled": false,
+                "scale": true,
+                "focus": "none",
+                "blurScope": "coordinateSystem",
+                "labelLine": {
+                    "show": false
+                },
+                "itemStyle": {
+                    "shadowBlur": 10,
+                    "shadowColor": "rgba(0, 0, 0, 0.2)"
+                }
+            },
+            "itemPayload": {
+                "center": [
+                    "75%",
+                    "50%"
+                ],
+                "radius": [
+                    "50%",
+                    "65%"
+                ],
+                "segmentCount": 6,
+                "label": {
+                    "show": true,
+                    "formatter": "{d} \ud83c\udf89",
+                    "fontSize": 35,
+                    "color": "#555"
+                }
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "A",
+                "B"
+            ],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "displayTransition": true,
+        "textStyle": {
+            "fontSize": 14,
+            "richInheritPlainLabel": true
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    }
+};
+        chart_72a71403e8804f08b73f1ce029112549.setOption(option_72a71403e8804f08b73f1ce029112549);
+    </script>
+</body>
+</html>

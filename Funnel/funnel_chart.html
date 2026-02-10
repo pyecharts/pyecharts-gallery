@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="13fab9c0fb21448ab956f3f0ad3db02b" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="57ff2c05435648f29d72c6fdff9d8c2f" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_13fab9c0fb21448ab956f3f0ad3db02b = echarts.init(
-            document.getElementById('13fab9c0fb21448ab956f3f0ad3db02b'), 'white', {renderer: 'canvas'});
-        var option_13fab9c0fb21448ab956f3f0ad3db02b = {
+        var chart_57ff2c05435648f29d72c6fdff9d8c2f = echarts.init(
+            document.getElementById('57ff2c05435648f29d72c6fdff9d8c2f'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_57ff2c05435648f29d72c6fdff9d8c2f = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,17 +24,6 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "funnel",
@@ -59,12 +49,21 @@
                     "value": 20
                 }
             ],
+            "min": 0,
+            "max": 100,
+            "minSize": "0%",
+            "maxSize": "100%",
+            "orient": "vertical",
             "sort": "descending",
             "gap": 2,
+            "legendHoverLink": true,
+            "funnelAlign": "center",
             "label": {
                 "show": true,
                 "position": "inside",
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "tooltip": {
                 "show": true,
@@ -81,9 +80,11 @@
                 "confine": false,
                 "appendToBody": false,
                 "transitionDuration": 0.4,
+                "displayTransition": true,
                 "formatter": "{a} <br/>{b} : {c}%",
                 "textStyle": {
-                    "fontSize": 14
+                    "fontSize": 14,
+                    "richInheritPlainLabel": true
                 },
                 "borderWidth": 0,
                 "padding": 5,
@@ -92,16 +93,19 @@
             "itemStyle": {
                 "borderColor": "#fff",
                 "borderWidth": 1
-            }
+            },
+            "selectedMode": false,
+            "zlevel": 0,
+            "z": 2
         }
     ],
     "legend": [
         {
             "data": [
-                "\u8bbf\u95ee",
                 "\u54a8\u8be2",
-                "\u8ba2\u5355",
+                "\u8bbf\u95ee",
                 "\u70b9\u51fb",
+                "\u8ba2\u5355",
                 "\u5c55\u73b0"
             ],
             "selected": {},
@@ -112,7 +116,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -124,7 +127,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -142,8 +146,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -164,7 +170,7 @@
         }
     ]
 };
-        chart_13fab9c0fb21448ab956f3f0ad3db02b.setOption(option_13fab9c0fb21448ab956f3f0ad3db02b);
+        chart_57ff2c05435648f29d72c6fdff9d8c2f.setOption(option_57ff2c05435648f29d72c6fdff9d8c2f);
     </script>
 </body>
 </html>

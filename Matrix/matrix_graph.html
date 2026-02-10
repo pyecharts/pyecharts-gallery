@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="8389ad6ad5a04a659a7bcfc11365d982" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_8389ad6ad5a04a659a7bcfc11365d982 = echarts.init(
+            document.getElementById('8389ad6ad5a04a659a7bcfc11365d982'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_8389ad6ad5a04a659a7bcfc11365d982 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "series": [
+        {
+            "type": "graph",
+            "name": "course",
+            "coordinateSystem": "matrix",
+            "layout": "force",
+            "symbolSize": 15,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 50,
+                "gravity": 0.2,
+                "edgeLength": 30,
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": true,
+                "color": "#555",
+                "offset": [
+                    0,
+                    -15
+                ],
+                "margin": 8,
+                "fontSize": 15,
+                "fontWeight": "bold",
+                "verticalAlign": "bottom",
+                "formatter": (params) => { return params.data[3];},
+                "borderWidth": 0,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
+            },
+            "lineStyle": {
+                "show": false,
+                "width": 2,
+                "opacity": 1,
+                "color": "#9af"
+            },
+            "roam": true,
+            "nodeScaleRatio": 0.6,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                [
+                    "Programming",
+                    "1st Year",
+                    1,
+                    "Intro to Computer Science"
+                ],
+                [
+                    "Data Analysis",
+                    "2nd Year",
+                    1,
+                    "Intro to Data Analysis"
+                ],
+                [
+                    "Algorithms",
+                    "2nd Year",
+                    1,
+                    "Intro to Algorithms"
+                ],
+                [
+                    "Programming",
+                    "2nd Year",
+                    1,
+                    "Advanced Programming"
+                ],
+                [
+                    "Algorithms",
+                    "4th Year",
+                    1,
+                    "Data Structures\nand Algorithms"
+                ],
+                [
+                    "Data Analysis",
+                    "3rd Year",
+                    1,
+                    "Statistics for Data Analysis"
+                ],
+                [
+                    "Programming",
+                    "3rd Year",
+                    1,
+                    "Software Development"
+                ]
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
+            },
+            "edgeSymbol": [
+                "none",
+                "arrow"
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": 1,
+                    "target": 0,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": 2,
+                    "target": 0,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": 3,
+                    "target": 0,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": 4,
+                    "target": 3,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": 4,
+                    "target": 2,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": 5,
+                    "target": 1,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                },
+                {
+                    "source": 6,
+                    "target": 3,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
+                }
+            ],
+            "preserveAspect": false
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10,
+            "triggerEvent": false
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "displayTransition": true,
+        "textStyle": {
+            "fontSize": 14,
+            "richInheritPlainLabel": true
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "Course Prerequisites",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "graphic": [
+        {
+            "type": "text",
+            "x": 668.75,
+            "y": 135,
+            "style": {
+                "text": "Course Categories",
+                "x": 0,
+                "y": 0,
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "textAlign": "center",
+                "textVerticalAlign": "bottom",
+                "fill": "#333",
+                "line_width": 0
+            }
+        },
+        {
+            "type": "text",
+            "x": 65,
+            "y": 445.20000000000005,
+            "rotation": 1.5707963267948966,
+            "style": {
+                "text": "Course Categories",
+                "x": 0,
+                "y": 0,
+                "fontSize": 18,
+                "fontWeight": "bold",
+                "textAlign": "center",
+                "textVerticalAlign": "bottom",
+                "fill": "#333",
+                "line_width": 0
+            }
+        }
+    ],
+    "matrix": {
+        "zlevel": 0,
+        "z": 2,
+        "left": 80,
+        "top": 150,
+        "right": 80,
+        "bottom": 150,
+        "x": {
+            "show": true,
+            "data": [
+                "Data Analysis",
+                "Programming",
+                "Algorithms"
+            ],
+            "silent": false
+        },
+        "y": {
+            "show": true,
+            "data": [
+                "1st Year",
+                "2nd Year",
+                "3rd Year",
+                "4th Year"
+            ],
+            "silent": false
+        }
+    }
+};
+        chart_8389ad6ad5a04a659a7bcfc11365d982.setOption(option_8389ad6ad5a04a659a7bcfc11365d982);
+    </script>
+</body>
+</html>

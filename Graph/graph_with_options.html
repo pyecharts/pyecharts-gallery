@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="e87cd4ed5c774f6a9fefc6cfdb19218e" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="3287909cdb4941bfb030d0805c7928b6" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_e87cd4ed5c774f6a9fefc6cfdb19218e = echarts.init(
-            document.getElementById('e87cd4ed5c774f6a9fefc6cfdb19218e'), 'white', {renderer: 'canvas'});
-        var option_e87cd4ed5c774f6a9fefc6cfdb19218e = {
+        var chart_3287909cdb4941bfb030d0805c7928b6 = echarts.init(
+            document.getElementById('3287909cdb4941bfb030d0805c7928b6'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_3287909cdb4941bfb030d0805c7928b6 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,17 +24,6 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "graph",
@@ -51,48 +41,64 @@
             },
             "label": {
                 "show": true,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "lineStyle": {
-                "show": true,
-                "width": 1,
-                "opacity": 1,
-                "curveness": 0,
-                "type": "solid"
+                "show": false
             },
             "roam": true,
+            "nodeScaleRatio": 0.6,
             "draggable": false,
             "focusNodeAdjacency": true,
             "data": [
                 {
                     "name": "\u7ed3\u70b91",
                     "fixed": false,
-                    "symbolSize": 10
+                    "symbolSize": 10,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
                 },
                 {
                     "name": "\u7ed3\u70b92",
                     "fixed": false,
-                    "symbolSize": 20
+                    "symbolSize": 20,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
                 },
                 {
                     "name": "\u7ed3\u70b93",
                     "fixed": false,
-                    "symbolSize": 30
+                    "symbolSize": 30,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
                 },
                 {
                     "name": "\u7ed3\u70b94",
                     "fixed": false,
-                    "symbolSize": 40
+                    "symbolSize": 40,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
                 },
                 {
                     "name": "\u7ed3\u70b95",
                     "fixed": false,
-                    "symbolSize": 50
+                    "symbolSize": 50,
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {}
                 }
             ],
             "edgeLabel": {
                 "show": false,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "edgeSymbol": [
                 null,
@@ -102,25 +108,46 @@
             "links": [
                 {
                     "source": "\u7ed3\u70b91",
-                    "target": "\u7ed3\u70b92"
+                    "target": "\u7ed3\u70b92",
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
                 },
                 {
                     "source": "\u7ed3\u70b92",
-                    "target": "\u7ed3\u70b93"
+                    "target": "\u7ed3\u70b93",
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
                 },
                 {
                     "source": "\u7ed3\u70b93",
-                    "target": "\u7ed3\u70b94"
+                    "target": "\u7ed3\u70b94",
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
                 },
                 {
                     "source": "\u7ed3\u70b94",
-                    "target": "\u7ed3\u70b95"
+                    "target": "\u7ed3\u70b95",
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
                 },
                 {
                     "source": "\u7ed3\u70b95",
-                    "target": "\u7ed3\u70b91"
+                    "target": "\u7ed3\u70b91",
+                    "emphasis": {},
+                    "blur": {},
+                    "select": {},
+                    "ignoreForceLayout": false
                 }
-            ]
+            ],
+            "preserveAspect": false
         }
     ],
     "legend": [
@@ -134,7 +161,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -146,7 +172,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -164,8 +191,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -185,7 +214,7 @@
         }
     ]
 };
-        chart_e87cd4ed5c774f6a9fefc6cfdb19218e.setOption(option_e87cd4ed5c774f6a9fefc6cfdb19218e);
+        chart_3287909cdb4941bfb030d0805c7928b6.setOption(option_3287909cdb4941bfb030d0805c7928b6);
     </script>
 </body>
 </html>

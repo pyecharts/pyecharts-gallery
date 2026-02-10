@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="24e86970ad7a4e4982ff956a363ac1ea" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="bee6cdcf27da4f06b84dc5b1818ea316" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_24e86970ad7a4e4982ff956a363ac1ea = echarts.init(
-            document.getElementById('24e86970ad7a4e4982ff956a363ac1ea'), 'white', {renderer: 'canvas'});
-        var option_24e86970ad7a4e4982ff956a363ac1ea = {
+        var chart_bee6cdcf27da4f06b84dc5b1818ea316 = echarts.init(
+            document.getElementById('bee6cdcf27da4f06b84dc5b1818ea316'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_bee6cdcf27da4f06b84dc5b1818ea316 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -23,15 +24,6 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "blue",
-        "green",
-        "yellow",
-        "red",
-        "pink",
-        "orange",
-        "purple"
-    ],
     "series": [
         {
             "type": "pie",
@@ -60,32 +52,32 @@
             },
             "data": [
                 {
-                    "name": "\u53ef\u4e50",
-                    "value": 91
+                    "name": "\u5c0f\u7c73",
+                    "value": 132
                 },
                 {
-                    "name": "\u96ea\u78a7",
-                    "value": 122
+                    "name": "\u4e09\u661f",
+                    "value": 131
                 },
                 {
-                    "name": "\u6a59\u6c41",
-                    "value": 29
+                    "name": "\u534e\u4e3a",
+                    "value": 134
                 },
                 {
-                    "name": "\u7eff\u8336",
-                    "value": 112
+                    "name": "\u82f9\u679c",
+                    "value": 52
                 },
                 {
-                    "name": "\u5976\u8336",
+                    "name": "\u9b45\u65cf",
+                    "value": 117
+                },
+                {
+                    "name": "VIVO",
                     "value": 93
                 },
                 {
-                    "name": "\u767e\u5a01",
-                    "value": 27
-                },
-                {
-                    "name": "\u9752\u5c9b",
-                    "value": 53
+                    "name": "OPPO",
+                    "value": 112
                 }
             ],
             "radius": [
@@ -99,7 +91,9 @@
             "label": {
                 "show": true,
                 "margin": 8,
-                "formatter": "{b}: {c}"
+                "formatter": "{b}: {c}",
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "labelLine": {
                 "show": true,
@@ -121,13 +115,13 @@
     "legend": [
         {
             "data": [
-                "\u53ef\u4e50",
-                "\u96ea\u78a7",
-                "\u6a59\u6c41",
-                "\u7eff\u8336",
-                "\u5976\u8336",
-                "\u767e\u5a01",
-                "\u9752\u5c9b"
+                "\u5c0f\u7c73",
+                "\u4e09\u661f",
+                "\u534e\u4e3a",
+                "\u82f9\u679c",
+                "\u9b45\u65cf",
+                "VIVO",
+                "OPPO"
             ],
             "selected": {},
             "show": true,
@@ -137,7 +131,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -149,7 +142,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -167,13 +161,24 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
         "order": "seriesAsc"
     },
+    "color": [
+        "blue",
+        "green",
+        "yellow",
+        "red",
+        "pink",
+        "orange",
+        "purple"
+    ],
     "title": [
         {
             "show": true,
@@ -188,7 +193,7 @@
         }
     ]
 };
-        chart_24e86970ad7a4e4982ff956a363ac1ea.setOption(option_24e86970ad7a4e4982ff956a363ac1ea);
+        chart_bee6cdcf27da4f06b84dc5b1818ea316.setOption(option_bee6cdcf27da4f06b84dc5b1818ea316);
     </script>
 </body>
 </html>

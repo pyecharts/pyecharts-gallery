@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-liquidfill.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts-liquidfill.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="266054d691fe4b80aaf4814c4e21ef49" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="4db9121fbe9e4973be37e2e2e444c885" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_266054d691fe4b80aaf4814c4e21ef49 = echarts.init(
-            document.getElementById('266054d691fe4b80aaf4814c4e21ef49'), 'white', {renderer: 'canvas'});
-        var option_266054d691fe4b80aaf4814c4e21ef49 = {
+        var chart_4db9121fbe9e4973be37e2e2e444c885 = echarts.init(
+            document.getElementById('4db9121fbe9e4973be37e2e2e444c885'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_4db9121fbe9e4973be37e2e2e444c885 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -24,17 +25,6 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "liquidFill",
@@ -62,7 +52,9 @@
                 "position": "inside",
                 "margin": 8,
                 "fontSize": 50,
-                "formatter": function (param) {                    return (Math.floor(param.value * 10000) / 100) + '%';                }
+                "formatter": function (param) {                    return (Math.floor(param.value * 10000) / 100) + '%';                },
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             }
         }
     ],
@@ -77,7 +69,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -89,7 +80,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -107,8 +99,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -128,7 +122,7 @@
         }
     ]
 };
-        chart_266054d691fe4b80aaf4814c4e21ef49.setOption(option_266054d691fe4b80aaf4814c4e21ef49);
+        chart_4db9121fbe9e4973be37e2e2e444c885.setOption(option_4db9121fbe9e4973be37e2e2e444c885);
     </script>
 </body>
 </html>

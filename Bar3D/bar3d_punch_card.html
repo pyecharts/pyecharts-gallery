@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-gl.min.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts-gl.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="70aeaa825c674dfcbfaa53d1672878ce" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="da71d26255364cdd8ad883bea5da99b5" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_70aeaa825c674dfcbfaa53d1672878ce = echarts.init(
-            document.getElementById('70aeaa825c674dfcbfaa53d1672878ce'), 'white', {renderer: 'canvas'});
-        var option_70aeaa825c674dfcbfaa53d1672878ce = {
+        var chart_da71d26255364cdd8ad883bea5da99b5 = echarts.init(
+            document.getElementById('da71d26255364cdd8ad883bea5da99b5'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_da71d26255364cdd8ad883bea5da99b5 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -24,17 +25,6 @@
     "aria": {
         "enabled": false
     },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
     "series": [
         {
             "type": "bar3D",
@@ -882,7 +872,9 @@
             ],
             "label": {
                 "show": false,
-                "margin": 8
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
             },
             "grid3DIndex": 0
         }
@@ -900,7 +892,6 @@
             "itemHeight": 14,
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
-            "borderWidth": 1,
             "borderRadius": 0,
             "pageButtonItemGap": 5,
             "pageButtonPosition": "end",
@@ -912,7 +903,8 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10
+            "selectorButtonGap": 10,
+            "triggerEvent": false
         }
     ],
     "tooltip": {
@@ -930,8 +922,10 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "displayTransition": true,
         "textStyle": {
-            "fontSize": 14
+            "fontSize": 14,
+            "richInheritPlainLabel": true
         },
         "borderWidth": 0,
         "padding": 5,
@@ -973,11 +967,7 @@
         "splitLine": {
             "show": true,
             "lineStyle": {
-                "show": true,
-                "width": 1,
-                "opacity": 1,
-                "curveness": 0,
-                "type": "solid"
+                "show": false
             }
         }
     },
@@ -1000,11 +990,7 @@
         "splitLine": {
             "show": true,
             "lineStyle": {
-                "show": true,
-                "width": 1,
-                "opacity": 1,
-                "curveness": 0,
-                "type": "solid"
+                "show": false
             }
         }
     },
@@ -1018,11 +1004,7 @@
         "splitLine": {
             "show": true,
             "lineStyle": {
-                "show": true,
-                "width": 1,
-                "opacity": 1,
-                "curveness": 0,
-                "type": "solid"
+                "show": false
             }
         }
     },
@@ -1033,11 +1015,7 @@
         "splitLine": {
             "show": true,
             "lineStyle": {
-                "show": true,
-                "width": 1,
-                "opacity": 1,
-                "curveness": 0,
-                "type": "solid"
+                "show": false
             }
         },
         "environment": "auto",
@@ -1100,7 +1078,7 @@
         "borderWidth": 0
     }
 };
-        chart_70aeaa825c674dfcbfaa53d1672878ce.setOption(option_70aeaa825c674dfcbfaa53d1672878ce);
+        chart_da71d26255364cdd8ad883bea5da99b5.setOption(option_da71d26255364cdd8ad883bea5da99b5);
     </script>
 </body>
 </html>
